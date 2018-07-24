@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Matrix4 class from the vector_math_64 library, for the Dart programming language.">
+  <title>Matrix4 class - vector_math_64 library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="vector_math_64/vector_math_64-library.html">vector_math_64</a></li>
+    <li class="self-crumb">Matrix4 class</li>
+  </ol>
+  <div class="self-name">Matrix4</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>vector_math_64 library</h5>
+    <ol>
+      <li class="section-title"><a href="vector_math_64/vector_math_64-library.html#classes">Classes</a></li>
+      <li><a href="vector_math_64/Aabb2-class.html">Aabb2</a></li>
+      <li><a href="vector_math_64/Aabb3-class.html">Aabb3</a></li>
+      <li><a href="vector_math_64/Colors-class.html">Colors</a></li>
+      <li><a href="vector_math_64/Frustum-class.html">Frustum</a></li>
+      <li><a href="vector_math_64/IntersectionResult-class.html">IntersectionResult</a></li>
+      <li><a href="vector_math_64/Matrix2-class.html">Matrix2</a></li>
+      <li><a href="vector_math_64/Matrix3-class.html">Matrix3</a></li>
+      <li><a href="vector_math_64/Matrix4-class.html">Matrix4</a></li>
+      <li><a href="vector_math_64/Obb3-class.html">Obb3</a></li>
+      <li><a href="vector_math_64/Plane-class.html">Plane</a></li>
+      <li><a href="vector_math_64/Quad-class.html">Quad</a></li>
+      <li><a href="vector_math_64/Quaternion-class.html">Quaternion</a></li>
+      <li><a href="vector_math_64/Ray-class.html">Ray</a></li>
+      <li><a href="vector_math_64/SimplexNoise-class.html">SimplexNoise</a></li>
+      <li><a href="vector_math_64/Sphere-class.html">Sphere</a></li>
+      <li><a href="vector_math_64/Triangle-class.html">Triangle</a></li>
+      <li><a href="vector_math_64/Vector-class.html">Vector</a></li>
+      <li><a href="vector_math_64/Vector2-class.html">Vector2</a></li>
+      <li><a href="vector_math_64/Vector3-class.html">Vector3</a></li>
+      <li><a href="vector_math_64/Vector4-class.html">Vector4</a></li>
+    
+      <li class="section-title"><a href="vector_math_64/vector_math_64-library.html#constants">Constants</a></li>
+      <li><a href="vector_math_64/degrees2Radians-constant.html">degrees2Radians</a></li>
+      <li><a href="vector_math_64/radians2Degrees-constant.html">radians2Degrees</a></li>
+    
+    
+      <li class="section-title"><a href="vector_math_64/vector_math_64-library.html#functions">Functions</a></li>
+      <li><a href="vector_math_64/absoluteError.html">absoluteError</a></li>
+      <li><a href="vector_math_64/buildPlaneVectors.html">buildPlaneVectors</a></li>
+      <li><a href="vector_math_64/catmullRom.html">catmullRom</a></li>
+      <li><a href="vector_math_64/cross2.html">cross2</a></li>
+      <li><a href="vector_math_64/cross2A.html">cross2A</a></li>
+      <li><a href="vector_math_64/cross2B.html">cross2B</a></li>
+      <li><a href="vector_math_64/cross3.html">cross3</a></li>
+      <li><a href="vector_math_64/degrees.html">degrees</a></li>
+      <li><a href="vector_math_64/dot2.html">dot2</a></li>
+      <li><a href="vector_math_64/dot3.html">dot3</a></li>
+      <li><a href="vector_math_64/makeFrustumMatrix.html">makeFrustumMatrix</a></li>
+      <li><a href="vector_math_64/makeInfiniteMatrix.html">makeInfiniteMatrix</a></li>
+      <li><a href="vector_math_64/makeOrthographicMatrix.html">makeOrthographicMatrix</a></li>
+      <li><a href="vector_math_64/makePerspectiveMatrix.html">makePerspectiveMatrix</a></li>
+      <li><a href="vector_math_64/makePlaneProjection.html">makePlaneProjection</a></li>
+      <li><a href="vector_math_64/makePlaneReflection.html">makePlaneReflection</a></li>
+      <li><a href="vector_math_64/makeViewMatrix.html">makeViewMatrix</a></li>
+      <li><a href="vector_math_64/mix.html">mix</a></li>
+      <li><a href="vector_math_64/pickRay.html">pickRay</a></li>
+      <li><a href="vector_math_64/radians.html">radians</a></li>
+      <li><a href="vector_math_64/relativeError.html">relativeError</a></li>
+      <li><a href="vector_math_64/setFrustumMatrix.html">setFrustumMatrix</a></li>
+      <li><a href="vector_math_64/setInfiniteMatrix.html">setInfiniteMatrix</a></li>
+      <li><a href="vector_math_64/setModelMatrix.html">setModelMatrix</a></li>
+      <li><a href="vector_math_64/setOrthographicMatrix.html">setOrthographicMatrix</a></li>
+      <li><a href="vector_math_64/setPerspectiveMatrix.html">setPerspectiveMatrix</a></li>
+      <li><a href="vector_math_64/setRotationMatrix.html">setRotationMatrix</a></li>
+      <li><a href="vector_math_64/setViewMatrix.html">setViewMatrix</a></li>
+      <li><a href="vector_math_64/smoothStep.html">smoothStep</a></li>
+      <li><a href="vector_math_64/unproject.html">unproject</a></li>
+    
+    
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>Matrix4 class</h1>
+
+    <section class="desc markdown">
+      <p>4D Matrix.
+Values are stored in column major order.</p>
+    </section>
+    
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Matrix4" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.html">Matrix4</a></span><span class="signature">(<span class="parameter" id="-param-arg0"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg0</span>, </span> <span class="parameter" id="-param-arg1"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg1</span>, </span> <span class="parameter" id="-param-arg2"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg2</span>, </span> <span class="parameter" id="-param-arg3"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg3</span>, </span> <span class="parameter" id="-param-arg4"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg4</span>, </span> <span class="parameter" id="-param-arg5"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg5</span>, </span> <span class="parameter" id="-param-arg6"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg6</span>, </span> <span class="parameter" id="-param-arg7"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg7</span>, </span> <span class="parameter" id="-param-arg8"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg8</span>, </span> <span class="parameter" id="-param-arg9"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg9</span>, </span> <span class="parameter" id="-param-arg10"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg10</span>, </span> <span class="parameter" id="-param-arg11"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg11</span>, </span> <span class="parameter" id="-param-arg12"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg12</span>, </span> <span class="parameter" id="-param-arg13"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg13</span>, </span> <span class="parameter" id="-param-arg14"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg14</span>, </span> <span class="parameter" id="-param-arg15"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg15</span></span>)</span>
+        </dt>
+        <dd>
+          Constructs a new mat4.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.columns" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.columns.html">Matrix4.columns</a></span><span class="signature">(<span class="parameter" id="columns-param-arg0"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg0</span>, </span> <span class="parameter" id="columns-param-arg1"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg1</span>, </span> <span class="parameter" id="columns-param-arg2"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg2</span>, </span> <span class="parameter" id="columns-param-arg3"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg3</span></span>)</span>
+        </dt>
+        <dd>
+          Constructs a new mat4 from columns.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.compose" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.compose.html">Matrix4.compose</a></span><span class="signature">(<span class="parameter" id="compose-param-translation"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">translation</span>, </span> <span class="parameter" id="compose-param-rotation"><span class="type-annotation"><a href="vector_math_64/Quaternion-class.html">Quaternion</a></span> <span class="parameter-name">rotation</span>, </span> <span class="parameter" id="compose-param-scale"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">scale</span></span>)</span>
+        </dt>
+        <dd>
+          Constructs Matrix4 from <code>translation</code>, <code>rotation</code> and <code>scale</code>.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.copy" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.copy.html">Matrix4.copy</a></span><span class="signature">(<span class="parameter" id="copy-param-other"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">other</span></span>)</span>
+        </dt>
+        <dd>
+          Copies values from <code>other</code>.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.diagonal3" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.diagonal3.html">Matrix4.diagonal3</a></span><span class="signature">(<span class="parameter" id="diagonal3-param-scale"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">scale</span></span>)</span>
+        </dt>
+        <dd>
+          Scale matrix.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.diagonal3Values" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.diagonal3Values.html">Matrix4.diagonal3Values</a></span><span class="signature">(<span class="parameter" id="diagonal3Values-param-x"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="diagonal3Values-param-y"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="diagonal3Values-param-z"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">z</span></span>)</span>
+        </dt>
+        <dd>
+          Scale matrix.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.fromBuffer" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.fromBuffer.html">Matrix4.fromBuffer</a></span><span class="signature">(<span class="parameter" id="fromBuffer-param-buffer"><span class="type-annotation"><a href="dart-typed_data/ByteBuffer-class.html">ByteBuffer</a></span> <span class="parameter-name">buffer</span>, </span> <span class="parameter" id="fromBuffer-param-offset"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span></span>)</span>
+        </dt>
+        <dd>
+          Constructs Matrix4 with a <a href="vector_math_64/Matrix4/storage.html">storage</a> that views given <code>buffer</code> starting at
+<code>offset</code>. <code>offset</code> has to be multiple of <a class="deprecated" href="dart-typed_data/Float64List/BYTES_PER_ELEMENT-constant.html">Float64List.BYTES_PER_ELEMENT</a>.
+        </dd>
+        <dt id="Matrix4.fromFloat64List" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.fromFloat64List.html">Matrix4.fromFloat64List</a></span><span class="signature">(<span class="parameter" id="fromFloat64List-param-_m4storage"><span class="type-annotation"><a href="dart-typed_data/Float64List-class.html">Float64List</a></span> <span class="parameter-name">_m4storage</span></span>)</span>
+        </dt>
+        <dd>
+          Constructs Matrix4 with given <a href="dart-typed_data/Float64List-class.html">Float64List</a> as <a href="vector_math_64/Matrix4/storage.html">storage</a>.
+        </dd>
+        <dt id="Matrix4.fromList" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.fromList.html">Matrix4.fromList</a></span><span class="signature">(<span class="parameter" id="fromList-param-values"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/double-class.html">double</a></span>&gt;</span></span> <span class="parameter-name">values</span></span>)</span>
+        </dt>
+        <dd>
+          New matrix from <code>values</code>.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.identity" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.identity.html">Matrix4.identity</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          Identity matrix.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.inverted" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.inverted.html">Matrix4.inverted</a></span><span class="signature">(<span class="parameter" id="inverted-param-other"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">other</span></span>)</span>
+        </dt>
+        <dd>
+          Constructs a matrix that is the inverse of <code>other</code>.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.outer" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.outer.html">Matrix4.outer</a></span><span class="signature">(<span class="parameter" id="outer-param-u"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">u</span>, </span> <span class="parameter" id="outer-param-v"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">v</span></span>)</span>
+        </dt>
+        <dd>
+          Outer product of <code>u</code> and <code>v</code>.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.rotationX" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.rotationX.html">Matrix4.rotationX</a></span><span class="signature">(<span class="parameter" id="rotationX-param-radians"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radians</span></span>)</span>
+        </dt>
+        <dd>
+          Rotation of <code>radians_</code> around X.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.rotationY" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.rotationY.html">Matrix4.rotationY</a></span><span class="signature">(<span class="parameter" id="rotationY-param-radians"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radians</span></span>)</span>
+        </dt>
+        <dd>
+          Rotation of <code>radians_</code> around Y.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.rotationZ" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.rotationZ.html">Matrix4.rotationZ</a></span><span class="signature">(<span class="parameter" id="rotationZ-param-radians"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radians</span></span>)</span>
+        </dt>
+        <dd>
+          Rotation of <code>radians_</code> around Z.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.skew" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.skew.html">Matrix4.skew</a></span><span class="signature">(<span class="parameter" id="skew-param-alpha"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">alpha</span>, </span> <span class="parameter" id="skew-param-beta"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">beta</span></span>)</span>
+        </dt>
+        <dd>
+          Skew matrix around X axis (alpha) and Y axis (beta).
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.skewX" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.skewX.html">Matrix4.skewX</a></span><span class="signature">(<span class="parameter" id="skewX-param-alpha"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">alpha</span></span>)</span>
+        </dt>
+        <dd>
+          Skew matrix around X axis
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.skewY" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.skewY.html">Matrix4.skewY</a></span><span class="signature">(<span class="parameter" id="skewY-param-beta"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">beta</span></span>)</span>
+        </dt>
+        <dd>
+          Skew matrix around Y axis.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.translation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.translation.html">Matrix4.translation</a></span><span class="signature">(<span class="parameter" id="translation-param-translation"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">translation</span></span>)</span>
+        </dt>
+        <dd>
+          Translation matrix.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.translationValues" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.translationValues.html">Matrix4.translationValues</a></span><span class="signature">(<span class="parameter" id="translationValues-param-x"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="translationValues-param-y"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="translationValues-param-z"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">z</span></span>)</span>
+        </dt>
+        <dd>
+          Translation matrix.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Matrix4.zero" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/Matrix4.zero.html">Matrix4.zero</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          Zero matrix.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="dimension" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/dimension.html">dimension</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          Dimension of the matrix.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="forward" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/forward.html">forward</a></span>
+          <span class="signature">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hashCode" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          The hash code for this object. <a href="vector_math_64/Matrix4/hashCode.html">[...]</a>
+          <div class="features">read-only</div>
+</dd>
+        <dt id="right" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/right.html">right</a></span>
+          <span class="signature">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="row0" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/row0.html">row0</a></span>
+          <span class="signature">&#8596; <a href="vector_math_64/Vector4-class.html">Vector4</a></span>
+        </dt>
+        <dd>
+          Returns row 0
+          <div class="features">read / write</div>
+</dd>
+        <dt id="row1" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/row1.html">row1</a></span>
+          <span class="signature">&#8596; <a href="vector_math_64/Vector4-class.html">Vector4</a></span>
+        </dt>
+        <dd>
+          Returns row 1
+          <div class="features">read / write</div>
+</dd>
+        <dt id="row2" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/row2.html">row2</a></span>
+          <span class="signature">&#8596; <a href="vector_math_64/Vector4-class.html">Vector4</a></span>
+        </dt>
+        <dd>
+          Returns row 2
+          <div class="features">read / write</div>
+</dd>
+        <dt id="row3" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/row3.html">row3</a></span>
+          <span class="signature">&#8596; <a href="vector_math_64/Vector4-class.html">Vector4</a></span>
+        </dt>
+        <dd>
+          Returns row 3
+          <div class="features">read / write</div>
+</dd>
+        <dt id="storage" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/storage.html">storage</a></span>
+          <span class="signature">&#8594; <a href="dart-typed_data/Float64List-class.html">Float64List</a></span>
+        </dt>
+        <dd>
+          The components of the matrix.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="up" class="property">
+          <span class="name"><a href="vector_math_64/Matrix4/up.html">up</a></span>
+          <span class="signature">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="absolute" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/absolute.html">absolute</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the component wise absolute value of this.
+          
+</dd>
+        <dt id="absoluteError" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/absoluteError.html">absoluteError</a></span><span class="signature">(<wbr><span class="parameter" id="absoluteError-param-correct"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">correct</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns absolute error between <a href="vector_math_64/Matrix4-class.html">this</a> and <code>correct</code>
+          
+</dd>
+        <dt id="absoluteRotate" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/absoluteRotate.html">absoluteRotate</a></span><span class="signature">(<wbr><span class="parameter" id="absoluteRotate-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Rotates <code>arg</code> by the absolute rotation of <a href="vector_math_64/Matrix4-class.html">this</a>
+Returns <code>arg</code>.
+Primarily used by AABB transformation code.
+          
+</dd>
+        <dt id="add" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/add.html">add</a></span><span class="signature">(<wbr><span class="parameter" id="add-param-o"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">o</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Adds <code>o</code> to <a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="applyToVector3Array" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/applyToVector3Array.html">applyToVector3Array</a></span><span class="signature">(<wbr><span class="parameter" id="applyToVector3Array-param-array"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/double-class.html">double</a></span>&gt;</span></span> <span class="parameter-name">array</span>, [</span> <span class="parameter" id="applyToVector3Array-param-offset"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span> = <span class="default-value">0</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/double-class.html">double</a></span>&gt;</span></span>
+          </span>
+        </dt>
+        <dd>
+          Multiply <a href="vector_math_64/Matrix4-class.html">this</a> to each set of xyz values in <code>array</code> starting at <code>offset</code>.
+          
+</dd>
+        <dt id="clone" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/clone.html">clone</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Clone matrix.
+          
+</dd>
+        <dt id="copyFromArray" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/copyFromArray.html">copyFromArray</a></span><span class="signature">(<wbr><span class="parameter" id="copyFromArray-param-array"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/double-class.html">double</a></span>&gt;</span></span> <span class="parameter-name">array</span>, [</span> <span class="parameter" id="copyFromArray-param-offset"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span> = <span class="default-value">0</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Copies elements from <code>array</code> into <a href="vector_math_64/Matrix4-class.html">this</a> starting at <code>offset</code>.
+          
+</dd>
+        <dt id="copyInto" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/copyInto.html">copyInto</a></span><span class="signature">(<wbr><span class="parameter" id="copyInto-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Copy into <code>arg</code>.
+          
+</dd>
+        <dt id="copyIntoArray" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/copyIntoArray.html">copyIntoArray</a></span><span class="signature">(<wbr><span class="parameter" id="copyIntoArray-param-array"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/num-class.html">num</a></span>&gt;</span></span> <span class="parameter-name">array</span>, [</span> <span class="parameter" id="copyIntoArray-param-offset"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span> = <span class="default-value">0</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Copies <a href="vector_math_64/Matrix4-class.html">this</a> into <code>array</code> starting at <code>offset</code>.
+          
+</dd>
+        <dt id="copyInverse" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/copyInverse.html">copyInverse</a></span><span class="signature">(<wbr><span class="parameter" id="copyInverse-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Set this matrix to be the inverse of <code>arg</code>
+          
+</dd>
+        <dt id="copyRotation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/copyRotation.html">copyRotation</a></span><span class="signature">(<wbr><span class="parameter" id="copyRotation-param-rotation"><span class="type-annotation"><a href="vector_math_64/Matrix3-class.html">Matrix3</a></span> <span class="parameter-name">rotation</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Copies the rotation matrix from this homogeneous transformation matrix
+into <code>rotation</code>.
+          
+</dd>
+        <dt id="decompose" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/decompose.html">decompose</a></span><span class="signature">(<wbr><span class="parameter" id="decompose-param-translation"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">translation</span>, </span> <span class="parameter" id="decompose-param-rotation"><span class="type-annotation"><a href="vector_math_64/Quaternion-class.html">Quaternion</a></span> <span class="parameter-name">rotation</span>, </span> <span class="parameter" id="decompose-param-scale"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">scale</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Decomposes <a href="vector_math_64/Matrix4-class.html">this</a> into <code>translation</code>, <code>rotation</code> and <code>scale</code> components.
+          
+</dd>
+        <dt id="determinant" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/determinant.html">determinant</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the determinant of this matrix.
+          
+</dd>
+        <dt id="dotColumn" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/dotColumn.html">dotColumn</a></span><span class="signature">(<wbr><span class="parameter" id="dotColumn-param-j"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">j</span>, </span> <span class="parameter" id="dotColumn-param-v"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">v</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the dot product of column <code>j</code> and <code>v</code>.
+          
+</dd>
+        <dt id="dotRow" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/dotRow.html">dotRow</a></span><span class="signature">(<wbr><span class="parameter" id="dotRow-param-i"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">i</span>, </span> <span class="parameter" id="dotRow-param-v"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">v</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the dot product of row <code>i</code> and <code>v</code>.
+          
+</dd>
+        <dt id="entry" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/entry.html">entry</a></span><span class="signature">(<wbr><span class="parameter" id="entry-param-row"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">row</span>, </span> <span class="parameter" id="entry-param-col"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">col</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Value at <code>row</code>, <code>col</code>.
+          
+</dd>
+        <dt id="getColumn" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/getColumn.html">getColumn</a></span><span class="signature">(<wbr><span class="parameter" id="getColumn-param-column"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">column</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector4-class.html">Vector4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Gets the <code>column</code> of the matrix
+          
+</dd>
+        <dt id="getMaxScaleOnAxis" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/getMaxScaleOnAxis.html">getMaxScaleOnAxis</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the max scale value of the 3 axes.
+          
+</dd>
+        <dt id="getNormalMatrix" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/getNormalMatrix.html">getNormalMatrix</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix3-class.html">Matrix3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the normal matrix from this homogeneous transformation matrix. The normal
+matrix is the transpose of the inverse of the top-left 3x3 part of this 4x4 matrix.
+          
+</dd>
+        <dt id="getRotation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/getRotation.html">getRotation</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix3-class.html">Matrix3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the rotation matrix from this homogeneous transformation matrix.
+          
+</dd>
+        <dt id="getRow" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/getRow.html">getRow</a></span><span class="signature">(<wbr><span class="parameter" id="getRow-param-row"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">row</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector4-class.html">Vector4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Gets the <code>row</code> of the matrix
+          
+</dd>
+        <dt id="getTranslation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/getTranslation.html">getTranslation</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the translation vector from this homogeneous transformation matrix.
+          
+</dd>
+        <dt id="index" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/index.html">index</a></span><span class="signature">(<wbr><span class="parameter" id="index-param-row"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">row</span>, </span> <span class="parameter" id="index-param-col"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">col</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/int-class.html">int</a></span>
+          </span>
+        </dt>
+        <dd>
+          Return index in storage for <code>row</code>, <code>col</code> value.
+          
+</dd>
+        <dt id="infinityNorm" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/infinityNorm.html">infinityNorm</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns infinity norm of the matrix. Used for numerical analysis.
+          
+</dd>
+        <dt id="invert" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/invert.html">invert</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Invert <a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="invertRotation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/invertRotation.html">invertRotation</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="isIdentity" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/isIdentity.html">isIdentity</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          Is <a href="vector_math_64/Matrix4-class.html">this</a> the identity matrix?
+          
+</dd>
+        <dt id="isZero" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/isZero.html">isZero</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          Is <a href="vector_math_64/Matrix4-class.html">this</a> the zero matrix?
+          
+</dd>
+        <dt id="leftTranslate" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/leftTranslate.html">leftTranslate</a></span><span class="signature">(<wbr><span class="parameter" id="leftTranslate-param-x"><span class="type-annotation">dynamic</span> <span class="parameter-name">x</span>, [</span> <span class="parameter" id="leftTranslate-param-y"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span> = <span class="default-value">0.0</span>, </span> <span class="parameter" id="leftTranslate-param-z"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">z</span> = <span class="default-value">0.0</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Multiply <a href="vector_math_64/Matrix4-class.html">this</a> by a translation from the left.
+The translation can be specified with a  <a href="vector_math_64/Vector3-class.html">Vector3</a>, <a href="vector_math_64/Vector4-class.html">Vector4</a>, or x, y, z.
+          
+</dd>
+        <dt id="multiplied" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/multiplied.html">multiplied</a></span><span class="signature">(<wbr><span class="parameter" id="multiplied-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Multiply a copy of <a href="vector_math_64/Matrix4-class.html">this</a> with <code>arg</code>.
+          
+</dd>
+        <dt id="multiply" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/multiply.html">multiply</a></span><span class="signature">(<wbr><span class="parameter" id="multiply-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Multiply <a href="vector_math_64/Matrix4-class.html">this</a> by <code>arg</code>.
+          
+</dd>
+        <dt id="multiplyTranspose" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/multiplyTranspose.html">multiplyTranspose</a></span><span class="signature">(<wbr><span class="parameter" id="multiplyTranspose-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Multiply <a href="vector_math_64/Matrix4-class.html">this</a> with a transposed <code>arg</code>.
+          
+</dd>
+        <dt id="negate" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/negate.html">negate</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Negate <a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="perspectiveTransform" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/perspectiveTransform.html">perspectiveTransform</a></span><span class="signature">(<wbr><span class="parameter" id="perspectiveTransform-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Transform <code>arg</code> of type <a href="vector_math_64/Vector3-class.html">Vector3</a> using the perspective transformation
+defined by <a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="relativeError" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/relativeError.html">relativeError</a></span><span class="signature">(<wbr><span class="parameter" id="relativeError-param-correct"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">correct</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns relative error between <a href="vector_math_64/Matrix4-class.html">this</a> and <code>correct</code>
+          
+</dd>
+        <dt id="rotate" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/rotate.html">rotate</a></span><span class="signature">(<wbr><span class="parameter" id="rotate-param-axis"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">axis</span>, </span> <span class="parameter" id="rotate-param-angle"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">angle</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Rotate this <code>angle</code> radians around <code>axis</code>
+          
+</dd>
+        <dt id="rotate3" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/rotate3.html">rotate3</a></span><span class="signature">(<wbr><span class="parameter" id="rotate3-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Rotate <code>arg</code> of type <a href="vector_math_64/Vector3-class.html">Vector3</a> using the rotation defined by <a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="rotated3" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/rotated3.html">rotated3</a></span><span class="signature">(<wbr><span class="parameter" id="rotated3-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">arg</span>, [</span> <span class="parameter" id="rotated3-param-out"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">out</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Rotate a copy of <code>arg</code> of type <a href="vector_math_64/Vector3-class.html">Vector3</a> using the rotation defined by
+<a href="vector_math_64/Matrix4-class.html">this</a>. If a <code>out</code> parameter is supplied, the copy is stored in <code>out</code>.
+          
+</dd>
+        <dt id="rotateX" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/rotateX.html">rotateX</a></span><span class="signature">(<wbr><span class="parameter" id="rotateX-param-angle"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">angle</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Rotate this <code>angle</code> radians around X
+          
+</dd>
+        <dt id="rotateY" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/rotateY.html">rotateY</a></span><span class="signature">(<wbr><span class="parameter" id="rotateY-param-angle"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">angle</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Rotate this matrix <code>angle</code> radians around Y
+          
+</dd>
+        <dt id="rotateZ" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/rotateZ.html">rotateZ</a></span><span class="signature">(<wbr><span class="parameter" id="rotateZ-param-angle"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">angle</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Rotate this matrix <code>angle</code> radians around Z
+          
+</dd>
+        <dt id="scale" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/scale.html">scale</a></span><span class="signature">(<wbr><span class="parameter" id="scale-param-x"><span class="type-annotation">dynamic</span> <span class="parameter-name">x</span>, [</span> <span class="parameter" id="scale-param-y"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="scale-param-z"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">z</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Scale this matrix by a <a href="vector_math_64/Vector3-class.html">Vector3</a>, <a href="vector_math_64/Vector4-class.html">Vector4</a>, or x,y,z
+          
+</dd>
+        <dt id="scaleAdjoint" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/scaleAdjoint.html">scaleAdjoint</a></span><span class="signature">(<wbr><span class="parameter" id="scaleAdjoint-param-scale"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">scale</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Converts into Adjugate matrix and scales by <code>scale</code>
+          
+</dd>
+        <dt id="scaled" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/scaled.html">scaled</a></span><span class="signature">(<wbr><span class="parameter" id="scaled-param-x"><span class="type-annotation">dynamic</span> <span class="parameter-name">x</span>, [</span> <span class="parameter" id="scaled-param-y"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="scaled-param-z"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">z</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Create a copy of <a href="vector_math_64/Matrix4-class.html">this</a> scaled by a <a href="vector_math_64/Vector3-class.html">Vector3</a>, <a href="vector_math_64/Vector4-class.html">Vector4</a> or <code>x</code>,<code>y</code>, and
+<code>z</code>.
+          
+</dd>
+        <dt id="setColumn" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setColumn.html">setColumn</a></span><span class="signature">(<wbr><span class="parameter" id="setColumn-param-column"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">column</span>, </span> <span class="parameter" id="setColumn-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Assigns the <code>column</code> of the matrix <code>arg</code>
+          
+</dd>
+        <dt id="setColumns" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setColumns.html">setColumns</a></span><span class="signature">(<wbr><span class="parameter" id="setColumns-param-arg0"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg0</span>, </span> <span class="parameter" id="setColumns-param-arg1"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg1</span>, </span> <span class="parameter" id="setColumns-param-arg2"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg2</span>, </span> <span class="parameter" id="setColumns-param-arg3"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg3</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the entire matrix to the column values.
+          
+</dd>
+        <dt id="setDiagonal" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setDiagonal.html">setDiagonal</a></span><span class="signature">(<wbr><span class="parameter" id="setDiagonal-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the diagonal of the matrix to be <code>arg</code>.
+          
+</dd>
+        <dt id="setEntry" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setEntry.html">setEntry</a></span><span class="signature">(<wbr><span class="parameter" id="setEntry-param-row"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">row</span>, </span> <span class="parameter" id="setEntry-param-col"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">col</span>, </span> <span class="parameter" id="setEntry-param-v"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">v</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Set value at <code>row</code>, <code>col</code> to be <code>v</code>.
+          
+</dd>
+        <dt id="setFrom" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setFrom.html">setFrom</a></span><span class="signature">(<wbr><span class="parameter" id="setFrom-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the entire matrix to the matrix in <code>arg</code>.
+          
+</dd>
+        <dt id="setFromTranslationRotation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setFromTranslationRotation.html">setFromTranslationRotation</a></span><span class="signature">(<wbr><span class="parameter" id="setFromTranslationRotation-param-arg0"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">arg0</span>, </span> <span class="parameter" id="setFromTranslationRotation-param-arg1"><span class="type-annotation"><a href="vector_math_64/Quaternion-class.html">Quaternion</a></span> <span class="parameter-name">arg1</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the matrix from translation <code>arg0</code> and rotation <code>arg1</code>.
+          
+</dd>
+        <dt id="setFromTranslationRotationScale" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setFromTranslationRotationScale.html">setFromTranslationRotationScale</a></span><span class="signature">(<wbr><span class="parameter" id="setFromTranslationRotationScale-param-translation"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">translation</span>, </span> <span class="parameter" id="setFromTranslationRotationScale-param-rotation"><span class="type-annotation"><a href="vector_math_64/Quaternion-class.html">Quaternion</a></span> <span class="parameter-name">rotation</span>, </span> <span class="parameter" id="setFromTranslationRotationScale-param-scale"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">scale</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the matrix from <code>translation</code>, <code>rotation</code> and <code>scale</code>.
+          
+</dd>
+        <dt id="setIdentity" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setIdentity.html">setIdentity</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Makes <a href="vector_math_64/Matrix4-class.html">this</a> into the identity matrix.
+          
+</dd>
+        <dt id="setOuter" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setOuter.html">setOuter</a></span><span class="signature">(<wbr><span class="parameter" id="setOuter-param-u"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">u</span>, </span> <span class="parameter" id="setOuter-param-v"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">v</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="setRotation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setRotation.html">setRotation</a></span><span class="signature">(<wbr><span class="parameter" id="setRotation-param-r"><span class="type-annotation"><a href="vector_math_64/Matrix3-class.html">Matrix3</a></span> <span class="parameter-name">r</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the rotation matrix in this homogeneous transformation matrix.
+          
+</dd>
+        <dt id="setRotationX" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setRotationX.html">setRotationX</a></span><span class="signature">(<wbr><span class="parameter" id="setRotationX-param-radians"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radians</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the upper 3x3 to a rotation of <code>radians</code> around X
+          
+</dd>
+        <dt id="setRotationY" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setRotationY.html">setRotationY</a></span><span class="signature">(<wbr><span class="parameter" id="setRotationY-param-radians"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radians</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the upper 3x3 to a rotation of <code>radians</code> around Y
+          
+</dd>
+        <dt id="setRotationZ" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setRotationZ.html">setRotationZ</a></span><span class="signature">(<wbr><span class="parameter" id="setRotationZ-param-radians"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">radians</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the upper 3x3 to a rotation of <code>radians</code> around Z
+          
+</dd>
+        <dt id="setRow" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setRow.html">setRow</a></span><span class="signature">(<wbr><span class="parameter" id="setRow-param-row"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">row</span>, </span> <span class="parameter" id="setRow-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Assigns the <code>row</code> of the matrix <code>arg</code>
+          
+</dd>
+        <dt id="setTranslation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setTranslation.html">setTranslation</a></span><span class="signature">(<wbr><span class="parameter" id="setTranslation-param-t"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">t</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the translation vector in this homogeneous transformation matrix.
+          
+</dd>
+        <dt id="setTranslationRaw" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setTranslationRaw.html">setTranslationRaw</a></span><span class="signature">(<wbr><span class="parameter" id="setTranslationRaw-param-x"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="setTranslationRaw-param-y"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="setTranslationRaw-param-z"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">z</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the translation vector in this homogeneous transformation matrix.
+          
+</dd>
+        <dt id="setUpper2x2" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setUpper2x2.html">setUpper2x2</a></span><span class="signature">(<wbr><span class="parameter" id="setUpper2x2-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix2-class.html">Matrix2</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the upper 2x2 of the matrix to be <code>arg</code>.
+          
+</dd>
+        <dt id="setValues" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setValues.html">setValues</a></span><span class="signature">(<wbr><span class="parameter" id="setValues-param-arg0"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg0</span>, </span> <span class="parameter" id="setValues-param-arg1"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg1</span>, </span> <span class="parameter" id="setValues-param-arg2"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg2</span>, </span> <span class="parameter" id="setValues-param-arg3"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg3</span>, </span> <span class="parameter" id="setValues-param-arg4"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg4</span>, </span> <span class="parameter" id="setValues-param-arg5"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg5</span>, </span> <span class="parameter" id="setValues-param-arg6"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg6</span>, </span> <span class="parameter" id="setValues-param-arg7"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg7</span>, </span> <span class="parameter" id="setValues-param-arg8"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg8</span>, </span> <span class="parameter" id="setValues-param-arg9"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg9</span>, </span> <span class="parameter" id="setValues-param-arg10"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg10</span>, </span> <span class="parameter" id="setValues-param-arg11"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg11</span>, </span> <span class="parameter" id="setValues-param-arg12"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg12</span>, </span> <span class="parameter" id="setValues-param-arg13"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg13</span>, </span> <span class="parameter" id="setValues-param-arg14"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg14</span>, </span> <span class="parameter" id="setValues-param-arg15"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg15</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the matrix with specified values.
+          
+</dd>
+        <dt id="setZero" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/setZero.html">setZero</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Zeros <a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="splatDiagonal" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/splatDiagonal.html">splatDiagonal</a></span><span class="signature">(<wbr><span class="parameter" id="splatDiagonal-param-arg"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Sets the diagonal to <code>arg</code>.
+          
+</dd>
+        <dt id="sub" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/sub.html">sub</a></span><span class="signature">(<wbr><span class="parameter" id="sub-param-o"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">o</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Subtracts <code>o</code> from <a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="toString" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a printable string
+          
+</dd>
+        <dt id="trace" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/trace.html">trace</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the trace of the matrix. The trace of a matrix is the sum of the
+diagonal entries.
+          
+</dd>
+        <dt id="transform" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/transform.html">transform</a></span><span class="signature">(<wbr><span class="parameter" id="transform-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector4-class.html">Vector4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Transform <code>arg</code> of type <a href="vector_math_64/Vector4-class.html">Vector4</a> using the transformation defined by
+<a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="transform3" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/transform3.html">transform3</a></span><span class="signature">(<wbr><span class="parameter" id="transform3-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Transform <code>arg</code> of type <a href="vector_math_64/Vector3-class.html">Vector3</a> using the transformation defined by
+<a href="vector_math_64/Matrix4-class.html">this</a>.
+          
+</dd>
+        <dt id="transformed" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/transformed.html">transformed</a></span><span class="signature">(<wbr><span class="parameter" id="transformed-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">arg</span>, [</span> <span class="parameter" id="transformed-param-out"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">out</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector4-class.html">Vector4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Transform a copy of <code>arg</code> of type <a href="vector_math_64/Vector4-class.html">Vector4</a> using the transformation
+defined by <a href="vector_math_64/Matrix4-class.html">this</a>. If a <code>out</code> parameter is supplied, the copy is stored in
+<code>out</code>.
+          
+</dd>
+        <dt id="transformed3" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/transformed3.html">transformed3</a></span><span class="signature">(<wbr><span class="parameter" id="transformed3-param-arg"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">arg</span>, [</span> <span class="parameter" id="transformed3-param-out"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">out</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Vector3-class.html">Vector3</a></span>
+          </span>
+        </dt>
+        <dd>
+          Transform a copy of <code>arg</code> of type <a href="vector_math_64/Vector3-class.html">Vector3</a> using the transformation
+defined by <a href="vector_math_64/Matrix4-class.html">this</a>. If a <code>out</code> parameter is supplied, the copy is stored in
+<code>out</code>.
+          
+</dd>
+        <dt id="translate" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/translate.html">translate</a></span><span class="signature">(<wbr><span class="parameter" id="translate-param-x"><span class="type-annotation">dynamic</span> <span class="parameter-name">x</span>, [</span> <span class="parameter" id="translate-param-y"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">y</span> = <span class="default-value">0.0</span>, </span> <span class="parameter" id="translate-param-z"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">z</span> = <span class="default-value">0.0</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Translate this matrix by a <a href="vector_math_64/Vector3-class.html">Vector3</a>, <a href="vector_math_64/Vector4-class.html">Vector4</a>, or x,y,z
+          
+</dd>
+        <dt id="transpose" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/transpose.html">transpose</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="transposed" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/transposed.html">transposed</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the tranpose of this.
+          
+</dd>
+        <dt id="transposeMultiply" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/transposeMultiply.html">transposeMultiply</a></span><span class="signature">(<wbr><span class="parameter" id="transposeMultiply-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Multiply a transposed <a href="vector_math_64/Matrix4-class.html">this</a> with <code>arg</code>.
+          
+</dd>
+        <dt id="transposeRotation" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/transposeRotation.html">transposeRotation</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Transposes just the upper 3x3 rotation matrix.
+          
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator *" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/operator_multiply.html">operator *</a></span><span class="signature">(<wbr><span class="parameter" id="*-param-arg"><span class="type-annotation">dynamic</span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd>
+          Returns a new vector or matrix by multiplying <a href="vector_math_64/Matrix4-class.html">this</a> with <code>arg</code>.
+          
+</dd>
+        <dt id="operator +" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/operator_plus.html">operator +</a></span><span class="signature">(<wbr><span class="parameter" id="+-param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns new matrix after component wise <a href="vector_math_64/Matrix4-class.html">this</a> + <code>arg</code>
+          
+</dd>
+        <dt id="operator -" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/operator_minus.html">operator -</a></span><span class="signature">(<wbr><span class="parameter" id="--param-arg"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">arg</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns new matrix after component wise <a href="vector_math_64/Matrix4-class.html">this</a> - <code>arg</code>
+          
+</dd>
+        <dt id="operator ==" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          Check if two matrices are the same.
+          
+</dd>
+        <dt id="operator []" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/operator_get.html">operator []</a></span><span class="signature">(<wbr><span class="parameter" id="[]-param-i"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">i</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd>
+          Access the element of the matrix at the index <code>i</code>.
+          
+</dd>
+        <dt id="operator []=" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/operator_put.html">operator []=</a></span><span class="signature">(<wbr><span class="parameter" id="[]=-param-i"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">i</span>, </span> <span class="parameter" id="[]=-param-v"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">v</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Set the element of the matrix at the index <code>i</code>.
+          
+</dd>
+        <dt id="operator unary-" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/operator_unary_minus.html">operator unary-</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns new matrix -this
+          
+</dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="solve" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/solve.html">solve</a></span><span class="signature">(<wbr><span class="parameter" id="solve-param-A"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">A</span>, </span> <span class="parameter" id="solve-param-x"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="solve-param-b"><span class="type-annotation"><a href="vector_math_64/Vector4-class.html">Vector4</a></span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Solve <code>A</code> * <code>x</code> = <code>b</code>.
+          
+</dd>
+        <dt id="solve2" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/solve2.html">solve2</a></span><span class="signature">(<wbr><span class="parameter" id="solve2-param-A"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">A</span>, </span> <span class="parameter" id="solve2-param-x"><span class="type-annotation"><a href="vector_math_64/Vector2-class.html">Vector2</a></span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="solve2-param-b"><span class="type-annotation"><a href="vector_math_64/Vector2-class.html">Vector2</a></span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Solve <code>A</code> * <code>x</code> = <code>b</code>.
+          
+</dd>
+        <dt id="solve3" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/solve3.html">solve3</a></span><span class="signature">(<wbr><span class="parameter" id="solve3-param-A"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">A</span>, </span> <span class="parameter" id="solve3-param-x"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="solve3-param-b"><span class="type-annotation"><a href="vector_math_64/Vector3-class.html">Vector3</a></span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Solve <code>A</code> * <code>x</code> = <code>b</code>.
+          
+</dd>
+        <dt id="tryInvert" class="callable">
+          <span class="name"><a href="vector_math_64/Matrix4/tryInvert.html">tryInvert</a></span><span class="signature">(<wbr><span class="parameter" id="tryInvert-param-other"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a matrix that is the inverse of <code>other</code> if <code>other</code> is invertible,
+otherwise <code>null</code>.
+          
+</dd>
+      </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="vector_math_64/Matrix4-class.html#constructors">Constructors</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.html">Matrix4</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.columns.html">columns</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.compose.html">compose</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.copy.html">copy</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.diagonal3.html">diagonal3</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.diagonal3Values.html">diagonal3Values</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.fromBuffer.html">fromBuffer</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.fromFloat64List.html">fromFloat64List</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.fromList.html">fromList</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.identity.html">identity</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.inverted.html">inverted</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.outer.html">outer</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.rotationX.html">rotationX</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.rotationY.html">rotationY</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.rotationZ.html">rotationZ</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.skew.html">skew</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.skewX.html">skewX</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.skewY.html">skewY</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.translation.html">translation</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.translationValues.html">translationValues</a></li>
+      <li><a href="vector_math_64/Matrix4/Matrix4.zero.html">zero</a></li>
+    
+      <li class="section-title">
+        <a href="vector_math_64/Matrix4-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="vector_math_64/Matrix4/dimension.html">dimension</a></li>
+      <li><a href="vector_math_64/Matrix4/forward.html">forward</a></li>
+      <li><a href="vector_math_64/Matrix4/hashCode.html">hashCode</a></li>
+      <li><a href="vector_math_64/Matrix4/right.html">right</a></li>
+      <li><a href="vector_math_64/Matrix4/row0.html">row0</a></li>
+      <li><a href="vector_math_64/Matrix4/row1.html">row1</a></li>
+      <li><a href="vector_math_64/Matrix4/row2.html">row2</a></li>
+      <li><a href="vector_math_64/Matrix4/row3.html">row3</a></li>
+      <li><a href="vector_math_64/Matrix4/storage.html">storage</a></li>
+      <li><a href="vector_math_64/Matrix4/up.html">up</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="vector_math_64/Matrix4-class.html#instance-methods">Methods</a></li>
+      <li><a href="vector_math_64/Matrix4/absolute.html">absolute</a></li>
+      <li><a href="vector_math_64/Matrix4/absoluteError.html">absoluteError</a></li>
+      <li><a href="vector_math_64/Matrix4/absoluteRotate.html">absoluteRotate</a></li>
+      <li><a href="vector_math_64/Matrix4/add.html">add</a></li>
+      <li><a href="vector_math_64/Matrix4/applyToVector3Array.html">applyToVector3Array</a></li>
+      <li><a href="vector_math_64/Matrix4/clone.html">clone</a></li>
+      <li><a href="vector_math_64/Matrix4/copyFromArray.html">copyFromArray</a></li>
+      <li><a href="vector_math_64/Matrix4/copyInto.html">copyInto</a></li>
+      <li><a href="vector_math_64/Matrix4/copyIntoArray.html">copyIntoArray</a></li>
+      <li><a href="vector_math_64/Matrix4/copyInverse.html">copyInverse</a></li>
+      <li><a href="vector_math_64/Matrix4/copyRotation.html">copyRotation</a></li>
+      <li><a href="vector_math_64/Matrix4/decompose.html">decompose</a></li>
+      <li><a href="vector_math_64/Matrix4/determinant.html">determinant</a></li>
+      <li><a href="vector_math_64/Matrix4/dotColumn.html">dotColumn</a></li>
+      <li><a href="vector_math_64/Matrix4/dotRow.html">dotRow</a></li>
+      <li><a href="vector_math_64/Matrix4/entry.html">entry</a></li>
+      <li><a href="vector_math_64/Matrix4/getColumn.html">getColumn</a></li>
+      <li><a href="vector_math_64/Matrix4/getMaxScaleOnAxis.html">getMaxScaleOnAxis</a></li>
+      <li><a href="vector_math_64/Matrix4/getNormalMatrix.html">getNormalMatrix</a></li>
+      <li><a href="vector_math_64/Matrix4/getRotation.html">getRotation</a></li>
+      <li><a href="vector_math_64/Matrix4/getRow.html">getRow</a></li>
+      <li><a href="vector_math_64/Matrix4/getTranslation.html">getTranslation</a></li>
+      <li><a href="vector_math_64/Matrix4/index.html">index</a></li>
+      <li><a href="vector_math_64/Matrix4/infinityNorm.html">infinityNorm</a></li>
+      <li><a href="vector_math_64/Matrix4/invert.html">invert</a></li>
+      <li><a href="vector_math_64/Matrix4/invertRotation.html">invertRotation</a></li>
+      <li><a href="vector_math_64/Matrix4/isIdentity.html">isIdentity</a></li>
+      <li><a href="vector_math_64/Matrix4/isZero.html">isZero</a></li>
+      <li><a href="vector_math_64/Matrix4/leftTranslate.html">leftTranslate</a></li>
+      <li><a href="vector_math_64/Matrix4/multiplied.html">multiplied</a></li>
+      <li><a href="vector_math_64/Matrix4/multiply.html">multiply</a></li>
+      <li><a href="vector_math_64/Matrix4/multiplyTranspose.html">multiplyTranspose</a></li>
+      <li><a href="vector_math_64/Matrix4/negate.html">negate</a></li>
+      <li><a href="vector_math_64/Matrix4/perspectiveTransform.html">perspectiveTransform</a></li>
+      <li><a href="vector_math_64/Matrix4/relativeError.html">relativeError</a></li>
+      <li><a href="vector_math_64/Matrix4/rotate.html">rotate</a></li>
+      <li><a href="vector_math_64/Matrix4/rotate3.html">rotate3</a></li>
+      <li><a href="vector_math_64/Matrix4/rotated3.html">rotated3</a></li>
+      <li><a href="vector_math_64/Matrix4/rotateX.html">rotateX</a></li>
+      <li><a href="vector_math_64/Matrix4/rotateY.html">rotateY</a></li>
+      <li><a href="vector_math_64/Matrix4/rotateZ.html">rotateZ</a></li>
+      <li><a href="vector_math_64/Matrix4/scale.html">scale</a></li>
+      <li><a href="vector_math_64/Matrix4/scaleAdjoint.html">scaleAdjoint</a></li>
+      <li><a href="vector_math_64/Matrix4/scaled.html">scaled</a></li>
+      <li><a href="vector_math_64/Matrix4/setColumn.html">setColumn</a></li>
+      <li><a href="vector_math_64/Matrix4/setColumns.html">setColumns</a></li>
+      <li><a href="vector_math_64/Matrix4/setDiagonal.html">setDiagonal</a></li>
+      <li><a href="vector_math_64/Matrix4/setEntry.html">setEntry</a></li>
+      <li><a href="vector_math_64/Matrix4/setFrom.html">setFrom</a></li>
+      <li><a href="vector_math_64/Matrix4/setFromTranslationRotation.html">setFromTranslationRotation</a></li>
+      <li><a href="vector_math_64/Matrix4/setFromTranslationRotationScale.html">setFromTranslationRotationScale</a></li>
+      <li><a href="vector_math_64/Matrix4/setIdentity.html">setIdentity</a></li>
+      <li><a href="vector_math_64/Matrix4/setOuter.html">setOuter</a></li>
+      <li><a href="vector_math_64/Matrix4/setRotation.html">setRotation</a></li>
+      <li><a href="vector_math_64/Matrix4/setRotationX.html">setRotationX</a></li>
+      <li><a href="vector_math_64/Matrix4/setRotationY.html">setRotationY</a></li>
+      <li><a href="vector_math_64/Matrix4/setRotationZ.html">setRotationZ</a></li>
+      <li><a href="vector_math_64/Matrix4/setRow.html">setRow</a></li>
+      <li><a href="vector_math_64/Matrix4/setTranslation.html">setTranslation</a></li>
+      <li><a href="vector_math_64/Matrix4/setTranslationRaw.html">setTranslationRaw</a></li>
+      <li><a href="vector_math_64/Matrix4/setUpper2x2.html">setUpper2x2</a></li>
+      <li><a href="vector_math_64/Matrix4/setValues.html">setValues</a></li>
+      <li><a href="vector_math_64/Matrix4/setZero.html">setZero</a></li>
+      <li><a href="vector_math_64/Matrix4/splatDiagonal.html">splatDiagonal</a></li>
+      <li><a href="vector_math_64/Matrix4/sub.html">sub</a></li>
+      <li><a href="vector_math_64/Matrix4/toString.html">toString</a></li>
+      <li><a href="vector_math_64/Matrix4/trace.html">trace</a></li>
+      <li><a href="vector_math_64/Matrix4/transform.html">transform</a></li>
+      <li><a href="vector_math_64/Matrix4/transform3.html">transform3</a></li>
+      <li><a href="vector_math_64/Matrix4/transformed.html">transformed</a></li>
+      <li><a href="vector_math_64/Matrix4/transformed3.html">transformed3</a></li>
+      <li><a href="vector_math_64/Matrix4/translate.html">translate</a></li>
+      <li><a href="vector_math_64/Matrix4/transpose.html">transpose</a></li>
+      <li><a href="vector_math_64/Matrix4/transposed.html">transposed</a></li>
+      <li><a href="vector_math_64/Matrix4/transposeMultiply.html">transposeMultiply</a></li>
+      <li><a href="vector_math_64/Matrix4/transposeRotation.html">transposeRotation</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title"><a href="vector_math_64/Matrix4-class.html#operators">Operators</a></li>
+      <li><a href="vector_math_64/Matrix4/operator_multiply.html">operator *</a></li>
+      <li><a href="vector_math_64/Matrix4/operator_plus.html">operator +</a></li>
+      <li><a href="vector_math_64/Matrix4/operator_minus.html">operator -</a></li>
+      <li><a href="vector_math_64/Matrix4/operator_equals.html">operator ==</a></li>
+      <li><a href="vector_math_64/Matrix4/operator_get.html">operator []</a></li>
+      <li><a href="vector_math_64/Matrix4/operator_put.html">operator []=</a></li>
+      <li><a href="vector_math_64/Matrix4/operator_unary_minus.html">operator unary-</a></li>
+    
+    
+      <li class="section-title"><a href="vector_math_64/Matrix4-class.html#static-methods">Static methods</a></li>
+      <li><a href="vector_math_64/Matrix4/solve.html">solve</a></li>
+      <li><a href="vector_math_64/Matrix4/solve2.html">solve2</a></li>
+      <li><a href="vector_math_64/Matrix4/solve3.html">solve3</a></li>
+      <li><a href="vector_math_64/Matrix4/tryInvert.html">tryInvert</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

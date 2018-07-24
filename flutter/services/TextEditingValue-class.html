@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the TextEditingValue class from the services library, for the Dart programming language.">
+  <title>TextEditingValue class - services library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="services/services-library.html">services</a></li>
+    <li class="self-crumb">TextEditingValue class</li>
+  </ol>
+  <div class="self-name">TextEditingValue</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>services library</h5>
+    <ol>
+      <li class="section-title"><a href="services/services-library.html#classes">Classes</a></li>
+      <li><a href="services/ApplicationSwitcherDescription-class.html">ApplicationSwitcherDescription</a></li>
+      <li><a href="services/AssetBundle-class.html">AssetBundle</a></li>
+      <li><a href="services/BasicMessageChannel-class.html">BasicMessageChannel</a></li>
+      <li><a href="services/BinaryCodec-class.html">BinaryCodec</a></li>
+      <li><a href="services/BinaryMessages-class.html">BinaryMessages</a></li>
+      <li><a href="services/BlacklistingTextInputFormatter-class.html">BlacklistingTextInputFormatter</a></li>
+      <li><a href="dart-typed_data/ByteData-class.html">ByteData</a></li>
+      <li><a href="services/CachingAssetBundle-class.html">CachingAssetBundle</a></li>
+      <li><a href="services/Clipboard-class.html">Clipboard</a></li>
+      <li><a href="services/ClipboardData-class.html">ClipboardData</a></li>
+      <li><a href="services/EventChannel-class.html">EventChannel</a></li>
+      <li><a href="services/HapticFeedback-class.html">HapticFeedback</a></li>
+      <li><a href="services/JSONMessageCodec-class.html">JSONMessageCodec</a></li>
+      <li><a href="services/JSONMethodCodec-class.html">JSONMethodCodec</a></li>
+      <li><a href="services/LengthLimitingTextInputFormatter-class.html">LengthLimitingTextInputFormatter</a></li>
+      <li><a href="services/MessageCodec-class.html">MessageCodec</a></li>
+      <li><a href="services/MethodCall-class.html">MethodCall</a></li>
+      <li><a href="services/MethodChannel-class.html">MethodChannel</a></li>
+      <li><a href="services/MethodCodec-class.html">MethodCodec</a></li>
+      <li><a href="services/NetworkAssetBundle-class.html">NetworkAssetBundle</a></li>
+      <li><a href="services/OptionalMethodChannel-class.html">OptionalMethodChannel</a></li>
+      <li><a href="services/PlatformAssetBundle-class.html">PlatformAssetBundle</a></li>
+      <li><a href="services/RawKeyboard-class.html">RawKeyboard</a></li>
+      <li><a href="services/RawKeyDownEvent-class.html">RawKeyDownEvent</a></li>
+      <li><a href="services/RawKeyEvent-class.html">RawKeyEvent</a></li>
+      <li><a href="services/RawKeyEventData-class.html">RawKeyEventData</a></li>
+      <li><a href="services/RawKeyEventDataAndroid-class.html">RawKeyEventDataAndroid</a></li>
+      <li><a href="services/RawKeyEventDataFuchsia-class.html">RawKeyEventDataFuchsia</a></li>
+      <li><a href="services/RawKeyUpEvent-class.html">RawKeyUpEvent</a></li>
+      <li><a href="services/ServicesBinding-class.html">ServicesBinding</a></li>
+      <li><a href="services/StandardMessageCodec-class.html">StandardMessageCodec</a></li>
+      <li><a href="services/StandardMethodCodec-class.html">StandardMethodCodec</a></li>
+      <li><a href="services/StringCodec-class.html">StringCodec</a></li>
+      <li><a href="services/SystemChannels-class.html">SystemChannels</a></li>
+      <li><a href="services/SystemChrome-class.html">SystemChrome</a></li>
+      <li><a href="services/SystemNavigator-class.html">SystemNavigator</a></li>
+      <li><a href="services/SystemSound-class.html">SystemSound</a></li>
+      <li><a href="services/SystemUiOverlayStyle-class.html">SystemUiOverlayStyle</a></li>
+      <li><a href="services/TextEditingValue-class.html">TextEditingValue</a></li>
+      <li><a href="services/TextInput-class.html">TextInput</a></li>
+      <li><a href="services/TextInputClient-class.html">TextInputClient</a></li>
+      <li><a href="services/TextInputConfiguration-class.html">TextInputConfiguration</a></li>
+      <li><a href="services/TextInputConnection-class.html">TextInputConnection</a></li>
+      <li><a href="services/TextInputFormatter-class.html">TextInputFormatter</a></li>
+      <li><a href="services/TextInputType-class.html">TextInputType</a></li>
+      <li><a href="dart-ui/TextPosition-class.html">TextPosition</a></li>
+      <li><a href="services/TextRange-class.html">TextRange</a></li>
+      <li><a href="services/TextSelection-class.html">TextSelection</a></li>
+      <li><a href="services/WhitelistingTextInputFormatter-class.html">WhitelistingTextInputFormatter</a></li>
+    
+    
+      <li class="section-title"><a href="services/services-library.html#properties">Properties</a></li>
+      <li><a href="services/rootBundle.html">rootBundle</a></li>
+    
+    
+      <li class="section-title"><a href="services/services-library.html#enums">Enums</a></li>
+      <li><a href="services/Brightness-class.html">Brightness</a></li>
+      <li><a href="services/DeviceOrientation-class.html">DeviceOrientation</a></li>
+      <li><a href="services/SystemSoundType-class.html">SystemSoundType</a></li>
+      <li><a href="services/SystemUiOverlay-class.html">SystemUiOverlay</a></li>
+      <li><a href="dart-ui/TextAffinity-class.html">TextAffinity</a></li>
+      <li><a href="services/TextInputAction-class.html">TextInputAction</a></li>
+    
+      <li class="section-title"><a href="services/services-library.html#typedefs">Typedefs</a></li>
+      <li><a href="services/TextInputFormatFunction.html">TextInputFormatFunction</a></li>
+    
+      <li class="section-title"><a href="services/services-library.html#exceptions">Exceptions</a></li>
+      <li><a href="services/MissingPluginException-class.html">MissingPluginException</a></li>
+      <li><a href="services/PlatformException-class.html">PlatformException</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>TextEditingValue class</h1>
+
+    <section class="desc markdown">
+      <p>The current text, selection, and composing state for editing a run of text.</p>
+    </section>
+    
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>@immutable</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="TextEditingValue" class="callable">
+          <span class="name"><a href="services/TextEditingValue/TextEditingValue.html">TextEditingValue</a></span><span class="signature">({<span class="parameter" id="-param-text"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="-param-selection"><span class="type-annotation"><a href="services/TextSelection-class.html">TextSelection</a></span> <span class="parameter-name">selection</span>: <span class="default-value">const TextSelection.collapsed(offset: -1)</span>, </span> <span class="parameter" id="-param-composing"><span class="type-annotation"><a href="services/TextRange-class.html">TextRange</a></span> <span class="parameter-name">composing</span>: <span class="default-value">TextRange.empty</span></span> })</span>
+        </dt>
+        <dd>
+          Creates information for editing a run of text. <a href="services/TextEditingValue/TextEditingValue.html">[...]</a>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+        <dt id="TextEditingValue.fromJSON" class="callable">
+          <span class="name"><a href="services/TextEditingValue/TextEditingValue.fromJSON.html">TextEditingValue.fromJSON</a></span><span class="signature">(<span class="parameter" id="fromJSON-param-encoded"><span class="type-annotation"><a href="dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">encoded</span></span>)</span>
+        </dt>
+        <dd>
+          Creates an instance of this class from a JSON object.
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="composing" class="property">
+          <span class="name"><a href="services/TextEditingValue/composing.html">composing</a></span>
+          <span class="signature">&#8594; <a href="services/TextRange-class.html">TextRange</a></span>
+        </dt>
+        <dd>
+          The range of text that is still being composed.
+          <div class="features">final</div>
+</dd>
+        <dt id="hashCode" class="property">
+          <span class="name"><a href="services/TextEditingValue/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          The hash code for this object. <a href="services/TextEditingValue/hashCode.html">[...]</a>
+          <div class="features">read-only</div>
+</dd>
+        <dt id="selection" class="property">
+          <span class="name"><a href="services/TextEditingValue/selection.html">selection</a></span>
+          <span class="signature">&#8594; <a href="services/TextSelection-class.html">TextSelection</a></span>
+        </dt>
+        <dd>
+          The range of text that is currently selected.
+          <div class="features">final</div>
+</dd>
+        <dt id="text" class="property">
+          <span class="name"><a href="services/TextEditingValue/text.html">text</a></span>
+          <span class="signature">&#8594; <a href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd>
+          The current text being edited.
+          <div class="features">final</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="copyWith" class="callable">
+          <span class="name"><a href="services/TextEditingValue/copyWith.html">copyWith</a></span><span class="signature">(<wbr>{<span class="parameter" id="copyWith-param-text"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span>, </span> <span class="parameter" id="copyWith-param-selection"><span class="type-annotation"><a href="services/TextSelection-class.html">TextSelection</a></span> <span class="parameter-name">selection</span>, </span> <span class="parameter" id="copyWith-param-composing"><span class="type-annotation"><a href="services/TextRange-class.html">TextRange</a></span> <span class="parameter-name">composing</span></span> })
+            <span class="returntype parameter">&#8594; <a href="services/TextEditingValue-class.html">TextEditingValue</a></span>
+          </span>
+        </dt>
+        <dd>
+          Creates a copy of this value but with the given fields replaced with the new values.
+          
+</dd>
+        <dt id="toJSON" class="callable">
+          <span class="name"><a href="services/TextEditingValue/toJSON.html">toJSON</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a representation of this object as a JSON object.
+          
+</dd>
+        <dt id="toString" class="callable">
+          <span class="name"><a href="services/TextEditingValue/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a string representation of this object.
+          
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+          <span class="name"><a href="services/TextEditingValue/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          The equality operator. <a href="services/TextEditingValue/operator_equals.html">[...]</a>
+          
+</dd>
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="empty" class="constant">
+          <span class="name "><a href="services/TextEditingValue/empty-constant.html">empty</a></span>
+          <span class="signature">&#8594; const <a href="services/TextEditingValue-class.html">TextEditingValue</a></span>
+        </dt>
+        <dd>
+          A value that corresponds to the empty string with no selection and no composing range.
+          
+  <div>
+            <span class="signature"><code>const <a href="services/TextEditingValue/TextEditingValue.html">TextEditingValue</a>()</code></span>
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="services/TextEditingValue-class.html#constructors">Constructors</a></li>
+      <li><a href="services/TextEditingValue/TextEditingValue.html">TextEditingValue</a></li>
+      <li><a href="services/TextEditingValue/TextEditingValue.fromJSON.html">fromJSON</a></li>
+    
+      <li class="section-title">
+        <a href="services/TextEditingValue-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="services/TextEditingValue/composing.html">composing</a></li>
+      <li><a href="services/TextEditingValue/hashCode.html">hashCode</a></li>
+      <li><a href="services/TextEditingValue/selection.html">selection</a></li>
+      <li><a href="services/TextEditingValue/text.html">text</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="services/TextEditingValue-class.html#instance-methods">Methods</a></li>
+      <li><a href="services/TextEditingValue/copyWith.html">copyWith</a></li>
+      <li><a href="services/TextEditingValue/toJSON.html">toJSON</a></li>
+      <li><a href="services/TextEditingValue/toString.html">toString</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title"><a href="services/TextEditingValue-class.html#operators">Operators</a></li>
+      <li><a href="services/TextEditingValue/operator_equals.html">operator ==</a></li>
+    
+    
+    
+      <li class="section-title"><a href="services/TextEditingValue-class.html#constants">Constants</a></li>
+      <li><a href="services/TextEditingValue/empty-constant.html">empty</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

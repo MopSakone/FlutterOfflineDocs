@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the TextStyle class from the painting library, for the Dart programming language.">
+  <title>TextStyle class - painting library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="painting/painting-library.html">painting</a></li>
+    <li class="self-crumb">TextStyle class</li>
+  </ol>
+  <div class="self-name">TextStyle</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>painting library</h5>
+    <ol>
+      <li class="section-title"><a href="painting/painting-library.html#classes">Classes</a></li>
+      <li><a href="painting/Alignment-class.html">Alignment</a></li>
+      <li><a href="painting/AlignmentDirectional-class.html">AlignmentDirectional</a></li>
+      <li><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></li>
+      <li><a href="painting/AssetBundleImageKey-class.html">AssetBundleImageKey</a></li>
+      <li><a href="painting/AssetBundleImageProvider-class.html">AssetBundleImageProvider</a></li>
+      <li><a href="painting/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="painting/BeveledRectangleBorder-class.html">BeveledRectangleBorder</a></li>
+      <li><a href="painting/Border-class.html">Border</a></li>
+      <li><a href="painting/BorderDirectional-class.html">BorderDirectional</a></li>
+      <li><a href="painting/BorderRadius-class.html">BorderRadius</a></li>
+      <li><a href="painting/BorderRadiusDirectional-class.html">BorderRadiusDirectional</a></li>
+      <li><a href="painting/BorderRadiusGeometry-class.html">BorderRadiusGeometry</a></li>
+      <li><a href="painting/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="painting/BoxBorder-class.html">BoxBorder</a></li>
+      <li><a href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="painting/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="dart-ui/Canvas-class.html">Canvas</a></li>
+      <li><a href="painting/CircleBorder-class.html">CircleBorder</a></li>
+      <li><a href="dart-ui/Color-class.html">Color</a></li>
+      <li><a href="dart-ui/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="painting/ColorSwatch-class.html">ColorSwatch</a></li>
+      <li><a href="painting/Decoration-class.html">Decoration</a></li>
+      <li><a href="painting/DecorationImage-class.html">DecorationImage</a></li>
+      <li><a href="painting/DecorationImagePainter-class.html">DecorationImagePainter</a></li>
+      <li><a href="painting/EdgeInsets-class.html">EdgeInsets</a></li>
+      <li><a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a></li>
+      <li><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></li>
+      <li><a href="painting/ExactAssetImage-class.html">ExactAssetImage</a></li>
+      <li><a href="painting/FileImage-class.html">FileImage</a></li>
+      <li><a href="painting/FittedSizes-class.html">FittedSizes</a></li>
+      <li><a href="painting/FlutterLogoDecoration-class.html">FlutterLogoDecoration</a></li>
+      <li><a href="dart-ui/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="painting/FractionalOffset-class.html">FractionalOffset</a></li>
+      <li><a href="painting/Gradient-class.html">Gradient</a></li>
+      <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+      <li><a href="painting/ImageCache-class.html">ImageCache</a></li>
+      <li><a href="painting/ImageConfiguration-class.html">ImageConfiguration</a></li>
+      <li><a href="painting/ImageInfo-class.html">ImageInfo</a></li>
+      <li><a href="painting/ImageProvider-class.html">ImageProvider</a></li>
+      <li><a href="dart-ui/ImageShader-class.html">ImageShader</a></li>
+      <li><a href="painting/ImageStream-class.html">ImageStream</a></li>
+      <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+      <li><a href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="dart-ui/Locale-class.html">Locale</a></li>
+      <li><a href="dart-ui/MaskFilter-class.html">MaskFilter</a></li>
+      <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+      <li><a href="painting/MemoryImage-class.html">MemoryImage</a></li>
+      <li><a href="painting/MultiFrameImageStreamCompleter-class.html">MultiFrameImageStreamCompleter</a></li>
+      <li><a href="painting/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="painting/OneFrameImageStreamCompleter-class.html">OneFrameImageStreamCompleter</a></li>
+      <li><a href="dart-ui/Paint-class.html">Paint</a></li>
+      <li><a href="painting/PaintingBinding-class.html">PaintingBinding</a></li>
+      <li><a href="dart-ui/Path-class.html">Path</a></li>
+      <li><a href="painting/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="dart-ui/Radius-class.html">Radius</a></li>
+      <li><a href="dart-ui/Rect-class.html">Rect</a></li>
+      <li><a href="painting/RoundedRectangleBorder-class.html">RoundedRectangleBorder</a></li>
+      <li><a href="dart-ui/RRect-class.html">RRect</a></li>
+      <li><a href="dart-ui/RSTransform-class.html">RSTransform</a></li>
+      <li><a href="dart-ui/Shader-class.html">Shader</a></li>
+      <li><a href="painting/ShapeBorder-class.html">ShapeBorder</a></li>
+      <li><a href="painting/ShapeDecoration-class.html">ShapeDecoration</a></li>
+      <li><a href="dart-ui/Size-class.html">Size</a></li>
+      <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+      <li><a href="dart-ui/TextBox-class.html">TextBox</a></li>
+      <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
+      <li><a href="dart-ui/TextPosition-class.html">TextPosition</a></li>
+      <li><a href="services/TextRange-class.html">TextRange</a></li>
+      <li><a href="services/TextSelection-class.html">TextSelection</a></li>
+      <li><a href="painting/TextSpan-class.html">TextSpan</a></li>
+      <li><a href="painting/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="painting/TransformProperty-class.html">TransformProperty</a></li>
+    
+    
+      <li class="section-title"><a href="painting/painting-library.html#properties">Properties</a></li>
+      <li><a href="painting/debugDisableShadows.html">debugDisableShadows</a></li>
+      <li><a href="painting/imageCache.html">imageCache</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
+      <li><a href="painting/applyBoxFit.html">applyBoxFit</a></li>
+      <li><a href="painting/axisDirectionIsReversed.html">axisDirectionIsReversed</a></li>
+      <li><a href="painting/axisDirectionToAxis.html">axisDirectionToAxis</a></li>
+      <li><a href="painting/debugAssertAllPaintingVarsUnset.html">debugAssertAllPaintingVarsUnset</a></li>
+      <li><a href="painting/debugDescribeTransform.html">debugDescribeTransform</a></li>
+      <li><a href="painting/decodeImageFromList.html">decodeImageFromList</a></li>
+      <li><a href="painting/flipAxis.html">flipAxis</a></li>
+      <li><a href="painting/flipAxisDirection.html">flipAxisDirection</a></li>
+      <li><a href="dart-ui/hashList.html">hashList</a></li>
+      <li><a href="dart-ui/hashValues.html">hashValues</a></li>
+      <li><a href="painting/paintBorder.html">paintBorder</a></li>
+      <li><a href="painting/paintImage.html">paintImage</a></li>
+      <li><a href="painting/paintZigZag.html">paintZigZag</a></li>
+      <li><a href="painting/positionDependentBox.html">positionDependentBox</a></li>
+      <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#enums">Enums</a></li>
+      <li><a href="painting/Axis-class.html">Axis</a></li>
+      <li><a href="painting/AxisDirection-class.html">AxisDirection</a></li>
+      <li><a href="dart-ui/BlendMode-class.html">BlendMode</a></li>
+      <li><a href="dart-ui/BlurStyle-class.html">BlurStyle</a></li>
+      <li><a href="painting/BorderStyle-class.html">BorderStyle</a></li>
+      <li><a href="painting/BoxFit-class.html">BoxFit</a></li>
+      <li><a href="painting/BoxShape-class.html">BoxShape</a></li>
+      <li><a href="dart-ui/FilterQuality-class.html">FilterQuality</a></li>
+      <li><a href="painting/FlutterLogoStyle-class.html">FlutterLogoStyle</a></li>
+      <li><a href="dart-ui/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="dart-ui/PaintingStyle-class.html">PaintingStyle</a></li>
+      <li><a href="dart-ui/PathFillType-class.html">PathFillType</a></li>
+      <li><a href="painting/RenderComparison-class.html">RenderComparison</a></li>
+      <li><a href="dart-ui/StrokeCap-class.html">StrokeCap</a></li>
+      <li><a href="dart-ui/StrokeJoin-class.html">StrokeJoin</a></li>
+      <li><a href="dart-ui/TextAffinity-class.html">TextAffinity</a></li>
+      <li><a href="dart-ui/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="dart-ui/TextDirection-class.html">TextDirection</a></li>
+      <li><a href="dart-ui/TileMode-class.html">TileMode</a></li>
+      <li><a href="dart-ui/VertexMode-class.html">VertexMode</a></li>
+      <li><a href="painting/VerticalDirection-class.html">VerticalDirection</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
+      <li><a href="painting/ImageListener.html">ImageListener</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>TextStyle class</h1>
+
+    <section class="desc markdown">
+      <p>An immutable style in which paint text.</p>
+<h2>Sample code</h2>
+<h3>Bold</h3>
+<p>Here, a single line of text in a <a href="widgets/Text-class.html">Text</a> widget is given a specific style
+override. The style is mixed with the ambient <a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a> by the
+<a href="widgets/Text-class.html">Text</a> widget.</p>
+<pre class="language-dart"><code class="language-dart">new Text(
+  'No, we need bold strokes. We need this plan.',
+  style: new TextStyle(fontWeight: FontWeight.bold),
+)
+</code></pre>
+<h3>Italics</h3>
+<p>As in the previous example, the <a href="widgets/Text-class.html">Text</a> widget is given a specific style
+override which is implicitly mixed with the ambient <a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a>.</p>
+<pre class="language-dart"><code class="language-dart">new Text(
+  'Welcome to the present, we\'re running a real nation.',
+  style: new TextStyle(fontStyle: FontStyle.italic),
+)
+</code></pre>
+<h3>Opacity</h3>
+<p>Each line here is progressively more opaque. The base color is
+<a href="material/Colors/black-constant.html">material.Colors.black</a>, and <a href="dart-ui/Color/withOpacity.html">Color.withOpacity</a> is used to create a
+derivative color with the desired opacity. The root <a href="painting/TextSpan-class.html">TextSpan</a> for this
+<a href="widgets/RichText-class.html">RichText</a> widget is explicitly given the ambient <a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a>, since
+<a href="widgets/RichText-class.html">RichText</a> does not do that automatically. The inner <a href="painting/TextStyle-class.html">TextStyle</a> objects are
+implicitly mixed with the parent <a href="painting/TextSpan-class.html">TextSpan</a>'s <a href="painting/TextSpan/style.html">TextSpan.style</a>.</p>
+<pre class="language-dart"><code class="language-dart">new RichText(
+  text: new TextSpan(
+    style: DefaultTextStyle.of(context).style,
+    children: &lt;TextSpan&gt;[
+      new TextSpan(
+        text: 'You don\'t have the votes.\n',
+        style: new TextStyle(color: Colors.black.withOpacity(0.6)),
+      ),
+      new TextSpan(
+        text: 'You don\'t have the votes!\n',
+        style: new TextStyle(color: Colors.black.withOpacity(0.8)),
+      ),
+      new TextSpan(
+        text: 'You\'re gonna need congressional approval and you don\'t have the votes!\n',
+        style: new TextStyle(color: Colors.black.withOpacity(1.0)),
+      ),
+    ],
+  ),
+)
+</code></pre>
+<h3>Size</h3>
+<p>In this example, the ambient <a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a> is explicitly manipulated to
+obtain a <a href="painting/TextStyle-class.html">TextStyle</a> that doubles the default font size.</p>
+<pre class="language-dart"><code class="language-dart">new Text(
+  'These are wise words, enterprising men quote \'em.',
+  style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 2.0),
+)
+</code></pre>
+<h3>Line height</h3>
+<p>The <a href="painting/TextStyle/height.html">height</a> property can be used to change the line height. Here, the line
+height is set to 100 logical pixels, so that the text is very spaced out.</p>
+<pre class="language-dart"><code class="language-dart">new Text(
+  'Don\'t act surprised, you guys, cuz I wrote \'em!',
+  style: new TextStyle(height: 100.0),
+)
+</code></pre>
+<h3>Wavy red underline with black text</h3>
+<p>Styles can be combined. In this example, the misspelt word is drawn in black
+text and underlined with a wavy red line to indicate a spelling error. (The
+remainder is styled according to the Flutter default text styles, not the
+ambient <a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a>, since no explicit style is given and <a href="widgets/RichText-class.html">RichText</a>
+does not automatically use the ambient <a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a>.)</p>
+<pre class="language-dart"><code class="language-dart">new RichText(
+  text: new TextSpan(
+    text: 'Don\'t tax the South ',
+    children: &lt;TextSpan&gt;[
+      new TextSpan(
+        text: 'cuz',
+        style: new TextStyle(
+          color: Colors.black,
+          decoration: TextDecoration.underline,
+          decorationColor: Colors.red,
+          decorationStyle: TextDecorationStyle.wavy,
+        ),
+      ),
+      new TextSpan(
+        text: ' we got it made in the shade',
+      ),
+    ],
+  ),
+)
+</code></pre>
+<h3>Custom Fonts</h3>
+<p>Custom fonts can be declared in the <code>pubspec.yaml</code> file as shown below:</p>
+<pre class="language-yaml"><code class="language-yaml">flutter:
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: fonts/Raleway-Regular.ttf
+        - asset: fonts/Raleway-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Raleway-SemiBold.ttf
+          weight: 600
+     - family: Schyler
+       fonts:
+         - asset: fonts/Schyler-Regular.ttf
+         - asset: fonts/Schyler-Italic.ttf
+           style: italic
+</code></pre>
+<p>The <code>family</code> property determines the name of the font, which you can use in
+the <a href="painting/TextStyle/fontFamily.html">fontFamily</a> argument. The <code>asset</code> property is a path to the font file,
+relative to the <code>pubspec.yaml</code> file. The <code>weight</code> property specifies the
+weight of the glyph outlines in the file as an integer multiple of 100
+between 100 and 900. This corresponds to the <a href="dart-ui/FontWeight-class.html">FontWeight</a> class and can be
+used in the <a href="painting/TextStyle/fontWeight.html">fontWeight</a> argument. The <code>style</code> property specifies whether the
+outlines in the file are <code>italic</code> or <code>normal</code>. These values correspond to
+the <a href="dart-ui/FontStyle-class.html">FontStyle</a> class and can be used in the <a href="painting/TextStyle/fontStyle.html">fontStyle</a> argument.</p>
+<p>To select a custom font, create <a href="painting/TextStyle-class.html">TextStyle</a> using the <a href="painting/TextStyle/fontFamily.html">fontFamily</a>
+argument as shown in the example below:</p>
+<pre class="language-dart"><code class="language-dart">const TextStyle(fontFamily: 'Raleway')
+</code></pre>
+<p>To use a font family defined in a package, the <code>package</code> argument must be
+provided. For instance, suppose the font declaration above is in the
+<code>pubspec.yaml</code> of a package named <code>my_package</code> which the app depends on.
+Then creating the TextStyle is done as follows:</p>
+<pre class="language-dart"><code class="language-dart">const TextStyle(fontFamily: 'Raleway', package: 'my_package')
+</code></pre>
+<p>If the package internally uses the font it defines, it should still specify
+the <code>package</code> argument when creating the text style as in the example above.</p>
+<p>A package can also provide font files without declaring a font in its
+<code>pubspec.yaml</code>. These files should then be in the <code>lib/</code> folder of the
+package. The font files will not automatically be bundled in the app, instead
+the app can use these selectively when declaring a font. Suppose a package
+named <code>my_package</code> has:</p>
+<pre class="language-dart"><code>lib/fonts/Raleway-Medium.ttf
+</code></pre>
+<p>Then the app can declare a font like in the example below:</p>
+<pre class="language-yaml"><code class="language-yaml">flutter:
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+        - asset: packages/my_package/fonts/Raleway-Medium.ttf
+          weight: 500
+</code></pre>
+<p>The <code>lib/</code> is implied, so it should not be included in the asset path.</p>
+<p>In this case, since the app locally defines the font, the TextStyle is
+created without the <code>package</code> argument:</p>
+<pre class="language-dart"><code class="language-dart">const TextStyle(fontFamily: 'Raleway')
+</code></pre>
+<p>See also:</p><ul><li><a href="widgets/Text-class.html">Text</a>, the widget for showing text in a single style.</li><li><a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a>, the widget that specifies the default text styles for
+<a href="widgets/Text-class.html">Text</a> widgets, configured using a <a href="painting/TextStyle-class.html">TextStyle</a>.</li><li><a href="widgets/RichText-class.html">RichText</a>, the widget for showing a paragraph of mix-style text.</li><li><a href="painting/TextSpan-class.html">TextSpan</a>, the class that wraps a <a href="painting/TextStyle-class.html">TextStyle</a> for the purposes of
+passing it to a <a href="widgets/RichText-class.html">RichText</a>.</li></ul>
+    </section>
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a href="dart-core/Object-class.html">Object</a></li>
+          <li><a href="foundation/Diagnosticable-class.html">Diagnosticable</a></li>
+          <li>TextStyle</li>
+        </ul></dd>
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>@immutable</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="TextStyle" class="callable">
+          <span class="name"><a href="painting/TextStyle/TextStyle.html">TextStyle</a></span><span class="signature">({<span class="parameter" id="-param-inherit"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">inherit</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="-param-color"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span>, </span> <span class="parameter" id="-param-fontSize"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">fontSize</span>, </span> <span class="parameter" id="-param-fontWeight"><span class="type-annotation"><a href="dart-ui/FontWeight-class.html">FontWeight</a></span> <span class="parameter-name">fontWeight</span>, </span> <span class="parameter" id="-param-fontStyle"><span class="type-annotation"><a href="dart-ui/FontStyle-class.html">FontStyle</a></span> <span class="parameter-name">fontStyle</span>, </span> <span class="parameter" id="-param-letterSpacing"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">letterSpacing</span>, </span> <span class="parameter" id="-param-wordSpacing"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">wordSpacing</span>, </span> <span class="parameter" id="-param-textBaseline"><span class="type-annotation"><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">textBaseline</span>, </span> <span class="parameter" id="-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span>, </span> <span class="parameter" id="-param-locale"><span class="type-annotation"><a href="dart-ui/Locale-class.html">Locale</a></span> <span class="parameter-name">locale</span>, </span> <span class="parameter" id="-param-background"><span class="type-annotation"><a href="dart-ui/Paint-class.html">Paint</a></span> <span class="parameter-name">background</span>, </span> <span class="parameter" id="-param-decoration"><span class="type-annotation"><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></span> <span class="parameter-name">decoration</span>, </span> <span class="parameter" id="-param-decorationColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">decorationColor</span>, </span> <span class="parameter" id="-param-decorationStyle"><span class="type-annotation"><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></span> <span class="parameter-name">decorationStyle</span>, </span> <span class="parameter" id="-param-debugLabel"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">debugLabel</span>, </span> <span class="parameter" id="-param-fontFamily"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">fontFamily</span>, </span> <span class="parameter" id="-param-package"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">package</span></span> })</span>
+        </dt>
+        <dd>
+          Creates a text style. <a href="painting/TextStyle/TextStyle.html">[...]</a>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="background" class="property">
+          <span class="name"><a href="painting/TextStyle/background.html">background</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Paint-class.html">Paint</a></span>
+        </dt>
+        <dd>
+          The paint drawn as a background for the text. <a href="painting/TextStyle/background.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="color" class="property">
+          <span class="name"><a href="painting/TextStyle/color.html">color</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Color-class.html">Color</a></span>
+        </dt>
+        <dd>
+          The color to use when painting the text.
+          <div class="features">final</div>
+</dd>
+        <dt id="debugLabel" class="property">
+          <span class="name"><a href="painting/TextStyle/debugLabel.html">debugLabel</a></span>
+          <span class="signature">&#8594; <a href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd>
+          A human-readable description of this text style. <a href="painting/TextStyle/debugLabel.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="decoration" class="property">
+          <span class="name"><a href="painting/TextStyle/decoration.html">decoration</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/TextDecoration-class.html">TextDecoration</a></span>
+        </dt>
+        <dd>
+          The decorations to paint near the text (e.g., an underline).
+          <div class="features">final</div>
+</dd>
+        <dt id="decorationColor" class="property">
+          <span class="name"><a href="painting/TextStyle/decorationColor.html">decorationColor</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Color-class.html">Color</a></span>
+        </dt>
+        <dd>
+          The color in which to paint the text decorations.
+          <div class="features">final</div>
+</dd>
+        <dt id="decorationStyle" class="property">
+          <span class="name"><a href="painting/TextStyle/decorationStyle.html">decorationStyle</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></span>
+        </dt>
+        <dd>
+          The style in which to paint the text decorations (e.g., dashed).
+          <div class="features">final</div>
+</dd>
+        <dt id="fontFamily" class="property">
+          <span class="name"><a href="painting/TextStyle/fontFamily.html">fontFamily</a></span>
+          <span class="signature">&#8594; <a href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd>
+          The name of the font to use when painting the text (e.g., Roboto). If the
+font is defined in a package, this will be prefixed with
+'packages/package_name/' (e.g. 'packages/cool_fonts/Roboto'). The
+prefixing is done by the constructor when the <code>package</code> argument is
+provided.
+          <div class="features">final</div>
+</dd>
+        <dt id="fontSize" class="property">
+          <span class="name"><a href="painting/TextStyle/fontSize.html">fontSize</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The size of glyphs (in logical pixels) to use when painting the text. <a href="painting/TextStyle/fontSize.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="fontStyle" class="property">
+          <span class="name"><a href="painting/TextStyle/fontStyle.html">fontStyle</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/FontStyle-class.html">FontStyle</a></span>
+        </dt>
+        <dd>
+          The typeface variant to use when drawing the letters (e.g., italics).
+          <div class="features">final</div>
+</dd>
+        <dt id="fontWeight" class="property">
+          <span class="name"><a href="painting/TextStyle/fontWeight.html">fontWeight</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/FontWeight-class.html">FontWeight</a></span>
+        </dt>
+        <dd>
+          The typeface thickness to use when painting the text (e.g., bold).
+          <div class="features">final</div>
+</dd>
+        <dt id="hashCode" class="property">
+          <span class="name"><a href="painting/TextStyle/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          The hash code for this object. <a href="painting/TextStyle/hashCode.html">[...]</a>
+          <div class="features">read-only</div>
+</dd>
+        <dt id="height" class="property">
+          <span class="name"><a href="painting/TextStyle/height.html">height</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The height of this text span, as a multiple of the font size. <a href="painting/TextStyle/height.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="inherit" class="property">
+          <span class="name"><a href="painting/TextStyle/inherit.html">inherit</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd>
+          Whether null values are replaced with their value in an ancestor text
+style (e.g., in a <code>TextSpan</code> tree). <a href="painting/TextStyle/inherit.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="letterSpacing" class="property">
+          <span class="name"><a href="painting/TextStyle/letterSpacing.html">letterSpacing</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The amount of space (in logical pixels) to add between each letter.
+A negative value can be used to bring the letters closer.
+          <div class="features">final</div>
+</dd>
+        <dt id="locale" class="property">
+          <span class="name"><a href="painting/TextStyle/locale.html">locale</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Locale-class.html">Locale</a></span>
+        </dt>
+        <dd>
+          The locale used to select region-specific glyphs.
+          <div class="features">final</div>
+</dd>
+        <dt id="textBaseline" class="property">
+          <span class="name"><a href="painting/TextStyle/textBaseline.html">textBaseline</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span>
+        </dt>
+        <dd>
+          The common baseline that should be aligned between this text span and its
+parent text span, or, for the root text spans, with the line box.
+          <div class="features">final</div>
+</dd>
+        <dt id="wordSpacing" class="property">
+          <span class="name"><a href="painting/TextStyle/wordSpacing.html">wordSpacing</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The amount of space (in logical pixels) to add at each sequence of
+white-space (i.e. between each word). A negative value can be used to
+bring the words closer.
+          <div class="features">final</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="apply" class="callable">
+          <span class="name"><a href="painting/TextStyle/apply.html">apply</a></span><span class="signature">(<wbr>{<span class="parameter" id="apply-param-color"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span>, </span> <span class="parameter" id="apply-param-decoration"><span class="type-annotation"><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></span> <span class="parameter-name">decoration</span>, </span> <span class="parameter" id="apply-param-decorationColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">decorationColor</span>, </span> <span class="parameter" id="apply-param-decorationStyle"><span class="type-annotation"><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></span> <span class="parameter-name">decorationStyle</span>, </span> <span class="parameter" id="apply-param-fontFamily"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">fontFamily</span>, </span> <span class="parameter" id="apply-param-fontSizeFactor"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">fontSizeFactor</span>: <span class="default-value">1.0</span>, </span> <span class="parameter" id="apply-param-fontSizeDelta"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">fontSizeDelta</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="apply-param-fontWeightDelta"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">fontWeightDelta</span>: <span class="default-value">0</span>, </span> <span class="parameter" id="apply-param-letterSpacingFactor"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">letterSpacingFactor</span>: <span class="default-value">1.0</span>, </span> <span class="parameter" id="apply-param-letterSpacingDelta"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">letterSpacingDelta</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="apply-param-wordSpacingFactor"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">wordSpacingFactor</span>: <span class="default-value">1.0</span>, </span> <span class="parameter" id="apply-param-wordSpacingDelta"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">wordSpacingDelta</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="apply-param-heightFactor"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">heightFactor</span>: <span class="default-value">1.0</span>, </span> <span class="parameter" id="apply-param-heightDelta"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">heightDelta</span>: <span class="default-value">0.0</span></span> })
+            <span class="returntype parameter">&#8594; <a href="painting/TextStyle-class.html">TextStyle</a></span>
+          </span>
+        </dt>
+        <dd>
+          Creates a copy of this text style replacing or altering the specified
+properties. <a href="painting/TextStyle/apply.html">[...]</a>
+          
+</dd>
+        <dt id="compareTo" class="callable">
+          <span class="name"><a href="painting/TextStyle/compareTo.html">compareTo</a></span><span class="signature">(<wbr><span class="parameter" id="compareTo-param-other"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/RenderComparison-class.html">RenderComparison</a></span>
+          </span>
+        </dt>
+        <dd>
+          Describe the difference between this style and another, in terms of how
+much damage it will make to the rendering. <a href="painting/TextStyle/compareTo.html">[...]</a>
+          
+</dd>
+        <dt id="copyWith" class="callable">
+          <span class="name"><a href="painting/TextStyle/copyWith.html">copyWith</a></span><span class="signature">(<wbr>{<span class="parameter" id="copyWith-param-color"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span>, </span> <span class="parameter" id="copyWith-param-fontFamily"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">fontFamily</span>, </span> <span class="parameter" id="copyWith-param-fontSize"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">fontSize</span>, </span> <span class="parameter" id="copyWith-param-fontWeight"><span class="type-annotation"><a href="dart-ui/FontWeight-class.html">FontWeight</a></span> <span class="parameter-name">fontWeight</span>, </span> <span class="parameter" id="copyWith-param-fontStyle"><span class="type-annotation"><a href="dart-ui/FontStyle-class.html">FontStyle</a></span> <span class="parameter-name">fontStyle</span>, </span> <span class="parameter" id="copyWith-param-letterSpacing"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">letterSpacing</span>, </span> <span class="parameter" id="copyWith-param-wordSpacing"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">wordSpacing</span>, </span> <span class="parameter" id="copyWith-param-textBaseline"><span class="type-annotation"><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">textBaseline</span>, </span> <span class="parameter" id="copyWith-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span>, </span> <span class="parameter" id="copyWith-param-locale"><span class="type-annotation"><a href="dart-ui/Locale-class.html">Locale</a></span> <span class="parameter-name">locale</span>, </span> <span class="parameter" id="copyWith-param-background"><span class="type-annotation"><a href="dart-ui/Paint-class.html">Paint</a></span> <span class="parameter-name">background</span>, </span> <span class="parameter" id="copyWith-param-decoration"><span class="type-annotation"><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></span> <span class="parameter-name">decoration</span>, </span> <span class="parameter" id="copyWith-param-decorationColor"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">decorationColor</span>, </span> <span class="parameter" id="copyWith-param-decorationStyle"><span class="type-annotation"><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></span> <span class="parameter-name">decorationStyle</span>, </span> <span class="parameter" id="copyWith-param-debugLabel"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">debugLabel</span></span> })
+            <span class="returntype parameter">&#8594; <a href="painting/TextStyle-class.html">TextStyle</a></span>
+          </span>
+        </dt>
+        <dd>
+          Creates a copy of this text style but with the given fields replaced with
+the new values.
+          
+</dd>
+        <dt id="debugFillProperties" class="callable">
+          <span class="name"><a href="painting/TextStyle/debugFillProperties.html">debugFillProperties</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillProperties-param-properties"><span class="type-annotation"><a href="foundation/DiagnosticPropertiesBuilder-class.html">DiagnosticPropertiesBuilder</a></span> <span class="parameter-name">properties</span>, {</span> <span class="parameter" id="debugFillProperties-param-prefix"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefix</span>: <span class="default-value">''</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Adds all properties prefixing property names with the optional <code>prefix</code>.
+          
+</dd>
+        <dt id="getParagraphStyle" class="callable">
+          <span class="name"><a href="painting/TextStyle/getParagraphStyle.html">getParagraphStyle</a></span><span class="signature">(<wbr>{<span class="parameter" id="getParagraphStyle-param-textAlign"><span class="type-annotation"><a href="dart-ui/TextAlign-class.html">TextAlign</a></span> <span class="parameter-name">textAlign</span>, </span> <span class="parameter" id="getParagraphStyle-param-textDirection"><span class="type-annotation"><a href="dart-ui/TextDirection-class.html">TextDirection</a></span> <span class="parameter-name">textDirection</span>, </span> <span class="parameter" id="getParagraphStyle-param-textScaleFactor"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">textScaleFactor</span>: <span class="default-value">1.0</span>, </span> <span class="parameter" id="getParagraphStyle-param-ellipsis"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">ellipsis</span>, </span> <span class="parameter" id="getParagraphStyle-param-maxLines"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">maxLines</span>, </span> <span class="parameter" id="getParagraphStyle-param-locale"><span class="type-annotation"><a href="dart-ui/Locale-class.html">Locale</a></span> <span class="parameter-name">locale</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-ui/ParagraphStyle-class.html">ParagraphStyle</a></span>
+          </span>
+        </dt>
+        <dd>
+          The style information for paragraphs, encoded for use by <code>dart:ui</code>. <a href="painting/TextStyle/getParagraphStyle.html">[...]</a>
+          
+</dd>
+        <dt id="getTextStyle" class="callable">
+          <span class="name"><a href="painting/TextStyle/getTextStyle.html">getTextStyle</a></span><span class="signature">(<wbr>{<span class="parameter" id="getTextStyle-param-textScaleFactor"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">textScaleFactor</span>: <span class="default-value">1.0</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-ui/TextStyle-class.html">TextStyle</a></span>
+          </span>
+        </dt>
+        <dd>
+          The style information for text runs, encoded for use by <code>dart:ui</code>.
+          
+</dd>
+        <dt id="merge" class="callable">
+          <span class="name"><a href="painting/TextStyle/merge.html">merge</a></span><span class="signature">(<wbr><span class="parameter" id="merge-param-other"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/TextStyle-class.html">TextStyle</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a new text style that is a combination of this style and the given
+<code>other</code> style. <a href="painting/TextStyle/merge.html">[...]</a>
+          
+</dd>
+        <dt id="toStringShort" class="callable">
+          <span class="name"><a href="painting/TextStyle/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd>
+          A brief description of this object, usually just the <a href="dart-core/Object/runtimeType.html">runtimeType</a> and the
+<a href="painting/TextStyle/hashCode.html">hashCode</a>. <a href="painting/TextStyle/toStringShort.html">[...]</a>
+          
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toDiagnosticsNode" class="callable inherited">
+          <span class="name"><a href="foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr>{<span class="parameter" id="toDiagnosticsNode-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, </span> <span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation"><a href="foundation/DiagnosticsTreeStyle-class.html">DiagnosticsTreeStyle</a></span> <span class="parameter-name">style</span></span> })
+            <span class="returntype parameter">&#8594; <a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a debug representation of the object that is used by debugging
+tools and by <code>toStringDeep</code>. <a href="foundation/Diagnosticable/toDiagnosticsNode.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="foundation/Diagnosticable/toString.html">toString</a></span><span class="signature">(<wbr>{<span class="parameter" id="toString-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+          <span class="name"><a href="painting/TextStyle/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          The equality operator. <a href="painting/TextStyle/operator_equals.html">[...]</a>
+          
+</dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="lerp" class="callable">
+          <span class="name"><a href="painting/TextStyle/lerp.html">lerp</a></span><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">a</span>, </span> <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">b</span>, </span> <span class="parameter" id="lerp-param-t"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">t</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/TextStyle-class.html">TextStyle</a></span>
+          </span>
+        </dt>
+        <dd>
+          Interpolate between two text styles. <a href="painting/TextStyle/lerp.html">[...]</a>
+          
+</dd>
+      </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="painting/TextStyle-class.html#constructors">Constructors</a></li>
+      <li><a href="painting/TextStyle/TextStyle.html">TextStyle</a></li>
+    
+      <li class="section-title">
+        <a href="painting/TextStyle-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="painting/TextStyle/background.html">background</a></li>
+      <li><a href="painting/TextStyle/color.html">color</a></li>
+      <li><a href="painting/TextStyle/debugLabel.html">debugLabel</a></li>
+      <li><a href="painting/TextStyle/decoration.html">decoration</a></li>
+      <li><a href="painting/TextStyle/decorationColor.html">decorationColor</a></li>
+      <li><a href="painting/TextStyle/decorationStyle.html">decorationStyle</a></li>
+      <li><a href="painting/TextStyle/fontFamily.html">fontFamily</a></li>
+      <li><a href="painting/TextStyle/fontSize.html">fontSize</a></li>
+      <li><a href="painting/TextStyle/fontStyle.html">fontStyle</a></li>
+      <li><a href="painting/TextStyle/fontWeight.html">fontWeight</a></li>
+      <li><a href="painting/TextStyle/hashCode.html">hashCode</a></li>
+      <li><a href="painting/TextStyle/height.html">height</a></li>
+      <li><a href="painting/TextStyle/inherit.html">inherit</a></li>
+      <li><a href="painting/TextStyle/letterSpacing.html">letterSpacing</a></li>
+      <li><a href="painting/TextStyle/locale.html">locale</a></li>
+      <li><a href="painting/TextStyle/textBaseline.html">textBaseline</a></li>
+      <li><a href="painting/TextStyle/wordSpacing.html">wordSpacing</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="painting/TextStyle-class.html#instance-methods">Methods</a></li>
+      <li><a href="painting/TextStyle/apply.html">apply</a></li>
+      <li><a href="painting/TextStyle/compareTo.html">compareTo</a></li>
+      <li><a href="painting/TextStyle/copyWith.html">copyWith</a></li>
+      <li><a href="painting/TextStyle/debugFillProperties.html">debugFillProperties</a></li>
+      <li><a href="painting/TextStyle/getParagraphStyle.html">getParagraphStyle</a></li>
+      <li><a href="painting/TextStyle/getTextStyle.html">getTextStyle</a></li>
+      <li><a href="painting/TextStyle/merge.html">merge</a></li>
+      <li><a href="painting/TextStyle/toStringShort.html">toStringShort</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+    
+      <li class="section-title"><a href="painting/TextStyle-class.html#operators">Operators</a></li>
+      <li><a href="painting/TextStyle/operator_equals.html">operator ==</a></li>
+    
+    
+      <li class="section-title"><a href="painting/TextStyle-class.html#static-methods">Static methods</a></li>
+      <li><a href="painting/TextStyle/lerp.html">lerp</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

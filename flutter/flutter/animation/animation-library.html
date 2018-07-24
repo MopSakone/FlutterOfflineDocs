@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="animation library API docs, for the Dart programming language.">
+  <title>animation library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li class="self-crumb">animation library</li>
+  </ol>
+  <div class="self-name">animation</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><span class="package-name">Flutter</span> <span class="package-kind">package</span></h5>
+    <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="animation/animation-library.html">animation</a></li>
+          <li><a href="cupertino/cupertino-library.html">cupertino</a></li>
+          <li><a href="foundation/foundation-library.html">foundation</a></li>
+          <li><a href="gestures/gestures-library.html">gestures</a></li>
+          <li><a href="material/material-library.html">material</a></li>
+          <li><a href="painting/painting-library.html">painting</a></li>
+          <li><a href="physics/physics-library.html">physics</a></li>
+          <li><a href="rendering/rendering-library.html">rendering</a></li>
+          <li><a href="scheduler/scheduler-library.html">scheduler</a></li>
+          <li><a href="semantics/semantics-library.html">semantics</a></li>
+          <li><a href="services/services-library.html">services</a></li>
+          <li><a href="widgets/widgets-library.html">widgets</a></li>
+          <li class="section-title">Dart</li>
+          <li><a href="dart-async/dart-async-library.html">dart:async</a></li>
+          <li><a href="dart-collection/dart-collection-library.html">dart:collection</a></li>
+          <li><a href="dart-convert/dart-convert-library.html">dart:convert</a></li>
+          <li><a href="dart-core/dart-core-library.html">dart:core</a></li>
+          <li><a href="dart-developer/dart-developer-library.html">dart:developer</a></li>
+          <li><a href="dart-math/dart-math-library.html">dart:math</a></li>
+          <li><a href="dart-typed_data/dart-typed_data-library.html">dart:typed_data</a></li>
+          <li><a href="dart-ui/dart-ui-library.html">dart:ui</a></li>
+          <li class="section-subtitle">VM</li>
+            <li class="section-subitem"><a href="dart-io/dart-io-library.html">dart:io</a></li>
+            <li class="section-subitem"><a href="dart-isolate/dart-isolate-library.html">dart:isolate</a></li>
+          <li class="section-title">flutter_test</li>
+          <li><a href="flutter_test/flutter_test-library.html">flutter_test</a></li>
+          <li class="section-title">flutter_driver</li>
+          <li><a href="flutter_driver/flutter_driver-library.html">flutter_driver</a></li>
+          <li><a href="flutter_driver_extension/flutter_driver_extension-library.html">flutter_driver_extension</a></li>
+          <li class="section-title">flutter_localizations</li>
+          <li><a href="flutter_localizations/flutter_localizations-library.html">flutter_localizations</a></li>
+          <li class="section-title">async</li>
+          <li><a href="package-async_async/package-async_async-library.html">async</a></li>
+          <li class="section-title">boolean_selector</li>
+          <li><a href="package-boolean_selector_boolean_selector/package-boolean_selector_boolean_selector-library.html">boolean_selector</a></li>
+          <li class="section-title">charcode</li>
+          <li><a href="charcode/charcode-library.html">charcode</a></li>
+          <li><a href="charcode.ascii.dollar_lowercase/charcode.ascii.dollar_lowercase-library.html">charcode.ascii.dollar_lowercase</a></li>
+          <li><a href="charcode.htmlentity.dollar_lowercase/charcode.htmlentity.dollar_lowercase-library.html">charcode.htmlentity.dollar_lowercase</a></li>
+          <li class="section-title">collection</li>
+          <li><a href="package-collection_collection/package-collection_collection-library.html">collection</a></li>
+          <li><a class="deprecated" href="dart.pkg.collection.algorithms/dart.pkg.collection.algorithms-library.html">dart.pkg.collection.algorithms</a></li>
+          <li><a class="deprecated" href="dart.pkg.collection.equality/dart.pkg.collection.equality-library.html">dart.pkg.collection.equality</a></li>
+          <li><a class="deprecated" href="dart.pkg.collection.iterable_zip/dart.pkg.collection.iterable_zip-library.html">dart.pkg.collection.iterable_zip</a></li>
+          <li><a class="deprecated" href="dart.pkg.collection.priority_queue/dart.pkg.collection.priority_queue-library.html">dart.pkg.collection.priority_queue</a></li>
+          <li><a class="deprecated" href="dart.pkg.collection.wrappers/dart.pkg.collection.wrappers-library.html">dart.pkg.collection.wrappers</a></li>
+          <li class="section-title">convert</li>
+          <li><a href="convert/convert-library.html">convert</a></li>
+          <li class="section-title">crypto</li>
+          <li><a href="package-crypto_crypto/package-crypto_crypto-library.html">crypto</a></li>
+          <li class="section-title">file</li>
+          <li><a href="package-file_chroot/package-file_chroot-library.html">chroot</a></li>
+          <li><a href="package-file_file/package-file_file-library.html">file</a></li>
+          <li><a href="package-file_local/package-file_local-library.html">local</a></li>
+          <li><a href="package-file_memory/package-file_memory-library.html">memory</a></li>
+          <li><a href="package-file_record_replay/package-file_record_replay-library.html">record_replay</a></li>
+          <li class="section-title">http</li>
+          <li><a href="package-http_http/package-http_http-library.html">http</a></li>
+          <li><a href="package-http_testing/package-http_testing-library.html">testing</a></li>
+          <li class="section-title">http_parser</li>
+          <li><a href="package-http_parser_http_parser/package-http_parser_http_parser-library.html">http_parser</a></li>
+          <li class="section-title">intl</li>
+          <li><a href="package-intl_date_symbol_data_custom/package-intl_date_symbol_data_custom-library.html">date_symbol_data_custom</a></li>
+          <li><a href="date_symbol_data_file/date_symbol_data_file-library.html">date_symbol_data_file</a></li>
+          <li><a href="date_symbol_data_http_request/date_symbol_data_http_request-library.html">date_symbol_data_http_request</a></li>
+          <li><a href="date_symbol_data_local/date_symbol_data_local-library.html">date_symbol_data_local</a></li>
+          <li><a href="date_symbols/date_symbols-library.html">date_symbols</a></li>
+          <li><a href="date_time_patterns/date_time_patterns-library.html">date_time_patterns</a></li>
+          <li><a href="intl/intl-library.html">intl</a></li>
+          <li><a href="intl_standalone/intl_standalone-library.html">intl_standalone</a></li>
+          <li><a href="message_lookup_by_library/message_lookup_by_library-library.html">message_lookup_by_library</a></li>
+          <li><a href="number_symbol_data/number_symbol_data-library.html">number_symbol_data</a></li>
+          <li><a href="number_symbols/number_symbols-library.html">number_symbols</a></li>
+          <li class="section-title">json_rpc_2</li>
+          <li><a href="package-json_rpc_2_error_code/package-json_rpc_2_error_code-library.html">error_code</a></li>
+          <li><a href="package-json_rpc_2_json_rpc_2/package-json_rpc_2_json_rpc_2-library.html">json_rpc_2</a></li>
+          <li class="section-title">matcher</li>
+          <li><a href="package-matcher_matcher/package-matcher_matcher-library.html">matcher</a></li>
+          <li class="section-title">meta</li>
+          <li><a href="meta/meta-library.html">meta</a></li>
+          <li><a href="meta_dart2js/meta_dart2js-library.html">meta_dart2js</a></li>
+          <li class="section-title">multi_server_socket</li>
+          <li><a href="package-multi_server_socket_multi_server_socket/package-multi_server_socket_multi_server_socket-library.html">multi_server_socket</a></li>
+          <li class="section-title">package_config</li>
+          <li><a href="package_config.discovery/package_config.discovery-library.html">package_config.discovery</a></li>
+          <li><a href="package_config.discovery_analysis/package_config.discovery_analysis-library.html">package_config.discovery_analysis</a></li>
+          <li><a href="package_config.packages/package_config.packages-library.html">package_config.packages</a></li>
+          <li><a href="package_config.packages_file/package_config.packages_file-library.html">package_config.packages_file</a></li>
+          <li class="section-title">package_resolver</li>
+          <li><a href="package-package_resolver_package_resolver/package-package_resolver_package_resolver-library.html">package_resolver</a></li>
+          <li class="section-title">path</li>
+          <li><a href="package-path_path/package-path_path-library.html">path</a></li>
+          <li class="section-title">platform</li>
+          <li><a href="package-platform_platform/package-platform_platform-library.html">platform</a></li>
+          <li class="section-title">platform_integration</li>
+          <li><a href="Android/Android-library.html">Android</a></li>
+          <li><a href="iOS/iOS-library.html">iOS</a></li>
+          <li class="section-title">pool</li>
+          <li><a href="package-pool_pool/package-pool_pool-library.html">pool</a></li>
+          <li class="section-title">process</li>
+          <li><a href="package-process_process/package-process_process-library.html">process</a></li>
+          <li><a href="package-process_record_replay/package-process_record_replay-library.html">record_replay</a></li>
+          <li class="section-title">pub_semver</li>
+          <li><a href="package-pub_semver_pub_semver/package-pub_semver_pub_semver-library.html">pub_semver</a></li>
+          <li class="section-title">quiver</li>
+          <li><a href="quiver.async/quiver.async-library.html">quiver.async</a></li>
+          <li><a href="quiver.cache/quiver.cache-library.html">quiver.cache</a></li>
+          <li><a href="quiver.check/quiver.check-library.html">quiver.check</a></li>
+          <li><a href="quiver.collection/quiver.collection-library.html">quiver.collection</a></li>
+          <li><a href="quiver.core/quiver.core-library.html">quiver.core</a></li>
+          <li><a href="quiver.iterables/quiver.iterables-library.html">quiver.iterables</a></li>
+          <li><a href="quiver.pattern/quiver.pattern-library.html">quiver.pattern</a></li>
+          <li><a href="quiver.strings/quiver.strings-library.html">quiver.strings</a></li>
+          <li><a href="quiver.testing.async/quiver.testing.async-library.html">quiver.testing.async</a></li>
+          <li><a href="quiver.testing.equality/quiver.testing.equality-library.html">quiver.testing.equality</a></li>
+          <li><a href="quiver.testing.runtime/quiver.testing.runtime-library.html">quiver.testing.runtime</a></li>
+          <li><a href="quiver.testing.time/quiver.testing.time-library.html">quiver.testing.time</a></li>
+          <li><a href="quiver.time/quiver.time-library.html">quiver.time</a></li>
+          <li class="section-title">source_map_stack_trace</li>
+          <li><a href="package-source_map_stack_trace_source_map_stack_trace/package-source_map_stack_trace_source_map_stack_trace-library.html">source_map_stack_trace</a></li>
+          <li class="section-title">source_maps</li>
+          <li><a href="source_maps/source_maps-library.html">source_maps</a></li>
+          <li><a href="source_maps.builder/source_maps.builder-library.html">source_maps.builder</a></li>
+          <li><a href="source_maps.parser/source_maps.parser-library.html">source_maps.parser</a></li>
+          <li><a href="source_maps.printer/source_maps.printer-library.html">source_maps.printer</a></li>
+          <li><a href="source_maps.refactor/source_maps.refactor-library.html">source_maps.refactor</a></li>
+          <li class="section-title">source_span</li>
+          <li><a href="package-source_span_source_span/package-source_span_source_span-library.html">source_span</a></li>
+          <li class="section-title">stack_trace</li>
+          <li><a href="package-stack_trace_stack_trace/package-stack_trace_stack_trace-library.html">stack_trace</a></li>
+          <li class="section-title">stream_channel</li>
+          <li><a href="package-stream_channel_stream_channel/package-stream_channel_stream_channel-library.html">stream_channel</a></li>
+          <li class="section-title">string_scanner</li>
+          <li><a href="package-string_scanner_string_scanner/package-string_scanner_string_scanner-library.html">string_scanner</a></li>
+          <li class="section-title">term_glyph</li>
+          <li><a href="package-term_glyph_term_glyph/package-term_glyph_term_glyph-library.html">term_glyph</a></li>
+          <li class="section-title">test</li>
+          <li><a href="package-test_bootstrap_browser/package-test_bootstrap_browser-library.html">browser</a></li>
+          <li><a href="package-test_bootstrap_node/package-test_bootstrap_node-library.html">node</a></li>
+          <li><a href="package-test_test/package-test_test-library.html">test</a></li>
+          <li><a href="package-test_bootstrap_vm/package-test_bootstrap_vm-library.html">vm</a></li>
+          <li class="section-title">typed_data</li>
+          <li><a href="typed_data/typed_data-library.html">typed_data</a></li>
+          <li><a href="typed_data.typed_buffers/typed_data.typed_buffers-library.html">typed_data.typed_buffers</a></li>
+          <li class="section-title">vector_math</li>
+          <li><a href="package-vector_math_hash/package-vector_math_hash-library.html">hash</a></li>
+          <li><a href="vector_math/vector_math-library.html">vector_math</a></li>
+          <li><a href="vector_math_64/vector_math_64-library.html">vector_math_64</a></li>
+          <li><a href="vector_math_geometry/vector_math_geometry-library.html">vector_math_geometry</a></li>
+          <li><a href="vector_math_lists/vector_math_lists-library.html">vector_math_lists</a></li>
+          <li><a href="vector_math_operations/vector_math_operations-library.html">vector_math_operations</a></li>
+          <li class="section-title">web_socket_channel</li>
+          <li><a href="package-web_socket_channel_web_socket_channel/package-web_socket_channel_web_socket_channel-library.html">web_socket_channel</a></li>
+          <li><a href="web_socket_channel.io/web_socket_channel.io-library.html">web_socket_channel.io</a></li>
+          <li><a href="web_socket_channel.status/web_socket_channel.status-library.html">web_socket_channel.status</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>animation library</h1>
+
+    <section class="desc markdown">
+      <p>The Flutter animation system.</p>
+<p>To use, import <code>package:flutter/animation.dart</code>.</p>
+<p>See <a href="https://flutter.io/animations/">flutter.io/animations</a> for an overview.</p>
+<p>This library depends only on core Dart libraries and the <code>physics.dart</code> library.</p>
+    </section>
+    
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="AlwaysStoppedAnimation">
+          <span class="name "><a href="animation/AlwaysStoppedAnimation-class.html">AlwaysStoppedAnimation</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>
+        </dt>
+        <dd>
+          An animation that is always stopped at a given value. <a href="animation/AlwaysStoppedAnimation-class.html">[...]</a>
+        </dd>
+        <dt id="Animatable">
+          <span class="name "><a href="animation/Animatable-class.html">Animatable</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>
+        </dt>
+        <dd>
+          An object that can produce a value of type <code>T</code> given an <a href="animation/Animation-class.html">Animation<double></double></a>
+as input. <a href="animation/Animatable-class.html">[...]</a>
+        </dd>
+        <dt id="Animation">
+          <span class="name "><a href="animation/Animation-class.html">Animation</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>
+        </dt>
+        <dd>
+          An animation with a value of type <code>T</code>. <a href="animation/Animation-class.html">[...]</a>
+        </dd>
+        <dt id="AnimationController">
+          <span class="name "><a href="animation/AnimationController-class.html">AnimationController</a></span>
+        </dt>
+        <dd>
+          A controller for an animation. <a href="animation/AnimationController-class.html">[...]</a>
+        </dd>
+        <dt id="AnimationEagerListenerMixin">
+          <span class="name "><a href="animation/AnimationEagerListenerMixin-class.html">AnimationEagerListenerMixin</a></span>
+        </dt>
+        <dd>
+          A mixin that replaces the didRegisterListener/didUnregisterListener contract
+with a dispose contract.
+        </dd>
+        <dt id="AnimationLazyListenerMixin">
+          <span class="name "><a href="animation/AnimationLazyListenerMixin-class.html">AnimationLazyListenerMixin</a></span>
+        </dt>
+        <dd>
+          A mixin that helps listen to another object only when this object has registered listeners.
+        </dd>
+        <dt id="AnimationLocalListenersMixin">
+          <span class="name "><a href="animation/AnimationLocalListenersMixin-class.html">AnimationLocalListenersMixin</a></span>
+        </dt>
+        <dd>
+          A mixin that implements the <a href="animation/AnimationLocalListenersMixin/addListener.html">addListener</a>/<a href="animation/AnimationLocalListenersMixin/removeListener.html">removeListener</a> protocol and notifies
+all the registered listeners when <a href="animation/AnimationLocalListenersMixin/notifyListeners.html">notifyListeners</a> is called.
+        </dd>
+        <dt id="AnimationLocalStatusListenersMixin">
+          <span class="name "><a href="animation/AnimationLocalStatusListenersMixin-class.html">AnimationLocalStatusListenersMixin</a></span>
+        </dt>
+        <dd>
+          A mixin that implements the addStatusListener/removeStatusListener protocol
+and notifies all the registered listeners when notifyStatusListeners is
+called.
+        </dd>
+        <dt id="AnimationMax">
+          <span class="name "><a href="animation/AnimationMax-class.html">AnimationMax</a><span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="dart-core/num-class.html">num</a></span>&gt;</span></span>
+        </dt>
+        <dd>
+          An animation that tracks the maximum of two other animations. <a href="animation/AnimationMax-class.html">[...]</a>
+        </dd>
+        <dt id="AnimationMean">
+          <span class="name "><a href="animation/AnimationMean-class.html">AnimationMean</a></span>
+        </dt>
+        <dd>
+          An animation of <a href="dart-core/double-class.html">double</a>s that tracks the mean of two other animations. <a href="animation/AnimationMean-class.html">[...]</a>
+        </dd>
+        <dt id="AnimationMin">
+          <span class="name "><a href="animation/AnimationMin-class.html">AnimationMin</a><span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="dart-core/num-class.html">num</a></span>&gt;</span></span>
+        </dt>
+        <dd>
+          An animation that tracks the minimum of two other animations. <a href="animation/AnimationMin-class.html">[...]</a>
+        </dd>
+        <dt id="AnimationWithParentMixin">
+          <span class="name "><a href="animation/AnimationWithParentMixin-class.html">AnimationWithParentMixin</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>
+        </dt>
+        <dd>
+          Implements most of the <a href="animation/Animation-class.html">Animation</a> interface by deferring its behavior to a
+given <a href="animation/AnimationWithParentMixin/parent.html">parent</a> Animation. <a href="animation/AnimationWithParentMixin-class.html">[...]</a>
+        </dd>
+        <dt id="ColorTween">
+          <span class="name "><a href="animation/ColorTween-class.html">ColorTween</a></span>
+        </dt>
+        <dd>
+          An interpolation between two colors. <a href="animation/ColorTween-class.html">[...]</a>
+        </dd>
+        <dt id="CompoundAnimation">
+          <span class="name "><a href="animation/CompoundAnimation-class.html">CompoundAnimation</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>
+        </dt>
+        <dd>
+          An interface for combining multiple Animations. Subclasses need only
+implement the <code>value</code> getter to control how the child animations are
+combined. Can be chained to combine more than 2 animations. <a href="animation/CompoundAnimation-class.html">[...]</a>
+        </dd>
+        <dt id="Cubic">
+          <span class="name "><a href="animation/Cubic-class.html">Cubic</a></span>
+        </dt>
+        <dd>
+          A cubic polynomial mapping of the unit interval. <a href="animation/Cubic-class.html">[...]</a>
+        </dd>
+        <dt id="Curve">
+          <span class="name "><a href="animation/Curve-class.html">Curve</a></span>
+        </dt>
+        <dd>
+          A mapping of the unit interval to the unit interval. <a href="animation/Curve-class.html">[...]</a>
+        </dd>
+        <dt id="CurvedAnimation">
+          <span class="name "><a href="animation/CurvedAnimation-class.html">CurvedAnimation</a></span>
+        </dt>
+        <dd>
+          An animation that applies a curve to another animation. <a href="animation/CurvedAnimation-class.html">[...]</a>
+        </dd>
+        <dt id="Curves">
+          <span class="name "><a href="animation/Curves-class.html">Curves</a></span>
+        </dt>
+        <dd>
+          A collection of common animation curves. <a href="animation/Curves-class.html">[...]</a>
+        </dd>
+        <dt id="CurveTween">
+          <span class="name "><a href="animation/CurveTween-class.html">CurveTween</a></span>
+        </dt>
+        <dd>
+          Transforms the value of the given animation by the given curve. <a href="animation/CurveTween-class.html">[...]</a>
+        </dd>
+        <dt id="ElasticInCurve">
+          <span class="name "><a href="animation/ElasticInCurve-class.html">ElasticInCurve</a></span>
+        </dt>
+        <dd>
+          An oscillating curve that grows in magnitude while overshooting its bounds. <a href="animation/ElasticInCurve-class.html">[...]</a>
+        </dd>
+        <dt id="ElasticInOutCurve">
+          <span class="name "><a href="animation/ElasticInOutCurve-class.html">ElasticInOutCurve</a></span>
+        </dt>
+        <dd>
+          An oscillating curve that grows and then shrinks in magnitude while
+overshooting its bounds. <a href="animation/ElasticInOutCurve-class.html">[...]</a>
+        </dd>
+        <dt id="ElasticOutCurve">
+          <span class="name "><a href="animation/ElasticOutCurve-class.html">ElasticOutCurve</a></span>
+        </dt>
+        <dd>
+          An oscillating curve that shrinks in magnitude while overshooting its bounds. <a href="animation/ElasticOutCurve-class.html">[...]</a>
+        </dd>
+        <dt id="FlippedCurve">
+          <span class="name "><a href="animation/FlippedCurve-class.html">FlippedCurve</a></span>
+        </dt>
+        <dd>
+          A curve that is the reversed inversion of its given curve. <a href="animation/FlippedCurve-class.html">[...]</a>
+        </dd>
+        <dt id="Interval">
+          <span class="name "><a href="animation/Interval-class.html">Interval</a></span>
+        </dt>
+        <dd>
+          A curve that is 0.0 until <a href="animation/Interval/begin.html">begin</a>, then curved (according to <a href="animation/Interval/curve.html">curve</a> from
+0.0 to 1.0 at <a href="animation/Interval/end.html">end</a>, then 1.0. <a href="animation/Interval-class.html">[...]</a>
+        </dd>
+        <dt id="IntTween">
+          <span class="name "><a href="animation/IntTween-class.html">IntTween</a></span>
+        </dt>
+        <dd>
+          An interpolation between two integers that rounds. <a href="animation/IntTween-class.html">[...]</a>
+        </dd>
+        <dt id="ProxyAnimation">
+          <span class="name "><a href="animation/ProxyAnimation-class.html">ProxyAnimation</a></span>
+        </dt>
+        <dd>
+          An animation that is a proxy for another animation. <a href="animation/ProxyAnimation-class.html">[...]</a>
+        </dd>
+        <dt id="RectTween">
+          <span class="name "><a href="animation/RectTween-class.html">RectTween</a></span>
+        </dt>
+        <dd>
+          An interpolation between two rectangles. <a href="animation/RectTween-class.html">[...]</a>
+        </dd>
+        <dt id="ReverseAnimation">
+          <span class="name "><a href="animation/ReverseAnimation-class.html">ReverseAnimation</a></span>
+        </dt>
+        <dd>
+          An animation that is the reverse of another animation. <a href="animation/ReverseAnimation-class.html">[...]</a>
+        </dd>
+        <dt id="ReverseTween">
+          <span class="name "><a href="animation/ReverseTween-class.html">ReverseTween</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>
+        </dt>
+        <dd>
+          A <a href="animation/Tween-class.html">Tween</a> that evaluates its <a href="animation/ReverseTween/parent.html">parent</a> in reverse.
+        </dd>
+        <dt id="SawTooth">
+          <span class="name "><a href="animation/SawTooth-class.html">SawTooth</a></span>
+        </dt>
+        <dd>
+          A sawtooth curve that repeats a given number of times over the unit interval. <a href="animation/SawTooth-class.html">[...]</a>
+        </dd>
+        <dt id="SizeTween">
+          <span class="name "><a href="animation/SizeTween-class.html">SizeTween</a></span>
+        </dt>
+        <dd>
+          An interpolation between two sizes. <a href="animation/SizeTween-class.html">[...]</a>
+        </dd>
+        <dt id="StepTween">
+          <span class="name "><a href="animation/StepTween-class.html">StepTween</a></span>
+        </dt>
+        <dd>
+          An interpolation between two integers that floors. <a href="animation/StepTween-class.html">[...]</a>
+        </dd>
+        <dt id="Threshold">
+          <span class="name "><a href="animation/Threshold-class.html">Threshold</a></span>
+        </dt>
+        <dd>
+          A curve that is 0.0 until it hits the threshold, then it jumps to 1.0. <a href="animation/Threshold-class.html">[...]</a>
+        </dd>
+        <dt id="TickerFuture">
+          <span class="name "><a href="scheduler/TickerFuture-class.html">TickerFuture</a></span>
+        </dt>
+        <dd>
+          An object representing an ongoing <a href="scheduler/Ticker-class.html">Ticker</a> sequence. <a href="scheduler/TickerFuture-class.html">[...]</a>
+        </dd>
+        <dt id="TrainHoppingAnimation">
+          <span class="name "><a href="animation/TrainHoppingAnimation-class.html">TrainHoppingAnimation</a></span>
+        </dt>
+        <dd>
+          This animation starts by proxying one animation, but can be given a
+second animation. When their times cross (either because the second is
+going in the opposite direction, or because the one overtakes the other),
+the animation hops over to proxying the second animation, and the second
+animation becomes the new "first" performance. <a href="animation/TrainHoppingAnimation-class.html">[...]</a>
+        </dd>
+        <dt id="Tween">
+          <span class="name "><a href="animation/Tween-class.html">Tween</a><span class="signature">&lt;<wbr><span class="type-parameter">T extends dynamic</span>&gt;</span></span>
+        </dt>
+        <dd>
+          A linear interpolation between a beginning and ending value. <a href="animation/Tween-class.html">[...]</a>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="kAlwaysCompleteAnimation" class="constant">
+          <span class="name "><a href="animation/kAlwaysCompleteAnimation-constant.html">kAlwaysCompleteAnimation</a></span>
+          <span class="signature">&#8594; const <a href="animation/Animation-class.html">Animation</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/double-class.html">double</a></span>&gt;</span></span>
+        </dt>
+        <dd>
+          An animation that is always complete. <a href="animation/kAlwaysCompleteAnimation-constant.html">[...]</a>
+          
+  <div>
+            <span class="signature"><code>const _AlwaysCompleteAnimation()</code></span>
+          </div>
+        </dd>
+        <dt id="kAlwaysDismissedAnimation" class="constant">
+          <span class="name "><a href="animation/kAlwaysDismissedAnimation-constant.html">kAlwaysDismissedAnimation</a></span>
+          <span class="signature">&#8594; const <a href="animation/Animation-class.html">Animation</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/double-class.html">double</a></span>&gt;</span></span>
+        </dt>
+        <dd>
+          An animation that is always dismissed. <a href="animation/kAlwaysDismissedAnimation-constant.html">[...]</a>
+          
+  <div>
+            <span class="signature"><code>const _AlwaysDismissedAnimation()</code></span>
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="enums">
+      <h2>Enums</h2>
+
+      <dl>
+        <dt id="AnimationStatus">
+          <a href="animation/AnimationStatus-class.html">AnimationStatus</a>
+        </dt>
+        <dd>
+          The status of an animation
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="typedefs">
+      <h2>Typedefs</h2>
+
+      <dl class="callables">
+        <dt id="AnimationStatusListener" class="callable">
+          <span class="name"><a href="animation/AnimationStatusListener.html">AnimationStatusListener</a></span><span class="signature">(<wbr><span class="parameter" id="AnimationStatusListener-param-status"><span class="type-annotation"><a href="animation/AnimationStatus-class.html">AnimationStatus</a></span> <span class="parameter-name">status</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Signature for listeners attached using <code>Animation.addStatusListener</code>.
+          
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="exceptions">
+      <h2>Exceptions / Errors</h2>
+
+      <dl>
+        <dt id="TickerCanceled">
+          <span class="name "><a href="scheduler/TickerCanceled-class.html">TickerCanceled</a></span>
+        </dt>
+        <dd>
+          Exception thrown by <a href="scheduler/Ticker-class.html">Ticker</a> objects on the <a href="scheduler/TickerFuture/orCancel.html">TickerFuture.orCancel</a> future
+when the ticker is canceled.
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>animation library</h5>
+    <ol>
+      <li class="section-title"><a href="animation/animation-library.html#classes">Classes</a></li>
+      <li><a href="animation/AlwaysStoppedAnimation-class.html">AlwaysStoppedAnimation</a></li>
+      <li><a href="animation/Animatable-class.html">Animatable</a></li>
+      <li><a href="animation/Animation-class.html">Animation</a></li>
+      <li><a href="animation/AnimationController-class.html">AnimationController</a></li>
+      <li><a href="animation/AnimationEagerListenerMixin-class.html">AnimationEagerListenerMixin</a></li>
+      <li><a href="animation/AnimationLazyListenerMixin-class.html">AnimationLazyListenerMixin</a></li>
+      <li><a href="animation/AnimationLocalListenersMixin-class.html">AnimationLocalListenersMixin</a></li>
+      <li><a href="animation/AnimationLocalStatusListenersMixin-class.html">AnimationLocalStatusListenersMixin</a></li>
+      <li><a href="animation/AnimationMax-class.html">AnimationMax</a></li>
+      <li><a href="animation/AnimationMean-class.html">AnimationMean</a></li>
+      <li><a href="animation/AnimationMin-class.html">AnimationMin</a></li>
+      <li><a href="animation/AnimationWithParentMixin-class.html">AnimationWithParentMixin</a></li>
+      <li><a href="animation/ColorTween-class.html">ColorTween</a></li>
+      <li><a href="animation/CompoundAnimation-class.html">CompoundAnimation</a></li>
+      <li><a href="animation/Cubic-class.html">Cubic</a></li>
+      <li><a href="animation/Curve-class.html">Curve</a></li>
+      <li><a href="animation/CurvedAnimation-class.html">CurvedAnimation</a></li>
+      <li><a href="animation/Curves-class.html">Curves</a></li>
+      <li><a href="animation/CurveTween-class.html">CurveTween</a></li>
+      <li><a href="animation/ElasticInCurve-class.html">ElasticInCurve</a></li>
+      <li><a href="animation/ElasticInOutCurve-class.html">ElasticInOutCurve</a></li>
+      <li><a href="animation/ElasticOutCurve-class.html">ElasticOutCurve</a></li>
+      <li><a href="animation/FlippedCurve-class.html">FlippedCurve</a></li>
+      <li><a href="animation/Interval-class.html">Interval</a></li>
+      <li><a href="animation/IntTween-class.html">IntTween</a></li>
+      <li><a href="animation/ProxyAnimation-class.html">ProxyAnimation</a></li>
+      <li><a href="animation/RectTween-class.html">RectTween</a></li>
+      <li><a href="animation/ReverseAnimation-class.html">ReverseAnimation</a></li>
+      <li><a href="animation/ReverseTween-class.html">ReverseTween</a></li>
+      <li><a href="animation/SawTooth-class.html">SawTooth</a></li>
+      <li><a href="animation/SizeTween-class.html">SizeTween</a></li>
+      <li><a href="animation/StepTween-class.html">StepTween</a></li>
+      <li><a href="animation/Threshold-class.html">Threshold</a></li>
+      <li><a href="scheduler/TickerFuture-class.html">TickerFuture</a></li>
+      <li><a href="animation/TrainHoppingAnimation-class.html">TrainHoppingAnimation</a></li>
+      <li><a href="animation/Tween-class.html">Tween</a></li>
+    
+      <li class="section-title"><a href="animation/animation-library.html#constants">Constants</a></li>
+      <li><a href="animation/kAlwaysCompleteAnimation-constant.html">kAlwaysCompleteAnimation</a></li>
+      <li><a href="animation/kAlwaysDismissedAnimation-constant.html">kAlwaysDismissedAnimation</a></li>
+    
+    
+    
+      <li class="section-title"><a href="animation/animation-library.html#enums">Enums</a></li>
+      <li><a href="animation/AnimationStatus-class.html">AnimationStatus</a></li>
+    
+      <li class="section-title"><a href="animation/animation-library.html#typedefs">Typedefs</a></li>
+      <li><a href="animation/AnimationStatusListener.html">AnimationStatusListener</a></li>
+    
+      <li class="section-title"><a href="animation/animation-library.html#exceptions">Exceptions</a></li>
+      <li><a href="scheduler/TickerCanceled-class.html">TickerCanceled</a></li>
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

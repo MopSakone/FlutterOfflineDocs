@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the SingleChildScrollView class from the widgets library, for the Dart programming language.">
+  <title>SingleChildScrollView class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li class="self-crumb">SingleChildScrollView class</li>
+  </ol>
+  <div class="self-name">SingleChildScrollView</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>widgets library</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/widgets-library.html#classes">Classes</a></li>
+      <li><a href="widgets/AbsorbPointer-class.html">AbsorbPointer</a></li>
+      <li><a href="widgets/Align-class.html">Align</a></li>
+      <li><a href="painting/Alignment-class.html">Alignment</a></li>
+      <li><a href="painting/AlignmentDirectional-class.html">AlignmentDirectional</a></li>
+      <li><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></li>
+      <li><a href="rendering/AlignmentGeometryTween-class.html">AlignmentGeometryTween</a></li>
+      <li><a href="rendering/AlignmentTween-class.html">AlignmentTween</a></li>
+      <li><a href="widgets/AlignTransition-class.html">AlignTransition</a></li>
+      <li><a href="widgets/AlwaysScrollableScrollPhysics-class.html">AlwaysScrollableScrollPhysics</a></li>
+      <li><a href="animation/AlwaysStoppedAnimation-class.html">AlwaysStoppedAnimation</a></li>
+      <li><a href="animation/Animatable-class.html">Animatable</a></li>
+      <li><a href="widgets/AnimatedAlign-class.html">AnimatedAlign</a></li>
+      <li><a href="widgets/AnimatedBuilder-class.html">AnimatedBuilder</a></li>
+      <li><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></li>
+      <li><a href="widgets/AnimatedCrossFade-class.html">AnimatedCrossFade</a></li>
+      <li><a href="widgets/AnimatedDefaultTextStyle-class.html">AnimatedDefaultTextStyle</a></li>
+      <li><a href="widgets/AnimatedList-class.html">AnimatedList</a></li>
+      <li><a href="widgets/AnimatedListState-class.html">AnimatedListState</a></li>
+      <li><a href="widgets/AnimatedModalBarrier-class.html">AnimatedModalBarrier</a></li>
+      <li><a href="widgets/AnimatedOpacity-class.html">AnimatedOpacity</a></li>
+      <li><a href="widgets/AnimatedPadding-class.html">AnimatedPadding</a></li>
+      <li><a href="widgets/AnimatedPhysicalModel-class.html">AnimatedPhysicalModel</a></li>
+      <li><a href="widgets/AnimatedPositioned-class.html">AnimatedPositioned</a></li>
+      <li><a href="widgets/AnimatedPositionedDirectional-class.html">AnimatedPositionedDirectional</a></li>
+      <li><a href="widgets/AnimatedSize-class.html">AnimatedSize</a></li>
+      <li><a href="widgets/AnimatedSwitcher-class.html">AnimatedSwitcher</a></li>
+      <li><a href="widgets/AnimatedWidget-class.html">AnimatedWidget</a></li>
+      <li><a href="widgets/AnimatedWidgetBaseState-class.html">AnimatedWidgetBaseState</a></li>
+      <li><a href="animation/Animation-class.html">Animation</a></li>
+      <li><a href="animation/AnimationController-class.html">AnimationController</a></li>
+      <li><a href="animation/AnimationEagerListenerMixin-class.html">AnimationEagerListenerMixin</a></li>
+      <li><a href="animation/AnimationLazyListenerMixin-class.html">AnimationLazyListenerMixin</a></li>
+      <li><a href="animation/AnimationLocalListenersMixin-class.html">AnimationLocalListenersMixin</a></li>
+      <li><a href="animation/AnimationLocalStatusListenersMixin-class.html">AnimationLocalStatusListenersMixin</a></li>
+      <li><a href="animation/AnimationMax-class.html">AnimationMax</a></li>
+      <li><a href="animation/AnimationMean-class.html">AnimationMean</a></li>
+      <li><a href="animation/AnimationMin-class.html">AnimationMin</a></li>
+      <li><a href="animation/AnimationWithParentMixin-class.html">AnimationWithParentMixin</a></li>
+      <li><a href="widgets/AspectRatio-class.html">AspectRatio</a></li>
+      <li><a href="painting/AssetBundleImageKey-class.html">AssetBundleImageKey</a></li>
+      <li><a href="painting/AssetBundleImageProvider-class.html">AssetBundleImageProvider</a></li>
+      <li><a href="painting/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="widgets/AsyncSnapshot-class.html">AsyncSnapshot</a></li>
+      <li><a href="widgets/AutomaticKeepAlive-class.html">AutomaticKeepAlive</a></li>
+      <li><a href="widgets/AutomaticKeepAliveClientMixin-class.html">AutomaticKeepAliveClientMixin</a></li>
+      <li><a href="widgets/BackdropFilter-class.html">BackdropFilter</a></li>
+      <li><a href="widgets/BallisticScrollActivity-class.html">BallisticScrollActivity</a></li>
+      <li><a href="widgets/Banner-class.html">Banner</a></li>
+      <li><a href="widgets/BannerPainter-class.html">BannerPainter</a></li>
+      <li><a href="widgets/Baseline-class.html">Baseline</a></li>
+      <li><a href="painting/BeveledRectangleBorder-class.html">BeveledRectangleBorder</a></li>
+      <li><a href="widgets/BlockSemantics-class.html">BlockSemantics</a></li>
+      <li><a href="painting/Border-class.html">Border</a></li>
+      <li><a href="painting/BorderDirectional-class.html">BorderDirectional</a></li>
+      <li><a href="painting/BorderRadius-class.html">BorderRadius</a></li>
+      <li><a href="painting/BorderRadiusDirectional-class.html">BorderRadiusDirectional</a></li>
+      <li><a href="painting/BorderRadiusGeometry-class.html">BorderRadiusGeometry</a></li>
+      <li><a href="widgets/BorderRadiusTween-class.html">BorderRadiusTween</a></li>
+      <li><a href="painting/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="widgets/BottomNavigationBarItem-class.html">BottomNavigationBarItem</a></li>
+      <li><a href="widgets/BouncingScrollPhysics-class.html">BouncingScrollPhysics</a></li>
+      <li><a href="widgets/BouncingScrollSimulation-class.html">BouncingScrollSimulation</a></li>
+      <li><a href="painting/BoxBorder-class.html">BoxBorder</a></li>
+      <li><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></li>
+      <li><a href="widgets/BoxConstraintsTween-class.html">BoxConstraintsTween</a></li>
+      <li><a href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="painting/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="widgets/BoxScrollView-class.html">BoxScrollView</a></li>
+      <li><a href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="widgets/BuildContext-class.html">BuildContext</a></li>
+      <li><a href="widgets/Builder-class.html">Builder</a></li>
+      <li><a href="widgets/BuildOwner-class.html">BuildOwner</a></li>
+      <li><a href="dart-ui/Canvas-class.html">Canvas</a></li>
+      <li><a href="widgets/Center-class.html">Center</a></li>
+      <li><a href="foundation/ChangeNotifier-class.html">ChangeNotifier</a></li>
+      <li><a href="widgets/CheckedModeBanner-class.html">CheckedModeBanner</a></li>
+      <li><a href="painting/CircleBorder-class.html">CircleBorder</a></li>
+      <li><a href="widgets/ClampingScrollPhysics-class.html">ClampingScrollPhysics</a></li>
+      <li><a href="widgets/ClampingScrollSimulation-class.html">ClampingScrollSimulation</a></li>
+      <li><a href="widgets/ClipOval-class.html">ClipOval</a></li>
+      <li><a href="widgets/ClipPath-class.html">ClipPath</a></li>
+      <li><a href="widgets/ClipRect-class.html">ClipRect</a></li>
+      <li><a href="widgets/ClipRRect-class.html">ClipRRect</a></li>
+      <li><a href="dart-ui/Color-class.html">Color</a></li>
+      <li><a href="dart-ui/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="painting/ColorSwatch-class.html">ColorSwatch</a></li>
+      <li><a href="animation/ColorTween-class.html">ColorTween</a></li>
+      <li><a href="widgets/Column-class.html">Column</a></li>
+      <li><a href="widgets/ComponentElement-class.html">ComponentElement</a></li>
+      <li><a href="widgets/CompositedTransformFollower-class.html">CompositedTransformFollower</a></li>
+      <li><a href="widgets/CompositedTransformTarget-class.html">CompositedTransformTarget</a></li>
+      <li><a href="animation/CompoundAnimation-class.html">CompoundAnimation</a></li>
+      <li><a href="widgets/ConstrainedBox-class.html">ConstrainedBox</a></li>
+      <li><a href="widgets/Container-class.html">Container</a></li>
+      <li><a href="animation/Cubic-class.html">Cubic</a></li>
+      <li><a href="animation/Curve-class.html">Curve</a></li>
+      <li><a href="animation/CurvedAnimation-class.html">CurvedAnimation</a></li>
+      <li><a href="animation/Curves-class.html">Curves</a></li>
+      <li><a href="animation/CurveTween-class.html">CurveTween</a></li>
+      <li><a href="rendering/CustomClipper-class.html">CustomClipper</a></li>
+      <li><a href="widgets/CustomMultiChildLayout-class.html">CustomMultiChildLayout</a></li>
+      <li><a href="widgets/CustomPaint-class.html">CustomPaint</a></li>
+      <li><a href="rendering/CustomPainter-class.html">CustomPainter</a></li>
+      <li><a href="rendering/CustomPainterSemantics-class.html">CustomPainterSemantics</a></li>
+      <li><a href="widgets/CustomScrollView-class.html">CustomScrollView</a></li>
+      <li><a href="widgets/CustomSingleChildLayout-class.html">CustomSingleChildLayout</a></li>
+      <li><a href="widgets/DecoratedBox-class.html">DecoratedBox</a></li>
+      <li><a href="widgets/DecoratedBoxTransition-class.html">DecoratedBoxTransition</a></li>
+      <li><a href="painting/Decoration-class.html">Decoration</a></li>
+      <li><a href="painting/DecorationImage-class.html">DecorationImage</a></li>
+      <li><a href="painting/DecorationImagePainter-class.html">DecorationImagePainter</a></li>
+      <li><a href="widgets/DecorationTween-class.html">DecorationTween</a></li>
+      <li><a href="widgets/DefaultAssetBundle-class.html">DefaultAssetBundle</a></li>
+      <li><a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a></li>
+      <li><a href="widgets/DefaultWidgetsLocalizations-class.html">DefaultWidgetsLocalizations</a></li>
+      <li><a href="widgets/Directionality-class.html">Directionality</a></li>
+      <li><a href="widgets/Dismissible-class.html">Dismissible</a></li>
+      <li><a href="gestures/DragDownDetails-class.html">DragDownDetails</a></li>
+      <li><a href="gestures/DragEndDetails-class.html">DragEndDetails</a></li>
+      <li><a href="widgets/Draggable-class.html">Draggable</a></li>
+      <li><a href="widgets/DragScrollActivity-class.html">DragScrollActivity</a></li>
+      <li><a href="gestures/DragStartDetails-class.html">DragStartDetails</a></li>
+      <li><a href="widgets/DragTarget-class.html">DragTarget</a></li>
+      <li><a href="gestures/DragUpdateDetails-class.html">DragUpdateDetails</a></li>
+      <li><a href="widgets/DrivenScrollActivity-class.html">DrivenScrollActivity</a></li>
+      <li><a href="painting/EdgeInsets-class.html">EdgeInsets</a></li>
+      <li><a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a></li>
+      <li><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></li>
+      <li><a href="widgets/EdgeInsetsGeometryTween-class.html">EdgeInsetsGeometryTween</a></li>
+      <li><a href="widgets/EdgeInsetsTween-class.html">EdgeInsetsTween</a></li>
+      <li><a href="widgets/EditableText-class.html">EditableText</a></li>
+      <li><a href="widgets/EditableTextState-class.html">EditableTextState</a></li>
+      <li><a href="animation/ElasticInCurve-class.html">ElasticInCurve</a></li>
+      <li><a href="animation/ElasticInOutCurve-class.html">ElasticInOutCurve</a></li>
+      <li><a href="animation/ElasticOutCurve-class.html">ElasticOutCurve</a></li>
+      <li><a href="widgets/Element-class.html">Element</a></li>
+      <li><a href="widgets/ErrorWidget-class.html">ErrorWidget</a></li>
+      <li><a href="painting/ExactAssetImage-class.html">ExactAssetImage</a></li>
+      <li><a href="widgets/ExcludeSemantics-class.html">ExcludeSemantics</a></li>
+      <li><a href="widgets/Expanded-class.html">Expanded</a></li>
+      <li><a href="widgets/FadeInImage-class.html">FadeInImage</a></li>
+      <li><a href="widgets/FadeTransition-class.html">FadeTransition</a></li>
+      <li><a href="painting/FileImage-class.html">FileImage</a></li>
+      <li><a href="widgets/FittedBox-class.html">FittedBox</a></li>
+      <li><a href="painting/FittedSizes-class.html">FittedSizes</a></li>
+      <li><a href="rendering/FixedColumnWidth-class.html">FixedColumnWidth</a></li>
+      <li><a href="widgets/FixedExtentMetrics-class.html">FixedExtentMetrics</a></li>
+      <li><a href="widgets/FixedExtentScrollController-class.html">FixedExtentScrollController</a></li>
+      <li><a href="widgets/FixedExtentScrollPhysics-class.html">FixedExtentScrollPhysics</a></li>
+      <li><a href="widgets/FixedScrollMetrics-class.html">FixedScrollMetrics</a></li>
+      <li><a href="widgets/Flex-class.html">Flex</a></li>
+      <li><a href="rendering/FlexColumnWidth-class.html">FlexColumnWidth</a></li>
+      <li><a href="widgets/Flexible-class.html">Flexible</a></li>
+      <li><a href="animation/FlippedCurve-class.html">FlippedCurve</a></li>
+      <li><a href="widgets/Flow-class.html">Flow</a></li>
+      <li><a href="rendering/FlowDelegate-class.html">FlowDelegate</a></li>
+      <li><a href="rendering/FlowPaintingContext-class.html">FlowPaintingContext</a></li>
+      <li><a href="foundation/FlutterErrorDetails-class.html">FlutterErrorDetails</a></li>
+      <li><a href="painting/FlutterLogoDecoration-class.html">FlutterLogoDecoration</a></li>
+      <li><a href="widgets/FocusManager-class.html">FocusManager</a></li>
+      <li><a href="widgets/FocusNode-class.html">FocusNode</a></li>
+      <li><a href="widgets/FocusScope-class.html">FocusScope</a></li>
+      <li><a href="widgets/FocusScopeNode-class.html">FocusScopeNode</a></li>
+      <li><a href="dart-ui/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="widgets/Form-class.html">Form</a></li>
+      <li><a href="widgets/FormField-class.html">FormField</a></li>
+      <li><a href="widgets/FormFieldState-class.html">FormFieldState</a></li>
+      <li><a href="widgets/FormState-class.html">FormState</a></li>
+      <li><a href="widgets/FractionallySizedBox-class.html">FractionallySizedBox</a></li>
+      <li><a href="painting/FractionalOffset-class.html">FractionalOffset</a></li>
+      <li><a href="rendering/FractionalOffsetTween-class.html">FractionalOffsetTween</a></li>
+      <li><a href="widgets/FractionalTranslation-class.html">FractionalTranslation</a></li>
+      <li><a href="rendering/FractionColumnWidth-class.html">FractionColumnWidth</a></li>
+      <li><a href="widgets/FutureBuilder-class.html">FutureBuilder</a></li>
+      <li><a href="widgets/GestureDetector-class.html">GestureDetector</a></li>
+      <li><a href="widgets/GestureRecognizerFactory-class.html">GestureRecognizerFactory</a></li>
+      <li><a href="widgets/GestureRecognizerFactoryWithHandlers-class.html">GestureRecognizerFactoryWithHandlers</a></li>
+      <li><a href="widgets/GlobalKey-class.html">GlobalKey</a></li>
+      <li><a href="widgets/GlobalObjectKey-class.html">GlobalObjectKey</a></li>
+      <li><a href="widgets/GlowingOverscrollIndicator-class.html">GlowingOverscrollIndicator</a></li>
+      <li><a href="painting/Gradient-class.html">Gradient</a></li>
+      <li><a href="widgets/GridPaper-class.html">GridPaper</a></li>
+      <li><a href="widgets/GridView-class.html">GridView</a></li>
+      <li><a href="widgets/Hero-class.html">Hero</a></li>
+      <li><a href="widgets/HeroController-class.html">HeroController</a></li>
+      <li><a href="widgets/HoldScrollActivity-class.html">HoldScrollActivity</a></li>
+      <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+      <li><a href="widgets/Icon-class.html">Icon</a></li>
+      <li><a href="widgets/IconData-class.html">IconData</a></li>
+      <li><a href="widgets/IconTheme-class.html">IconTheme</a></li>
+      <li><a href="widgets/IconThemeData-class.html">IconThemeData</a></li>
+      <li><a href="widgets/IdleScrollActivity-class.html">IdleScrollActivity</a></li>
+      <li><a href="widgets/IgnorePointer-class.html">IgnorePointer</a></li>
+      <li><a href="widgets/Image-class.html">Image</a></li>
+      <li><a href="painting/ImageCache-class.html">ImageCache</a></li>
+      <li><a href="painting/ImageConfiguration-class.html">ImageConfiguration</a></li>
+      <li><a href="widgets/ImageIcon-class.html">ImageIcon</a></li>
+      <li><a href="painting/ImageInfo-class.html">ImageInfo</a></li>
+      <li><a href="painting/ImageProvider-class.html">ImageProvider</a></li>
+      <li><a href="dart-ui/ImageShader-class.html">ImageShader</a></li>
+      <li><a href="painting/ImageStream-class.html">ImageStream</a></li>
+      <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedWidget-class.html">ImplicitlyAnimatedWidget</a></li>
+      <li><a href="widgets/IndexedStack-class.html">IndexedStack</a></li>
+      <li><a href="widgets/InheritedElement-class.html">InheritedElement</a></li>
+      <li><a href="widgets/InheritedWidget-class.html">InheritedWidget</a></li>
+      <li><a href="widgets/InspectorSelection-class.html">InspectorSelection</a></li>
+      <li><a href="animation/Interval-class.html">Interval</a></li>
+      <li><a href="rendering/IntrinsicColumnWidth-class.html">IntrinsicColumnWidth</a></li>
+      <li><a href="widgets/IntrinsicHeight-class.html">IntrinsicHeight</a></li>
+      <li><a href="widgets/IntrinsicWidth-class.html">IntrinsicWidth</a></li>
+      <li><a href="animation/IntTween-class.html">IntTween</a></li>
+      <li><a href="widgets/KeepAlive-class.html">KeepAlive</a></li>
+      <li><a href="widgets/KeepAliveHandle-class.html">KeepAliveHandle</a></li>
+      <li><a href="widgets/KeepAliveNotification-class.html">KeepAliveNotification</a></li>
+      <li><a href="foundation/Key-class.html">Key</a></li>
+      <li><a href="widgets/KeyedSubtree-class.html">KeyedSubtree</a></li>
+      <li><a href="widgets/LabeledGlobalKey-class.html">LabeledGlobalKey</a></li>
+      <li><a href="rendering/LayerLink-class.html">LayerLink</a></li>
+      <li><a href="widgets/LayoutBuilder-class.html">LayoutBuilder</a></li>
+      <li><a href="widgets/LayoutChangedNotification-class.html">LayoutChangedNotification</a></li>
+      <li><a href="widgets/LayoutId-class.html">LayoutId</a></li>
+      <li><a href="widgets/LeafRenderObjectElement-class.html">LeafRenderObjectElement</a></li>
+      <li><a href="widgets/LeafRenderObjectWidget-class.html">LeafRenderObjectWidget</a></li>
+      <li><a href="widgets/LimitedBox-class.html">LimitedBox</a></li>
+      <li><a href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="widgets/ListBody-class.html">ListBody</a></li>
+      <li><a href="foundation/Listenable-class.html">Listenable</a></li>
+      <li><a href="widgets/Listener-class.html">Listener</a></li>
+      <li><a href="widgets/ListView-class.html">ListView</a></li>
+      <li><a href="widgets/ListWheelScrollView-class.html">ListWheelScrollView</a></li>
+      <li><a href="widgets/ListWheelViewport-class.html">ListWheelViewport</a></li>
+      <li><a href="dart-ui/Locale-class.html">Locale</a></li>
+      <li><a href="widgets/LocalHistoryEntry-class.html">LocalHistoryEntry</a></li>
+      <li><a href="widgets/LocalHistoryRoute-class.html">LocalHistoryRoute</a></li>
+      <li><a href="widgets/Localizations-class.html">Localizations</a></li>
+      <li><a href="widgets/LocalizationsDelegate-class.html">LocalizationsDelegate</a></li>
+      <li><a href="foundation/LocalKey-class.html">LocalKey</a></li>
+      <li><a href="widgets/LongPressDraggable-class.html">LongPressDraggable</a></li>
+      <li><a href="dart-ui/MaskFilter-class.html">MaskFilter</a></li>
+      <li><a href="vector_math_64/Matrix4-class.html">Matrix4</a></li>
+      <li><a href="widgets/Matrix4Tween-class.html">Matrix4Tween</a></li>
+      <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+      <li><a href="rendering/MaxColumnWidth-class.html">MaxColumnWidth</a></li>
+      <li><a href="widgets/MediaQuery-class.html">MediaQuery</a></li>
+      <li><a href="widgets/MediaQueryData-class.html">MediaQueryData</a></li>
+      <li><a href="painting/MemoryImage-class.html">MemoryImage</a></li>
+      <li><a href="widgets/MergeSemantics-class.html">MergeSemantics</a></li>
+      <li><a href="widgets/MetaData-class.html">MetaData</a></li>
+      <li><a href="rendering/MinColumnWidth-class.html">MinColumnWidth</a></li>
+      <li><a href="widgets/ModalBarrier-class.html">ModalBarrier</a></li>
+      <li><a href="widgets/ModalRoute-class.html">ModalRoute</a></li>
+      <li><a href="rendering/MultiChildLayoutDelegate-class.html">MultiChildLayoutDelegate</a></li>
+      <li><a href="widgets/MultiChildRenderObjectElement-class.html">MultiChildRenderObjectElement</a></li>
+      <li><a href="widgets/MultiChildRenderObjectWidget-class.html">MultiChildRenderObjectWidget</a></li>
+      <li><a href="painting/MultiFrameImageStreamCompleter-class.html">MultiFrameImageStreamCompleter</a></li>
+      <li><a href="widgets/NavigationToolbar-class.html">NavigationToolbar</a></li>
+      <li><a href="widgets/Navigator-class.html">Navigator</a></li>
+      <li><a href="widgets/NavigatorObserver-class.html">NavigatorObserver</a></li>
+      <li><a href="widgets/NavigatorState-class.html">NavigatorState</a></li>
+      <li><a href="widgets/NestedScrollView-class.html">NestedScrollView</a></li>
+      <li><a href="widgets/NestedScrollViewViewport-class.html">NestedScrollViewViewport</a></li>
+      <li><a href="painting/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="widgets/NeverScrollableScrollPhysics-class.html">NeverScrollableScrollPhysics</a></li>
+      <li><a href="widgets/Notification-class.html">Notification</a></li>
+      <li><a href="widgets/NotificationListener-class.html">NotificationListener</a></li>
+      <li><a href="widgets/ObjectKey-class.html">ObjectKey</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="widgets/Offstage-class.html">Offstage</a></li>
+      <li><a href="painting/OneFrameImageStreamCompleter-class.html">OneFrameImageStreamCompleter</a></li>
+      <li><a href="widgets/Opacity-class.html">Opacity</a></li>
+      <li><a href="widgets/OrientationBuilder-class.html">OrientationBuilder</a></li>
+      <li><a href="widgets/OverflowBox-class.html">OverflowBox</a></li>
+      <li><a href="widgets/Overlay-class.html">Overlay</a></li>
+      <li><a href="widgets/OverlayEntry-class.html">OverlayEntry</a></li>
+      <li><a href="widgets/OverlayRoute-class.html">OverlayRoute</a></li>
+      <li><a href="widgets/OverlayState-class.html">OverlayState</a></li>
+      <li><a href="widgets/OverscrollIndicatorNotification-class.html">OverscrollIndicatorNotification</a></li>
+      <li><a href="widgets/OverscrollNotification-class.html">OverscrollNotification</a></li>
+      <li><a href="widgets/Padding-class.html">Padding</a></li>
+      <li><a href="widgets/PageController-class.html">PageController</a></li>
+      <li><a href="widgets/PageMetrics-class.html">PageMetrics</a></li>
+      <li><a href="widgets/PageRoute-class.html">PageRoute</a></li>
+      <li><a href="widgets/PageRouteBuilder-class.html">PageRouteBuilder</a></li>
+      <li><a href="widgets/PageScrollPhysics-class.html">PageScrollPhysics</a></li>
+      <li><a href="widgets/PageStorage-class.html">PageStorage</a></li>
+      <li><a href="widgets/PageStorageBucket-class.html">PageStorageBucket</a></li>
+      <li><a href="widgets/PageStorageKey-class.html">PageStorageKey</a></li>
+      <li><a href="widgets/PageView-class.html">PageView</a></li>
+      <li><a href="dart-ui/Paint-class.html">Paint</a></li>
+      <li><a href="painting/PaintingBinding-class.html">PaintingBinding</a></li>
+      <li><a href="rendering/PaintingContext-class.html">PaintingContext</a></li>
+      <li><a href="widgets/ParentDataElement-class.html">ParentDataElement</a></li>
+      <li><a href="widgets/ParentDataWidget-class.html">ParentDataWidget</a></li>
+      <li><a href="dart-ui/Path-class.html">Path</a></li>
+      <li><a href="widgets/PerformanceOverlay-class.html">PerformanceOverlay</a></li>
+      <li><a href="widgets/PhysicalModel-class.html">PhysicalModel</a></li>
+      <li><a href="widgets/PhysicalShape-class.html">PhysicalShape</a></li>
+      <li><a href="widgets/Placeholder-class.html">Placeholder</a></li>
+      <li><a href="gestures/PointerCancelEvent-class.html">PointerCancelEvent</a></li>
+      <li><a href="gestures/PointerDownEvent-class.html">PointerDownEvent</a></li>
+      <li><a href="gestures/PointerEvent-class.html">PointerEvent</a></li>
+      <li><a href="gestures/PointerMoveEvent-class.html">PointerMoveEvent</a></li>
+      <li><a href="gestures/PointerUpEvent-class.html">PointerUpEvent</a></li>
+      <li><a href="widgets/PopupRoute-class.html">PopupRoute</a></li>
+      <li><a href="widgets/Positioned-class.html">Positioned</a></li>
+      <li><a href="widgets/PositionedDirectional-class.html">PositionedDirectional</a></li>
+      <li><a href="widgets/PositionedTransition-class.html">PositionedTransition</a></li>
+      <li><a href="widgets/PreferredSize-class.html">PreferredSize</a></li>
+      <li><a href="widgets/PreferredSizeWidget-class.html">PreferredSizeWidget</a></li>
+      <li><a href="widgets/PrimaryScrollController-class.html">PrimaryScrollController</a></li>
+      <li><a href="animation/ProxyAnimation-class.html">ProxyAnimation</a></li>
+      <li><a href="widgets/ProxyElement-class.html">ProxyElement</a></li>
+      <li><a href="widgets/ProxyWidget-class.html">ProxyWidget</a></li>
+      <li><a href="painting/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="dart-ui/Radius-class.html">Radius</a></li>
+      <li><a href="widgets/RawGestureDetector-class.html">RawGestureDetector</a></li>
+      <li><a href="widgets/RawGestureDetectorState-class.html">RawGestureDetectorState</a></li>
+      <li><a href="widgets/RawImage-class.html">RawImage</a></li>
+      <li><a href="widgets/RawKeyboardListener-class.html">RawKeyboardListener</a></li>
+      <li><a href="services/RawKeyEvent-class.html">RawKeyEvent</a></li>
+      <li><a href="dart-ui/Rect-class.html">Rect</a></li>
+      <li><a href="animation/RectTween-class.html">RectTween</a></li>
+      <li><a href="widgets/RelativePositionedTransition-class.html">RelativePositionedTransition</a></li>
+      <li><a href="rendering/RelativeRect-class.html">RelativeRect</a></li>
+      <li><a href="widgets/RelativeRectTween-class.html">RelativeRectTween</a></li>
+      <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
+      <li><a href="widgets/RenderNestedScrollViewViewport-class.html">RenderNestedScrollViewViewport</a></li>
+      <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
+      <li><a href="widgets/RenderObjectElement-class.html">RenderObjectElement</a></li>
+      <li><a href="widgets/RenderObjectToWidgetAdapter-class.html">RenderObjectToWidgetAdapter</a></li>
+      <li><a href="widgets/RenderObjectToWidgetElement-class.html">RenderObjectToWidgetElement</a></li>
+      <li><a href="widgets/RenderObjectWidget-class.html">RenderObjectWidget</a></li>
+      <li><a href="widgets/RenderSliverOverlapAbsorber-class.html">RenderSliverOverlapAbsorber</a></li>
+      <li><a href="widgets/RenderSliverOverlapInjector-class.html">RenderSliverOverlapInjector</a></li>
+      <li><a href="widgets/RepaintBoundary-class.html">RepaintBoundary</a></li>
+      <li><a href="animation/ReverseAnimation-class.html">ReverseAnimation</a></li>
+      <li><a href="animation/ReverseTween-class.html">ReverseTween</a></li>
+      <li><a href="widgets/RichText-class.html">RichText</a></li>
+      <li><a href="widgets/RootRenderObjectElement-class.html">RootRenderObjectElement</a></li>
+      <li><a href="widgets/RotatedBox-class.html">RotatedBox</a></li>
+      <li><a href="widgets/RotationTransition-class.html">RotationTransition</a></li>
+      <li><a href="painting/RoundedRectangleBorder-class.html">RoundedRectangleBorder</a></li>
+      <li><a href="widgets/Route-class.html">Route</a></li>
+      <li><a href="widgets/RouteAware-class.html">RouteAware</a></li>
+      <li><a href="widgets/RouteObserver-class.html">RouteObserver</a></li>
+      <li><a href="widgets/RouteSettings-class.html">RouteSettings</a></li>
+      <li><a href="widgets/Row-class.html">Row</a></li>
+      <li><a href="dart-ui/RRect-class.html">RRect</a></li>
+      <li><a href="dart-ui/RSTransform-class.html">RSTransform</a></li>
+      <li><a href="widgets/SafeArea-class.html">SafeArea</a></li>
+      <li><a href="animation/SawTooth-class.html">SawTooth</a></li>
+      <li><a href="gestures/ScaleEndDetails-class.html">ScaleEndDetails</a></li>
+      <li><a href="gestures/ScaleStartDetails-class.html">ScaleStartDetails</a></li>
+      <li><a href="widgets/ScaleTransition-class.html">ScaleTransition</a></li>
+      <li><a href="gestures/ScaleUpdateDetails-class.html">ScaleUpdateDetails</a></li>
+      <li><a href="widgets/Scrollable-class.html">Scrollable</a></li>
+      <li><a href="widgets/ScrollableState-class.html">ScrollableState</a></li>
+      <li><a href="widgets/ScrollActivity-class.html">ScrollActivity</a></li>
+      <li><a href="widgets/ScrollActivityDelegate-class.html">ScrollActivityDelegate</a></li>
+      <li><a href="widgets/ScrollbarPainter-class.html">ScrollbarPainter</a></li>
+      <li><a href="widgets/ScrollBehavior-class.html">ScrollBehavior</a></li>
+      <li><a href="widgets/ScrollConfiguration-class.html">ScrollConfiguration</a></li>
+      <li><a href="widgets/ScrollContext-class.html">ScrollContext</a></li>
+      <li><a href="widgets/ScrollController-class.html">ScrollController</a></li>
+      <li><a href="widgets/ScrollDragController-class.html">ScrollDragController</a></li>
+      <li><a href="widgets/ScrollEndNotification-class.html">ScrollEndNotification</a></li>
+      <li><a href="widgets/ScrollHoldController-class.html">ScrollHoldController</a></li>
+      <li><a href="widgets/ScrollMetrics-class.html">ScrollMetrics</a></li>
+      <li><a href="widgets/ScrollNotification-class.html">ScrollNotification</a></li>
+      <li><a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a></li>
+      <li><a href="widgets/ScrollPosition-class.html">ScrollPosition</a></li>
+      <li><a href="widgets/ScrollPositionWithSingleContext-class.html">ScrollPositionWithSingleContext</a></li>
+      <li><a href="physics/ScrollSpringSimulation-class.html">ScrollSpringSimulation</a></li>
+      <li><a href="widgets/ScrollStartNotification-class.html">ScrollStartNotification</a></li>
+      <li><a href="widgets/ScrollUpdateNotification-class.html">ScrollUpdateNotification</a></li>
+      <li><a href="widgets/ScrollView-class.html">ScrollView</a></li>
+      <li><a href="widgets/Semantics-class.html">Semantics</a></li>
+      <li><a href="widgets/SemanticsDebugger-class.html">SemanticsDebugger</a></li>
+      <li><a href="dart-ui/Shader-class.html">Shader</a></li>
+      <li><a href="widgets/ShaderMask-class.html">ShaderMask</a></li>
+      <li><a href="painting/ShapeBorder-class.html">ShapeBorder</a></li>
+      <li><a href="rendering/ShapeBorderClipper-class.html">ShapeBorderClipper</a></li>
+      <li><a href="painting/ShapeDecoration-class.html">ShapeDecoration</a></li>
+      <li><a href="widgets/ShrinkWrappingViewport-class.html">ShrinkWrappingViewport</a></li>
+      <li><a href="physics/Simulation-class.html">Simulation</a></li>
+      <li><a href="rendering/SingleChildLayoutDelegate-class.html">SingleChildLayoutDelegate</a></li>
+      <li><a href="widgets/SingleChildRenderObjectElement-class.html">SingleChildRenderObjectElement</a></li>
+      <li><a href="widgets/SingleChildRenderObjectWidget-class.html">SingleChildRenderObjectWidget</a></li>
+      <li><a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a></li>
+      <li><a href="widgets/SingleTickerProviderStateMixin-class.html">SingleTickerProviderStateMixin</a></li>
+      <li><a href="dart-ui/Size-class.html">Size</a></li>
+      <li><a href="widgets/SizeChangedLayoutNotification-class.html">SizeChangedLayoutNotification</a></li>
+      <li><a href="widgets/SizeChangedLayoutNotifier-class.html">SizeChangedLayoutNotifier</a></li>
+      <li><a href="widgets/SizedBox-class.html">SizedBox</a></li>
+      <li><a href="widgets/SizedOverflowBox-class.html">SizedOverflowBox</a></li>
+      <li><a href="widgets/SizeTransition-class.html">SizeTransition</a></li>
+      <li><a href="animation/SizeTween-class.html">SizeTween</a></li>
+      <li><a href="widgets/SlideTransition-class.html">SlideTransition</a></li>
+      <li><a href="widgets/SliverChildBuilderDelegate-class.html">SliverChildBuilderDelegate</a></li>
+      <li><a href="widgets/SliverChildDelegate-class.html">SliverChildDelegate</a></li>
+      <li><a href="widgets/SliverChildListDelegate-class.html">SliverChildListDelegate</a></li>
+      <li><a href="widgets/SliverFillRemaining-class.html">SliverFillRemaining</a></li>
+      <li><a href="widgets/SliverFillViewport-class.html">SliverFillViewport</a></li>
+      <li><a href="widgets/SliverFixedExtentList-class.html">SliverFixedExtentList</a></li>
+      <li><a href="widgets/SliverGrid-class.html">SliverGrid</a></li>
+      <li><a href="rendering/SliverGridDelegate-class.html">SliverGridDelegate</a></li>
+      <li><a href="rendering/SliverGridDelegateWithFixedCrossAxisCount-class.html">SliverGridDelegateWithFixedCrossAxisCount</a></li>
+      <li><a href="rendering/SliverGridDelegateWithMaxCrossAxisExtent-class.html">SliverGridDelegateWithMaxCrossAxisExtent</a></li>
+      <li><a href="widgets/SliverList-class.html">SliverList</a></li>
+      <li><a href="widgets/SliverMultiBoxAdaptorElement-class.html">SliverMultiBoxAdaptorElement</a></li>
+      <li><a href="widgets/SliverMultiBoxAdaptorWidget-class.html">SliverMultiBoxAdaptorWidget</a></li>
+      <li><a href="widgets/SliverOverlapAbsorber-class.html">SliverOverlapAbsorber</a></li>
+      <li><a href="widgets/SliverOverlapAbsorberHandle-class.html">SliverOverlapAbsorberHandle</a></li>
+      <li><a href="widgets/SliverOverlapInjector-class.html">SliverOverlapInjector</a></li>
+      <li><a href="widgets/SliverPadding-class.html">SliverPadding</a></li>
+      <li><a href="widgets/SliverPersistentHeader-class.html">SliverPersistentHeader</a></li>
+      <li><a href="widgets/SliverPersistentHeaderDelegate-class.html">SliverPersistentHeaderDelegate</a></li>
+      <li><a href="widgets/SliverPrototypeExtentList-class.html">SliverPrototypeExtentList</a></li>
+      <li><a href="widgets/SliverSafeArea-class.html">SliverSafeArea</a></li>
+      <li><a href="widgets/SliverToBoxAdapter-class.html">SliverToBoxAdapter</a></li>
+      <li><a href="widgets/Spacer-class.html">Spacer</a></li>
+      <li><a href="widgets/Stack-class.html">Stack</a></li>
+      <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+      <li><a href="widgets/State-class.html">State</a></li>
+      <li><a href="widgets/StatefulBuilder-class.html">StatefulBuilder</a></li>
+      <li><a href="widgets/StatefulElement-class.html">StatefulElement</a></li>
+      <li><a href="widgets/StatefulWidget-class.html">StatefulWidget</a></li>
+      <li><a href="widgets/StatelessElement-class.html">StatelessElement</a></li>
+      <li><a href="widgets/StatelessWidget-class.html">StatelessWidget</a></li>
+      <li><a href="widgets/StatusTransitionWidget-class.html">StatusTransitionWidget</a></li>
+      <li><a href="animation/StepTween-class.html">StepTween</a></li>
+      <li><a href="widgets/StreamBuilder-class.html">StreamBuilder</a></li>
+      <li><a href="widgets/StreamBuilderBase-class.html">StreamBuilderBase</a></li>
+      <li><a href="widgets/Table-class.html">Table</a></li>
+      <li><a href="rendering/TableBorder-class.html">TableBorder</a></li>
+      <li><a href="widgets/TableCell-class.html">TableCell</a></li>
+      <li><a href="rendering/TableColumnWidth-class.html">TableColumnWidth</a></li>
+      <li><a href="widgets/TableRow-class.html">TableRow</a></li>
+      <li><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></li>
+      <li><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></li>
+      <li><a href="widgets/Text-class.html">Text</a></li>
+      <li><a href="dart-ui/TextBox-class.html">TextBox</a></li>
+      <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="widgets/TextEditingController-class.html">TextEditingController</a></li>
+      <li><a href="services/TextEditingValue-class.html">TextEditingValue</a></li>
+      <li><a href="services/TextInputType-class.html">TextInputType</a></li>
+      <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
+      <li><a href="dart-ui/TextPosition-class.html">TextPosition</a></li>
+      <li><a href="services/TextRange-class.html">TextRange</a></li>
+      <li><a href="services/TextSelection-class.html">TextSelection</a></li>
+      <li><a href="widgets/TextSelectionControls-class.html">TextSelectionControls</a></li>
+      <li><a href="widgets/TextSelectionDelegate-class.html">TextSelectionDelegate</a></li>
+      <li><a href="widgets/TextSelectionOverlay-class.html">TextSelectionOverlay</a></li>
+      <li><a href="painting/TextSpan-class.html">TextSpan</a></li>
+      <li><a href="painting/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="widgets/TextStyleTween-class.html">TextStyleTween</a></li>
+      <li><a href="widgets/Texture-class.html">Texture</a></li>
+      <li><a href="animation/Threshold-class.html">Threshold</a></li>
+      <li><a href="scheduler/TickerFuture-class.html">TickerFuture</a></li>
+      <li><a href="widgets/TickerMode-class.html">TickerMode</a></li>
+      <li><a href="scheduler/TickerProvider-class.html">TickerProvider</a></li>
+      <li><a href="widgets/TickerProviderStateMixin-class.html">TickerProviderStateMixin</a></li>
+      <li><a href="widgets/Title-class.html">Title</a></li>
+      <li><a href="physics/Tolerance-class.html">Tolerance</a></li>
+      <li><a href="widgets/TrackingScrollController-class.html">TrackingScrollController</a></li>
+      <li><a href="animation/TrainHoppingAnimation-class.html">TrainHoppingAnimation</a></li>
+      <li><a href="widgets/Transform-class.html">Transform</a></li>
+      <li><a href="painting/TransformProperty-class.html">TransformProperty</a></li>
+      <li><a href="widgets/TransitionRoute-class.html">TransitionRoute</a></li>
+      <li><a href="animation/Tween-class.html">Tween</a></li>
+      <li><a href="widgets/TypeMatcher-class.html">TypeMatcher</a></li>
+      <li><a href="widgets/UnconstrainedBox-class.html">UnconstrainedBox</a></li>
+      <li><a href="widgets/UniqueKey-class.html">UniqueKey</a></li>
+      <li><a href="widgets/UniqueWidget-class.html">UniqueWidget</a></li>
+      <li><a href="widgets/UserScrollNotification-class.html">UserScrollNotification</a></li>
+      <li><a href="foundation/ValueKey-class.html">ValueKey</a></li>
+      <li><a href="foundation/ValueNotifier-class.html">ValueNotifier</a></li>
+      <li><a href="gestures/Velocity-class.html">Velocity</a></li>
+      <li><a href="widgets/Viewport-class.html">Viewport</a></li>
+      <li><a href="widgets/ViewportNotificationMixin-class.html">ViewportNotificationMixin</a></li>
+      <li><a href="widgets/Widget-class.html">Widget</a></li>
+      <li><a href="widgets/WidgetInspector-class.html">WidgetInspector</a></li>
+      <li><a href="widgets/WidgetInspectorService-class.html">WidgetInspectorService</a></li>
+      <li><a href="widgets/WidgetsApp-class.html">WidgetsApp</a></li>
+      <li><a href="widgets/WidgetsBinding-class.html">WidgetsBinding</a></li>
+      <li><a href="widgets/WidgetsBindingObserver-class.html">WidgetsBindingObserver</a></li>
+      <li><a href="widgets/WidgetsFlutterBinding-class.html">WidgetsFlutterBinding</a></li>
+      <li><a href="widgets/WidgetsLocalizations-class.html">WidgetsLocalizations</a></li>
+      <li><a href="widgets/WidgetToRenderBoxAdapter-class.html">WidgetToRenderBoxAdapter</a></li>
+      <li><a href="widgets/WillPopScope-class.html">WillPopScope</a></li>
+      <li><a href="widgets/Wrap-class.html">Wrap</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#constants">Constants</a></li>
+      <li><a href="meta/immutable-constant.html">immutable</a></li>
+      <li><a href="animation/kAlwaysCompleteAnimation-constant.html">kAlwaysCompleteAnimation</a></li>
+      <li><a href="animation/kAlwaysDismissedAnimation-constant.html">kAlwaysDismissedAnimation</a></li>
+      <li><a href="meta/mustCallSuper-constant.html">mustCallSuper</a></li>
+      <li><a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a></li>
+      <li><a href="meta/protected-constant.html">protected</a></li>
+      <li><a href="meta/required-constant.html">required</a></li>
+      <li><a href="meta/visibleForTesting-constant.html">visibleForTesting</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#properties">Properties</a></li>
+      <li><a href="painting/debugDisableShadows.html">debugDisableShadows</a></li>
+      <li><a href="widgets/debugHighlightDeprecatedWidgets.html">debugHighlightDeprecatedWidgets</a></li>
+      <li><a href="foundation/debugPrint.html">debugPrint</a></li>
+      <li><a href="widgets/debugPrintBuildScope.html">debugPrintBuildScope</a></li>
+      <li><a href="widgets/debugPrintGlobalKeyedWidgetLifecycle.html">debugPrintGlobalKeyedWidgetLifecycle</a></li>
+      <li><a href="widgets/debugPrintRebuildDirtyWidgets.html">debugPrintRebuildDirtyWidgets</a></li>
+      <li><a href="widgets/debugPrintScheduleBuildForStacks.html">debugPrintScheduleBuildForStacks</a></li>
+      <li><a href="widgets/debugProfileBuildsEnabled.html">debugProfileBuildsEnabled</a></li>
+      <li><a href="painting/imageCache.html">imageCache</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#functions">Functions</a></li>
+      <li><a href="painting/applyBoxFit.html">applyBoxFit</a></li>
+      <li><a href="painting/axisDirectionIsReversed.html">axisDirectionIsReversed</a></li>
+      <li><a href="painting/axisDirectionToAxis.html">axisDirectionToAxis</a></li>
+      <li><a href="widgets/createLocalImageConfiguration.html">createLocalImageConfiguration</a></li>
+      <li><a href="painting/debugAssertAllPaintingVarsUnset.html">debugAssertAllPaintingVarsUnset</a></li>
+      <li><a href="widgets/debugAssertAllWidgetVarsUnset.html">debugAssertAllWidgetVarsUnset</a></li>
+      <li><a href="widgets/debugCheckHasDirectionality.html">debugCheckHasDirectionality</a></li>
+      <li><a href="widgets/debugCheckHasMediaQuery.html">debugCheckHasMediaQuery</a></li>
+      <li><a href="widgets/debugCheckHasTable.html">debugCheckHasTable</a></li>
+      <li><a href="widgets/debugChildrenHaveDuplicateKeys.html">debugChildrenHaveDuplicateKeys</a></li>
+      <li><a href="painting/debugDescribeTransform.html">debugDescribeTransform</a></li>
+      <li><a href="widgets/debugDumpApp.html">debugDumpApp</a></li>
+      <li><a href="rendering/debugDumpLayerTree.html">debugDumpLayerTree</a></li>
+      <li><a href="rendering/debugDumpRenderTree.html">debugDumpRenderTree</a></li>
+      <li><a href="widgets/debugItemsHaveDuplicateKeys.html">debugItemsHaveDuplicateKeys</a></li>
+      <li><a href="foundation/debugPrintStack.html">debugPrintStack</a></li>
+      <li><a href="widgets/debugWidgetBuilderValue.html">debugWidgetBuilderValue</a></li>
+      <li><a href="painting/decodeImageFromList.html">decodeImageFromList</a></li>
+      <li><a href="widgets/defaultScrollNotificationPredicate.html">defaultScrollNotificationPredicate</a></li>
+      <li><a href="painting/flipAxis.html">flipAxis</a></li>
+      <li><a href="painting/flipAxisDirection.html">flipAxisDirection</a></li>
+      <li><a href="widgets/getAxisDirectionFromAxisReverseAndDirectionality.html">getAxisDirectionFromAxisReverseAndDirectionality</a></li>
+      <li><a href="dart-ui/hashList.html">hashList</a></li>
+      <li><a href="dart-ui/hashValues.html">hashValues</a></li>
+      <li><a href="painting/paintBorder.html">paintBorder</a></li>
+      <li><a href="painting/paintImage.html">paintImage</a></li>
+      <li><a href="painting/paintZigZag.html">paintZigZag</a></li>
+      <li><a href="painting/positionDependentBox.html">positionDependentBox</a></li>
+      <li><a href="widgets/precacheImage.html">precacheImage</a></li>
+      <li><a href="widgets/runApp.html">runApp</a></li>
+      <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#enums">Enums</a></li>
+      <li><a href="animation/AnimationStatus-class.html">AnimationStatus</a></li>
+      <li><a href="dart-ui/AppLifecycleState-class.html">AppLifecycleState</a></li>
+      <li><a href="painting/Axis-class.html">Axis</a></li>
+      <li><a href="painting/AxisDirection-class.html">AxisDirection</a></li>
+      <li><a href="widgets/BannerLocation-class.html">BannerLocation</a></li>
+      <li><a href="dart-ui/BlendMode-class.html">BlendMode</a></li>
+      <li><a href="dart-ui/BlurStyle-class.html">BlurStyle</a></li>
+      <li><a href="painting/BorderStyle-class.html">BorderStyle</a></li>
+      <li><a href="painting/BoxFit-class.html">BoxFit</a></li>
+      <li><a href="painting/BoxShape-class.html">BoxShape</a></li>
+      <li><a href="widgets/ConnectionState-class.html">ConnectionState</a></li>
+      <li><a href="rendering/CrossAxisAlignment-class.html">CrossAxisAlignment</a></li>
+      <li><a href="widgets/CrossFadeState-class.html">CrossFadeState</a></li>
+      <li><a href="rendering/DecorationPosition-class.html">DecorationPosition</a></li>
+      <li><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></li>
+      <li><a href="widgets/DismissDirection-class.html">DismissDirection</a></li>
+      <li><a href="widgets/DragAnchor-class.html">DragAnchor</a></li>
+      <li><a href="widgets/FadeInImagePhase-class.html">FadeInImagePhase</a></li>
+      <li><a href="dart-ui/FilterQuality-class.html">FilterQuality</a></li>
+      <li><a href="rendering/FlexFit-class.html">FlexFit</a></li>
+      <li><a href="painting/FlutterLogoStyle-class.html">FlutterLogoStyle</a></li>
+      <li><a href="dart-ui/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="rendering/GrowthDirection-class.html">GrowthDirection</a></li>
+      <li><a href="rendering/HitTestBehavior-class.html">HitTestBehavior</a></li>
+      <li><a href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="rendering/MainAxisAlignment-class.html">MainAxisAlignment</a></li>
+      <li><a href="rendering/MainAxisSize-class.html">MainAxisSize</a></li>
+      <li><a href="widgets/Orientation-class.html">Orientation</a></li>
+      <li><a href="rendering/Overflow-class.html">Overflow</a></li>
+      <li><a href="dart-ui/PaintingStyle-class.html">PaintingStyle</a></li>
+      <li><a href="dart-ui/PathFillType-class.html">PathFillType</a></li>
+      <li><a href="painting/RenderComparison-class.html">RenderComparison</a></li>
+      <li><a href="widgets/RoutePopDisposition-class.html">RoutePopDisposition</a></li>
+      <li><a href="rendering/SelectionChangedCause-class.html">SelectionChangedCause</a></li>
+      <li><a href="rendering/StackFit-class.html">StackFit</a></li>
+      <li><a href="dart-ui/StrokeCap-class.html">StrokeCap</a></li>
+      <li><a href="dart-ui/StrokeJoin-class.html">StrokeJoin</a></li>
+      <li><a href="rendering/TableCellVerticalAlignment-class.html">TableCellVerticalAlignment</a></li>
+      <li><a href="foundation/TargetPlatform-class.html">TargetPlatform</a></li>
+      <li><a href="dart-ui/TextAffinity-class.html">TextAffinity</a></li>
+      <li><a href="dart-ui/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="dart-ui/TextDirection-class.html">TextDirection</a></li>
+      <li><a href="rendering/TextOverflow-class.html">TextOverflow</a></li>
+      <li><a href="widgets/TextSelectionHandleType-class.html">TextSelectionHandleType</a></li>
+      <li><a href="dart-ui/TileMode-class.html">TileMode</a></li>
+      <li><a href="dart-ui/VertexMode-class.html">VertexMode</a></li>
+      <li><a href="painting/VerticalDirection-class.html">VerticalDirection</a></li>
+      <li><a href="rendering/WrapAlignment-class.html">WrapAlignment</a></li>
+      <li><a href="rendering/WrapCrossAlignment-class.html">WrapCrossAlignment</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#typedefs">Typedefs</a></li>
+      <li><a href="widgets/AnimatedCrossFadeBuilder.html">AnimatedCrossFadeBuilder</a></li>
+      <li><a href="widgets/AnimatedListItemBuilder.html">AnimatedListItemBuilder</a></li>
+      <li><a href="widgets/AnimatedListRemovedItemBuilder.html">AnimatedListRemovedItemBuilder</a></li>
+      <li><a href="widgets/AnimatedSwitcherLayoutBuilder.html">AnimatedSwitcherLayoutBuilder</a></li>
+      <li><a href="widgets/AnimatedSwitcherTransitionBuilder.html">AnimatedSwitcherTransitionBuilder</a></li>
+      <li><a href="animation/AnimationStatusListener.html">AnimationStatusListener</a></li>
+      <li><a href="widgets/AsyncWidgetBuilder.html">AsyncWidgetBuilder</a></li>
+      <li><a href="widgets/CreateRectTween.html">CreateRectTween</a></li>
+      <li><a href="widgets/DismissDirectionCallback.html">DismissDirectionCallback</a></li>
+      <li><a href="widgets/DraggableCanceledCallback.html">DraggableCanceledCallback</a></li>
+      <li><a href="widgets/DragTargetAccept.html">DragTargetAccept</a></li>
+      <li><a href="widgets/DragTargetBuilder.html">DragTargetBuilder</a></li>
+      <li><a href="widgets/DragTargetLeave.html">DragTargetLeave</a></li>
+      <li><a href="widgets/DragTargetWillAccept.html">DragTargetWillAccept</a></li>
+      <li><a href="widgets/ElementVisitor.html">ElementVisitor</a></li>
+      <li><a href="widgets/ErrorWidgetBuilder.html">ErrorWidgetBuilder</a></li>
+      <li><a href="widgets/FormFieldBuilder.html">FormFieldBuilder</a></li>
+      <li><a href="widgets/FormFieldSetter.html">FormFieldSetter</a></li>
+      <li><a href="widgets/FormFieldValidator.html">FormFieldValidator</a></li>
+      <li><a href="widgets/GenerateAppTitle.html">GenerateAppTitle</a></li>
+      <li><a href="gestures/GestureDragCancelCallback.html">GestureDragCancelCallback</a></li>
+      <li><a href="gestures/GestureDragDownCallback.html">GestureDragDownCallback</a></li>
+      <li><a href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></li>
+      <li><a href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></li>
+      <li><a href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></li>
+      <li><a href="gestures/GestureLongPressCallback.html">GestureLongPressCallback</a></li>
+      <li><a href="widgets/GestureRecognizerFactoryConstructor.html">GestureRecognizerFactoryConstructor</a></li>
+      <li><a href="widgets/GestureRecognizerFactoryInitializer.html">GestureRecognizerFactoryInitializer</a></li>
+      <li><a href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></li>
+      <li><a href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></li>
+      <li><a href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
+      <li><a href="gestures/GestureTapCallback.html">GestureTapCallback</a></li>
+      <li><a href="gestures/GestureTapCancelCallback.html">GestureTapCancelCallback</a></li>
+      <li><a href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a></li>
+      <li><a href="gestures/GestureTapUpCallback.html">GestureTapUpCallback</a></li>
+      <li><a href="painting/ImageListener.html">ImageListener</a></li>
+      <li><a href="widgets/IndexedWidgetBuilder.html">IndexedWidgetBuilder</a></li>
+      <li><a href="widgets/InspectorSelectButtonBuilder.html">InspectorSelectButtonBuilder</a></li>
+      <li><a href="widgets/InspectorSelectionChangedCallback.html">InspectorSelectionChangedCallback</a></li>
+      <li><a href="widgets/LayoutWidgetBuilder.html">LayoutWidgetBuilder</a></li>
+      <li><a href="widgets/LocaleResolutionCallback.html">LocaleResolutionCallback</a></li>
+      <li><a href="widgets/NestedScrollViewHeaderSliversBuilder.html">NestedScrollViewHeaderSliversBuilder</a></li>
+      <li><a href="widgets/NotificationListenerCallback.html">NotificationListenerCallback</a></li>
+      <li><a href="widgets/OrientationWidgetBuilder.html">OrientationWidgetBuilder</a></li>
+      <li><a href="rendering/PointerCancelEventListener.html">PointerCancelEventListener</a></li>
+      <li><a href="rendering/PointerDownEventListener.html">PointerDownEventListener</a></li>
+      <li><a href="rendering/PointerMoveEventListener.html">PointerMoveEventListener</a></li>
+      <li><a href="rendering/PointerUpEventListener.html">PointerUpEventListener</a></li>
+      <li><a href="widgets/RouteFactory.html">RouteFactory</a></li>
+      <li><a href="widgets/RoutePageBuilder.html">RoutePageBuilder</a></li>
+      <li><a href="widgets/RoutePredicate.html">RoutePredicate</a></li>
+      <li><a href="widgets/RouteTransitionsBuilder.html">RouteTransitionsBuilder</a></li>
+      <li><a href="widgets/ScrollNotificationPredicate.html">ScrollNotificationPredicate</a></li>
+      <li><a href="widgets/SelectionChangedCallback.html">SelectionChangedCallback</a></li>
+      <li><a href="rendering/SemanticsBuilderCallback.html">SemanticsBuilderCallback</a></li>
+      <li><a href="rendering/ShaderCallback.html">ShaderCallback</a></li>
+      <li><a href="widgets/StatefulWidgetBuilder.html">StatefulWidgetBuilder</a></li>
+      <li><a href="widgets/StateSetter.html">StateSetter</a></li>
+      <li><a href="widgets/TextSelectionOverlayChanged.html">TextSelectionOverlayChanged</a></li>
+      <li><a href="widgets/TransitionBuilder.html">TransitionBuilder</a></li>
+      <li><a href="widgets/TweenConstructor.html">TweenConstructor</a></li>
+      <li><a href="widgets/TweenVisitor.html">TweenVisitor</a></li>
+      <li><a href="foundation/ValueChanged.html">ValueChanged</a></li>
+      <li><a href="foundation/ValueGetter.html">ValueGetter</a></li>
+      <li><a href="foundation/ValueSetter.html">ValueSetter</a></li>
+      <li><a href="widgets/ViewportBuilder.html">ViewportBuilder</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+      <li><a href="widgets/WidgetBuilder.html">WidgetBuilder</a></li>
+      <li><a href="widgets/WillPopCallback.html">WillPopCallback</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#exceptions">Exceptions</a></li>
+      <li><a href="foundation/FlutterError-class.html">FlutterError</a></li>
+      <li><a href="scheduler/TickerCanceled-class.html">TickerCanceled</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>SingleChildScrollView class</h1>
+
+    <section class="desc markdown">
+      <p>A box in which a single widget can be scrolled.</p>
+<p>This widget is useful when you have a single box that will normally be
+entirely visible, for example a clock face in a time picker, but you need to
+make sure it can be scrolled if the container gets too small in one axis
+(the scroll direction).</p>
+<p>It is also useful if you need to shrink-wrap in both axes (the main
+scrolling direction as well as the cross axis), as one might see in a dialog
+or pop-up menu. In that case, you might pair the <a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a>
+with a <a href="widgets/ListBody-class.html">ListBody</a> child.</p>
+<p>When you have a list of children and do not require cross-axis
+shrink-wrapping behavior, for example a scrolling list that is always the
+width of the screen, consider <a href="widgets/ListView-class.html">ListView</a>, which is vastly more efficient
+that a <a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a> containing a <a href="widgets/ListBody-class.html">ListBody</a> or <a href="widgets/Column-class.html">Column</a> with
+many children.</p>
+<h2>Sample code: Using <a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a> with a <a href="widgets/Column-class.html">Column</a></h2>
+<p>Sometimes a layout is designed around the flexible properties of a
+<a href="widgets/Column-class.html">Column</a>, but there is the concern that in some cases, there might not
+be enough room to see the entire contents. This could be because some
+devices have unusually small screens, or because the application can
+be used in landscape mode where the aspect ratio isn't what was
+originally envisioned, or because the application is being shown in a
+small window in split-screen mode. In any case, as a result, it might
+make sense to wrap the layout in a <a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a>.</p>
+<p>Simply doing so, however, usually results in a conflict between the <a href="widgets/Column-class.html">Column</a>,
+which typically tries to grow as big as it can, and the <a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a>,
+which provides its children with an infinite amount of space.</p>
+<p>To resolve this apparent conflict, there are a couple of techniques, as
+discussed below. These techniques should only be used when the content is
+normally expected to fit on the screen, so that the lazy instantiation of
+a sliver-based <a href="widgets/ListView-class.html">ListView</a> or <a href="widgets/CustomScrollView-class.html">CustomScrollView</a> is not expected to provide
+any performance benefit. If the viewport is expected to usually contain
+content beyond the dimensions of the screen, then <a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a>
+would be very expensive.</p>
+<h3>Centering, spacing, or aligning fixed-height content</h3>
+<p>If the content has fixed (or intrinsic) dimensions but needs to be spaced out,
+centered, or otherwise positioned using the <a href="widgets/Flex-class.html">Flex</a> layout model of a <a href="widgets/Column-class.html">Column</a>,
+the following technique can be used to provide the <a href="widgets/Column-class.html">Column</a> with a minimum
+dimension while allowing it to shrink-wrap the contents when there isn't enough
+room to apply these spacing or alignment needs.</p>
+<p>A <a href="widgets/LayoutBuilder-class.html">LayoutBuilder</a> is used to obtain the size of the viewport (implicitly via
+the constraints that the <a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a> sees, since viewports
+typically grow to fit their maximum height constraint). Then, inside the
+scroll view, a <a href="widgets/ConstrainedBox-class.html">ConstrainedBox</a> is used to set the minimum height of the
+<a href="widgets/Column-class.html">Column</a>.</p>
+<p>The <a href="widgets/Column-class.html">Column</a> has no <a href="widgets/Expanded-class.html">Expanded</a> children, so rather than take on the infinite
+height from its <a href="rendering/BoxConstraints/maxHeight.html">BoxConstraints.maxHeight</a>, (the viewport provides no maximum height
+constraint), it automatically tries to shrink to fit its children. It cannot
+be smaller than its <a href="rendering/BoxConstraints/minHeight.html">BoxConstraints.minHeight</a>, though, and It therefore
+becomes the bigger of the minimum height provided by the
+<a href="widgets/ConstrainedBox-class.html">ConstrainedBox</a> and the sum of the heights of the children.</p>
+<p>If the children aren't enough to fit that minimum size, the <a href="widgets/Column-class.html">Column</a> ends up
+with some remaining space to allocate as specified by its
+<a href="widgets/Flex/mainAxisAlignment.html">Column.mainAxisAlignment</a> argument.</p>
+<p>In this example, the children are spaced out equally, unless there's no
+more room, in which case they stack vertically and scroll.</p>
+<pre class="language-dart"><code class="language-dart">new LayoutBuilder(
+  builder: (BuildContext context, BoxConstraints viewportConstraints) {
+    return SingleChildScrollView(
+      child: new ConstrainedBox(
+        constraints: new BoxConstraints(
+          minHeight: viewportConstraints.maxHeight,
+        ),
+        child: new Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: &lt;Widget&gt;[
+            new Container(
+              // A fixed-height child.
+              color: Colors.yellow,
+              height: 120.0,
+            ),
+            new Container(
+              // Another fixed-height child.
+              color: Colors.green,
+              height: 120.0,
+            ),
+          ],
+        ),
+      ),
+    );
+  },
+)
+</code></pre>
+<p>When using this technique, <a href="widgets/Expanded-class.html">Expanded</a> and <a href="widgets/Flexible-class.html">Flexible</a> are not useful, because
+in both cases the "available space" is infinite (since this is in a viewport).
+The next section describes a technique for providing a maximum height constraint.</p>
+<h3>Expanding content to fit the viewport</h3>
+<p>The following example builds on the previous one. In addition to providing a
+minimum dimension for the child <a href="widgets/Column-class.html">Column</a>, an <a href="widgets/IntrinsicHeight-class.html">IntrinsicHeight</a> widget is used
+to force the column to be exactly as big as its contents. This constraint
+combines with the <a href="widgets/ConstrainedBox-class.html">ConstrainedBox</a> constraints discussed previously to ensure
+that the column becomes either as big as viewport, or as big as the contents,
+whichever is biggest.</p>
+<p>Both constraints must be used to get the desired effect. If only the
+<a href="widgets/IntrinsicHeight-class.html">IntrinsicHeight</a> was specified, then the column would not grow to fit the
+entire viewport when its children were smaller than the whole screen. If only
+the size of the viewport was used, then the <a href="widgets/Column-class.html">Column</a> would overflow if the
+children were bigger than the viewport.</p>
+<p>The widget that is to grow to fit the remaining space so provided is wrapped
+in an <a href="widgets/Expanded-class.html">Expanded</a> widget.</p>
+<pre class="language-dart"><code class="language-dart">new LayoutBuilder(
+  builder: (BuildContext context, BoxConstraints viewportConstraints) {
+    return SingleChildScrollView(
+      child: new ConstrainedBox(
+        constraints: new BoxConstraints(
+          minHeight: viewportConstraints.maxHeight,
+        ),
+        child: new IntrinsicHeight(
+          child: new Column(
+            children: &lt;Widget&gt;[
+              new Container(
+                // A fixed-height child.
+                color: Colors.yellow,
+                height: 120.0,
+              ),
+              new Expanded(
+                // A flexible child that will grow to fit the viewport but
+                // still be at least as big as necessary to fit its contents.
+                child: new Container(
+                  color: Colors.blue,
+                  height: 120.0,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  },
+)
+</code></pre>
+<p>This technique is quite expensive, as it more or less requires that the contents
+of the viewport be laid out twice (once to find their intrinsic dimensions, and
+once to actually lay them out). The number of widgets within the column should
+therefore be kept small. Alternatively, subsets of the children that have known
+dimensions can be wrapped in a <a href="widgets/SizedBox-class.html">SizedBox</a> that has tight vertical constraints,
+so that the intrinsic sizing algorithm can short-circuit the computation when it
+reaches those parts of the subtree.</p>
+<p>See also:</p><ul><li><a href="widgets/ListView-class.html">ListView</a>, which handles multiple children in a scrolling list.</li><li><a href="widgets/GridView-class.html">GridView</a>, which handles multiple children in a scrolling grid.</li><li><a href="widgets/PageView-class.html">PageView</a>, for a scrollable that works page by page.</li><li><a href="widgets/Scrollable-class.html">Scrollable</a>, which handles arbitrary scrolling effects.</li></ul>
+    </section>
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a href="dart-core/Object-class.html">Object</a></li>
+          <li><a href="foundation/Diagnosticable-class.html">Diagnosticable</a></li>
+          <li><a href="foundation/DiagnosticableTree-class.html">DiagnosticableTree</a></li>
+          <li><a href="widgets/Widget-class.html">Widget</a></li>
+          <li><a href="widgets/StatelessWidget-class.html">StatelessWidget</a></li>
+          <li>SingleChildScrollView</li>
+        </ul></dd>
+
+
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="SingleChildScrollView" class="callable">
+          <span class="name"><a href="widgets/SingleChildScrollView/SingleChildScrollView.html">SingleChildScrollView</a></span><span class="signature">({<span class="parameter" id="-param-key"><span class="type-annotation"><a href="foundation/Key-class.html">Key</a></span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="-param-scrollDirection"><span class="type-annotation"><a href="painting/Axis-class.html">Axis</a></span> <span class="parameter-name">scrollDirection</span>: <span class="default-value">Axis.vertical</span>, </span> <span class="parameter" id="-param-reverse"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">reverse</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="-param-padding"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">padding</span>, </span> <span class="parameter" id="-param-primary"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">primary</span>, </span> <span class="parameter" id="-param-physics"><span class="type-annotation"><a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a></span> <span class="parameter-name">physics</span>, </span> <span class="parameter" id="-param-controller"><span class="type-annotation"><a href="widgets/ScrollController-class.html">ScrollController</a></span> <span class="parameter-name">controller</span>, </span> <span class="parameter" id="-param-child"><span class="type-annotation"><a href="widgets/Widget-class.html">Widget</a></span> <span class="parameter-name">child</span></span> })</span>
+        </dt>
+        <dd>
+          Creates a box in which a single widget can be scrolled.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="child" class="property">
+          <span class="name"><a href="widgets/SingleChildScrollView/child.html">child</a></span>
+          <span class="signature">&#8594; <a href="widgets/Widget-class.html">Widget</a></span>
+        </dt>
+        <dd>
+          The widget that scrolls. <a href="widgets/SingleChildScrollView/child.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="controller" class="property">
+          <span class="name"><a href="widgets/SingleChildScrollView/controller.html">controller</a></span>
+          <span class="signature">&#8594; <a href="widgets/ScrollController-class.html">ScrollController</a></span>
+        </dt>
+        <dd>
+          An object that can be used to control the position to which this scroll
+view is scrolled. <a href="widgets/SingleChildScrollView/controller.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="padding" class="property">
+          <span class="name"><a href="widgets/SingleChildScrollView/padding.html">padding</a></span>
+          <span class="signature">&#8594; <a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span>
+        </dt>
+        <dd>
+          The amount of space by which to inset the child.
+          <div class="features">final</div>
+</dd>
+        <dt id="physics" class="property">
+          <span class="name"><a href="widgets/SingleChildScrollView/physics.html">physics</a></span>
+          <span class="signature">&#8594; <a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a></span>
+        </dt>
+        <dd>
+          How the scroll view should respond to user input. <a href="widgets/SingleChildScrollView/physics.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="primary" class="property">
+          <span class="name"><a href="widgets/SingleChildScrollView/primary.html">primary</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd>
+          Whether this is the primary scroll view associated with the parent
+<code>PrimaryScrollController</code>. <a href="widgets/SingleChildScrollView/primary.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="reverse" class="property">
+          <span class="name"><a href="widgets/SingleChildScrollView/reverse.html">reverse</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd>
+          Whether the scroll view scrolls in the reading direction. <a href="widgets/SingleChildScrollView/reverse.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="scrollDirection" class="property">
+          <span class="name"><a href="widgets/SingleChildScrollView/scrollDirection.html">scrollDirection</a></span>
+          <span class="signature">&#8594; <a href="painting/Axis-class.html">Axis</a></span>
+        </dt>
+        <dd>
+          The axis along which the scroll view scrolls. <a href="widgets/SingleChildScrollView/scrollDirection.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          The hash code for this object. <a href="dart-core/Object/hashCode.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="key" class="property inherited">
+          <span class="name"><a href="widgets/Widget/key.html">key</a></span>
+          <span class="signature">&#8594; <a href="foundation/Key-class.html">Key</a></span>
+        </dt>
+        <dd class="inherited">
+          Controls how one widget replaces another widget in the tree. <a href="widgets/Widget/key.html">[...]</a>
+          <div class="features">final, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="build" class="callable">
+          <span class="name"><a href="widgets/SingleChildScrollView/build.html">build</a></span><span class="signature">(<wbr><span class="parameter" id="build-param-context"><span class="type-annotation"><a href="widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span>)
+            <span class="returntype parameter">&#8594; <a href="widgets/Widget-class.html">Widget</a></span>
+          </span>
+        </dt>
+        <dd>
+          Describes the part of the user interface represented by this widget. <a href="widgets/SingleChildScrollView/build.html">[...]</a>
+          
+</dd>
+        <dt id="createElement" class="callable inherited">
+          <span class="name"><a href="widgets/StatelessWidget/createElement.html">createElement</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="widgets/StatelessElement-class.html">StatelessElement</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Creates a <a href="widgets/StatelessElement-class.html">StatelessElement</a> to manage this widget's location in the tree. <a href="widgets/StatelessWidget/createElement.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugDescribeChildren" class="callable inherited">
+          <span class="name"><a href="foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>&gt;</span></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a list of <a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a> objects describing this node's
+children. <a href="foundation/DiagnosticableTree/debugDescribeChildren.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="debugFillProperties" class="callable inherited">
+          <span class="name"><a href="widgets/Widget/debugFillProperties.html">debugFillProperties</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillProperties-param-properties"><span class="type-annotation"><a href="foundation/DiagnosticPropertiesBuilder-class.html">DiagnosticPropertiesBuilder</a></span> <span class="parameter-name">properties</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Add additional properties associated with the node. <a href="widgets/Widget/debugFillProperties.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toDiagnosticsNode" class="callable inherited">
+          <span class="name"><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr>{<span class="parameter" id="toDiagnosticsNode-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, </span> <span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation"><a href="foundation/DiagnosticsTreeStyle-class.html">DiagnosticsTreeStyle</a></span> <span class="parameter-name">style</span></span> })
+            <span class="returntype parameter">&#8594; <a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a debug representation of the object that is used by debugging
+tools and by <a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a>. <a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="foundation/Diagnosticable/toString.html">toString</a></span><span class="signature">(<wbr>{<span class="parameter" id="toString-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toStringDeep" class="callable inherited">
+          <span class="name"><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringDeep-param-prefixLineOne"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixOtherLines</span>, </span> <span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a string representation of this node and its descendants. <a href="foundation/DiagnosticableTree/toStringDeep.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toStringShallow" class="callable inherited">
+          <span class="name"><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringShallow-param-joiner"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">joiner</span>: <span class="default-value">', '</span>, </span> <span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a one-line detailed description of the object. <a href="foundation/DiagnosticableTree/toStringShallow.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toStringShort" class="callable inherited">
+          <span class="name"><a href="widgets/Widget/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          A short, textual description of this widget.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The equality operator. <a href="dart-core/Object/operator_equals.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="widgets/SingleChildScrollView-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/SingleChildScrollView/SingleChildScrollView.html">SingleChildScrollView</a></li>
+    
+      <li class="section-title">
+        <a href="widgets/SingleChildScrollView-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="widgets/SingleChildScrollView/child.html">child</a></li>
+      <li><a href="widgets/SingleChildScrollView/controller.html">controller</a></li>
+      <li><a href="widgets/SingleChildScrollView/padding.html">padding</a></li>
+      <li><a href="widgets/SingleChildScrollView/physics.html">physics</a></li>
+      <li><a href="widgets/SingleChildScrollView/primary.html">primary</a></li>
+      <li><a href="widgets/SingleChildScrollView/reverse.html">reverse</a></li>
+      <li><a href="widgets/SingleChildScrollView/scrollDirection.html">scrollDirection</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="widgets/Widget/key.html">key</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="widgets/SingleChildScrollView-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/SingleChildScrollView/build.html">build</a></li>
+      <li class="inherited"><a href="widgets/StatelessWidget/createElement.html">createElement</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li class="inherited"><a href="widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+      <li class="inherited"><a href="widgets/Widget/toStringShort.html">toStringShort</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/SingleChildScrollView-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

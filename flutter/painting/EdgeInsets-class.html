@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the EdgeInsets class from the painting library, for the Dart programming language.">
+  <title>EdgeInsets class - painting library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="painting/painting-library.html">painting</a></li>
+    <li class="self-crumb">EdgeInsets class</li>
+  </ol>
+  <div class="self-name">EdgeInsets</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>painting library</h5>
+    <ol>
+      <li class="section-title"><a href="painting/painting-library.html#classes">Classes</a></li>
+      <li><a href="painting/Alignment-class.html">Alignment</a></li>
+      <li><a href="painting/AlignmentDirectional-class.html">AlignmentDirectional</a></li>
+      <li><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></li>
+      <li><a href="painting/AssetBundleImageKey-class.html">AssetBundleImageKey</a></li>
+      <li><a href="painting/AssetBundleImageProvider-class.html">AssetBundleImageProvider</a></li>
+      <li><a href="painting/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="painting/BeveledRectangleBorder-class.html">BeveledRectangleBorder</a></li>
+      <li><a href="painting/Border-class.html">Border</a></li>
+      <li><a href="painting/BorderDirectional-class.html">BorderDirectional</a></li>
+      <li><a href="painting/BorderRadius-class.html">BorderRadius</a></li>
+      <li><a href="painting/BorderRadiusDirectional-class.html">BorderRadiusDirectional</a></li>
+      <li><a href="painting/BorderRadiusGeometry-class.html">BorderRadiusGeometry</a></li>
+      <li><a href="painting/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="painting/BoxBorder-class.html">BoxBorder</a></li>
+      <li><a href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="painting/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="dart-ui/Canvas-class.html">Canvas</a></li>
+      <li><a href="painting/CircleBorder-class.html">CircleBorder</a></li>
+      <li><a href="dart-ui/Color-class.html">Color</a></li>
+      <li><a href="dart-ui/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="painting/ColorSwatch-class.html">ColorSwatch</a></li>
+      <li><a href="painting/Decoration-class.html">Decoration</a></li>
+      <li><a href="painting/DecorationImage-class.html">DecorationImage</a></li>
+      <li><a href="painting/DecorationImagePainter-class.html">DecorationImagePainter</a></li>
+      <li><a href="painting/EdgeInsets-class.html">EdgeInsets</a></li>
+      <li><a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a></li>
+      <li><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></li>
+      <li><a href="painting/ExactAssetImage-class.html">ExactAssetImage</a></li>
+      <li><a href="painting/FileImage-class.html">FileImage</a></li>
+      <li><a href="painting/FittedSizes-class.html">FittedSizes</a></li>
+      <li><a href="painting/FlutterLogoDecoration-class.html">FlutterLogoDecoration</a></li>
+      <li><a href="dart-ui/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="painting/FractionalOffset-class.html">FractionalOffset</a></li>
+      <li><a href="painting/Gradient-class.html">Gradient</a></li>
+      <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+      <li><a href="painting/ImageCache-class.html">ImageCache</a></li>
+      <li><a href="painting/ImageConfiguration-class.html">ImageConfiguration</a></li>
+      <li><a href="painting/ImageInfo-class.html">ImageInfo</a></li>
+      <li><a href="painting/ImageProvider-class.html">ImageProvider</a></li>
+      <li><a href="dart-ui/ImageShader-class.html">ImageShader</a></li>
+      <li><a href="painting/ImageStream-class.html">ImageStream</a></li>
+      <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+      <li><a href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="dart-ui/Locale-class.html">Locale</a></li>
+      <li><a href="dart-ui/MaskFilter-class.html">MaskFilter</a></li>
+      <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+      <li><a href="painting/MemoryImage-class.html">MemoryImage</a></li>
+      <li><a href="painting/MultiFrameImageStreamCompleter-class.html">MultiFrameImageStreamCompleter</a></li>
+      <li><a href="painting/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="painting/OneFrameImageStreamCompleter-class.html">OneFrameImageStreamCompleter</a></li>
+      <li><a href="dart-ui/Paint-class.html">Paint</a></li>
+      <li><a href="painting/PaintingBinding-class.html">PaintingBinding</a></li>
+      <li><a href="dart-ui/Path-class.html">Path</a></li>
+      <li><a href="painting/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="dart-ui/Radius-class.html">Radius</a></li>
+      <li><a href="dart-ui/Rect-class.html">Rect</a></li>
+      <li><a href="painting/RoundedRectangleBorder-class.html">RoundedRectangleBorder</a></li>
+      <li><a href="dart-ui/RRect-class.html">RRect</a></li>
+      <li><a href="dart-ui/RSTransform-class.html">RSTransform</a></li>
+      <li><a href="dart-ui/Shader-class.html">Shader</a></li>
+      <li><a href="painting/ShapeBorder-class.html">ShapeBorder</a></li>
+      <li><a href="painting/ShapeDecoration-class.html">ShapeDecoration</a></li>
+      <li><a href="dart-ui/Size-class.html">Size</a></li>
+      <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+      <li><a href="dart-ui/TextBox-class.html">TextBox</a></li>
+      <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
+      <li><a href="dart-ui/TextPosition-class.html">TextPosition</a></li>
+      <li><a href="services/TextRange-class.html">TextRange</a></li>
+      <li><a href="services/TextSelection-class.html">TextSelection</a></li>
+      <li><a href="painting/TextSpan-class.html">TextSpan</a></li>
+      <li><a href="painting/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="painting/TransformProperty-class.html">TransformProperty</a></li>
+    
+    
+      <li class="section-title"><a href="painting/painting-library.html#properties">Properties</a></li>
+      <li><a href="painting/debugDisableShadows.html">debugDisableShadows</a></li>
+      <li><a href="painting/imageCache.html">imageCache</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
+      <li><a href="painting/applyBoxFit.html">applyBoxFit</a></li>
+      <li><a href="painting/axisDirectionIsReversed.html">axisDirectionIsReversed</a></li>
+      <li><a href="painting/axisDirectionToAxis.html">axisDirectionToAxis</a></li>
+      <li><a href="painting/debugAssertAllPaintingVarsUnset.html">debugAssertAllPaintingVarsUnset</a></li>
+      <li><a href="painting/debugDescribeTransform.html">debugDescribeTransform</a></li>
+      <li><a href="painting/decodeImageFromList.html">decodeImageFromList</a></li>
+      <li><a href="painting/flipAxis.html">flipAxis</a></li>
+      <li><a href="painting/flipAxisDirection.html">flipAxisDirection</a></li>
+      <li><a href="dart-ui/hashList.html">hashList</a></li>
+      <li><a href="dart-ui/hashValues.html">hashValues</a></li>
+      <li><a href="painting/paintBorder.html">paintBorder</a></li>
+      <li><a href="painting/paintImage.html">paintImage</a></li>
+      <li><a href="painting/paintZigZag.html">paintZigZag</a></li>
+      <li><a href="painting/positionDependentBox.html">positionDependentBox</a></li>
+      <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#enums">Enums</a></li>
+      <li><a href="painting/Axis-class.html">Axis</a></li>
+      <li><a href="painting/AxisDirection-class.html">AxisDirection</a></li>
+      <li><a href="dart-ui/BlendMode-class.html">BlendMode</a></li>
+      <li><a href="dart-ui/BlurStyle-class.html">BlurStyle</a></li>
+      <li><a href="painting/BorderStyle-class.html">BorderStyle</a></li>
+      <li><a href="painting/BoxFit-class.html">BoxFit</a></li>
+      <li><a href="painting/BoxShape-class.html">BoxShape</a></li>
+      <li><a href="dart-ui/FilterQuality-class.html">FilterQuality</a></li>
+      <li><a href="painting/FlutterLogoStyle-class.html">FlutterLogoStyle</a></li>
+      <li><a href="dart-ui/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="dart-ui/PaintingStyle-class.html">PaintingStyle</a></li>
+      <li><a href="dart-ui/PathFillType-class.html">PathFillType</a></li>
+      <li><a href="painting/RenderComparison-class.html">RenderComparison</a></li>
+      <li><a href="dart-ui/StrokeCap-class.html">StrokeCap</a></li>
+      <li><a href="dart-ui/StrokeJoin-class.html">StrokeJoin</a></li>
+      <li><a href="dart-ui/TextAffinity-class.html">TextAffinity</a></li>
+      <li><a href="dart-ui/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="dart-ui/TextDirection-class.html">TextDirection</a></li>
+      <li><a href="dart-ui/TileMode-class.html">TileMode</a></li>
+      <li><a href="dart-ui/VertexMode-class.html">VertexMode</a></li>
+      <li><a href="painting/VerticalDirection-class.html">VerticalDirection</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
+      <li><a href="painting/ImageListener.html">ImageListener</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>EdgeInsets class</h1>
+
+    <section class="desc markdown">
+      <p>An immutable set of offsets in each of the four cardinal directions.</p>
+<p>Typically used for an offset from each of the four sides of a box. For
+example, the padding inside a box can be represented using this class.</p>
+<p>The <a href="painting/EdgeInsets-class.html">EdgeInsets</a> class specifies offsets in terms of visual edges, left,
+top, right, and bottom. These values are not affected by the
+<a href="dart-ui/TextDirection-class.html">TextDirection</a>. To support both left-to-right and right-to-left layouts,
+consider using <a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a>, which is expressed in terms of
+<em>start</em>, top, <em>end</em>, and bottom, where start and end are resolved in terms
+of a <a href="dart-ui/TextDirection-class.html">TextDirection</a> (typically obtained from the ambient <a href="widgets/Directionality-class.html">Directionality</a>).</p>
+<h2>Sample code</h2>
+<p>Here are some examples of how to create <a href="painting/EdgeInsets-class.html">EdgeInsets</a> instances:</p>
+<p>Typical eight-pixel margin on all sides:</p>
+<pre class="language-dart"><code class="language-dart">const EdgeInsets.all(8.0)
+</code></pre>
+<p>Eight pixel margin above and below, no horizontal margins:</p>
+<pre class="language-dart"><code class="language-dart">const EdgeInsets.symmetric(vertical: 8.0)
+</code></pre>
+<p>Left margin indent of 40 pixels:</p>
+<pre class="language-dart"><code class="language-dart">const EdgeInsets.only(left: 40.0)
+</code></pre>
+<p>See also:</p><ul><li><a href="widgets/Padding-class.html">Padding</a>, a widget that accepts <a href="painting/EdgeInsets-class.html">EdgeInsets</a> to describe its margins.</li><li><a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a>, which (for properties and arguments that accept
+the type <a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a>) allows the horizontal insets to be
+specified in a <a href="dart-ui/TextDirection-class.html">TextDirection</a>-aware manner.</li></ul>
+    </section>
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a href="dart-core/Object-class.html">Object</a></li>
+          <li><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></li>
+          <li>EdgeInsets</li>
+        </ul></dd>
+
+
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="EdgeInsets.all" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/EdgeInsets.all.html">EdgeInsets.all</a></span><span class="signature">(<span class="parameter" id="all-param-value"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">value</span></span>)</span>
+        </dt>
+        <dd>
+          Creates insets where all the offsets are <code>value</code>. <a href="painting/EdgeInsets/EdgeInsets.all.html">[...]</a>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+        <dt id="EdgeInsets.fromLTRB" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/EdgeInsets.fromLTRB.html">EdgeInsets.fromLTRB</a></span><span class="signature">(<span class="parameter" id="fromLTRB-param-left"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">left</span>, </span> <span class="parameter" id="fromLTRB-param-top"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">top</span>, </span> <span class="parameter" id="fromLTRB-param-right"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">right</span>, </span> <span class="parameter" id="fromLTRB-param-bottom"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">bottom</span></span>)</span>
+        </dt>
+        <dd>
+          Creates insets from offsets from the left, top, right, and bottom.
+          <div class="constructor-modifier features">const</div>
+        </dd>
+        <dt id="EdgeInsets.fromWindowPadding" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/EdgeInsets.fromWindowPadding.html">EdgeInsets.fromWindowPadding</a></span><span class="signature">(<span class="parameter" id="fromWindowPadding-param-padding"><span class="type-annotation"><a href="dart-ui/WindowPadding-class.html">WindowPadding</a></span> <span class="parameter-name">padding</span>, </span> <span class="parameter" id="fromWindowPadding-param-devicePixelRatio"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">devicePixelRatio</span></span>)</span>
+        </dt>
+        <dd>
+          Creates insets that match the given window padding. <a href="painting/EdgeInsets/EdgeInsets.fromWindowPadding.html">[...]</a>
+        </dd>
+        <dt id="EdgeInsets.only" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/EdgeInsets.only.html">EdgeInsets.only</a></span><span class="signature">({<span class="parameter" id="only-param-left"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">left</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="only-param-top"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">top</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="only-param-right"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">right</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="only-param-bottom"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">bottom</span>: <span class="default-value">0.0</span></span> })</span>
+        </dt>
+        <dd>
+          Creates insets with only the given values non-zero. <a href="painting/EdgeInsets/EdgeInsets.only.html">[...]</a>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+        <dt id="EdgeInsets.symmetric" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/EdgeInsets.symmetric.html">EdgeInsets.symmetric</a></span><span class="signature">({<span class="parameter" id="symmetric-param-vertical"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">vertical</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="symmetric-param-horizontal"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">horizontal</span>: <span class="default-value">0.0</span></span> })</span>
+        </dt>
+        <dd>
+          Creates insets with symmetrical vertical and horizontal offsets. <a href="painting/EdgeInsets/EdgeInsets.symmetric.html">[...]</a>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="bottom" class="property">
+          <span class="name"><a href="painting/EdgeInsets/bottom.html">bottom</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The offset from the bottom.
+          <div class="features">final</div>
+</dd>
+        <dt id="bottomLeft" class="property">
+          <span class="name"><a href="painting/EdgeInsets/bottomLeft.html">bottomLeft</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+        </dt>
+        <dd>
+          An Offset describing the vector from the bottom left of a rectangle to the
+bottom left of that rectangle inset by this object.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="bottomRight" class="property">
+          <span class="name"><a href="painting/EdgeInsets/bottomRight.html">bottomRight</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+        </dt>
+        <dd>
+          An Offset describing the vector from the bottom right of a rectangle to the
+bottom right of that rectangle inset by this object.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="flipped" class="property">
+          <span class="name"><a href="painting/EdgeInsets/flipped.html">flipped</a></span>
+          <span class="signature">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+        </dt>
+        <dd>
+          An <a href="painting/EdgeInsets-class.html">EdgeInsets</a> with top and bottom as well as left and right flipped.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="left" class="property">
+          <span class="name"><a href="painting/EdgeInsets/left.html">left</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The offset from the left.
+          <div class="features">final</div>
+</dd>
+        <dt id="right" class="property">
+          <span class="name"><a href="painting/EdgeInsets/right.html">right</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The offset from the right.
+          <div class="features">final</div>
+</dd>
+        <dt id="top" class="property">
+          <span class="name"><a href="painting/EdgeInsets/top.html">top</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The offset from the top.
+          <div class="features">final</div>
+</dd>
+        <dt id="topLeft" class="property">
+          <span class="name"><a href="painting/EdgeInsets/topLeft.html">topLeft</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+        </dt>
+        <dd>
+          An Offset describing the vector from the top left of a rectangle to the
+top left of that rectangle inset by this object.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="topRight" class="property">
+          <span class="name"><a href="painting/EdgeInsets/topRight.html">topRight</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+        </dt>
+        <dd>
+          An Offset describing the vector from the top right of a rectangle to the
+top right of that rectangle inset by this object.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="collapsedSize" class="property inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/collapsedSize.html">collapsedSize</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Size-class.html">Size</a></span>
+        </dt>
+        <dd class="inherited">
+          The size that this <a href="painting/EdgeInsets-class.html">EdgeInsets</a> would occupy with an empty interior.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          The hash code for this object. <a href="painting/EdgeInsetsGeometry/hashCode.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="horizontal" class="property inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/horizontal.html">horizontal</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd class="inherited">
+          The total offset in the vertical direction.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isNonNegative" class="property inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/isNonNegative.html">isNonNegative</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether every dimension is non-negative.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="vertical" class="property inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/vertical.html">vertical</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd class="inherited">
+          The total offset in the horizontal direction.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="add" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/add.html">add</a></span><span class="signature">(<wbr><span class="parameter" id="add-param-other"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the sum of two <a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a> objects. <a href="painting/EdgeInsets/add.html">[...]</a>
+          
+</dd>
+        <dt id="copyWith" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/copyWith.html">copyWith</a></span><span class="signature">(<wbr>{<span class="parameter" id="copyWith-param-left"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">left</span>, </span> <span class="parameter" id="copyWith-param-top"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">top</span>, </span> <span class="parameter" id="copyWith-param-right"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">right</span>, </span> <span class="parameter" id="copyWith-param-bottom"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">bottom</span></span> })
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Creates a copy of this EdgeInsets but with the given fields replaced
+with the new values.
+          
+</dd>
+        <dt id="deflateRect" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/deflateRect.html">deflateRect</a></span><span class="signature">(<wbr><span class="parameter" id="deflateRect-param-rect"><span class="type-annotation"><a href="dart-ui/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a new rect that is smaller than the given rect in each direction by
+the amount of inset in each direction. Specifically, the left edge of the
+rect is moved right by <a href="painting/EdgeInsets/left.html">left</a>, the top edge of the rect is moved down by
+<a href="painting/EdgeInsets/top.html">top</a>, the right edge of the rect is moved left by <a href="painting/EdgeInsets/right.html">right</a>, and the
+bottom edge of the rect is moved up by <a href="painting/EdgeInsets/bottom.html">bottom</a>. <a href="painting/EdgeInsets/deflateRect.html">[...]</a>
+          
+</dd>
+        <dt id="inflateRect" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/inflateRect.html">inflateRect</a></span><span class="signature">(<wbr><span class="parameter" id="inflateRect-param-rect"><span class="type-annotation"><a href="dart-ui/Rect-class.html">Rect</a></span> <span class="parameter-name">rect</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a new rect that is bigger than the given rect in each direction by
+the amount of inset in each direction. Specifically, the left edge of the
+rect is moved left by <a href="painting/EdgeInsets/left.html">left</a>, the top edge of the rect is moved up by
+<a href="painting/EdgeInsets/top.html">top</a>, the right edge of the rect is moved right by <a href="painting/EdgeInsets/right.html">right</a>, and the
+bottom edge of the rect is moved down by <a href="painting/EdgeInsets/bottom.html">bottom</a>. <a href="painting/EdgeInsets/inflateRect.html">[...]</a>
+          
+</dd>
+        <dt id="resolve" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/resolve.html">resolve</a></span><span class="signature">(<wbr><span class="parameter" id="resolve-param-direction"><span class="type-annotation"><a href="dart-ui/TextDirection-class.html">TextDirection</a></span> <span class="parameter-name">direction</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Convert this instance into an <a href="painting/EdgeInsets-class.html">EdgeInsets</a>, which uses literal coordinates
+(i.e. the <code>left</code> coordinate being explicitly a distance from the left, and
+the <code>right</code> coordinate being explicitly a distance from the right). <a href="painting/EdgeInsets/resolve.html">[...]</a>
+          
+</dd>
+        <dt id="subtract" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/subtract.html">subtract</a></span><span class="signature">(<wbr><span class="parameter" id="subtract-param-other"><span class="type-annotation"><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the difference between two <a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a> objects. <a href="painting/EdgeInsets/subtract.html">[...]</a>
+          
+</dd>
+        <dt id="along" class="callable inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/along.html">along</a></span><span class="signature">(<wbr><span class="parameter" id="along-param-axis"><span class="type-annotation"><a href="painting/Axis-class.html">Axis</a></span> <span class="parameter-name">axis</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The total offset in the given direction.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="deflateSize" class="callable inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/deflateSize.html">deflateSize</a></span><span class="signature">(<wbr><span class="parameter" id="deflateSize-param-size"><span class="type-annotation"><a href="dart-ui/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Size-class.html">Size</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a new size that is smaller than the given size by the amount of
+inset in the horizontal and vertical directions. <a href="painting/EdgeInsetsGeometry/deflateSize.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="inflateSize" class="callable inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/inflateSize.html">inflateSize</a></span><span class="signature">(<wbr><span class="parameter" id="inflateSize-param-size"><span class="type-annotation"><a href="dart-ui/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Size-class.html">Size</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a new size that is bigger than the given size by the amount of
+inset in the horizontal and vertical directions. <a href="painting/EdgeInsetsGeometry/inflateSize.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator %" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/operator_modulo.html">operator %</a></span><span class="signature">(<wbr><span class="parameter" id="%-param-other"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Computes the remainder in each dimension by the given factor.
+          
+</dd>
+        <dt id="operator *" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/operator_multiply.html">operator *</a></span><span class="signature">(<wbr><span class="parameter" id="*-param-other"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Scales the <a href="painting/EdgeInsets-class.html">EdgeInsets</a> in each dimension by the given factor.
+          
+</dd>
+        <dt id="operator +" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/operator_plus.html">operator +</a></span><span class="signature">(<wbr><span class="parameter" id="+-param-other"><span class="type-annotation"><a href="painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the sum of two <a href="painting/EdgeInsets-class.html">EdgeInsets</a>.
+          
+</dd>
+        <dt id="operator -" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/operator_minus.html">operator -</a></span><span class="signature">(<wbr><span class="parameter" id="--param-other"><span class="type-annotation"><a href="painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the difference between two <a href="painting/EdgeInsets-class.html">EdgeInsets</a>.
+          
+</dd>
+        <dt id="operator /" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/operator_divide.html">operator /</a></span><span class="signature">(<wbr><span class="parameter" id="/-param-other"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Divides the <a href="painting/EdgeInsets-class.html">EdgeInsets</a> in each dimension by the given factor.
+          
+</dd>
+        <dt id="operator unary-" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/operator_unary_minus.html">operator unary-</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the <a href="painting/EdgeInsets-class.html">EdgeInsets</a> object with each dimension negated. <a href="painting/EdgeInsets/operator_unary_minus.html">[...]</a>
+          
+</dd>
+        <dt id="operator ~/" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/operator_truncate_divide.html">operator ~/</a></span><span class="signature">(<wbr><span class="parameter" id="~/-param-other"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Integer divides the <a href="painting/EdgeInsets-class.html">EdgeInsets</a> in each dimension by the given factor.
+          
+</dd>
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="painting/EdgeInsetsGeometry/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The equality operator. <a href="painting/EdgeInsetsGeometry/operator_equals.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="lerp" class="callable">
+          <span class="name"><a href="painting/EdgeInsets/lerp.html">lerp</a></span><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a href="painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">a</span>, </span> <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a href="painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">b</span>, </span> <span class="parameter" id="lerp-param-t"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">t</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+          </span>
+        </dt>
+        <dd>
+          Linearly interpolate between two <a href="painting/EdgeInsets-class.html">EdgeInsets</a>. <a href="painting/EdgeInsets/lerp.html">[...]</a>
+          
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="zero" class="constant">
+          <span class="name "><a href="painting/EdgeInsets/zero-constant.html">zero</a></span>
+          <span class="signature">&#8594; const <a href="painting/EdgeInsets-class.html">EdgeInsets</a></span>
+        </dt>
+        <dd>
+          An <code>EdgeInsets</code> with zero offsets in each direction.
+          
+  <div>
+            <span class="signature"><code>const EdgeInsets.only()</code></span>
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="painting/EdgeInsets-class.html#constructors">Constructors</a></li>
+      <li><a href="painting/EdgeInsets/EdgeInsets.all.html">all</a></li>
+      <li><a href="painting/EdgeInsets/EdgeInsets.fromLTRB.html">fromLTRB</a></li>
+      <li><a href="painting/EdgeInsets/EdgeInsets.fromWindowPadding.html">fromWindowPadding</a></li>
+      <li><a href="painting/EdgeInsets/EdgeInsets.only.html">only</a></li>
+      <li><a href="painting/EdgeInsets/EdgeInsets.symmetric.html">symmetric</a></li>
+    
+      <li class="section-title">
+        <a href="painting/EdgeInsets-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="painting/EdgeInsets/bottom.html">bottom</a></li>
+      <li><a href="painting/EdgeInsets/bottomLeft.html">bottomLeft</a></li>
+      <li><a href="painting/EdgeInsets/bottomRight.html">bottomRight</a></li>
+      <li><a href="painting/EdgeInsets/flipped.html">flipped</a></li>
+      <li><a href="painting/EdgeInsets/left.html">left</a></li>
+      <li><a href="painting/EdgeInsets/right.html">right</a></li>
+      <li><a href="painting/EdgeInsets/top.html">top</a></li>
+      <li><a href="painting/EdgeInsets/topLeft.html">topLeft</a></li>
+      <li><a href="painting/EdgeInsets/topRight.html">topRight</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/collapsedSize.html">collapsedSize</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/horizontal.html">horizontal</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/isNonNegative.html">isNonNegative</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/vertical.html">vertical</a></li>
+    
+      <li class="section-title"><a href="painting/EdgeInsets-class.html#instance-methods">Methods</a></li>
+      <li><a href="painting/EdgeInsets/add.html">add</a></li>
+      <li><a href="painting/EdgeInsets/copyWith.html">copyWith</a></li>
+      <li><a href="painting/EdgeInsets/deflateRect.html">deflateRect</a></li>
+      <li><a href="painting/EdgeInsets/inflateRect.html">inflateRect</a></li>
+      <li><a href="painting/EdgeInsets/resolve.html">resolve</a></li>
+      <li><a href="painting/EdgeInsets/subtract.html">subtract</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/along.html">along</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/deflateSize.html">deflateSize</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/inflateSize.html">inflateSize</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/toString.html">toString</a></li>
+    
+      <li class="section-title"><a href="painting/EdgeInsets-class.html#operators">Operators</a></li>
+      <li><a href="painting/EdgeInsets/operator_modulo.html">operator %</a></li>
+      <li><a href="painting/EdgeInsets/operator_multiply.html">operator *</a></li>
+      <li><a href="painting/EdgeInsets/operator_plus.html">operator +</a></li>
+      <li><a href="painting/EdgeInsets/operator_minus.html">operator -</a></li>
+      <li><a href="painting/EdgeInsets/operator_divide.html">operator /</a></li>
+      <li><a href="painting/EdgeInsets/operator_unary_minus.html">operator unary-</a></li>
+      <li><a href="painting/EdgeInsets/operator_truncate_divide.html">operator ~/</a></li>
+      <li class="inherited"><a href="painting/EdgeInsetsGeometry/operator_equals.html">operator ==</a></li>
+    
+    
+      <li class="section-title"><a href="painting/EdgeInsets-class.html#static-methods">Static methods</a></li>
+      <li><a href="painting/EdgeInsets/lerp.html">lerp</a></li>
+    
+      <li class="section-title"><a href="painting/EdgeInsets-class.html#constants">Constants</a></li>
+      <li><a href="painting/EdgeInsets/zero-constant.html">zero</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

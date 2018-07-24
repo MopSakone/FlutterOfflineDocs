@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the RenderNestedScrollViewViewport class from the widgets library, for the Dart programming language.">
+  <title>RenderNestedScrollViewViewport class - widgets library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="widgets/widgets-library.html">widgets</a></li>
+    <li class="self-crumb">RenderNestedScrollViewViewport class</li>
+  </ol>
+  <div class="self-name">RenderNestedScrollViewViewport</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>widgets library</h5>
+    <ol>
+      <li class="section-title"><a href="widgets/widgets-library.html#classes">Classes</a></li>
+      <li><a href="widgets/AbsorbPointer-class.html">AbsorbPointer</a></li>
+      <li><a href="widgets/Align-class.html">Align</a></li>
+      <li><a href="painting/Alignment-class.html">Alignment</a></li>
+      <li><a href="painting/AlignmentDirectional-class.html">AlignmentDirectional</a></li>
+      <li><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></li>
+      <li><a href="rendering/AlignmentGeometryTween-class.html">AlignmentGeometryTween</a></li>
+      <li><a href="rendering/AlignmentTween-class.html">AlignmentTween</a></li>
+      <li><a href="widgets/AlignTransition-class.html">AlignTransition</a></li>
+      <li><a href="widgets/AlwaysScrollableScrollPhysics-class.html">AlwaysScrollableScrollPhysics</a></li>
+      <li><a href="animation/AlwaysStoppedAnimation-class.html">AlwaysStoppedAnimation</a></li>
+      <li><a href="animation/Animatable-class.html">Animatable</a></li>
+      <li><a href="widgets/AnimatedAlign-class.html">AnimatedAlign</a></li>
+      <li><a href="widgets/AnimatedBuilder-class.html">AnimatedBuilder</a></li>
+      <li><a href="widgets/AnimatedContainer-class.html">AnimatedContainer</a></li>
+      <li><a href="widgets/AnimatedCrossFade-class.html">AnimatedCrossFade</a></li>
+      <li><a href="widgets/AnimatedDefaultTextStyle-class.html">AnimatedDefaultTextStyle</a></li>
+      <li><a href="widgets/AnimatedList-class.html">AnimatedList</a></li>
+      <li><a href="widgets/AnimatedListState-class.html">AnimatedListState</a></li>
+      <li><a href="widgets/AnimatedModalBarrier-class.html">AnimatedModalBarrier</a></li>
+      <li><a href="widgets/AnimatedOpacity-class.html">AnimatedOpacity</a></li>
+      <li><a href="widgets/AnimatedPadding-class.html">AnimatedPadding</a></li>
+      <li><a href="widgets/AnimatedPhysicalModel-class.html">AnimatedPhysicalModel</a></li>
+      <li><a href="widgets/AnimatedPositioned-class.html">AnimatedPositioned</a></li>
+      <li><a href="widgets/AnimatedPositionedDirectional-class.html">AnimatedPositionedDirectional</a></li>
+      <li><a href="widgets/AnimatedSize-class.html">AnimatedSize</a></li>
+      <li><a href="widgets/AnimatedSwitcher-class.html">AnimatedSwitcher</a></li>
+      <li><a href="widgets/AnimatedWidget-class.html">AnimatedWidget</a></li>
+      <li><a href="widgets/AnimatedWidgetBaseState-class.html">AnimatedWidgetBaseState</a></li>
+      <li><a href="animation/Animation-class.html">Animation</a></li>
+      <li><a href="animation/AnimationController-class.html">AnimationController</a></li>
+      <li><a href="animation/AnimationEagerListenerMixin-class.html">AnimationEagerListenerMixin</a></li>
+      <li><a href="animation/AnimationLazyListenerMixin-class.html">AnimationLazyListenerMixin</a></li>
+      <li><a href="animation/AnimationLocalListenersMixin-class.html">AnimationLocalListenersMixin</a></li>
+      <li><a href="animation/AnimationLocalStatusListenersMixin-class.html">AnimationLocalStatusListenersMixin</a></li>
+      <li><a href="animation/AnimationMax-class.html">AnimationMax</a></li>
+      <li><a href="animation/AnimationMean-class.html">AnimationMean</a></li>
+      <li><a href="animation/AnimationMin-class.html">AnimationMin</a></li>
+      <li><a href="animation/AnimationWithParentMixin-class.html">AnimationWithParentMixin</a></li>
+      <li><a href="widgets/AspectRatio-class.html">AspectRatio</a></li>
+      <li><a href="painting/AssetBundleImageKey-class.html">AssetBundleImageKey</a></li>
+      <li><a href="painting/AssetBundleImageProvider-class.html">AssetBundleImageProvider</a></li>
+      <li><a href="painting/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="widgets/AsyncSnapshot-class.html">AsyncSnapshot</a></li>
+      <li><a href="widgets/AutomaticKeepAlive-class.html">AutomaticKeepAlive</a></li>
+      <li><a href="widgets/AutomaticKeepAliveClientMixin-class.html">AutomaticKeepAliveClientMixin</a></li>
+      <li><a href="widgets/BackdropFilter-class.html">BackdropFilter</a></li>
+      <li><a href="widgets/BallisticScrollActivity-class.html">BallisticScrollActivity</a></li>
+      <li><a href="widgets/Banner-class.html">Banner</a></li>
+      <li><a href="widgets/BannerPainter-class.html">BannerPainter</a></li>
+      <li><a href="widgets/Baseline-class.html">Baseline</a></li>
+      <li><a href="painting/BeveledRectangleBorder-class.html">BeveledRectangleBorder</a></li>
+      <li><a href="widgets/BlockSemantics-class.html">BlockSemantics</a></li>
+      <li><a href="painting/Border-class.html">Border</a></li>
+      <li><a href="painting/BorderDirectional-class.html">BorderDirectional</a></li>
+      <li><a href="painting/BorderRadius-class.html">BorderRadius</a></li>
+      <li><a href="painting/BorderRadiusDirectional-class.html">BorderRadiusDirectional</a></li>
+      <li><a href="painting/BorderRadiusGeometry-class.html">BorderRadiusGeometry</a></li>
+      <li><a href="widgets/BorderRadiusTween-class.html">BorderRadiusTween</a></li>
+      <li><a href="painting/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="widgets/BottomNavigationBarItem-class.html">BottomNavigationBarItem</a></li>
+      <li><a href="widgets/BouncingScrollPhysics-class.html">BouncingScrollPhysics</a></li>
+      <li><a href="widgets/BouncingScrollSimulation-class.html">BouncingScrollSimulation</a></li>
+      <li><a href="painting/BoxBorder-class.html">BoxBorder</a></li>
+      <li><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></li>
+      <li><a href="widgets/BoxConstraintsTween-class.html">BoxConstraintsTween</a></li>
+      <li><a href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="painting/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="widgets/BoxScrollView-class.html">BoxScrollView</a></li>
+      <li><a href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="widgets/BuildContext-class.html">BuildContext</a></li>
+      <li><a href="widgets/Builder-class.html">Builder</a></li>
+      <li><a href="widgets/BuildOwner-class.html">BuildOwner</a></li>
+      <li><a href="dart-ui/Canvas-class.html">Canvas</a></li>
+      <li><a href="widgets/Center-class.html">Center</a></li>
+      <li><a href="foundation/ChangeNotifier-class.html">ChangeNotifier</a></li>
+      <li><a href="widgets/CheckedModeBanner-class.html">CheckedModeBanner</a></li>
+      <li><a href="painting/CircleBorder-class.html">CircleBorder</a></li>
+      <li><a href="widgets/ClampingScrollPhysics-class.html">ClampingScrollPhysics</a></li>
+      <li><a href="widgets/ClampingScrollSimulation-class.html">ClampingScrollSimulation</a></li>
+      <li><a href="widgets/ClipOval-class.html">ClipOval</a></li>
+      <li><a href="widgets/ClipPath-class.html">ClipPath</a></li>
+      <li><a href="widgets/ClipRect-class.html">ClipRect</a></li>
+      <li><a href="widgets/ClipRRect-class.html">ClipRRect</a></li>
+      <li><a href="dart-ui/Color-class.html">Color</a></li>
+      <li><a href="dart-ui/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="painting/ColorSwatch-class.html">ColorSwatch</a></li>
+      <li><a href="animation/ColorTween-class.html">ColorTween</a></li>
+      <li><a href="widgets/Column-class.html">Column</a></li>
+      <li><a href="widgets/ComponentElement-class.html">ComponentElement</a></li>
+      <li><a href="widgets/CompositedTransformFollower-class.html">CompositedTransformFollower</a></li>
+      <li><a href="widgets/CompositedTransformTarget-class.html">CompositedTransformTarget</a></li>
+      <li><a href="animation/CompoundAnimation-class.html">CompoundAnimation</a></li>
+      <li><a href="widgets/ConstrainedBox-class.html">ConstrainedBox</a></li>
+      <li><a href="widgets/Container-class.html">Container</a></li>
+      <li><a href="animation/Cubic-class.html">Cubic</a></li>
+      <li><a href="animation/Curve-class.html">Curve</a></li>
+      <li><a href="animation/CurvedAnimation-class.html">CurvedAnimation</a></li>
+      <li><a href="animation/Curves-class.html">Curves</a></li>
+      <li><a href="animation/CurveTween-class.html">CurveTween</a></li>
+      <li><a href="rendering/CustomClipper-class.html">CustomClipper</a></li>
+      <li><a href="widgets/CustomMultiChildLayout-class.html">CustomMultiChildLayout</a></li>
+      <li><a href="widgets/CustomPaint-class.html">CustomPaint</a></li>
+      <li><a href="rendering/CustomPainter-class.html">CustomPainter</a></li>
+      <li><a href="rendering/CustomPainterSemantics-class.html">CustomPainterSemantics</a></li>
+      <li><a href="widgets/CustomScrollView-class.html">CustomScrollView</a></li>
+      <li><a href="widgets/CustomSingleChildLayout-class.html">CustomSingleChildLayout</a></li>
+      <li><a href="widgets/DecoratedBox-class.html">DecoratedBox</a></li>
+      <li><a href="widgets/DecoratedBoxTransition-class.html">DecoratedBoxTransition</a></li>
+      <li><a href="painting/Decoration-class.html">Decoration</a></li>
+      <li><a href="painting/DecorationImage-class.html">DecorationImage</a></li>
+      <li><a href="painting/DecorationImagePainter-class.html">DecorationImagePainter</a></li>
+      <li><a href="widgets/DecorationTween-class.html">DecorationTween</a></li>
+      <li><a href="widgets/DefaultAssetBundle-class.html">DefaultAssetBundle</a></li>
+      <li><a href="widgets/DefaultTextStyle-class.html">DefaultTextStyle</a></li>
+      <li><a href="widgets/DefaultWidgetsLocalizations-class.html">DefaultWidgetsLocalizations</a></li>
+      <li><a href="widgets/Directionality-class.html">Directionality</a></li>
+      <li><a href="widgets/Dismissible-class.html">Dismissible</a></li>
+      <li><a href="gestures/DragDownDetails-class.html">DragDownDetails</a></li>
+      <li><a href="gestures/DragEndDetails-class.html">DragEndDetails</a></li>
+      <li><a href="widgets/Draggable-class.html">Draggable</a></li>
+      <li><a href="widgets/DragScrollActivity-class.html">DragScrollActivity</a></li>
+      <li><a href="gestures/DragStartDetails-class.html">DragStartDetails</a></li>
+      <li><a href="widgets/DragTarget-class.html">DragTarget</a></li>
+      <li><a href="gestures/DragUpdateDetails-class.html">DragUpdateDetails</a></li>
+      <li><a href="widgets/DrivenScrollActivity-class.html">DrivenScrollActivity</a></li>
+      <li><a href="painting/EdgeInsets-class.html">EdgeInsets</a></li>
+      <li><a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a></li>
+      <li><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></li>
+      <li><a href="widgets/EdgeInsetsGeometryTween-class.html">EdgeInsetsGeometryTween</a></li>
+      <li><a href="widgets/EdgeInsetsTween-class.html">EdgeInsetsTween</a></li>
+      <li><a href="widgets/EditableText-class.html">EditableText</a></li>
+      <li><a href="widgets/EditableTextState-class.html">EditableTextState</a></li>
+      <li><a href="animation/ElasticInCurve-class.html">ElasticInCurve</a></li>
+      <li><a href="animation/ElasticInOutCurve-class.html">ElasticInOutCurve</a></li>
+      <li><a href="animation/ElasticOutCurve-class.html">ElasticOutCurve</a></li>
+      <li><a href="widgets/Element-class.html">Element</a></li>
+      <li><a href="widgets/ErrorWidget-class.html">ErrorWidget</a></li>
+      <li><a href="painting/ExactAssetImage-class.html">ExactAssetImage</a></li>
+      <li><a href="widgets/ExcludeSemantics-class.html">ExcludeSemantics</a></li>
+      <li><a href="widgets/Expanded-class.html">Expanded</a></li>
+      <li><a href="widgets/FadeInImage-class.html">FadeInImage</a></li>
+      <li><a href="widgets/FadeTransition-class.html">FadeTransition</a></li>
+      <li><a href="painting/FileImage-class.html">FileImage</a></li>
+      <li><a href="widgets/FittedBox-class.html">FittedBox</a></li>
+      <li><a href="painting/FittedSizes-class.html">FittedSizes</a></li>
+      <li><a href="rendering/FixedColumnWidth-class.html">FixedColumnWidth</a></li>
+      <li><a href="widgets/FixedExtentMetrics-class.html">FixedExtentMetrics</a></li>
+      <li><a href="widgets/FixedExtentScrollController-class.html">FixedExtentScrollController</a></li>
+      <li><a href="widgets/FixedExtentScrollPhysics-class.html">FixedExtentScrollPhysics</a></li>
+      <li><a href="widgets/FixedScrollMetrics-class.html">FixedScrollMetrics</a></li>
+      <li><a href="widgets/Flex-class.html">Flex</a></li>
+      <li><a href="rendering/FlexColumnWidth-class.html">FlexColumnWidth</a></li>
+      <li><a href="widgets/Flexible-class.html">Flexible</a></li>
+      <li><a href="animation/FlippedCurve-class.html">FlippedCurve</a></li>
+      <li><a href="widgets/Flow-class.html">Flow</a></li>
+      <li><a href="rendering/FlowDelegate-class.html">FlowDelegate</a></li>
+      <li><a href="rendering/FlowPaintingContext-class.html">FlowPaintingContext</a></li>
+      <li><a href="foundation/FlutterErrorDetails-class.html">FlutterErrorDetails</a></li>
+      <li><a href="painting/FlutterLogoDecoration-class.html">FlutterLogoDecoration</a></li>
+      <li><a href="widgets/FocusManager-class.html">FocusManager</a></li>
+      <li><a href="widgets/FocusNode-class.html">FocusNode</a></li>
+      <li><a href="widgets/FocusScope-class.html">FocusScope</a></li>
+      <li><a href="widgets/FocusScopeNode-class.html">FocusScopeNode</a></li>
+      <li><a href="dart-ui/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="widgets/Form-class.html">Form</a></li>
+      <li><a href="widgets/FormField-class.html">FormField</a></li>
+      <li><a href="widgets/FormFieldState-class.html">FormFieldState</a></li>
+      <li><a href="widgets/FormState-class.html">FormState</a></li>
+      <li><a href="widgets/FractionallySizedBox-class.html">FractionallySizedBox</a></li>
+      <li><a href="painting/FractionalOffset-class.html">FractionalOffset</a></li>
+      <li><a href="rendering/FractionalOffsetTween-class.html">FractionalOffsetTween</a></li>
+      <li><a href="widgets/FractionalTranslation-class.html">FractionalTranslation</a></li>
+      <li><a href="rendering/FractionColumnWidth-class.html">FractionColumnWidth</a></li>
+      <li><a href="widgets/FutureBuilder-class.html">FutureBuilder</a></li>
+      <li><a href="widgets/GestureDetector-class.html">GestureDetector</a></li>
+      <li><a href="widgets/GestureRecognizerFactory-class.html">GestureRecognizerFactory</a></li>
+      <li><a href="widgets/GestureRecognizerFactoryWithHandlers-class.html">GestureRecognizerFactoryWithHandlers</a></li>
+      <li><a href="widgets/GlobalKey-class.html">GlobalKey</a></li>
+      <li><a href="widgets/GlobalObjectKey-class.html">GlobalObjectKey</a></li>
+      <li><a href="widgets/GlowingOverscrollIndicator-class.html">GlowingOverscrollIndicator</a></li>
+      <li><a href="painting/Gradient-class.html">Gradient</a></li>
+      <li><a href="widgets/GridPaper-class.html">GridPaper</a></li>
+      <li><a href="widgets/GridView-class.html">GridView</a></li>
+      <li><a href="widgets/Hero-class.html">Hero</a></li>
+      <li><a href="widgets/HeroController-class.html">HeroController</a></li>
+      <li><a href="widgets/HoldScrollActivity-class.html">HoldScrollActivity</a></li>
+      <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+      <li><a href="widgets/Icon-class.html">Icon</a></li>
+      <li><a href="widgets/IconData-class.html">IconData</a></li>
+      <li><a href="widgets/IconTheme-class.html">IconTheme</a></li>
+      <li><a href="widgets/IconThemeData-class.html">IconThemeData</a></li>
+      <li><a href="widgets/IdleScrollActivity-class.html">IdleScrollActivity</a></li>
+      <li><a href="widgets/IgnorePointer-class.html">IgnorePointer</a></li>
+      <li><a href="widgets/Image-class.html">Image</a></li>
+      <li><a href="painting/ImageCache-class.html">ImageCache</a></li>
+      <li><a href="painting/ImageConfiguration-class.html">ImageConfiguration</a></li>
+      <li><a href="widgets/ImageIcon-class.html">ImageIcon</a></li>
+      <li><a href="painting/ImageInfo-class.html">ImageInfo</a></li>
+      <li><a href="painting/ImageProvider-class.html">ImageProvider</a></li>
+      <li><a href="dart-ui/ImageShader-class.html">ImageShader</a></li>
+      <li><a href="painting/ImageStream-class.html">ImageStream</a></li>
+      <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+      <li><a href="widgets/ImplicitlyAnimatedWidget-class.html">ImplicitlyAnimatedWidget</a></li>
+      <li><a href="widgets/IndexedStack-class.html">IndexedStack</a></li>
+      <li><a href="widgets/InheritedElement-class.html">InheritedElement</a></li>
+      <li><a href="widgets/InheritedWidget-class.html">InheritedWidget</a></li>
+      <li><a href="widgets/InspectorSelection-class.html">InspectorSelection</a></li>
+      <li><a href="animation/Interval-class.html">Interval</a></li>
+      <li><a href="rendering/IntrinsicColumnWidth-class.html">IntrinsicColumnWidth</a></li>
+      <li><a href="widgets/IntrinsicHeight-class.html">IntrinsicHeight</a></li>
+      <li><a href="widgets/IntrinsicWidth-class.html">IntrinsicWidth</a></li>
+      <li><a href="animation/IntTween-class.html">IntTween</a></li>
+      <li><a href="widgets/KeepAlive-class.html">KeepAlive</a></li>
+      <li><a href="widgets/KeepAliveHandle-class.html">KeepAliveHandle</a></li>
+      <li><a href="widgets/KeepAliveNotification-class.html">KeepAliveNotification</a></li>
+      <li><a href="foundation/Key-class.html">Key</a></li>
+      <li><a href="widgets/KeyedSubtree-class.html">KeyedSubtree</a></li>
+      <li><a href="widgets/LabeledGlobalKey-class.html">LabeledGlobalKey</a></li>
+      <li><a href="rendering/LayerLink-class.html">LayerLink</a></li>
+      <li><a href="widgets/LayoutBuilder-class.html">LayoutBuilder</a></li>
+      <li><a href="widgets/LayoutChangedNotification-class.html">LayoutChangedNotification</a></li>
+      <li><a href="widgets/LayoutId-class.html">LayoutId</a></li>
+      <li><a href="widgets/LeafRenderObjectElement-class.html">LeafRenderObjectElement</a></li>
+      <li><a href="widgets/LeafRenderObjectWidget-class.html">LeafRenderObjectWidget</a></li>
+      <li><a href="widgets/LimitedBox-class.html">LimitedBox</a></li>
+      <li><a href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="widgets/ListBody-class.html">ListBody</a></li>
+      <li><a href="foundation/Listenable-class.html">Listenable</a></li>
+      <li><a href="widgets/Listener-class.html">Listener</a></li>
+      <li><a href="widgets/ListView-class.html">ListView</a></li>
+      <li><a href="widgets/ListWheelScrollView-class.html">ListWheelScrollView</a></li>
+      <li><a href="widgets/ListWheelViewport-class.html">ListWheelViewport</a></li>
+      <li><a href="dart-ui/Locale-class.html">Locale</a></li>
+      <li><a href="widgets/LocalHistoryEntry-class.html">LocalHistoryEntry</a></li>
+      <li><a href="widgets/LocalHistoryRoute-class.html">LocalHistoryRoute</a></li>
+      <li><a href="widgets/Localizations-class.html">Localizations</a></li>
+      <li><a href="widgets/LocalizationsDelegate-class.html">LocalizationsDelegate</a></li>
+      <li><a href="foundation/LocalKey-class.html">LocalKey</a></li>
+      <li><a href="widgets/LongPressDraggable-class.html">LongPressDraggable</a></li>
+      <li><a href="dart-ui/MaskFilter-class.html">MaskFilter</a></li>
+      <li><a href="vector_math_64/Matrix4-class.html">Matrix4</a></li>
+      <li><a href="widgets/Matrix4Tween-class.html">Matrix4Tween</a></li>
+      <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+      <li><a href="rendering/MaxColumnWidth-class.html">MaxColumnWidth</a></li>
+      <li><a href="widgets/MediaQuery-class.html">MediaQuery</a></li>
+      <li><a href="widgets/MediaQueryData-class.html">MediaQueryData</a></li>
+      <li><a href="painting/MemoryImage-class.html">MemoryImage</a></li>
+      <li><a href="widgets/MergeSemantics-class.html">MergeSemantics</a></li>
+      <li><a href="widgets/MetaData-class.html">MetaData</a></li>
+      <li><a href="rendering/MinColumnWidth-class.html">MinColumnWidth</a></li>
+      <li><a href="widgets/ModalBarrier-class.html">ModalBarrier</a></li>
+      <li><a href="widgets/ModalRoute-class.html">ModalRoute</a></li>
+      <li><a href="rendering/MultiChildLayoutDelegate-class.html">MultiChildLayoutDelegate</a></li>
+      <li><a href="widgets/MultiChildRenderObjectElement-class.html">MultiChildRenderObjectElement</a></li>
+      <li><a href="widgets/MultiChildRenderObjectWidget-class.html">MultiChildRenderObjectWidget</a></li>
+      <li><a href="painting/MultiFrameImageStreamCompleter-class.html">MultiFrameImageStreamCompleter</a></li>
+      <li><a href="widgets/NavigationToolbar-class.html">NavigationToolbar</a></li>
+      <li><a href="widgets/Navigator-class.html">Navigator</a></li>
+      <li><a href="widgets/NavigatorObserver-class.html">NavigatorObserver</a></li>
+      <li><a href="widgets/NavigatorState-class.html">NavigatorState</a></li>
+      <li><a href="widgets/NestedScrollView-class.html">NestedScrollView</a></li>
+      <li><a href="widgets/NestedScrollViewViewport-class.html">NestedScrollViewViewport</a></li>
+      <li><a href="painting/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="widgets/NeverScrollableScrollPhysics-class.html">NeverScrollableScrollPhysics</a></li>
+      <li><a href="widgets/Notification-class.html">Notification</a></li>
+      <li><a href="widgets/NotificationListener-class.html">NotificationListener</a></li>
+      <li><a href="widgets/ObjectKey-class.html">ObjectKey</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="widgets/Offstage-class.html">Offstage</a></li>
+      <li><a href="painting/OneFrameImageStreamCompleter-class.html">OneFrameImageStreamCompleter</a></li>
+      <li><a href="widgets/Opacity-class.html">Opacity</a></li>
+      <li><a href="widgets/OrientationBuilder-class.html">OrientationBuilder</a></li>
+      <li><a href="widgets/OverflowBox-class.html">OverflowBox</a></li>
+      <li><a href="widgets/Overlay-class.html">Overlay</a></li>
+      <li><a href="widgets/OverlayEntry-class.html">OverlayEntry</a></li>
+      <li><a href="widgets/OverlayRoute-class.html">OverlayRoute</a></li>
+      <li><a href="widgets/OverlayState-class.html">OverlayState</a></li>
+      <li><a href="widgets/OverscrollIndicatorNotification-class.html">OverscrollIndicatorNotification</a></li>
+      <li><a href="widgets/OverscrollNotification-class.html">OverscrollNotification</a></li>
+      <li><a href="widgets/Padding-class.html">Padding</a></li>
+      <li><a href="widgets/PageController-class.html">PageController</a></li>
+      <li><a href="widgets/PageMetrics-class.html">PageMetrics</a></li>
+      <li><a href="widgets/PageRoute-class.html">PageRoute</a></li>
+      <li><a href="widgets/PageRouteBuilder-class.html">PageRouteBuilder</a></li>
+      <li><a href="widgets/PageScrollPhysics-class.html">PageScrollPhysics</a></li>
+      <li><a href="widgets/PageStorage-class.html">PageStorage</a></li>
+      <li><a href="widgets/PageStorageBucket-class.html">PageStorageBucket</a></li>
+      <li><a href="widgets/PageStorageKey-class.html">PageStorageKey</a></li>
+      <li><a href="widgets/PageView-class.html">PageView</a></li>
+      <li><a href="dart-ui/Paint-class.html">Paint</a></li>
+      <li><a href="painting/PaintingBinding-class.html">PaintingBinding</a></li>
+      <li><a href="rendering/PaintingContext-class.html">PaintingContext</a></li>
+      <li><a href="widgets/ParentDataElement-class.html">ParentDataElement</a></li>
+      <li><a href="widgets/ParentDataWidget-class.html">ParentDataWidget</a></li>
+      <li><a href="dart-ui/Path-class.html">Path</a></li>
+      <li><a href="widgets/PerformanceOverlay-class.html">PerformanceOverlay</a></li>
+      <li><a href="widgets/PhysicalModel-class.html">PhysicalModel</a></li>
+      <li><a href="widgets/PhysicalShape-class.html">PhysicalShape</a></li>
+      <li><a href="widgets/Placeholder-class.html">Placeholder</a></li>
+      <li><a href="gestures/PointerCancelEvent-class.html">PointerCancelEvent</a></li>
+      <li><a href="gestures/PointerDownEvent-class.html">PointerDownEvent</a></li>
+      <li><a href="gestures/PointerEvent-class.html">PointerEvent</a></li>
+      <li><a href="gestures/PointerMoveEvent-class.html">PointerMoveEvent</a></li>
+      <li><a href="gestures/PointerUpEvent-class.html">PointerUpEvent</a></li>
+      <li><a href="widgets/PopupRoute-class.html">PopupRoute</a></li>
+      <li><a href="widgets/Positioned-class.html">Positioned</a></li>
+      <li><a href="widgets/PositionedDirectional-class.html">PositionedDirectional</a></li>
+      <li><a href="widgets/PositionedTransition-class.html">PositionedTransition</a></li>
+      <li><a href="widgets/PreferredSize-class.html">PreferredSize</a></li>
+      <li><a href="widgets/PreferredSizeWidget-class.html">PreferredSizeWidget</a></li>
+      <li><a href="widgets/PrimaryScrollController-class.html">PrimaryScrollController</a></li>
+      <li><a href="animation/ProxyAnimation-class.html">ProxyAnimation</a></li>
+      <li><a href="widgets/ProxyElement-class.html">ProxyElement</a></li>
+      <li><a href="widgets/ProxyWidget-class.html">ProxyWidget</a></li>
+      <li><a href="painting/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="dart-ui/Radius-class.html">Radius</a></li>
+      <li><a href="widgets/RawGestureDetector-class.html">RawGestureDetector</a></li>
+      <li><a href="widgets/RawGestureDetectorState-class.html">RawGestureDetectorState</a></li>
+      <li><a href="widgets/RawImage-class.html">RawImage</a></li>
+      <li><a href="widgets/RawKeyboardListener-class.html">RawKeyboardListener</a></li>
+      <li><a href="services/RawKeyEvent-class.html">RawKeyEvent</a></li>
+      <li><a href="dart-ui/Rect-class.html">Rect</a></li>
+      <li><a href="animation/RectTween-class.html">RectTween</a></li>
+      <li><a href="widgets/RelativePositionedTransition-class.html">RelativePositionedTransition</a></li>
+      <li><a href="rendering/RelativeRect-class.html">RelativeRect</a></li>
+      <li><a href="widgets/RelativeRectTween-class.html">RelativeRectTween</a></li>
+      <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
+      <li><a href="widgets/RenderNestedScrollViewViewport-class.html">RenderNestedScrollViewViewport</a></li>
+      <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
+      <li><a href="widgets/RenderObjectElement-class.html">RenderObjectElement</a></li>
+      <li><a href="widgets/RenderObjectToWidgetAdapter-class.html">RenderObjectToWidgetAdapter</a></li>
+      <li><a href="widgets/RenderObjectToWidgetElement-class.html">RenderObjectToWidgetElement</a></li>
+      <li><a href="widgets/RenderObjectWidget-class.html">RenderObjectWidget</a></li>
+      <li><a href="widgets/RenderSliverOverlapAbsorber-class.html">RenderSliverOverlapAbsorber</a></li>
+      <li><a href="widgets/RenderSliverOverlapInjector-class.html">RenderSliverOverlapInjector</a></li>
+      <li><a href="widgets/RepaintBoundary-class.html">RepaintBoundary</a></li>
+      <li><a href="animation/ReverseAnimation-class.html">ReverseAnimation</a></li>
+      <li><a href="animation/ReverseTween-class.html">ReverseTween</a></li>
+      <li><a href="widgets/RichText-class.html">RichText</a></li>
+      <li><a href="widgets/RootRenderObjectElement-class.html">RootRenderObjectElement</a></li>
+      <li><a href="widgets/RotatedBox-class.html">RotatedBox</a></li>
+      <li><a href="widgets/RotationTransition-class.html">RotationTransition</a></li>
+      <li><a href="painting/RoundedRectangleBorder-class.html">RoundedRectangleBorder</a></li>
+      <li><a href="widgets/Route-class.html">Route</a></li>
+      <li><a href="widgets/RouteAware-class.html">RouteAware</a></li>
+      <li><a href="widgets/RouteObserver-class.html">RouteObserver</a></li>
+      <li><a href="widgets/RouteSettings-class.html">RouteSettings</a></li>
+      <li><a href="widgets/Row-class.html">Row</a></li>
+      <li><a href="dart-ui/RRect-class.html">RRect</a></li>
+      <li><a href="dart-ui/RSTransform-class.html">RSTransform</a></li>
+      <li><a href="widgets/SafeArea-class.html">SafeArea</a></li>
+      <li><a href="animation/SawTooth-class.html">SawTooth</a></li>
+      <li><a href="gestures/ScaleEndDetails-class.html">ScaleEndDetails</a></li>
+      <li><a href="gestures/ScaleStartDetails-class.html">ScaleStartDetails</a></li>
+      <li><a href="widgets/ScaleTransition-class.html">ScaleTransition</a></li>
+      <li><a href="gestures/ScaleUpdateDetails-class.html">ScaleUpdateDetails</a></li>
+      <li><a href="widgets/Scrollable-class.html">Scrollable</a></li>
+      <li><a href="widgets/ScrollableState-class.html">ScrollableState</a></li>
+      <li><a href="widgets/ScrollActivity-class.html">ScrollActivity</a></li>
+      <li><a href="widgets/ScrollActivityDelegate-class.html">ScrollActivityDelegate</a></li>
+      <li><a href="widgets/ScrollbarPainter-class.html">ScrollbarPainter</a></li>
+      <li><a href="widgets/ScrollBehavior-class.html">ScrollBehavior</a></li>
+      <li><a href="widgets/ScrollConfiguration-class.html">ScrollConfiguration</a></li>
+      <li><a href="widgets/ScrollContext-class.html">ScrollContext</a></li>
+      <li><a href="widgets/ScrollController-class.html">ScrollController</a></li>
+      <li><a href="widgets/ScrollDragController-class.html">ScrollDragController</a></li>
+      <li><a href="widgets/ScrollEndNotification-class.html">ScrollEndNotification</a></li>
+      <li><a href="widgets/ScrollHoldController-class.html">ScrollHoldController</a></li>
+      <li><a href="widgets/ScrollMetrics-class.html">ScrollMetrics</a></li>
+      <li><a href="widgets/ScrollNotification-class.html">ScrollNotification</a></li>
+      <li><a href="widgets/ScrollPhysics-class.html">ScrollPhysics</a></li>
+      <li><a href="widgets/ScrollPosition-class.html">ScrollPosition</a></li>
+      <li><a href="widgets/ScrollPositionWithSingleContext-class.html">ScrollPositionWithSingleContext</a></li>
+      <li><a href="physics/ScrollSpringSimulation-class.html">ScrollSpringSimulation</a></li>
+      <li><a href="widgets/ScrollStartNotification-class.html">ScrollStartNotification</a></li>
+      <li><a href="widgets/ScrollUpdateNotification-class.html">ScrollUpdateNotification</a></li>
+      <li><a href="widgets/ScrollView-class.html">ScrollView</a></li>
+      <li><a href="widgets/Semantics-class.html">Semantics</a></li>
+      <li><a href="widgets/SemanticsDebugger-class.html">SemanticsDebugger</a></li>
+      <li><a href="dart-ui/Shader-class.html">Shader</a></li>
+      <li><a href="widgets/ShaderMask-class.html">ShaderMask</a></li>
+      <li><a href="painting/ShapeBorder-class.html">ShapeBorder</a></li>
+      <li><a href="rendering/ShapeBorderClipper-class.html">ShapeBorderClipper</a></li>
+      <li><a href="painting/ShapeDecoration-class.html">ShapeDecoration</a></li>
+      <li><a href="widgets/ShrinkWrappingViewport-class.html">ShrinkWrappingViewport</a></li>
+      <li><a href="physics/Simulation-class.html">Simulation</a></li>
+      <li><a href="rendering/SingleChildLayoutDelegate-class.html">SingleChildLayoutDelegate</a></li>
+      <li><a href="widgets/SingleChildRenderObjectElement-class.html">SingleChildRenderObjectElement</a></li>
+      <li><a href="widgets/SingleChildRenderObjectWidget-class.html">SingleChildRenderObjectWidget</a></li>
+      <li><a href="widgets/SingleChildScrollView-class.html">SingleChildScrollView</a></li>
+      <li><a href="widgets/SingleTickerProviderStateMixin-class.html">SingleTickerProviderStateMixin</a></li>
+      <li><a href="dart-ui/Size-class.html">Size</a></li>
+      <li><a href="widgets/SizeChangedLayoutNotification-class.html">SizeChangedLayoutNotification</a></li>
+      <li><a href="widgets/SizeChangedLayoutNotifier-class.html">SizeChangedLayoutNotifier</a></li>
+      <li><a href="widgets/SizedBox-class.html">SizedBox</a></li>
+      <li><a href="widgets/SizedOverflowBox-class.html">SizedOverflowBox</a></li>
+      <li><a href="widgets/SizeTransition-class.html">SizeTransition</a></li>
+      <li><a href="animation/SizeTween-class.html">SizeTween</a></li>
+      <li><a href="widgets/SlideTransition-class.html">SlideTransition</a></li>
+      <li><a href="widgets/SliverChildBuilderDelegate-class.html">SliverChildBuilderDelegate</a></li>
+      <li><a href="widgets/SliverChildDelegate-class.html">SliverChildDelegate</a></li>
+      <li><a href="widgets/SliverChildListDelegate-class.html">SliverChildListDelegate</a></li>
+      <li><a href="widgets/SliverFillRemaining-class.html">SliverFillRemaining</a></li>
+      <li><a href="widgets/SliverFillViewport-class.html">SliverFillViewport</a></li>
+      <li><a href="widgets/SliverFixedExtentList-class.html">SliverFixedExtentList</a></li>
+      <li><a href="widgets/SliverGrid-class.html">SliverGrid</a></li>
+      <li><a href="rendering/SliverGridDelegate-class.html">SliverGridDelegate</a></li>
+      <li><a href="rendering/SliverGridDelegateWithFixedCrossAxisCount-class.html">SliverGridDelegateWithFixedCrossAxisCount</a></li>
+      <li><a href="rendering/SliverGridDelegateWithMaxCrossAxisExtent-class.html">SliverGridDelegateWithMaxCrossAxisExtent</a></li>
+      <li><a href="widgets/SliverList-class.html">SliverList</a></li>
+      <li><a href="widgets/SliverMultiBoxAdaptorElement-class.html">SliverMultiBoxAdaptorElement</a></li>
+      <li><a href="widgets/SliverMultiBoxAdaptorWidget-class.html">SliverMultiBoxAdaptorWidget</a></li>
+      <li><a href="widgets/SliverOverlapAbsorber-class.html">SliverOverlapAbsorber</a></li>
+      <li><a href="widgets/SliverOverlapAbsorberHandle-class.html">SliverOverlapAbsorberHandle</a></li>
+      <li><a href="widgets/SliverOverlapInjector-class.html">SliverOverlapInjector</a></li>
+      <li><a href="widgets/SliverPadding-class.html">SliverPadding</a></li>
+      <li><a href="widgets/SliverPersistentHeader-class.html">SliverPersistentHeader</a></li>
+      <li><a href="widgets/SliverPersistentHeaderDelegate-class.html">SliverPersistentHeaderDelegate</a></li>
+      <li><a href="widgets/SliverPrototypeExtentList-class.html">SliverPrototypeExtentList</a></li>
+      <li><a href="widgets/SliverSafeArea-class.html">SliverSafeArea</a></li>
+      <li><a href="widgets/SliverToBoxAdapter-class.html">SliverToBoxAdapter</a></li>
+      <li><a href="widgets/Spacer-class.html">Spacer</a></li>
+      <li><a href="widgets/Stack-class.html">Stack</a></li>
+      <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+      <li><a href="widgets/State-class.html">State</a></li>
+      <li><a href="widgets/StatefulBuilder-class.html">StatefulBuilder</a></li>
+      <li><a href="widgets/StatefulElement-class.html">StatefulElement</a></li>
+      <li><a href="widgets/StatefulWidget-class.html">StatefulWidget</a></li>
+      <li><a href="widgets/StatelessElement-class.html">StatelessElement</a></li>
+      <li><a href="widgets/StatelessWidget-class.html">StatelessWidget</a></li>
+      <li><a href="widgets/StatusTransitionWidget-class.html">StatusTransitionWidget</a></li>
+      <li><a href="animation/StepTween-class.html">StepTween</a></li>
+      <li><a href="widgets/StreamBuilder-class.html">StreamBuilder</a></li>
+      <li><a href="widgets/StreamBuilderBase-class.html">StreamBuilderBase</a></li>
+      <li><a href="widgets/Table-class.html">Table</a></li>
+      <li><a href="rendering/TableBorder-class.html">TableBorder</a></li>
+      <li><a href="widgets/TableCell-class.html">TableCell</a></li>
+      <li><a href="rendering/TableColumnWidth-class.html">TableColumnWidth</a></li>
+      <li><a href="widgets/TableRow-class.html">TableRow</a></li>
+      <li><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></li>
+      <li><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></li>
+      <li><a href="widgets/Text-class.html">Text</a></li>
+      <li><a href="dart-ui/TextBox-class.html">TextBox</a></li>
+      <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="widgets/TextEditingController-class.html">TextEditingController</a></li>
+      <li><a href="services/TextEditingValue-class.html">TextEditingValue</a></li>
+      <li><a href="services/TextInputType-class.html">TextInputType</a></li>
+      <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
+      <li><a href="dart-ui/TextPosition-class.html">TextPosition</a></li>
+      <li><a href="services/TextRange-class.html">TextRange</a></li>
+      <li><a href="services/TextSelection-class.html">TextSelection</a></li>
+      <li><a href="widgets/TextSelectionControls-class.html">TextSelectionControls</a></li>
+      <li><a href="widgets/TextSelectionDelegate-class.html">TextSelectionDelegate</a></li>
+      <li><a href="widgets/TextSelectionOverlay-class.html">TextSelectionOverlay</a></li>
+      <li><a href="painting/TextSpan-class.html">TextSpan</a></li>
+      <li><a href="painting/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="widgets/TextStyleTween-class.html">TextStyleTween</a></li>
+      <li><a href="widgets/Texture-class.html">Texture</a></li>
+      <li><a href="animation/Threshold-class.html">Threshold</a></li>
+      <li><a href="scheduler/TickerFuture-class.html">TickerFuture</a></li>
+      <li><a href="widgets/TickerMode-class.html">TickerMode</a></li>
+      <li><a href="scheduler/TickerProvider-class.html">TickerProvider</a></li>
+      <li><a href="widgets/TickerProviderStateMixin-class.html">TickerProviderStateMixin</a></li>
+      <li><a href="widgets/Title-class.html">Title</a></li>
+      <li><a href="physics/Tolerance-class.html">Tolerance</a></li>
+      <li><a href="widgets/TrackingScrollController-class.html">TrackingScrollController</a></li>
+      <li><a href="animation/TrainHoppingAnimation-class.html">TrainHoppingAnimation</a></li>
+      <li><a href="widgets/Transform-class.html">Transform</a></li>
+      <li><a href="painting/TransformProperty-class.html">TransformProperty</a></li>
+      <li><a href="widgets/TransitionRoute-class.html">TransitionRoute</a></li>
+      <li><a href="animation/Tween-class.html">Tween</a></li>
+      <li><a href="widgets/TypeMatcher-class.html">TypeMatcher</a></li>
+      <li><a href="widgets/UnconstrainedBox-class.html">UnconstrainedBox</a></li>
+      <li><a href="widgets/UniqueKey-class.html">UniqueKey</a></li>
+      <li><a href="widgets/UniqueWidget-class.html">UniqueWidget</a></li>
+      <li><a href="widgets/UserScrollNotification-class.html">UserScrollNotification</a></li>
+      <li><a href="foundation/ValueKey-class.html">ValueKey</a></li>
+      <li><a href="foundation/ValueNotifier-class.html">ValueNotifier</a></li>
+      <li><a href="gestures/Velocity-class.html">Velocity</a></li>
+      <li><a href="widgets/Viewport-class.html">Viewport</a></li>
+      <li><a href="widgets/ViewportNotificationMixin-class.html">ViewportNotificationMixin</a></li>
+      <li><a href="widgets/Widget-class.html">Widget</a></li>
+      <li><a href="widgets/WidgetInspector-class.html">WidgetInspector</a></li>
+      <li><a href="widgets/WidgetInspectorService-class.html">WidgetInspectorService</a></li>
+      <li><a href="widgets/WidgetsApp-class.html">WidgetsApp</a></li>
+      <li><a href="widgets/WidgetsBinding-class.html">WidgetsBinding</a></li>
+      <li><a href="widgets/WidgetsBindingObserver-class.html">WidgetsBindingObserver</a></li>
+      <li><a href="widgets/WidgetsFlutterBinding-class.html">WidgetsFlutterBinding</a></li>
+      <li><a href="widgets/WidgetsLocalizations-class.html">WidgetsLocalizations</a></li>
+      <li><a href="widgets/WidgetToRenderBoxAdapter-class.html">WidgetToRenderBoxAdapter</a></li>
+      <li><a href="widgets/WillPopScope-class.html">WillPopScope</a></li>
+      <li><a href="widgets/Wrap-class.html">Wrap</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#constants">Constants</a></li>
+      <li><a href="meta/immutable-constant.html">immutable</a></li>
+      <li><a href="animation/kAlwaysCompleteAnimation-constant.html">kAlwaysCompleteAnimation</a></li>
+      <li><a href="animation/kAlwaysDismissedAnimation-constant.html">kAlwaysDismissedAnimation</a></li>
+      <li><a href="meta/mustCallSuper-constant.html">mustCallSuper</a></li>
+      <li><a href="meta/optionalTypeArgs-constant.html">optionalTypeArgs</a></li>
+      <li><a href="meta/protected-constant.html">protected</a></li>
+      <li><a href="meta/required-constant.html">required</a></li>
+      <li><a href="meta/visibleForTesting-constant.html">visibleForTesting</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#properties">Properties</a></li>
+      <li><a href="painting/debugDisableShadows.html">debugDisableShadows</a></li>
+      <li><a href="widgets/debugHighlightDeprecatedWidgets.html">debugHighlightDeprecatedWidgets</a></li>
+      <li><a href="foundation/debugPrint.html">debugPrint</a></li>
+      <li><a href="widgets/debugPrintBuildScope.html">debugPrintBuildScope</a></li>
+      <li><a href="widgets/debugPrintGlobalKeyedWidgetLifecycle.html">debugPrintGlobalKeyedWidgetLifecycle</a></li>
+      <li><a href="widgets/debugPrintRebuildDirtyWidgets.html">debugPrintRebuildDirtyWidgets</a></li>
+      <li><a href="widgets/debugPrintScheduleBuildForStacks.html">debugPrintScheduleBuildForStacks</a></li>
+      <li><a href="widgets/debugProfileBuildsEnabled.html">debugProfileBuildsEnabled</a></li>
+      <li><a href="painting/imageCache.html">imageCache</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#functions">Functions</a></li>
+      <li><a href="painting/applyBoxFit.html">applyBoxFit</a></li>
+      <li><a href="painting/axisDirectionIsReversed.html">axisDirectionIsReversed</a></li>
+      <li><a href="painting/axisDirectionToAxis.html">axisDirectionToAxis</a></li>
+      <li><a href="widgets/createLocalImageConfiguration.html">createLocalImageConfiguration</a></li>
+      <li><a href="painting/debugAssertAllPaintingVarsUnset.html">debugAssertAllPaintingVarsUnset</a></li>
+      <li><a href="widgets/debugAssertAllWidgetVarsUnset.html">debugAssertAllWidgetVarsUnset</a></li>
+      <li><a href="widgets/debugCheckHasDirectionality.html">debugCheckHasDirectionality</a></li>
+      <li><a href="widgets/debugCheckHasMediaQuery.html">debugCheckHasMediaQuery</a></li>
+      <li><a href="widgets/debugCheckHasTable.html">debugCheckHasTable</a></li>
+      <li><a href="widgets/debugChildrenHaveDuplicateKeys.html">debugChildrenHaveDuplicateKeys</a></li>
+      <li><a href="painting/debugDescribeTransform.html">debugDescribeTransform</a></li>
+      <li><a href="widgets/debugDumpApp.html">debugDumpApp</a></li>
+      <li><a href="rendering/debugDumpLayerTree.html">debugDumpLayerTree</a></li>
+      <li><a href="rendering/debugDumpRenderTree.html">debugDumpRenderTree</a></li>
+      <li><a href="widgets/debugItemsHaveDuplicateKeys.html">debugItemsHaveDuplicateKeys</a></li>
+      <li><a href="foundation/debugPrintStack.html">debugPrintStack</a></li>
+      <li><a href="widgets/debugWidgetBuilderValue.html">debugWidgetBuilderValue</a></li>
+      <li><a href="painting/decodeImageFromList.html">decodeImageFromList</a></li>
+      <li><a href="widgets/defaultScrollNotificationPredicate.html">defaultScrollNotificationPredicate</a></li>
+      <li><a href="painting/flipAxis.html">flipAxis</a></li>
+      <li><a href="painting/flipAxisDirection.html">flipAxisDirection</a></li>
+      <li><a href="widgets/getAxisDirectionFromAxisReverseAndDirectionality.html">getAxisDirectionFromAxisReverseAndDirectionality</a></li>
+      <li><a href="dart-ui/hashList.html">hashList</a></li>
+      <li><a href="dart-ui/hashValues.html">hashValues</a></li>
+      <li><a href="painting/paintBorder.html">paintBorder</a></li>
+      <li><a href="painting/paintImage.html">paintImage</a></li>
+      <li><a href="painting/paintZigZag.html">paintZigZag</a></li>
+      <li><a href="painting/positionDependentBox.html">positionDependentBox</a></li>
+      <li><a href="widgets/precacheImage.html">precacheImage</a></li>
+      <li><a href="widgets/runApp.html">runApp</a></li>
+      <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#enums">Enums</a></li>
+      <li><a href="animation/AnimationStatus-class.html">AnimationStatus</a></li>
+      <li><a href="dart-ui/AppLifecycleState-class.html">AppLifecycleState</a></li>
+      <li><a href="painting/Axis-class.html">Axis</a></li>
+      <li><a href="painting/AxisDirection-class.html">AxisDirection</a></li>
+      <li><a href="widgets/BannerLocation-class.html">BannerLocation</a></li>
+      <li><a href="dart-ui/BlendMode-class.html">BlendMode</a></li>
+      <li><a href="dart-ui/BlurStyle-class.html">BlurStyle</a></li>
+      <li><a href="painting/BorderStyle-class.html">BorderStyle</a></li>
+      <li><a href="painting/BoxFit-class.html">BoxFit</a></li>
+      <li><a href="painting/BoxShape-class.html">BoxShape</a></li>
+      <li><a href="widgets/ConnectionState-class.html">ConnectionState</a></li>
+      <li><a href="rendering/CrossAxisAlignment-class.html">CrossAxisAlignment</a></li>
+      <li><a href="widgets/CrossFadeState-class.html">CrossFadeState</a></li>
+      <li><a href="rendering/DecorationPosition-class.html">DecorationPosition</a></li>
+      <li><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></li>
+      <li><a href="widgets/DismissDirection-class.html">DismissDirection</a></li>
+      <li><a href="widgets/DragAnchor-class.html">DragAnchor</a></li>
+      <li><a href="widgets/FadeInImagePhase-class.html">FadeInImagePhase</a></li>
+      <li><a href="dart-ui/FilterQuality-class.html">FilterQuality</a></li>
+      <li><a href="rendering/FlexFit-class.html">FlexFit</a></li>
+      <li><a href="painting/FlutterLogoStyle-class.html">FlutterLogoStyle</a></li>
+      <li><a href="dart-ui/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="rendering/GrowthDirection-class.html">GrowthDirection</a></li>
+      <li><a href="rendering/HitTestBehavior-class.html">HitTestBehavior</a></li>
+      <li><a href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="rendering/MainAxisAlignment-class.html">MainAxisAlignment</a></li>
+      <li><a href="rendering/MainAxisSize-class.html">MainAxisSize</a></li>
+      <li><a href="widgets/Orientation-class.html">Orientation</a></li>
+      <li><a href="rendering/Overflow-class.html">Overflow</a></li>
+      <li><a href="dart-ui/PaintingStyle-class.html">PaintingStyle</a></li>
+      <li><a href="dart-ui/PathFillType-class.html">PathFillType</a></li>
+      <li><a href="painting/RenderComparison-class.html">RenderComparison</a></li>
+      <li><a href="widgets/RoutePopDisposition-class.html">RoutePopDisposition</a></li>
+      <li><a href="rendering/SelectionChangedCause-class.html">SelectionChangedCause</a></li>
+      <li><a href="rendering/StackFit-class.html">StackFit</a></li>
+      <li><a href="dart-ui/StrokeCap-class.html">StrokeCap</a></li>
+      <li><a href="dart-ui/StrokeJoin-class.html">StrokeJoin</a></li>
+      <li><a href="rendering/TableCellVerticalAlignment-class.html">TableCellVerticalAlignment</a></li>
+      <li><a href="foundation/TargetPlatform-class.html">TargetPlatform</a></li>
+      <li><a href="dart-ui/TextAffinity-class.html">TextAffinity</a></li>
+      <li><a href="dart-ui/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="dart-ui/TextDirection-class.html">TextDirection</a></li>
+      <li><a href="rendering/TextOverflow-class.html">TextOverflow</a></li>
+      <li><a href="widgets/TextSelectionHandleType-class.html">TextSelectionHandleType</a></li>
+      <li><a href="dart-ui/TileMode-class.html">TileMode</a></li>
+      <li><a href="dart-ui/VertexMode-class.html">VertexMode</a></li>
+      <li><a href="painting/VerticalDirection-class.html">VerticalDirection</a></li>
+      <li><a href="rendering/WrapAlignment-class.html">WrapAlignment</a></li>
+      <li><a href="rendering/WrapCrossAlignment-class.html">WrapCrossAlignment</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#typedefs">Typedefs</a></li>
+      <li><a href="widgets/AnimatedCrossFadeBuilder.html">AnimatedCrossFadeBuilder</a></li>
+      <li><a href="widgets/AnimatedListItemBuilder.html">AnimatedListItemBuilder</a></li>
+      <li><a href="widgets/AnimatedListRemovedItemBuilder.html">AnimatedListRemovedItemBuilder</a></li>
+      <li><a href="widgets/AnimatedSwitcherLayoutBuilder.html">AnimatedSwitcherLayoutBuilder</a></li>
+      <li><a href="widgets/AnimatedSwitcherTransitionBuilder.html">AnimatedSwitcherTransitionBuilder</a></li>
+      <li><a href="animation/AnimationStatusListener.html">AnimationStatusListener</a></li>
+      <li><a href="widgets/AsyncWidgetBuilder.html">AsyncWidgetBuilder</a></li>
+      <li><a href="widgets/CreateRectTween.html">CreateRectTween</a></li>
+      <li><a href="widgets/DismissDirectionCallback.html">DismissDirectionCallback</a></li>
+      <li><a href="widgets/DraggableCanceledCallback.html">DraggableCanceledCallback</a></li>
+      <li><a href="widgets/DragTargetAccept.html">DragTargetAccept</a></li>
+      <li><a href="widgets/DragTargetBuilder.html">DragTargetBuilder</a></li>
+      <li><a href="widgets/DragTargetLeave.html">DragTargetLeave</a></li>
+      <li><a href="widgets/DragTargetWillAccept.html">DragTargetWillAccept</a></li>
+      <li><a href="widgets/ElementVisitor.html">ElementVisitor</a></li>
+      <li><a href="widgets/ErrorWidgetBuilder.html">ErrorWidgetBuilder</a></li>
+      <li><a href="widgets/FormFieldBuilder.html">FormFieldBuilder</a></li>
+      <li><a href="widgets/FormFieldSetter.html">FormFieldSetter</a></li>
+      <li><a href="widgets/FormFieldValidator.html">FormFieldValidator</a></li>
+      <li><a href="widgets/GenerateAppTitle.html">GenerateAppTitle</a></li>
+      <li><a href="gestures/GestureDragCancelCallback.html">GestureDragCancelCallback</a></li>
+      <li><a href="gestures/GestureDragDownCallback.html">GestureDragDownCallback</a></li>
+      <li><a href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></li>
+      <li><a href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></li>
+      <li><a href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></li>
+      <li><a href="gestures/GestureLongPressCallback.html">GestureLongPressCallback</a></li>
+      <li><a href="widgets/GestureRecognizerFactoryConstructor.html">GestureRecognizerFactoryConstructor</a></li>
+      <li><a href="widgets/GestureRecognizerFactoryInitializer.html">GestureRecognizerFactoryInitializer</a></li>
+      <li><a href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></li>
+      <li><a href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></li>
+      <li><a href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
+      <li><a href="gestures/GestureTapCallback.html">GestureTapCallback</a></li>
+      <li><a href="gestures/GestureTapCancelCallback.html">GestureTapCancelCallback</a></li>
+      <li><a href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a></li>
+      <li><a href="gestures/GestureTapUpCallback.html">GestureTapUpCallback</a></li>
+      <li><a href="painting/ImageListener.html">ImageListener</a></li>
+      <li><a href="widgets/IndexedWidgetBuilder.html">IndexedWidgetBuilder</a></li>
+      <li><a href="widgets/InspectorSelectButtonBuilder.html">InspectorSelectButtonBuilder</a></li>
+      <li><a href="widgets/InspectorSelectionChangedCallback.html">InspectorSelectionChangedCallback</a></li>
+      <li><a href="widgets/LayoutWidgetBuilder.html">LayoutWidgetBuilder</a></li>
+      <li><a href="widgets/LocaleResolutionCallback.html">LocaleResolutionCallback</a></li>
+      <li><a href="widgets/NestedScrollViewHeaderSliversBuilder.html">NestedScrollViewHeaderSliversBuilder</a></li>
+      <li><a href="widgets/NotificationListenerCallback.html">NotificationListenerCallback</a></li>
+      <li><a href="widgets/OrientationWidgetBuilder.html">OrientationWidgetBuilder</a></li>
+      <li><a href="rendering/PointerCancelEventListener.html">PointerCancelEventListener</a></li>
+      <li><a href="rendering/PointerDownEventListener.html">PointerDownEventListener</a></li>
+      <li><a href="rendering/PointerMoveEventListener.html">PointerMoveEventListener</a></li>
+      <li><a href="rendering/PointerUpEventListener.html">PointerUpEventListener</a></li>
+      <li><a href="widgets/RouteFactory.html">RouteFactory</a></li>
+      <li><a href="widgets/RoutePageBuilder.html">RoutePageBuilder</a></li>
+      <li><a href="widgets/RoutePredicate.html">RoutePredicate</a></li>
+      <li><a href="widgets/RouteTransitionsBuilder.html">RouteTransitionsBuilder</a></li>
+      <li><a href="widgets/ScrollNotificationPredicate.html">ScrollNotificationPredicate</a></li>
+      <li><a href="widgets/SelectionChangedCallback.html">SelectionChangedCallback</a></li>
+      <li><a href="rendering/SemanticsBuilderCallback.html">SemanticsBuilderCallback</a></li>
+      <li><a href="rendering/ShaderCallback.html">ShaderCallback</a></li>
+      <li><a href="widgets/StatefulWidgetBuilder.html">StatefulWidgetBuilder</a></li>
+      <li><a href="widgets/StateSetter.html">StateSetter</a></li>
+      <li><a href="widgets/TextSelectionOverlayChanged.html">TextSelectionOverlayChanged</a></li>
+      <li><a href="widgets/TransitionBuilder.html">TransitionBuilder</a></li>
+      <li><a href="widgets/TweenConstructor.html">TweenConstructor</a></li>
+      <li><a href="widgets/TweenVisitor.html">TweenVisitor</a></li>
+      <li><a href="foundation/ValueChanged.html">ValueChanged</a></li>
+      <li><a href="foundation/ValueGetter.html">ValueGetter</a></li>
+      <li><a href="foundation/ValueSetter.html">ValueSetter</a></li>
+      <li><a href="widgets/ViewportBuilder.html">ViewportBuilder</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+      <li><a href="widgets/WidgetBuilder.html">WidgetBuilder</a></li>
+      <li><a href="widgets/WillPopCallback.html">WillPopCallback</a></li>
+    
+      <li class="section-title"><a href="widgets/widgets-library.html#exceptions">Exceptions</a></li>
+      <li><a href="foundation/FlutterError-class.html">FlutterError</a></li>
+      <li><a href="scheduler/TickerCanceled-class.html">TickerCanceled</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>RenderNestedScrollViewViewport class</h1>
+
+    <section class="desc markdown">
+      <p>The <a href="rendering/RenderViewport-class.html">RenderViewport</a> variant used by <a href="widgets/NestedScrollView-class.html">NestedScrollView</a>.</p>
+<p>This viewport takes a <a href="widgets/SliverOverlapAbsorberHandle-class.html">SliverOverlapAbsorberHandle</a> and notifies it any time
+the viewport needs to recompute its layout (e.g. when it is scrolled).</p>
+    </section>
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a href="dart-core/Object-class.html">Object</a></li>
+          <li><a href="foundation/AbstractNode-class.html">AbstractNode</a></li>
+          <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
+          <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
+          <li><a href="rendering/RenderViewportBase-class.html">RenderViewportBase</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="rendering/SliverPhysicalContainerParentData-class.html">SliverPhysicalContainerParentData</a></span>&gt;</span></li>
+          <li><a href="rendering/RenderViewport-class.html">RenderViewport</a></li>
+          <li>RenderNestedScrollViewViewport</li>
+        </ul></dd>
+
+
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="RenderNestedScrollViewViewport" class="callable">
+          <span class="name"><a href="widgets/RenderNestedScrollViewViewport/RenderNestedScrollViewViewport.html">RenderNestedScrollViewViewport</a></span><span class="signature">({<span class="parameter" id="-param-axisDirection"><span class="type-annotation"><a href="painting/AxisDirection-class.html">AxisDirection</a></span> <span class="parameter-name">axisDirection</span>: <span class="default-value">AxisDirection.down</span>, </span> <span class="parameter" id="-param-crossAxisDirection"><span>@required</span> <span class="type-annotation"><a href="painting/AxisDirection-class.html">AxisDirection</a></span> <span class="parameter-name">crossAxisDirection</span>, </span> <span class="parameter" id="-param-offset"><span>@required</span> <span class="type-annotation"><a href="rendering/ViewportOffset-class.html">ViewportOffset</a></span> <span class="parameter-name">offset</span>, </span> <span class="parameter" id="-param-anchor"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">anchor</span>: <span class="default-value">0.0</span>, </span> <span class="parameter" id="-param-children"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span>&gt;</span></span> <span class="parameter-name">children</span>, </span> <span class="parameter" id="-param-center"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">center</span>, </span> <span class="parameter" id="-param-handle"><span>@required</span> <span class="type-annotation"><a href="widgets/SliverOverlapAbsorberHandle-class.html">SliverOverlapAbsorberHandle</a></span> <span class="parameter-name">handle</span></span> })</span>
+        </dt>
+        <dd>
+          Create a variant of <a href="rendering/RenderViewport-class.html">RenderViewport</a> that has a <a href="widgets/SliverOverlapAbsorberHandle-class.html">SliverOverlapAbsorberHandle</a>. <a href="widgets/RenderNestedScrollViewViewport/RenderNestedScrollViewViewport.html">[...]</a>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="handle" class="property">
+          <span class="name"><a href="widgets/RenderNestedScrollViewViewport/handle.html">handle</a></span>
+          <span class="signature">&#8596; <a href="widgets/SliverOverlapAbsorberHandle-class.html">SliverOverlapAbsorberHandle</a></span>
+        </dt>
+        <dd>
+          The object to notify when <a href="widgets/RenderNestedScrollViewViewport/markNeedsLayout.html">markNeedsLayout</a> is called.
+          <div class="features">read / write</div>
+</dd>
+        <dt id="alwaysNeedsCompositing" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/alwaysNeedsCompositing.html">alwaysNeedsCompositing</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether this render object always needs compositing. <a href="rendering/RenderObject/alwaysNeedsCompositing.html">[...]</a>
+          <div class="features">@protected, read-only, inherited</div>
+</dd>
+        <dt id="anchor" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewport/anchor.html">anchor</a></span>
+          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd class="inherited">
+          The relative position of the zero scroll offset. <a href="rendering/RenderViewport/anchor.html">[...]</a>
+          <div class="features">read / write, inherited</div>
+</dd>
+        <dt id="attached" class="property inherited">
+          <span class="name"><a href="foundation/AbstractNode/attached.html">attached</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether this node is in a tree whose root is attached to something. <a href="foundation/AbstractNode/attached.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="axis" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/axis.html">axis</a></span>
+          <span class="signature">&#8594; <a href="painting/Axis-class.html">Axis</a></span>
+        </dt>
+        <dd class="inherited">
+          The axis along which the viewport scrolls. <a href="rendering/RenderViewportBase/axis.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="axisDirection" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/axisDirection.html">axisDirection</a></span>
+          <span class="signature">&#8596; <a href="painting/AxisDirection-class.html">AxisDirection</a></span>
+        </dt>
+        <dd class="inherited">
+          The direction in which the <a href="rendering/SliverConstraints/scrollOffset.html">SliverConstraints.scrollOffset</a> increases. <a href="rendering/RenderViewportBase/axisDirection.html">[...]</a>
+          <div class="features">read / write, inherited</div>
+</dd>
+        <dt id="cacheExtent" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/cacheExtent.html">cacheExtent</a></span>
+          <span class="signature">&#8596; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read / write, inherited</div>
+</dd>
+        <dt id="center" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewport/center.html">center</a></span>
+          <span class="signature">&#8596; <a href="rendering/RenderSliver-class.html">RenderSliver</a></span>
+        </dt>
+        <dd class="inherited">
+          The first child in the <a href="rendering/GrowthDirection-class.html">GrowthDirection.forward</a> growth direction. <a href="rendering/RenderViewport/center.html">[...]</a>
+          <div class="features">read / write, inherited</div>
+</dd>
+        <dt id="childCount" class="property inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/childCount.html">childCount</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          The number of children.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="childrenInHitTestOrder" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewport/childrenInHitTestOrder.html">childrenInHitTestOrder</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span>&gt;</span></span>
+        </dt>
+        <dd class="inherited">
+          Provides an iterable that walks the children of the viewport, in the order
+that hit-testing should use. <a href="rendering/RenderViewport/childrenInHitTestOrder.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="childrenInPaintOrder" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewport/childrenInPaintOrder.html">childrenInPaintOrder</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span>&gt;</span></span>
+        </dt>
+        <dd class="inherited">
+          Provides an iterable that walks the children of the viewport, in the order
+that they should be painted. <a href="rendering/RenderViewport/childrenInPaintOrder.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="constraints" class="property inherited">
+          <span class="name"><a href="rendering/RenderBox/constraints.html">constraints</a></span>
+          <span class="signature">&#8594; <a href="rendering/BoxConstraints-class.html">BoxConstraints</a></span>
+        </dt>
+        <dd class="inherited">
+          The box constraints most recently received from the parent.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="crossAxisDirection" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/crossAxisDirection.html">crossAxisDirection</a></span>
+          <span class="signature">&#8596; <a href="painting/AxisDirection-class.html">AxisDirection</a></span>
+        </dt>
+        <dd class="inherited">
+          The direction in which child should be laid out in the cross axis. <a href="rendering/RenderViewportBase/crossAxisDirection.html">[...]</a>
+          <div class="features">read / write, inherited</div>
+</dd>
+        <dt id="debugCanParentUseSize" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugCanParentUseSize.html">debugCanParentUseSize</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether the parent render object is permitted to use this render object's
+size. <a href="rendering/RenderObject/debugCanParentUseSize.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="debugCreator" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugCreator.html">debugCreator</a></span>
+          <span class="signature">&#8596; dynamic</span>
+        </dt>
+        <dd class="inherited">
+          The object responsible for creating this render object. <a href="rendering/RenderObject/debugCreator.html">[...]</a>
+          <div class="features">read / write, inherited</div>
+</dd>
+        <dt id="debugDoingThisLayout" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugDoingThisLayout.html">debugDoingThisLayout</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether <a href="rendering/RenderViewport/performLayout.html">performLayout</a> for this render object is currently running. <a href="rendering/RenderObject/debugDoingThisLayout.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="debugDoingThisPaint" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugDoingThisPaint.html">debugDoingThisPaint</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether <a href="rendering/RenderViewportBase/paint.html">paint</a> for this render object is currently running. <a href="rendering/RenderObject/debugDoingThisPaint.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="debugDoingThisResize" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether <a href="rendering/RenderViewport/performResize.html">performResize</a> for this render object is currently running. <a href="rendering/RenderObject/debugDoingThisResize.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="debugLayer" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugLayer.html">debugLayer</a></span>
+          <span class="signature">&#8594; <a href="rendering/OffsetLayer-class.html">OffsetLayer</a></span>
+        </dt>
+        <dd class="inherited">
+          In debug mode, the compositing layer that this render object uses to repaint. <a href="rendering/RenderObject/debugLayer.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="debugNeedsLayout" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugNeedsLayout.html">debugNeedsLayout</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether this render object's layout information is dirty. <a href="rendering/RenderObject/debugNeedsLayout.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="debugNeedsPaint" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugNeedsPaint.html">debugNeedsPaint</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether this render object's paint information is dirty. <a href="rendering/RenderObject/debugNeedsPaint.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="debugSemantics" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/debugSemantics.html">debugSemantics</a></span>
+          <span class="signature">&#8594; <a href="semantics/SemanticsNode-class.html">SemanticsNode</a></span>
+        </dt>
+        <dd class="inherited">
+          The semantics of this render object. <a href="rendering/RenderObject/debugSemantics.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="depth" class="property inherited">
+          <span class="name"><a href="foundation/AbstractNode/depth.html">depth</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          The depth of this node in the tree. <a href="foundation/AbstractNode/depth.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="firstChild" class="property inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/firstChild.html">firstChild</a></span>
+          <span class="signature">&#8594; <a href="rendering/RenderSliver-class.html">RenderSliver</a></span>
+        </dt>
+        <dd class="inherited">
+          The first child in the child list.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          The hash code for this object. <a href="dart-core/Object/hashCode.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="hasSize" class="property inherited">
+          <span class="name"><a href="rendering/RenderBox/hasSize.html">hasSize</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether this render object has undergone layout and has a <a href="rendering/RenderBox/size.html">size</a>.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="hasVisualOverflow" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewport/hasVisualOverflow.html">hasVisualOverflow</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether the contents of this viewport would paint outside the bounds of
+the viewport if <a href="rendering/RenderViewportBase/paint.html">paint</a> did not clip. <a href="rendering/RenderViewport/hasVisualOverflow.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="indexOfFirstChild" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewport/indexOfFirstChild.html">indexOfFirstChild</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd class="inherited">
+          The index of the first child of the viewport relative to the center child. <a href="rendering/RenderViewport/indexOfFirstChild.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isRepaintBoundary" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/isRepaintBoundary.html">isRepaintBoundary</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether this render object repaints separately from its parent. <a href="rendering/RenderViewportBase/isRepaintBoundary.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="lastChild" class="property inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/lastChild.html">lastChild</a></span>
+          <span class="signature">&#8594; <a href="rendering/RenderSliver-class.html">RenderSliver</a></span>
+        </dt>
+        <dd class="inherited">
+          The last child in the child list.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="layer" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/layer.html">layer</a></span>
+          <span class="signature">&#8594; <a href="rendering/OffsetLayer-class.html">OffsetLayer</a></span>
+        </dt>
+        <dd class="inherited">
+          The compositing layer that this render object uses to repaint. <a href="rendering/RenderObject/layer.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="needsCompositing" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/needsCompositing.html">needsCompositing</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether we or one of our descendants has a compositing layer. <a href="rendering/RenderObject/needsCompositing.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="offset" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/offset.html">offset</a></span>
+          <span class="signature">&#8596; <a href="rendering/ViewportOffset-class.html">ViewportOffset</a></span>
+        </dt>
+        <dd class="inherited">
+          Which part of the content inside the viewport should be visible. <a href="rendering/RenderViewportBase/offset.html">[...]</a>
+          <div class="features">read / write, inherited</div>
+</dd>
+        <dt id="owner" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/owner.html">owner</a></span>
+          <span class="signature">&#8594; <a href="rendering/PipelineOwner-class.html">PipelineOwner</a></span>
+        </dt>
+        <dd class="inherited">
+          The owner for this node (null if unattached). <a href="rendering/RenderObject/owner.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="paintBounds" class="property inherited">
+          <span class="name"><a href="rendering/RenderBox/paintBounds.html">paintBounds</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+        </dt>
+        <dd class="inherited">
+          Returns a rectangle that contains all the pixels painted by this box. <a href="rendering/RenderBox/paintBounds.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="parent" class="property inherited">
+          <span class="name"><a href="foundation/AbstractNode/parent.html">parent</a></span>
+          <span class="signature">&#8594; <a href="foundation/AbstractNode-class.html">AbstractNode</a></span>
+        </dt>
+        <dd class="inherited">
+          The parent of this node in the tree.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="parentData" class="property inherited">
+          <span class="name"><a href="rendering/RenderObject/parentData.html">parentData</a></span>
+          <span class="signature">&#8596; <a href="rendering/ParentData-class.html">ParentData</a></span>
+        </dt>
+        <dd class="inherited">
+          Data for use by the parent render object. <a href="rendering/RenderObject/parentData.html">[...]</a>
+          <div class="features">read / write, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="semanticBounds" class="property inherited">
+          <span class="name"><a href="rendering/RenderBox/semanticBounds.html">semanticBounds</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+        </dt>
+        <dd class="inherited">
+          The bounding box, in the local coordinate system, of this
+object, for accessibility purposes.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="size" class="property inherited">
+          <span class="name"><a href="rendering/RenderBox/size.html">size</a></span>
+          <span class="signature">&#8596; <a href="dart-ui/Size-class.html">Size</a></span>
+        </dt>
+        <dd class="inherited">
+          The size of this render box computed during layout. <a href="rendering/RenderBox/size.html">[...]</a>
+          <div class="features">@protected, read / write, inherited</div>
+</dd>
+        <dt id="sizedByParent" class="property inherited">
+          <span class="name"><a href="rendering/RenderViewport/sizedByParent.html">sizedByParent</a></span>
+          <span class="signature">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+        </dt>
+        <dd class="inherited">
+          Whether the constraints are the only input to the sizing algorithm (in
+particular, child nodes have no impact). <a href="rendering/RenderViewport/sizedByParent.html">[...]</a>
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="debugFillProperties" class="callable">
+          <span class="name"><a href="widgets/RenderNestedScrollViewViewport/debugFillProperties.html">debugFillProperties</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillProperties-param-properties"><span class="type-annotation"><a href="foundation/DiagnosticPropertiesBuilder-class.html">DiagnosticPropertiesBuilder</a></span> <span class="parameter-name">properties</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="markNeedsLayout" class="callable">
+          <span class="name"><a href="widgets/RenderNestedScrollViewViewport/markNeedsLayout.html">markNeedsLayout</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="add" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/add.html">add</a></span><span class="signature">(<wbr><span class="parameter" id="add-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Append child to the end of this render object's child list.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="addAll" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/addAll.html">addAll</a></span><span class="signature">(<wbr><span class="parameter" id="addAll-param-children"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span>&gt;</span></span> <span class="parameter-name">children</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Add all the children to the end of this render object's child list.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="adoptChild" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/adoptChild.html">adoptChild</a></span><span class="signature">(<wbr><span class="parameter" id="adoptChild-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Called by subclasses when they decide a render object is a child. <a href="rendering/RenderObject/adoptChild.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="applyPaintTransform" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/applyPaintTransform.html">applyPaintTransform</a></span><span class="signature">(<wbr><span class="parameter" id="applyPaintTransform-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="applyPaintTransform-param-transform"><span class="type-annotation"><a href="vector_math_64/Matrix4-class.html">Matrix4</a></span> <span class="parameter-name">transform</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Multiply the transform from the parent's coordinate system to this box's
+coordinate system into the given transform. <a href="rendering/RenderViewport/applyPaintTransform.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="assembleSemanticsNode" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/assembleSemanticsNode.html">assembleSemanticsNode</a></span><span class="signature">(<wbr><span class="parameter" id="assembleSemanticsNode-param-node"><span class="type-annotation"><a href="semantics/SemanticsNode-class.html">SemanticsNode</a></span> <span class="parameter-name">node</span>, </span> <span class="parameter" id="assembleSemanticsNode-param-config"><span class="type-annotation"><a href="semantics/SemanticsConfiguration-class.html">SemanticsConfiguration</a></span> <span class="parameter-name">config</span>, </span> <span class="parameter" id="assembleSemanticsNode-param-children"><span class="type-annotation"><a href="dart-core/Iterable-class.html">Iterable</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="semantics/SemanticsNode-class.html">SemanticsNode</a></span>&gt;</span></span> <span class="parameter-name">children</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Assemble the <a href="semantics/SemanticsNode-class.html">SemanticsNode</a> for this <a href="rendering/RenderObject-class.html">RenderObject</a>. <a href="rendering/RenderObject/assembleSemanticsNode.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="attach" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/attach.html">attach</a></span><span class="signature">(<wbr><span class="parameter" id="attach-param-owner"><span class="type-annotation"><a href="rendering/PipelineOwner-class.html">PipelineOwner</a></span> <span class="parameter-name">owner</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="childAfter" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/childAfter.html">childAfter</a></span><span class="signature">(<wbr><span class="parameter" id="childAfter-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="rendering/RenderSliver-class.html">RenderSliver</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The next child after the given child in the child list.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="childBefore" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/childBefore.html">childBefore</a></span><span class="signature">(<wbr><span class="parameter" id="childBefore-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="rendering/RenderSliver-class.html">RenderSliver</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The previous child before the given child in the child list.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="clearSemantics" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/clearSemantics.html">clearSemantics</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Removes all semantics from this render object and its descendants. <a href="rendering/RenderObject/clearSemantics.html">[...]</a>
+          <div class="features">@mustCallSuper, inherited</div>
+</dd>
+        <dt id="computeAbsolutePaintOffset" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/computeAbsolutePaintOffset.html">computeAbsolutePaintOffset</a></span><span class="signature">(<wbr><span class="parameter" id="computeAbsolutePaintOffset-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="computeAbsolutePaintOffset-param-layoutOffset"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">layoutOffset</span>, </span> <span class="parameter" id="computeAbsolutePaintOffset-param-growthDirection"><span class="type-annotation"><a href="rendering/GrowthDirection-class.html">GrowthDirection</a></span> <span class="parameter-name">growthDirection</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The offset at which the given <code>child</code> should be painted. <a href="rendering/RenderViewportBase/computeAbsolutePaintOffset.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="computeChildMainAxisPosition" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/computeChildMainAxisPosition.html">computeChildMainAxisPosition</a></span><span class="signature">(<wbr><span class="parameter" id="computeChildMainAxisPosition-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="computeChildMainAxisPosition-param-parentMainAxisPosition"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">parentMainAxisPosition</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Converts the <code>parentMainAxisPosition</code> into the child's coordinate system. <a href="rendering/RenderViewport/computeChildMainAxisPosition.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="computeDistanceToActualBaseline" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="computeDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the distance from the y-coordinate of the position of the box to
+the y-coordinate of the first given baseline in the box's contents, if
+any, or null otherwise. <a href="rendering/RenderBox/computeDistanceToActualBaseline.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="computeMaxIntrinsicHeight" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/computeMaxIntrinsicHeight.html">computeMaxIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="computeMaxIntrinsicHeight-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Computes the value returned by <a href="rendering/RenderBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a>. Do not call this
+function directly, instead, call <a href="rendering/RenderBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a>. <a href="rendering/RenderViewportBase/computeMaxIntrinsicHeight.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="computeMaxIntrinsicWidth" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/computeMaxIntrinsicWidth.html">computeMaxIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="computeMaxIntrinsicWidth-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Computes the value returned by <a href="rendering/RenderBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a>. Do not call this
+function directly, instead, call <a href="rendering/RenderBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a>. <a href="rendering/RenderViewportBase/computeMaxIntrinsicWidth.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="computeMinIntrinsicHeight" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/computeMinIntrinsicHeight.html">computeMinIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="computeMinIntrinsicHeight-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Computes the value returned by <a href="rendering/RenderBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a>. Do not call this
+function directly, instead, call <a href="rendering/RenderBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a>. <a href="rendering/RenderViewportBase/computeMinIntrinsicHeight.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="computeMinIntrinsicWidth" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/computeMinIntrinsicWidth.html">computeMinIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="computeMinIntrinsicWidth-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Computes the value returned by <a href="rendering/RenderBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a>. Do not call this
+function directly, instead, call <a href="rendering/RenderBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a>. <a href="rendering/RenderViewportBase/computeMinIntrinsicWidth.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugAdoptSize" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/debugAdoptSize.html">debugAdoptSize</a></span><span class="signature">(<wbr><span class="parameter" id="debugAdoptSize-param-value"><span class="type-annotation"><a href="dart-ui/Size-class.html">Size</a></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Size-class.html">Size</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Claims ownership of the given <a href="dart-ui/Size-class.html">Size</a>. <a href="rendering/RenderBox/debugAdoptSize.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugAssertDoesMeetConstraints" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/debugAssertDoesMeetConstraints.html">debugAssertDoesMeetConstraints</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Verify that the object's constraints are being met. Override
+this function in a subclass to verify that your state matches
+the constraints object. This function is only called in checked
+mode and only when needsLayout is false. If the constraints are
+not met, it should assert or throw an exception.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugDescribeChildren" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/debugDescribeChildren.html">debugDescribeChildren</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>&gt;</span></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugHandleEvent" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/debugHandleEvent.html">debugHandleEvent</a></span><span class="signature">(<wbr><span class="parameter" id="debugHandleEvent-param-event"><span class="type-annotation"><a href="gestures/PointerEvent-class.html">PointerEvent</a></span> <span class="parameter-name">event</span>, </span> <span class="parameter" id="debugHandleEvent-param-entry"><span class="type-annotation"><a href="gestures/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Implements the <a href="rendering/debugPaintPointersEnabled.html">debugPaintPointersEnabled</a> debugging feature. <a href="rendering/RenderBox/debugHandleEvent.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugPaint" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/debugPaint.html">debugPaint</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaint-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaint-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Override this method to paint debugging information.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugPaintBaselines" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintBaselines-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintBaselines-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          In debug mode, paints a line for each baseline. <a href="rendering/RenderBox/debugPaintBaselines.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="debugPaintPointers" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/debugPaintPointers.html">debugPaintPointers</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintPointers-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintPointers-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          In debug mode, paints a rectangle if this render box has counted more
+pointer downs than pointer up events. <a href="rendering/RenderBox/debugPaintPointers.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="debugPaintSize" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/debugPaintSize.html">debugPaintSize</a></span><span class="signature">(<wbr><span class="parameter" id="debugPaintSize-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="debugPaintSize-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          In debug mode, paints a border around this render box. <a href="rendering/RenderViewportBase/debugPaintSize.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugRegisterRepaintBoundaryPaint" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/debugRegisterRepaintBoundaryPaint.html">debugRegisterRepaintBoundaryPaint</a></span><span class="signature">(<wbr>{<span class="parameter" id="debugRegisterRepaintBoundaryPaint-param-includedParent"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includedParent</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="debugRegisterRepaintBoundaryPaint-param-includedChild"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">includedChild</span>: <span class="default-value">false</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Called, in checked mode, if <a href="rendering/RenderViewportBase/isRepaintBoundary.html">isRepaintBoundary</a> is true, when either the
+this render object or its parent attempt to paint. <a href="rendering/RenderObject/debugRegisterRepaintBoundaryPaint.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugResetSize" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          If a subclass has a "size" (the state controlled by <code>parentUsesSize</code>,
+whatever it is in the subclass, e.g. the actual <code>size</code> property of
+<a href="rendering/RenderBox-class.html">RenderBox</a>), and the subclass verifies that in checked mode this "size"
+property isn't used when <a href="rendering/RenderObject/debugCanParentUseSize.html">debugCanParentUseSize</a> isn't set, then that
+subclass should override <a href="rendering/RenderBox/debugResetSize.html">debugResetSize</a> to reapply the current values of
+<a href="rendering/RenderObject/debugCanParentUseSize.html">debugCanParentUseSize</a> to that state.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="debugThrowIfNotCheckingIntrinsics" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/debugThrowIfNotCheckingIntrinsics.html">debugThrowIfNotCheckingIntrinsics</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Throws an exception saying that the object does not support returning
+intrinsic dimensions if, in checked mode, we are not in the
+<a href="rendering/RenderObject/debugCheckingIntrinsics.html">RenderObject.debugCheckingIntrinsics</a> mode. <a href="rendering/RenderViewportBase/debugThrowIfNotCheckingIntrinsics.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="debugValidateChild" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/debugValidateChild.html">debugValidateChild</a></span><span class="signature">(<wbr><span class="parameter" id="debugValidateChild-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Checks whether the given render object has the correct <a href="dart-core/Object/runtimeType.html">runtimeType</a> to be
+a child of this render object. <a href="rendering/ContainerRenderObjectMixin/debugValidateChild.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="describeApproximatePaintClip" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/describeApproximatePaintClip.html">describeApproximatePaintClip</a></span><span class="signature">(<wbr><span class="parameter" id="describeApproximatePaintClip-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a rect in this object's coordinate system that describes
+the approximate bounding box of the clip rect that would be
+applied to the given child during the paint phase, if any. <a href="rendering/RenderViewportBase/describeApproximatePaintClip.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="describeSemanticsClip" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/describeSemanticsClip.html">describeSemanticsClip</a></span><span class="signature">(<wbr><span class="parameter" id="describeSemanticsClip-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Rect-class.html">Rect</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a rect in this object's coordinate system that describes
+which <a href="semantics/SemanticsNode-class.html">SemanticsNode</a>s produced by the <code>child</code> should be included in the
+semantics tree. <a href="semantics/SemanticsNode-class.html">SemanticsNode</a>s from the <code>child</code> that are positioned
+outside of this rect will be dropped. Child <a href="semantics/SemanticsNode-class.html">SemanticsNode</a>s that are
+positioned inside this rect, but outside of <a href="rendering/RenderViewportBase/describeApproximatePaintClip.html">describeApproximatePaintClip</a>
+will be included in the tree marked as hidden. Child <a href="semantics/SemanticsNode-class.html">SemanticsNode</a>s
+that are inside of both rect will be included in the tree as regular
+nodes. <a href="rendering/RenderViewportBase/describeSemanticsClip.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="describeSemanticsConfiguration" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/describeSemanticsConfiguration.html">describeSemanticsConfiguration</a></span><span class="signature">(<wbr><span class="parameter" id="describeSemanticsConfiguration-param-config"><span class="type-annotation"><a href="semantics/SemanticsConfiguration-class.html">SemanticsConfiguration</a></span> <span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Report the semantics of this node, for example for accessibility purposes. <a href="rendering/RenderViewportBase/describeSemanticsConfiguration.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="detach" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/detach.html">detach</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="dropChild" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/dropChild.html">dropChild</a></span><span class="signature">(<wbr><span class="parameter" id="dropChild-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Called by subclasses when they decide a render object is no longer a child. <a href="rendering/RenderObject/dropChild.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="getDistanceToActualBaseline" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="getDistanceToActualBaseline-param-baseline"><span class="type-annotation"><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Calls <a href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a> and caches the result. <a href="rendering/RenderBox/getDistanceToActualBaseline.html">[...]</a>
+          <div class="features">@mustCallSuper, @protected, inherited</div>
+</dd>
+        <dt id="getDistanceToBaseline" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a></span><span class="signature">(<wbr><span class="parameter" id="getDistanceToBaseline-param-baseline"><span class="type-annotation"><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></span> <span class="parameter-name">baseline</span>, {</span> <span class="parameter" id="getDistanceToBaseline-param-onlyReal"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">onlyReal</span>: <span class="default-value">false</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the distance from the y-coordinate of the position of the box to
+the y-coordinate of the first given baseline in the box's contents. <a href="rendering/RenderBox/getDistanceToBaseline.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="getMaxIntrinsicHeight" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicHeight-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the smallest height beyond which increasing the height never
+decreases the preferred width. The preferred width is the value that
+would be returned by <a href="rendering/RenderBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a> for that height. <a href="rendering/RenderBox/getMaxIntrinsicHeight.html">[...]</a>
+          <div class="features">@mustCallSuper, inherited</div>
+</dd>
+        <dt id="getMaxIntrinsicWidth" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="getMaxIntrinsicWidth-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the smallest width beyond which increasing the width never
+decreases the preferred height. The preferred height is the value that
+would be returned by <a href="rendering/RenderBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a> for that width. <a href="rendering/RenderBox/getMaxIntrinsicWidth.html">[...]</a>
+          <div class="features">@mustCallSuper, inherited</div>
+</dd>
+        <dt id="getMinIntrinsicHeight" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></span><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicHeight-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the minimum height that this box could be without failing to
+correctly paint its contents within itself, without clipping. <a href="rendering/RenderBox/getMinIntrinsicHeight.html">[...]</a>
+          <div class="features">@mustCallSuper, inherited</div>
+</dd>
+        <dt id="getMinIntrinsicWidth" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></span><span class="signature">(<wbr><span class="parameter" id="getMinIntrinsicWidth-param-height"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the minimum width that this box could be without failing to
+correctly paint its contents within itself, without clipping. <a href="rendering/RenderBox/getMinIntrinsicWidth.html">[...]</a>
+          <div class="features">@mustCallSuper, inherited</div>
+</dd>
+        <dt id="getOffsetToReveal" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/getOffsetToReveal.html">getOffsetToReveal</a></span><span class="signature">(<wbr><span class="parameter" id="getOffsetToReveal-param-target"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">target</span>, </span> <span class="parameter" id="getOffsetToReveal-param-alignment"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">alignment</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the offset that would be needed to reveal the target render object. <a href="rendering/RenderViewportBase/getOffsetToReveal.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="getTransformTo" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/getTransformTo.html">getTransformTo</a></span><span class="signature">(<wbr><span class="parameter" id="getTransformTo-param-ancestor"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">ancestor</span></span>)
+            <span class="returntype parameter">&#8594; <a href="vector_math_64/Matrix4-class.html">Matrix4</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Applies the paint transform up the tree to <code>ancestor</code>. <a href="rendering/RenderObject/getTransformTo.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="globalToLocal" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/globalToLocal.html">globalToLocal</a></span><span class="signature">(<wbr><span class="parameter" id="globalToLocal-param-point"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="globalToLocal-param-ancestor"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">ancestor</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Convert the given point from the global coordinate system in logical pixels
+to the local coordinate system for this box. <a href="rendering/RenderBox/globalToLocal.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="handleEvent" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/handleEvent.html">handleEvent</a></span><span class="signature">(<wbr><span class="parameter" id="handleEvent-param-event"><span class="type-annotation"><a href="gestures/PointerEvent-class.html">PointerEvent</a></span> <span class="parameter-name">event</span>, </span> <span class="parameter" id="handleEvent-param-entry"><span class="type-annotation"><a href="gestures/HitTestEntry-class.html">HitTestEntry</a></span> <span class="parameter-name">entry</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Override this method to handle pointer events that hit this render object. <a href="rendering/RenderBox/handleEvent.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="hitTest" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/hitTest.html">hitTest</a></span><span class="signature">(<wbr><span class="parameter" id="hitTest-param-result"><span class="type-annotation"><a href="gestures/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span>, {</span> <span class="parameter" id="hitTest-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Determines the set of render objects located at the given position. <a href="rendering/RenderBox/hitTest.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="hitTestChildren" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/hitTestChildren.html">hitTestChildren</a></span><span class="signature">(<wbr><span class="parameter" id="hitTestChildren-param-result"><span class="type-annotation"><a href="gestures/HitTestResult-class.html">HitTestResult</a></span> <span class="parameter-name">result</span>, {</span> <span class="parameter" id="hitTestChildren-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Override this method to check whether any children are located at the
+given position. <a href="rendering/RenderViewportBase/hitTestChildren.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="hitTestSelf" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/hitTestSelf.html">hitTestSelf</a></span><span class="signature">(<wbr><span class="parameter" id="hitTestSelf-param-position"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">position</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Override this method if this render object can be hit even if its
+children were not hit. <a href="rendering/RenderBox/hitTestSelf.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="insert" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/insert.html">insert</a></span><span class="signature">(<wbr><span class="parameter" id="insert-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span>, {</span> <span class="parameter" id="insert-param-after"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">after</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Insert child into this render object's child list after the given child. <a href="rendering/ContainerRenderObjectMixin/insert.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="invokeLayoutCallback" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T extends <a href="rendering/Constraints-class.html">Constraints</a></span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="invokeLayoutCallback-param-callback"><span class="type-annotation"><a href="rendering/LayoutCallback.html">LayoutCallback</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> <span class="parameter-name">callback</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Allows mutations to be made to this object's child list (and any
+descendants) as well as to any other dirty nodes in the render tree owned
+by the same <a href="rendering/PipelineOwner-class.html">PipelineOwner</a> as this object. The <code>callback</code> argument is
+invoked synchronously, and the mutations are allowed only during that
+callback's execution. <a href="rendering/RenderObject/invokeLayoutCallback.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="labelForChild" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/labelForChild.html">labelForChild</a></span><span class="signature">(<wbr><span class="parameter" id="labelForChild-param-index"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          A short string to identify the child with the given index. <a href="rendering/RenderViewport/labelForChild.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="layout" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/layout.html">layout</a></span><span class="signature">(<wbr><span class="parameter" id="layout-param-constraints"><span class="type-annotation"><a href="rendering/Constraints-class.html">Constraints</a></span> <span class="parameter-name">constraints</span>, {</span> <span class="parameter" id="layout-param-parentUsesSize"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">parentUsesSize</span>: <span class="default-value">false</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Compute the layout for this render object. <a href="rendering/RenderObject/layout.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="layoutChildSequence" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/layoutChildSequence.html">layoutChildSequence</a></span><span class="signature">(<wbr>{<span class="parameter" id="layoutChildSequence-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="layoutChildSequence-param-scrollOffset"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">scrollOffset</span>, </span> <span class="parameter" id="layoutChildSequence-param-overlap"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">overlap</span>, </span> <span class="parameter" id="layoutChildSequence-param-layoutOffset"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">layoutOffset</span>, </span> <span class="parameter" id="layoutChildSequence-param-remainingPaintExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">remainingPaintExtent</span>, </span> <span class="parameter" id="layoutChildSequence-param-mainAxisExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">mainAxisExtent</span>, </span> <span class="parameter" id="layoutChildSequence-param-crossAxisExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">crossAxisExtent</span>, </span> <span class="parameter" id="layoutChildSequence-param-growthDirection"><span class="type-annotation"><a href="rendering/GrowthDirection-class.html">GrowthDirection</a></span> <span class="parameter-name">growthDirection</span>, </span> <span class="parameter" id="layoutChildSequence-param-advance"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">advance</span>(<span class="parameter" id="advance-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>), </span> <span class="parameter" id="layoutChildSequence-param-remainingCacheExtent"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">remainingCacheExtent</span>, </span> <span class="parameter" id="layoutChildSequence-param-cacheOrigin"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">cacheOrigin</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Determines the size and position of some of the children of the viewport. <a href="rendering/RenderViewportBase/layoutChildSequence.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="localToGlobal" class="callable inherited">
+          <span class="name"><a href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></span><span class="signature">(<wbr><span class="parameter" id="localToGlobal-param-point"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">point</span>, {</span> <span class="parameter" id="localToGlobal-param-ancestor"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">ancestor</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Convert the given point from the local coordinate system for this box to
+the global coordinate system in logical pixels. <a href="rendering/RenderBox/localToGlobal.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="markNeedsCompositingBitsUpdate" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/markNeedsCompositingBitsUpdate.html">markNeedsCompositingBitsUpdate</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Mark the compositing state for this render object as dirty. <a href="rendering/RenderObject/markNeedsCompositingBitsUpdate.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="markNeedsLayoutForSizedByParentChange" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/markNeedsLayoutForSizedByParentChange.html">markNeedsLayoutForSizedByParentChange</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Mark this render object's layout information as dirty (like
+<a href="widgets/RenderNestedScrollViewViewport/markNeedsLayout.html">markNeedsLayout</a>), and additionally also handle any necessary work to
+handle the case where <a href="rendering/RenderViewport/sizedByParent.html">sizedByParent</a> has changed value. <a href="rendering/RenderObject/markNeedsLayoutForSizedByParentChange.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="markNeedsPaint" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Mark this render object as having changed its visual appearance. <a href="rendering/RenderObject/markNeedsPaint.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="markNeedsSemanticsUpdate" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/markNeedsSemanticsUpdate.html">markNeedsSemanticsUpdate</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Mark this node as needing an update to its semantics description. <a href="rendering/RenderObject/markNeedsSemanticsUpdate.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="markParentNeedsLayout" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/markParentNeedsLayout.html">markParentNeedsLayout</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Mark this render object's layout information as dirty, and then defer to
+the parent. <a href="rendering/RenderObject/markParentNeedsLayout.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="maxScrollObstructionExtentBefore" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/maxScrollObstructionExtentBefore.html">maxScrollObstructionExtentBefore</a></span><span class="signature">(<wbr><span class="parameter" id="maxScrollObstructionExtentBefore-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the total scroll obstruction extent of all slivers in the viewport
+before <code>child</code>. <a href="rendering/RenderViewport/maxScrollObstructionExtentBefore.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="move" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/move.html">move</a></span><span class="signature">(<wbr><span class="parameter" id="move-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span>, {</span> <span class="parameter" id="move-param-after"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">after</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Move this child in the child list to be before the given child. <a href="rendering/ContainerRenderObjectMixin/move.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="paint" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/paint.html">paint</a></span><span class="signature">(<wbr><span class="parameter" id="paint-param-context"><span class="type-annotation"><a href="rendering/PaintingContext-class.html">PaintingContext</a></span> <span class="parameter-name">context</span>, </span> <span class="parameter" id="paint-param-offset"><span class="type-annotation"><a href="dart-ui/Offset-class.html">Offset</a></span> <span class="parameter-name">offset</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Paint this render object into the given context at the given offset. <a href="rendering/RenderViewportBase/paint.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="paintOffsetOf" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/paintOffsetOf.html">paintOffsetOf</a></span><span class="signature">(<wbr><span class="parameter" id="paintOffsetOf-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Offset-class.html">Offset</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The offset at which the given <code>child</code> should be painted. <a href="rendering/RenderViewport/paintOffsetOf.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="performLayout" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/performLayout.html">performLayout</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="performResize" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/performResize.html">performResize</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="reassemble" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/reassemble.html">reassemble</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Cause the entire subtree rooted at the given <a href="rendering/RenderObject-class.html">RenderObject</a> to be marked
+dirty for layout, paint, etc, so that the effects of a hot reload can be
+seen, or so that the effect of changing a global debug flag (such as
+<a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a>) can be applied. <a href="rendering/RenderObject/reassemble.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="redepthChild" class="callable inherited">
+          <span class="name"><a href="foundation/AbstractNode/redepthChild.html">redepthChild</a></span><span class="signature">(<wbr><span class="parameter" id="redepthChild-param-child"><span class="type-annotation"><a href="foundation/AbstractNode-class.html">AbstractNode</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Adjust the <a href="foundation/AbstractNode/depth.html">depth</a> of the given <code>child</code> to be greater than this node's own
+<a href="foundation/AbstractNode/depth.html">depth</a>. <a href="foundation/AbstractNode/redepthChild.html">[...]</a>
+          <div class="features">@protected, inherited</div>
+</dd>
+        <dt id="redepthChildren" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/redepthChildren.html">redepthChildren</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Adjust the <a href="foundation/AbstractNode/depth.html">depth</a> of this node's children, if any. <a href="rendering/ContainerRenderObjectMixin/redepthChildren.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="remove" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/remove.html">remove</a></span><span class="signature">(<wbr><span class="parameter" id="remove-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Remove this child from the child list. <a href="rendering/ContainerRenderObjectMixin/remove.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="removeAll" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/removeAll.html">removeAll</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Remove all their children from this render object's child list. <a href="rendering/ContainerRenderObjectMixin/removeAll.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="replaceRootLayer" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/replaceRootLayer.html">replaceRootLayer</a></span><span class="signature">(<wbr><span class="parameter" id="replaceRootLayer-param-rootLayer"><span class="type-annotation"><a href="rendering/OffsetLayer-class.html">OffsetLayer</a></span> <span class="parameter-name">rootLayer</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Replace the layer. This is only valid for the root of a render
+object subtree (whatever object <a href="rendering/RenderObject/scheduleInitialPaint.html">scheduleInitialPaint</a> was
+called on). <a href="rendering/RenderObject/replaceRootLayer.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="rotate" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/rotate.html">rotate</a></span><span class="signature">(<wbr>{<span class="parameter" id="rotate-param-oldAngle"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">oldAngle</span>, </span> <span class="parameter" id="rotate-param-newAngle"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">newAngle</span>, </span> <span class="parameter" id="rotate-param-time"><span class="type-annotation"><a href="dart-core/Duration-class.html">Duration</a></span> <span class="parameter-name">time</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Rotate this render object (not yet implemented).
+          <div class="features">inherited</div>
+</dd>
+        <dt id="scheduleInitialLayout" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/scheduleInitialLayout.html">scheduleInitialLayout</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Bootstrap the rendering pipeline by scheduling the very first layout. <a href="rendering/RenderObject/scheduleInitialLayout.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="scheduleInitialPaint" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/scheduleInitialPaint.html">scheduleInitialPaint</a></span><span class="signature">(<wbr><span class="parameter" id="scheduleInitialPaint-param-rootLayer"><span class="type-annotation"><a href="rendering/ContainerLayer-class.html">ContainerLayer</a></span> <span class="parameter-name">rootLayer</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Bootstrap the rendering pipeline by scheduling the very first paint. <a href="rendering/RenderObject/scheduleInitialPaint.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="scheduleInitialSemantics" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/scheduleInitialSemantics.html">scheduleInitialSemantics</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Bootstrap the semantics reporting mechanism by marking this node
+as needing a semantics update. <a href="rendering/RenderObject/scheduleInitialSemantics.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="scrollOffsetOf" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/scrollOffsetOf.html">scrollOffsetOf</a></span><span class="signature">(<wbr><span class="parameter" id="scrollOffsetOf-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="scrollOffsetOf-param-scrollOffsetWithinChild"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">scrollOffsetWithinChild</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/double-class.html">double</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns the scroll offset within the viewport for the given
+<code>scrollOffsetWithinChild</code> within the given <code>child</code>. <a href="rendering/RenderViewport/scrollOffsetOf.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="sendSemanticsEvent" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/sendSemanticsEvent.html">sendSemanticsEvent</a></span><span class="signature">(<wbr><span class="parameter" id="sendSemanticsEvent-param-semanticsEvent"><span class="type-annotation"><a href="semantics/SemanticsEvent-class.html">SemanticsEvent</a></span> <span class="parameter-name">semanticsEvent</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Sends a <a href="semantics/SemanticsEvent-class.html">SemanticsEvent</a> associated with this render object's <a href="semantics/SemanticsNode-class.html">SemanticsNode</a>. <a href="rendering/RenderObject/sendSemanticsEvent.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="setupParentData" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/setupParentData.html">setupParentData</a></span><span class="signature">(<wbr><span class="parameter" id="setupParentData-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="showOnScreen" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/showOnScreen.html">showOnScreen</a></span><span class="signature">(<wbr>[<span class="parameter" id="showOnScreen-param-child"><span class="type-annotation"><a href="rendering/RenderObject-class.html">RenderObject</a></span> <span class="parameter-name">child</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Attempt to make this or a descendant RenderObject visible on screen. <a href="rendering/RenderViewportBase/showOnScreen.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toDiagnosticsNode" class="callable inherited">
+          <span class="name"><a href="foundation/DiagnosticableTreeMixin/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr>{<span class="parameter" id="toDiagnosticsNode-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, </span> <span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation"><a href="foundation/DiagnosticsTreeStyle-class.html">DiagnosticsTreeStyle</a></span> <span class="parameter-name">style</span></span> })
+            <span class="returntype parameter">&#8594; <a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/toString.html">toString</a></span><span class="signature">(<wbr>{<span class="parameter" id="toString-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toStringDeep" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringDeep-param-prefixLineOne"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixOtherLines</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a description of the tree rooted at this node.
+If the prefix argument is provided, then every line in the output
+will be prefixed by that string.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toStringShallow" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringShallow-param-joiner"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">joiner</span>: <span class="default-value">'; '</span>, </span> <span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a one-line detailed description of the render object.
+This description is often somewhat long. <a href="rendering/RenderObject/toStringShallow.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toStringShort" class="callable inherited">
+          <span class="name"><a href="rendering/RenderObject/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a human understandable name.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="updateChildLayoutOffset" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/updateChildLayoutOffset.html">updateChildLayoutOffset</a></span><span class="signature">(<wbr><span class="parameter" id="updateChildLayoutOffset-param-child"><span class="type-annotation"><a href="rendering/RenderSliver-class.html">RenderSliver</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="updateChildLayoutOffset-param-layoutOffset"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">layoutOffset</span>, </span> <span class="parameter" id="updateChildLayoutOffset-param-growthDirection"><span class="type-annotation"><a href="rendering/GrowthDirection-class.html">GrowthDirection</a></span> <span class="parameter-name">growthDirection</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Called during <a href="rendering/RenderViewportBase/layoutChildSequence.html">layoutChildSequence</a> to store the layout offset for the
+given child. <a href="rendering/RenderViewport/updateChildLayoutOffset.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="updateOutOfBandData" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewport/updateOutOfBandData.html">updateOutOfBandData</a></span><span class="signature">(<wbr><span class="parameter" id="updateOutOfBandData-param-growthDirection"><span class="type-annotation"><a href="rendering/GrowthDirection-class.html">GrowthDirection</a></span> <span class="parameter-name">growthDirection</span>, </span> <span class="parameter" id="updateOutOfBandData-param-childLayoutGeometry"><span class="type-annotation"><a href="rendering/SliverGeometry-class.html">SliverGeometry</a></span> <span class="parameter-name">childLayoutGeometry</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Called during <a href="rendering/RenderViewportBase/layoutChildSequence.html">layoutChildSequence</a> for each child. <a href="rendering/RenderViewport/updateOutOfBandData.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="visitChildren" class="callable inherited">
+          <span class="name"><a href="rendering/ContainerRenderObjectMixin/visitChildren.html">visitChildren</a></span><span class="signature">(<wbr><span class="parameter" id="visitChildren-param-visitor"><span class="type-annotation"><a href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></span> <span class="parameter-name">visitor</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Calls visitor for each immediate child of this render object. <a href="rendering/ContainerRenderObjectMixin/visitChildren.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="visitChildrenForSemantics" class="callable inherited">
+          <span class="name"><a href="rendering/RenderViewportBase/visitChildrenForSemantics.html">visitChildrenForSemantics</a></span><span class="signature">(<wbr><span class="parameter" id="visitChildrenForSemantics-param-visitor"><span class="type-annotation"><a href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></span> <span class="parameter-name">visitor</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Called when collecting the semantics of this node. <a href="rendering/RenderViewportBase/visitChildrenForSemantics.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The equality operator. <a href="dart-core/Object/operator_equals.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="widgets/RenderNestedScrollViewViewport-class.html#constructors">Constructors</a></li>
+      <li><a href="widgets/RenderNestedScrollViewViewport/RenderNestedScrollViewViewport.html">RenderNestedScrollViewViewport</a></li>
+    
+      <li class="section-title">
+        <a href="widgets/RenderNestedScrollViewViewport-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="widgets/RenderNestedScrollViewViewport/handle.html">handle</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/alwaysNeedsCompositing.html">alwaysNeedsCompositing</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/anchor.html">anchor</a></li>
+      <li class="inherited"><a href="foundation/AbstractNode/attached.html">attached</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/axis.html">axis</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/axisDirection.html">axisDirection</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/cacheExtent.html">cacheExtent</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/center.html">center</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/childCount.html">childCount</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/childrenInHitTestOrder.html">childrenInHitTestOrder</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/childrenInPaintOrder.html">childrenInPaintOrder</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/constraints.html">constraints</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/crossAxisDirection.html">crossAxisDirection</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugCanParentUseSize.html">debugCanParentUseSize</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugCreator.html">debugCreator</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugDoingThisLayout.html">debugDoingThisLayout</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugDoingThisPaint.html">debugDoingThisPaint</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugDoingThisResize.html">debugDoingThisResize</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugLayer.html">debugLayer</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugNeedsLayout.html">debugNeedsLayout</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugNeedsPaint.html">debugNeedsPaint</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugSemantics.html">debugSemantics</a></li>
+      <li class="inherited"><a href="foundation/AbstractNode/depth.html">depth</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/firstChild.html">firstChild</a></li>
+      <li class="inherited"><a href="dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/hasSize.html">hasSize</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/hasVisualOverflow.html">hasVisualOverflow</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/indexOfFirstChild.html">indexOfFirstChild</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/isRepaintBoundary.html">isRepaintBoundary</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/lastChild.html">lastChild</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/layer.html">layer</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/needsCompositing.html">needsCompositing</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/offset.html">offset</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/owner.html">owner</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/paintBounds.html">paintBounds</a></li>
+      <li class="inherited"><a href="foundation/AbstractNode/parent.html">parent</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/parentData.html">parentData</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/semanticBounds.html">semanticBounds</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/size.html">size</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/sizedByParent.html">sizedByParent</a></li>
+    
+      <li class="section-title"><a href="widgets/RenderNestedScrollViewViewport-class.html#instance-methods">Methods</a></li>
+      <li><a href="widgets/RenderNestedScrollViewViewport/debugFillProperties.html">debugFillProperties</a></li>
+      <li><a href="widgets/RenderNestedScrollViewViewport/markNeedsLayout.html">markNeedsLayout</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/add.html">add</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/addAll.html">addAll</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/adoptChild.html">adoptChild</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/applyPaintTransform.html">applyPaintTransform</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/assembleSemanticsNode.html">assembleSemanticsNode</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/attach.html">attach</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/childAfter.html">childAfter</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/childBefore.html">childBefore</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/clearSemantics.html">clearSemantics</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/computeAbsolutePaintOffset.html">computeAbsolutePaintOffset</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/computeChildMainAxisPosition.html">computeChildMainAxisPosition</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/computeDistanceToActualBaseline.html">computeDistanceToActualBaseline</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/computeMaxIntrinsicHeight.html">computeMaxIntrinsicHeight</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/computeMaxIntrinsicWidth.html">computeMaxIntrinsicWidth</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/computeMinIntrinsicHeight.html">computeMinIntrinsicHeight</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/computeMinIntrinsicWidth.html">computeMinIntrinsicWidth</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/debugAdoptSize.html">debugAdoptSize</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/debugAssertDoesMeetConstraints.html">debugAssertDoesMeetConstraints</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/debugHandleEvent.html">debugHandleEvent</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/debugPaint.html">debugPaint</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/debugPaintBaselines.html">debugPaintBaselines</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/debugPaintPointers.html">debugPaintPointers</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/debugPaintSize.html">debugPaintSize</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/debugRegisterRepaintBoundaryPaint.html">debugRegisterRepaintBoundaryPaint</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/debugResetSize.html">debugResetSize</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/debugThrowIfNotCheckingIntrinsics.html">debugThrowIfNotCheckingIntrinsics</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/debugValidateChild.html">debugValidateChild</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/describeApproximatePaintClip.html">describeApproximatePaintClip</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/describeSemanticsClip.html">describeSemanticsClip</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/describeSemanticsConfiguration.html">describeSemanticsConfiguration</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/detach.html">detach</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/dropChild.html">dropChild</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/getDistanceToActualBaseline.html">getDistanceToActualBaseline</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/getDistanceToBaseline.html">getDistanceToBaseline</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/getMaxIntrinsicHeight.html">getMaxIntrinsicHeight</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/getMaxIntrinsicWidth.html">getMaxIntrinsicWidth</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/getMinIntrinsicHeight.html">getMinIntrinsicHeight</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/getMinIntrinsicWidth.html">getMinIntrinsicWidth</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/getOffsetToReveal.html">getOffsetToReveal</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/getTransformTo.html">getTransformTo</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/globalToLocal.html">globalToLocal</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/handleEvent.html">handleEvent</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/hitTest.html">hitTest</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/hitTestChildren.html">hitTestChildren</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/hitTestSelf.html">hitTestSelf</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/insert.html">insert</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/invokeLayoutCallback.html">invokeLayoutCallback</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/labelForChild.html">labelForChild</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/layout.html">layout</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/layoutChildSequence.html">layoutChildSequence</a></li>
+      <li class="inherited"><a href="rendering/RenderBox/localToGlobal.html">localToGlobal</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/markNeedsCompositingBitsUpdate.html">markNeedsCompositingBitsUpdate</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/markNeedsLayoutForSizedByParentChange.html">markNeedsLayoutForSizedByParentChange</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/markNeedsPaint.html">markNeedsPaint</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/markNeedsSemanticsUpdate.html">markNeedsSemanticsUpdate</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/markParentNeedsLayout.html">markParentNeedsLayout</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/maxScrollObstructionExtentBefore.html">maxScrollObstructionExtentBefore</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/move.html">move</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/paint.html">paint</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/paintOffsetOf.html">paintOffsetOf</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/performLayout.html">performLayout</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/performResize.html">performResize</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/reassemble.html">reassemble</a></li>
+      <li class="inherited"><a href="foundation/AbstractNode/redepthChild.html">redepthChild</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/redepthChildren.html">redepthChildren</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/remove.html">remove</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/removeAll.html">removeAll</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/replaceRootLayer.html">replaceRootLayer</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/rotate.html">rotate</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/scheduleInitialLayout.html">scheduleInitialLayout</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/scheduleInitialPaint.html">scheduleInitialPaint</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/scheduleInitialSemantics.html">scheduleInitialSemantics</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/scrollOffsetOf.html">scrollOffsetOf</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/sendSemanticsEvent.html">sendSemanticsEvent</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/setupParentData.html">setupParentData</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/showOnScreen.html">showOnScreen</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTreeMixin/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/toString.html">toString</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/toStringShallow.html">toStringShallow</a></li>
+      <li class="inherited"><a href="rendering/RenderObject/toStringShort.html">toStringShort</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/updateChildLayoutOffset.html">updateChildLayoutOffset</a></li>
+      <li class="inherited"><a href="rendering/RenderViewport/updateOutOfBandData.html">updateOutOfBandData</a></li>
+      <li class="inherited"><a href="rendering/ContainerRenderObjectMixin/visitChildren.html">visitChildren</a></li>
+      <li class="inherited"><a href="rendering/RenderViewportBase/visitChildrenForSemantics.html">visitChildrenForSemantics</a></li>
+    
+      <li class="section-title inherited"><a href="widgets/RenderNestedScrollViewViewport-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dart-core/Object/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

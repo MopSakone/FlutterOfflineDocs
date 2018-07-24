@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the TextSpan class from the painting library, for the Dart programming language.">
+  <title>TextSpan class - painting library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="painting/painting-library.html">painting</a></li>
+    <li class="self-crumb">TextSpan class</li>
+  </ol>
+  <div class="self-name">TextSpan</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>painting library</h5>
+    <ol>
+      <li class="section-title"><a href="painting/painting-library.html#classes">Classes</a></li>
+      <li><a href="painting/Alignment-class.html">Alignment</a></li>
+      <li><a href="painting/AlignmentDirectional-class.html">AlignmentDirectional</a></li>
+      <li><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></li>
+      <li><a href="painting/AssetBundleImageKey-class.html">AssetBundleImageKey</a></li>
+      <li><a href="painting/AssetBundleImageProvider-class.html">AssetBundleImageProvider</a></li>
+      <li><a href="painting/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="painting/BeveledRectangleBorder-class.html">BeveledRectangleBorder</a></li>
+      <li><a href="painting/Border-class.html">Border</a></li>
+      <li><a href="painting/BorderDirectional-class.html">BorderDirectional</a></li>
+      <li><a href="painting/BorderRadius-class.html">BorderRadius</a></li>
+      <li><a href="painting/BorderRadiusDirectional-class.html">BorderRadiusDirectional</a></li>
+      <li><a href="painting/BorderRadiusGeometry-class.html">BorderRadiusGeometry</a></li>
+      <li><a href="painting/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="painting/BoxBorder-class.html">BoxBorder</a></li>
+      <li><a href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="painting/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="dart-ui/Canvas-class.html">Canvas</a></li>
+      <li><a href="painting/CircleBorder-class.html">CircleBorder</a></li>
+      <li><a href="dart-ui/Color-class.html">Color</a></li>
+      <li><a href="dart-ui/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="painting/ColorSwatch-class.html">ColorSwatch</a></li>
+      <li><a href="painting/Decoration-class.html">Decoration</a></li>
+      <li><a href="painting/DecorationImage-class.html">DecorationImage</a></li>
+      <li><a href="painting/DecorationImagePainter-class.html">DecorationImagePainter</a></li>
+      <li><a href="painting/EdgeInsets-class.html">EdgeInsets</a></li>
+      <li><a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a></li>
+      <li><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></li>
+      <li><a href="painting/ExactAssetImage-class.html">ExactAssetImage</a></li>
+      <li><a href="painting/FileImage-class.html">FileImage</a></li>
+      <li><a href="painting/FittedSizes-class.html">FittedSizes</a></li>
+      <li><a href="painting/FlutterLogoDecoration-class.html">FlutterLogoDecoration</a></li>
+      <li><a href="dart-ui/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="painting/FractionalOffset-class.html">FractionalOffset</a></li>
+      <li><a href="painting/Gradient-class.html">Gradient</a></li>
+      <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+      <li><a href="painting/ImageCache-class.html">ImageCache</a></li>
+      <li><a href="painting/ImageConfiguration-class.html">ImageConfiguration</a></li>
+      <li><a href="painting/ImageInfo-class.html">ImageInfo</a></li>
+      <li><a href="painting/ImageProvider-class.html">ImageProvider</a></li>
+      <li><a href="dart-ui/ImageShader-class.html">ImageShader</a></li>
+      <li><a href="painting/ImageStream-class.html">ImageStream</a></li>
+      <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+      <li><a href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="dart-ui/Locale-class.html">Locale</a></li>
+      <li><a href="dart-ui/MaskFilter-class.html">MaskFilter</a></li>
+      <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+      <li><a href="painting/MemoryImage-class.html">MemoryImage</a></li>
+      <li><a href="painting/MultiFrameImageStreamCompleter-class.html">MultiFrameImageStreamCompleter</a></li>
+      <li><a href="painting/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="painting/OneFrameImageStreamCompleter-class.html">OneFrameImageStreamCompleter</a></li>
+      <li><a href="dart-ui/Paint-class.html">Paint</a></li>
+      <li><a href="painting/PaintingBinding-class.html">PaintingBinding</a></li>
+      <li><a href="dart-ui/Path-class.html">Path</a></li>
+      <li><a href="painting/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="dart-ui/Radius-class.html">Radius</a></li>
+      <li><a href="dart-ui/Rect-class.html">Rect</a></li>
+      <li><a href="painting/RoundedRectangleBorder-class.html">RoundedRectangleBorder</a></li>
+      <li><a href="dart-ui/RRect-class.html">RRect</a></li>
+      <li><a href="dart-ui/RSTransform-class.html">RSTransform</a></li>
+      <li><a href="dart-ui/Shader-class.html">Shader</a></li>
+      <li><a href="painting/ShapeBorder-class.html">ShapeBorder</a></li>
+      <li><a href="painting/ShapeDecoration-class.html">ShapeDecoration</a></li>
+      <li><a href="dart-ui/Size-class.html">Size</a></li>
+      <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+      <li><a href="dart-ui/TextBox-class.html">TextBox</a></li>
+      <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
+      <li><a href="dart-ui/TextPosition-class.html">TextPosition</a></li>
+      <li><a href="services/TextRange-class.html">TextRange</a></li>
+      <li><a href="services/TextSelection-class.html">TextSelection</a></li>
+      <li><a href="painting/TextSpan-class.html">TextSpan</a></li>
+      <li><a href="painting/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="painting/TransformProperty-class.html">TransformProperty</a></li>
+    
+    
+      <li class="section-title"><a href="painting/painting-library.html#properties">Properties</a></li>
+      <li><a href="painting/debugDisableShadows.html">debugDisableShadows</a></li>
+      <li><a href="painting/imageCache.html">imageCache</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
+      <li><a href="painting/applyBoxFit.html">applyBoxFit</a></li>
+      <li><a href="painting/axisDirectionIsReversed.html">axisDirectionIsReversed</a></li>
+      <li><a href="painting/axisDirectionToAxis.html">axisDirectionToAxis</a></li>
+      <li><a href="painting/debugAssertAllPaintingVarsUnset.html">debugAssertAllPaintingVarsUnset</a></li>
+      <li><a href="painting/debugDescribeTransform.html">debugDescribeTransform</a></li>
+      <li><a href="painting/decodeImageFromList.html">decodeImageFromList</a></li>
+      <li><a href="painting/flipAxis.html">flipAxis</a></li>
+      <li><a href="painting/flipAxisDirection.html">flipAxisDirection</a></li>
+      <li><a href="dart-ui/hashList.html">hashList</a></li>
+      <li><a href="dart-ui/hashValues.html">hashValues</a></li>
+      <li><a href="painting/paintBorder.html">paintBorder</a></li>
+      <li><a href="painting/paintImage.html">paintImage</a></li>
+      <li><a href="painting/paintZigZag.html">paintZigZag</a></li>
+      <li><a href="painting/positionDependentBox.html">positionDependentBox</a></li>
+      <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#enums">Enums</a></li>
+      <li><a href="painting/Axis-class.html">Axis</a></li>
+      <li><a href="painting/AxisDirection-class.html">AxisDirection</a></li>
+      <li><a href="dart-ui/BlendMode-class.html">BlendMode</a></li>
+      <li><a href="dart-ui/BlurStyle-class.html">BlurStyle</a></li>
+      <li><a href="painting/BorderStyle-class.html">BorderStyle</a></li>
+      <li><a href="painting/BoxFit-class.html">BoxFit</a></li>
+      <li><a href="painting/BoxShape-class.html">BoxShape</a></li>
+      <li><a href="dart-ui/FilterQuality-class.html">FilterQuality</a></li>
+      <li><a href="painting/FlutterLogoStyle-class.html">FlutterLogoStyle</a></li>
+      <li><a href="dart-ui/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="dart-ui/PaintingStyle-class.html">PaintingStyle</a></li>
+      <li><a href="dart-ui/PathFillType-class.html">PathFillType</a></li>
+      <li><a href="painting/RenderComparison-class.html">RenderComparison</a></li>
+      <li><a href="dart-ui/StrokeCap-class.html">StrokeCap</a></li>
+      <li><a href="dart-ui/StrokeJoin-class.html">StrokeJoin</a></li>
+      <li><a href="dart-ui/TextAffinity-class.html">TextAffinity</a></li>
+      <li><a href="dart-ui/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="dart-ui/TextDirection-class.html">TextDirection</a></li>
+      <li><a href="dart-ui/TileMode-class.html">TileMode</a></li>
+      <li><a href="dart-ui/VertexMode-class.html">VertexMode</a></li>
+      <li><a href="painting/VerticalDirection-class.html">VerticalDirection</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
+      <li><a href="painting/ImageListener.html">ImageListener</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>TextSpan class</h1>
+
+    <section class="desc markdown">
+      <p>An immutable span of text.</p>
+<p>A <a href="painting/TextSpan-class.html">TextSpan</a> object can be styled using its <a href="painting/TextSpan/style.html">style</a> property.
+The style will be applied to the <a href="painting/TextSpan/text.html">text</a> and the <a href="painting/TextSpan/children.html">children</a>.</p>
+<p>A <a href="painting/TextSpan-class.html">TextSpan</a> object can just have plain text, or it can have
+children <a href="painting/TextSpan-class.html">TextSpan</a> objects with their own styles that (possibly
+only partially) override the <a href="painting/TextSpan/style.html">style</a> of this object. If a
+<a href="painting/TextSpan-class.html">TextSpan</a> has both <a href="painting/TextSpan/text.html">text</a> and <a href="painting/TextSpan/children.html">children</a>, then the <a href="painting/TextSpan/text.html">text</a> is
+treated as if it was an unstyled <a href="painting/TextSpan-class.html">TextSpan</a> at the start of the
+<a href="painting/TextSpan/children.html">children</a> list.</p>
+<p>To paint a <a href="painting/TextSpan-class.html">TextSpan</a> on a <a href="dart-ui/Canvas-class.html">Canvas</a>, use a <a href="painting/TextPainter-class.html">TextPainter</a>. To display a text
+span in a widget, use a <a href="widgets/RichText-class.html">RichText</a>. For text with a single style, consider
+using the <a href="widgets/Text-class.html">Text</a> widget.</p>
+<h2>Sample code</h2>
+<p>The text "Hello world!", in black:</p>
+<pre class="language-dart"><code class="language-dart">new TextSpan(
+  text: 'Hello world!',
+  style: new TextStyle(color: Colors.black),
+)
+</code></pre>
+<p><em>There is some more detailed sample code in the documentation for the
+<a href="painting/TextSpan/recognizer.html">recognizer</a> property.</em></p>
+<p>See also:</p><ul><li><a href="widgets/Text-class.html">Text</a>, a widget for showing uniformly-styled text.</li><li><a href="widgets/RichText-class.html">RichText</a>, a widget for finer control of text rendering.</li><li><a href="painting/TextPainter-class.html">TextPainter</a>, a class for painting <a href="painting/TextSpan-class.html">TextSpan</a> objects on a <a href="dart-ui/Canvas-class.html">Canvas</a>.</li></ul>
+    </section>
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a href="dart-core/Object-class.html">Object</a></li>
+          <li><a href="foundation/Diagnosticable-class.html">Diagnosticable</a></li>
+          <li><a href="foundation/DiagnosticableTree-class.html">DiagnosticableTree</a></li>
+          <li>TextSpan</li>
+        </ul></dd>
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>@immutable</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="TextSpan" class="callable">
+          <span class="name"><a href="painting/TextSpan/TextSpan.html">TextSpan</a></span><span class="signature">({<span class="parameter" id="-param-style"><span class="type-annotation"><a href="painting/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">style</span>, </span> <span class="parameter" id="-param-text"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span>, </span> <span class="parameter" id="-param-children"><span class="type-annotation"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="painting/TextSpan-class.html">TextSpan</a></span>&gt;</span></span> <span class="parameter-name">children</span>, </span> <span class="parameter" id="-param-recognizer"><span class="type-annotation"><a href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></span> <span class="parameter-name">recognizer</span></span> })</span>
+        </dt>
+        <dd>
+          Creates a <a href="painting/TextSpan-class.html">TextSpan</a> with the given values. <a href="painting/TextSpan/TextSpan.html">[...]</a>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="children" class="property">
+          <span class="name"><a href="painting/TextSpan/children.html">children</a></span>
+          <span class="signature">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="painting/TextSpan-class.html">TextSpan</a></span>&gt;</span></span>
+        </dt>
+        <dd>
+          Additional spans to include as children. <a href="painting/TextSpan/children.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="hashCode" class="property">
+          <span class="name"><a href="painting/TextSpan/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          The hash code for this object. <a href="painting/TextSpan/hashCode.html">[...]</a>
+          <div class="features">read-only</div>
+</dd>
+        <dt id="recognizer" class="property">
+          <span class="name"><a href="painting/TextSpan/recognizer.html">recognizer</a></span>
+          <span class="signature">&#8594; <a href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></span>
+        </dt>
+        <dd>
+          A gesture recognizer that will receive events that hit this text span. <a href="painting/TextSpan/recognizer.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="style" class="property">
+          <span class="name"><a href="painting/TextSpan/style.html">style</a></span>
+          <span class="signature">&#8594; <a href="painting/TextStyle-class.html">TextStyle</a></span>
+        </dt>
+        <dd>
+          The style to apply to the <code>text</code> and the <code>children</code>.
+          <div class="features">final</div>
+</dd>
+        <dt id="text" class="property">
+          <span class="name"><a href="painting/TextSpan/text.html">text</a></span>
+          <span class="signature">&#8594; <a href="dart-core/String-class.html">String</a></span>
+        </dt>
+        <dd>
+          The text contained in the span. <a href="painting/TextSpan/text.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="build" class="callable">
+          <span class="name"><a href="painting/TextSpan/build.html">build</a></span><span class="signature">(<wbr><span class="parameter" id="build-param-builder"><span class="type-annotation"><a href="dart-ui/ParagraphBuilder-class.html">ParagraphBuilder</a></span> <span class="parameter-name">builder</span>, {</span> <span class="parameter" id="build-param-textScaleFactor"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">textScaleFactor</span>: <span class="default-value">1.0</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Apply the <a href="painting/TextSpan/style.html">style</a>, <a href="painting/TextSpan/text.html">text</a>, and <a href="painting/TextSpan/children.html">children</a> of this object to the
+given <a href="dart-ui/ParagraphBuilder-class.html">ParagraphBuilder</a>, from which a <a href="dart-ui/Paragraph-class.html">Paragraph</a> can be obtained.
+<a href="dart-ui/Paragraph-class.html">Paragraph</a> objects can be drawn on <a href="dart-ui/Canvas-class.html">Canvas</a> objects. <a href="painting/TextSpan/build.html">[...]</a>
+          
+</dd>
+        <dt id="codeUnitAt" class="callable">
+          <span class="name"><a href="painting/TextSpan/codeUnitAt.html">codeUnitAt</a></span><span class="signature">(<wbr><span class="parameter" id="codeUnitAt-param-index"><span class="type-annotation"><a href="dart-core/int-class.html">int</a></span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/int-class.html">int</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the UTF-16 code unit at the given index in the flattened string. <a href="painting/TextSpan/codeUnitAt.html">[...]</a>
+          
+</dd>
+        <dt id="compareTo" class="callable">
+          <span class="name"><a href="painting/TextSpan/compareTo.html">compareTo</a></span><span class="signature">(<wbr><span class="parameter" id="compareTo-param-other"><span class="type-annotation"><a href="painting/TextSpan-class.html">TextSpan</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/RenderComparison-class.html">RenderComparison</a></span>
+          </span>
+        </dt>
+        <dd>
+          Describe the difference between this text span and another, in terms of
+how much damage it will make to the rendering. The comparison is deep. <a href="painting/TextSpan/compareTo.html">[...]</a>
+          
+</dd>
+        <dt id="debugAssertIsValid" class="callable">
+          <span class="name"><a href="painting/TextSpan/debugAssertIsValid.html">debugAssertIsValid</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          In checked mode, throws an exception if the object is not in a
+valid configuration. Otherwise, returns true. <a href="painting/TextSpan/debugAssertIsValid.html">[...]</a>
+          
+</dd>
+        <dt id="debugDescribeChildren" class="callable">
+          <span class="name"><a href="painting/TextSpan/debugDescribeChildren.html">debugDescribeChildren</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>&gt;</span></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a list of <a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a> objects describing this node's
+children. <a href="painting/TextSpan/debugDescribeChildren.html">[...]</a>
+          
+</dd>
+        <dt id="debugFillProperties" class="callable">
+          <span class="name"><a href="painting/TextSpan/debugFillProperties.html">debugFillProperties</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillProperties-param-properties"><span class="type-annotation"><a href="foundation/DiagnosticPropertiesBuilder-class.html">DiagnosticPropertiesBuilder</a></span> <span class="parameter-name">properties</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          Add additional properties associated with the node. <a href="painting/TextSpan/debugFillProperties.html">[...]</a>
+          
+</dd>
+        <dt id="getSpanForPosition" class="callable">
+          <span class="name"><a href="painting/TextSpan/getSpanForPosition.html">getSpanForPosition</a></span><span class="signature">(<wbr><span class="parameter" id="getSpanForPosition-param-position"><span class="type-annotation"><a href="dart-ui/TextPosition-class.html">TextPosition</a></span> <span class="parameter-name">position</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/TextSpan-class.html">TextSpan</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns the text span that contains the given position in the text.
+          
+</dd>
+        <dt id="toPlainText" class="callable">
+          <span class="name"><a href="painting/TextSpan/toPlainText.html">toPlainText</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd>
+          Flattens the <a href="painting/TextSpan-class.html">TextSpan</a> tree into a single string. <a href="painting/TextSpan/toPlainText.html">[...]</a>
+          
+</dd>
+        <dt id="toStringShort" class="callable">
+          <span class="name"><a href="painting/TextSpan/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="visitTextSpan" class="callable">
+          <span class="name"><a href="painting/TextSpan/visitTextSpan.html">visitTextSpan</a></span><span class="signature">(<wbr><span class="parameter" id="visitTextSpan-param-visitor"><span class="type-annotation"><a href="dart-core/bool-class.html">bool</a></span> <span class="parameter-name">visitor</span>(<span class="parameter" id="visitor-param-span"><span class="type-annotation"><a href="painting/TextSpan-class.html">TextSpan</a></span> <span class="parameter-name">span</span></span>)</span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          Walks this text span and its descendants in pre-order and calls <code>visitor</code>
+for each span that has text.
+          
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toDiagnosticsNode" class="callable inherited">
+          <span class="name"><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr>{<span class="parameter" id="toDiagnosticsNode-param-name"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">name</span>, </span> <span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation"><a href="foundation/DiagnosticsTreeStyle-class.html">DiagnosticsTreeStyle</a></span> <span class="parameter-name">style</span></span> })
+            <span class="returntype parameter">&#8594; <a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a debug representation of the object that is used by debugging
+tools and by <a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a>. <a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="foundation/Diagnosticable/toString.html">toString</a></span><span class="signature">(<wbr>{<span class="parameter" id="toString-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toStringDeep" class="callable inherited">
+          <span class="name"><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringDeep-param-prefixLineOne"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span>: <span class="default-value">''</span>, </span> <span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixOtherLines</span>, </span> <span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a string representation of this node and its descendants. <a href="foundation/DiagnosticableTree/toStringDeep.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toStringShallow" class="callable inherited">
+          <span class="name"><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr>{<span class="parameter" id="toStringShallow-param-joiner"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">joiner</span>: <span class="default-value">', '</span>, </span> <span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation"><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span>: <span class="default-value">DiagnosticLevel.debug</span></span> })
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a one-line detailed description of the object. <a href="foundation/DiagnosticableTree/toStringShallow.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+          <span class="name"><a href="painting/TextSpan/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          The equality operator. <a href="painting/TextSpan/operator_equals.html">[...]</a>
+          
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="painting/TextSpan-class.html#constructors">Constructors</a></li>
+      <li><a href="painting/TextSpan/TextSpan.html">TextSpan</a></li>
+    
+      <li class="section-title">
+        <a href="painting/TextSpan-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="painting/TextSpan/children.html">children</a></li>
+      <li><a href="painting/TextSpan/hashCode.html">hashCode</a></li>
+      <li><a href="painting/TextSpan/recognizer.html">recognizer</a></li>
+      <li><a href="painting/TextSpan/style.html">style</a></li>
+      <li><a href="painting/TextSpan/text.html">text</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="painting/TextSpan-class.html#instance-methods">Methods</a></li>
+      <li><a href="painting/TextSpan/build.html">build</a></li>
+      <li><a href="painting/TextSpan/codeUnitAt.html">codeUnitAt</a></li>
+      <li><a href="painting/TextSpan/compareTo.html">compareTo</a></li>
+      <li><a href="painting/TextSpan/debugAssertIsValid.html">debugAssertIsValid</a></li>
+      <li><a href="painting/TextSpan/debugDescribeChildren.html">debugDescribeChildren</a></li>
+      <li><a href="painting/TextSpan/debugFillProperties.html">debugFillProperties</a></li>
+      <li><a href="painting/TextSpan/getSpanForPosition.html">getSpanForPosition</a></li>
+      <li><a href="painting/TextSpan/toPlainText.html">toPlainText</a></li>
+      <li><a href="painting/TextSpan/toStringShort.html">toStringShort</a></li>
+      <li><a href="painting/TextSpan/visitTextSpan.html">visitTextSpan</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+      <li class="inherited"><a href="foundation/Diagnosticable/toString.html">toString</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+      <li class="inherited"><a href="foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+    
+      <li class="section-title"><a href="painting/TextSpan-class.html#operators">Operators</a></li>
+      <li><a href="painting/TextSpan/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

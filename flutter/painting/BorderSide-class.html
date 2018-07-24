@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the BorderSide class from the painting library, for the Dart programming language.">
+  <title>BorderSide class - painting library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="painting/painting-library.html">painting</a></li>
+    <li class="self-crumb">BorderSide class</li>
+  </ol>
+  <div class="self-name">BorderSide</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>painting library</h5>
+    <ol>
+      <li class="section-title"><a href="painting/painting-library.html#classes">Classes</a></li>
+      <li><a href="painting/Alignment-class.html">Alignment</a></li>
+      <li><a href="painting/AlignmentDirectional-class.html">AlignmentDirectional</a></li>
+      <li><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></li>
+      <li><a href="painting/AssetBundleImageKey-class.html">AssetBundleImageKey</a></li>
+      <li><a href="painting/AssetBundleImageProvider-class.html">AssetBundleImageProvider</a></li>
+      <li><a href="painting/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="painting/BeveledRectangleBorder-class.html">BeveledRectangleBorder</a></li>
+      <li><a href="painting/Border-class.html">Border</a></li>
+      <li><a href="painting/BorderDirectional-class.html">BorderDirectional</a></li>
+      <li><a href="painting/BorderRadius-class.html">BorderRadius</a></li>
+      <li><a href="painting/BorderRadiusDirectional-class.html">BorderRadiusDirectional</a></li>
+      <li><a href="painting/BorderRadiusGeometry-class.html">BorderRadiusGeometry</a></li>
+      <li><a href="painting/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="painting/BoxBorder-class.html">BoxBorder</a></li>
+      <li><a href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="painting/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="dart-ui/Canvas-class.html">Canvas</a></li>
+      <li><a href="painting/CircleBorder-class.html">CircleBorder</a></li>
+      <li><a href="dart-ui/Color-class.html">Color</a></li>
+      <li><a href="dart-ui/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="painting/ColorSwatch-class.html">ColorSwatch</a></li>
+      <li><a href="painting/Decoration-class.html">Decoration</a></li>
+      <li><a href="painting/DecorationImage-class.html">DecorationImage</a></li>
+      <li><a href="painting/DecorationImagePainter-class.html">DecorationImagePainter</a></li>
+      <li><a href="painting/EdgeInsets-class.html">EdgeInsets</a></li>
+      <li><a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a></li>
+      <li><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></li>
+      <li><a href="painting/ExactAssetImage-class.html">ExactAssetImage</a></li>
+      <li><a href="painting/FileImage-class.html">FileImage</a></li>
+      <li><a href="painting/FittedSizes-class.html">FittedSizes</a></li>
+      <li><a href="painting/FlutterLogoDecoration-class.html">FlutterLogoDecoration</a></li>
+      <li><a href="dart-ui/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="painting/FractionalOffset-class.html">FractionalOffset</a></li>
+      <li><a href="painting/Gradient-class.html">Gradient</a></li>
+      <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+      <li><a href="painting/ImageCache-class.html">ImageCache</a></li>
+      <li><a href="painting/ImageConfiguration-class.html">ImageConfiguration</a></li>
+      <li><a href="painting/ImageInfo-class.html">ImageInfo</a></li>
+      <li><a href="painting/ImageProvider-class.html">ImageProvider</a></li>
+      <li><a href="dart-ui/ImageShader-class.html">ImageShader</a></li>
+      <li><a href="painting/ImageStream-class.html">ImageStream</a></li>
+      <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+      <li><a href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="dart-ui/Locale-class.html">Locale</a></li>
+      <li><a href="dart-ui/MaskFilter-class.html">MaskFilter</a></li>
+      <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+      <li><a href="painting/MemoryImage-class.html">MemoryImage</a></li>
+      <li><a href="painting/MultiFrameImageStreamCompleter-class.html">MultiFrameImageStreamCompleter</a></li>
+      <li><a href="painting/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="painting/OneFrameImageStreamCompleter-class.html">OneFrameImageStreamCompleter</a></li>
+      <li><a href="dart-ui/Paint-class.html">Paint</a></li>
+      <li><a href="painting/PaintingBinding-class.html">PaintingBinding</a></li>
+      <li><a href="dart-ui/Path-class.html">Path</a></li>
+      <li><a href="painting/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="dart-ui/Radius-class.html">Radius</a></li>
+      <li><a href="dart-ui/Rect-class.html">Rect</a></li>
+      <li><a href="painting/RoundedRectangleBorder-class.html">RoundedRectangleBorder</a></li>
+      <li><a href="dart-ui/RRect-class.html">RRect</a></li>
+      <li><a href="dart-ui/RSTransform-class.html">RSTransform</a></li>
+      <li><a href="dart-ui/Shader-class.html">Shader</a></li>
+      <li><a href="painting/ShapeBorder-class.html">ShapeBorder</a></li>
+      <li><a href="painting/ShapeDecoration-class.html">ShapeDecoration</a></li>
+      <li><a href="dart-ui/Size-class.html">Size</a></li>
+      <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+      <li><a href="dart-ui/TextBox-class.html">TextBox</a></li>
+      <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
+      <li><a href="dart-ui/TextPosition-class.html">TextPosition</a></li>
+      <li><a href="services/TextRange-class.html">TextRange</a></li>
+      <li><a href="services/TextSelection-class.html">TextSelection</a></li>
+      <li><a href="painting/TextSpan-class.html">TextSpan</a></li>
+      <li><a href="painting/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="painting/TransformProperty-class.html">TransformProperty</a></li>
+    
+    
+      <li class="section-title"><a href="painting/painting-library.html#properties">Properties</a></li>
+      <li><a href="painting/debugDisableShadows.html">debugDisableShadows</a></li>
+      <li><a href="painting/imageCache.html">imageCache</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#functions">Functions</a></li>
+      <li><a href="painting/applyBoxFit.html">applyBoxFit</a></li>
+      <li><a href="painting/axisDirectionIsReversed.html">axisDirectionIsReversed</a></li>
+      <li><a href="painting/axisDirectionToAxis.html">axisDirectionToAxis</a></li>
+      <li><a href="painting/debugAssertAllPaintingVarsUnset.html">debugAssertAllPaintingVarsUnset</a></li>
+      <li><a href="painting/debugDescribeTransform.html">debugDescribeTransform</a></li>
+      <li><a href="painting/decodeImageFromList.html">decodeImageFromList</a></li>
+      <li><a href="painting/flipAxis.html">flipAxis</a></li>
+      <li><a href="painting/flipAxisDirection.html">flipAxisDirection</a></li>
+      <li><a href="dart-ui/hashList.html">hashList</a></li>
+      <li><a href="dart-ui/hashValues.html">hashValues</a></li>
+      <li><a href="painting/paintBorder.html">paintBorder</a></li>
+      <li><a href="painting/paintImage.html">paintImage</a></li>
+      <li><a href="painting/paintZigZag.html">paintZigZag</a></li>
+      <li><a href="painting/positionDependentBox.html">positionDependentBox</a></li>
+      <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#enums">Enums</a></li>
+      <li><a href="painting/Axis-class.html">Axis</a></li>
+      <li><a href="painting/AxisDirection-class.html">AxisDirection</a></li>
+      <li><a href="dart-ui/BlendMode-class.html">BlendMode</a></li>
+      <li><a href="dart-ui/BlurStyle-class.html">BlurStyle</a></li>
+      <li><a href="painting/BorderStyle-class.html">BorderStyle</a></li>
+      <li><a href="painting/BoxFit-class.html">BoxFit</a></li>
+      <li><a href="painting/BoxShape-class.html">BoxShape</a></li>
+      <li><a href="dart-ui/FilterQuality-class.html">FilterQuality</a></li>
+      <li><a href="painting/FlutterLogoStyle-class.html">FlutterLogoStyle</a></li>
+      <li><a href="dart-ui/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="dart-ui/PaintingStyle-class.html">PaintingStyle</a></li>
+      <li><a href="dart-ui/PathFillType-class.html">PathFillType</a></li>
+      <li><a href="painting/RenderComparison-class.html">RenderComparison</a></li>
+      <li><a href="dart-ui/StrokeCap-class.html">StrokeCap</a></li>
+      <li><a href="dart-ui/StrokeJoin-class.html">StrokeJoin</a></li>
+      <li><a href="dart-ui/TextAffinity-class.html">TextAffinity</a></li>
+      <li><a href="dart-ui/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="dart-ui/TextDirection-class.html">TextDirection</a></li>
+      <li><a href="dart-ui/TileMode-class.html">TileMode</a></li>
+      <li><a href="dart-ui/VertexMode-class.html">VertexMode</a></li>
+      <li><a href="painting/VerticalDirection-class.html">VerticalDirection</a></li>
+    
+      <li class="section-title"><a href="painting/painting-library.html#typedefs">Typedefs</a></li>
+      <li><a href="painting/ImageListener.html">ImageListener</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>BorderSide class</h1>
+
+    <section class="desc markdown">
+      <p>A side of a border of a box.</p>
+<p>A <a href="painting/Border-class.html">Border</a> consists of four <a href="painting/BorderSide-class.html">BorderSide</a> objects: <a href="painting/Border/top.html">Border.top</a>,
+<a href="painting/Border/left.html">Border.left</a>, <a href="painting/Border/right.html">Border.right</a>, and <a href="painting/Border/bottom.html">Border.bottom</a>.</p>
+<h2>Sample code</h2>
+<p>This sample shows how <a href="painting/BorderSide-class.html">BorderSide</a> objects can be used in a <a href="widgets/Container-class.html">Container</a>, via
+a <a href="painting/BoxDecoration-class.html">BoxDecoration</a> and a <a href="painting/Border-class.html">Border</a>, to decorate some <a href="widgets/Text-class.html">Text</a>. In this example,
+the text has a thick bar above it that is light blue, and a thick bar below
+it that is a darker shade of blue.</p>
+<pre class="language-dart"><code class="language-dart">new Container(
+  padding: new EdgeInsets.all(8.0),
+  decoration: new BoxDecoration(
+    border: new Border(
+      top: new BorderSide(width: 16.0, color: Colors.lightBlue.shade50),
+      bottom: new BorderSide(width: 16.0, color: Colors.lightBlue.shade900),
+    ),
+  ),
+  child: new Text('Flutter in the sky', textAlign: TextAlign.center),
+)
+</code></pre>
+<p>See also:</p><ul><li><a href="painting/Border-class.html">Border</a>, which uses <a href="painting/BorderSide-class.html">BorderSide</a> objects to represent its sides.</li><li><a href="painting/BoxDecoration-class.html">BoxDecoration</a>, which optionally takes a <a href="painting/Border-class.html">Border</a> object.</li><li><a href="rendering/TableBorder-class.html">TableBorder</a>, which is similar to <a href="painting/Border-class.html">Border</a> but has two more sides
+(<a href="rendering/TableBorder/horizontalInside.html">TableBorder.horizontalInside</a> and <a href="rendering/TableBorder/verticalInside.html">TableBorder.verticalInside</a>), both
+of which are also <a href="painting/BorderSide-class.html">BorderSide</a> objects.</li></ul>
+    </section>
+    
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>@immutable</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="BorderSide" class="callable">
+          <span class="name"><a href="painting/BorderSide/BorderSide.html">BorderSide</a></span><span class="signature">({<span class="parameter" id="-param-color"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span>: <span class="default-value">const Color(0xFF000000)</span>, </span> <span class="parameter" id="-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span>: <span class="default-value">1.0</span>, </span> <span class="parameter" id="-param-style"><span class="type-annotation"><a href="painting/BorderStyle-class.html">BorderStyle</a></span> <span class="parameter-name">style</span>: <span class="default-value">BorderStyle.solid</span></span> })</span>
+        </dt>
+        <dd>
+          Creates the side of a border. <a href="painting/BorderSide/BorderSide.html">[...]</a>
+          <div class="constructor-modifier features">const</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="color" class="property">
+          <span class="name"><a href="painting/BorderSide/color.html">color</a></span>
+          <span class="signature">&#8594; <a href="dart-ui/Color-class.html">Color</a></span>
+        </dt>
+        <dd>
+          The color of this side of the border.
+          <div class="features">final</div>
+</dd>
+        <dt id="hashCode" class="property">
+          <span class="name"><a href="painting/BorderSide/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="dart-core/int-class.html">int</a></span>
+        </dt>
+        <dd>
+          The hash code for this object. <a href="painting/BorderSide/hashCode.html">[...]</a>
+          <div class="features">read-only</div>
+</dd>
+        <dt id="style" class="property">
+          <span class="name"><a href="painting/BorderSide/style.html">style</a></span>
+          <span class="signature">&#8594; <a href="painting/BorderStyle-class.html">BorderStyle</a></span>
+        </dt>
+        <dd>
+          The style of this side of the border. <a href="painting/BorderSide/style.html">[...]</a>
+          <div class="features">final</div>
+</dd>
+        <dt id="width" class="property">
+          <span class="name"><a href="painting/BorderSide/width.html">width</a></span>
+          <span class="signature">&#8594; <a href="dart-core/double-class.html">double</a></span>
+        </dt>
+        <dd>
+          The width of this side of the border, in logical pixels. A
+zero-width border is a hairline border. To omit the border
+entirely, set the <code>style</code> to <code>BorderStyle.none</code>.
+          <div class="features">final</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="dart-core/Type-class.html">Type</a></span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="copyWith" class="callable">
+          <span class="name"><a href="painting/BorderSide/copyWith.html">copyWith</a></span><span class="signature">(<wbr>{<span class="parameter" id="copyWith-param-color"><span class="type-annotation"><a href="dart-ui/Color-class.html">Color</a></span> <span class="parameter-name">color</span>, </span> <span class="parameter" id="copyWith-param-width"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="copyWith-param-style"><span class="type-annotation"><a href="painting/BorderStyle-class.html">BorderStyle</a></span> <span class="parameter-name">style</span></span> })
+            <span class="returntype parameter">&#8594; <a href="painting/BorderSide-class.html">BorderSide</a></span>
+          </span>
+        </dt>
+        <dd>
+          Creates a copy of this border but with the given fields replaced with the new values.
+          
+</dd>
+        <dt id="scale" class="callable">
+          <span class="name"><a href="painting/BorderSide/scale.html">scale</a></span><span class="signature">(<wbr><span class="parameter" id="scale-param-t"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">t</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/BorderSide-class.html">BorderSide</a></span>
+          </span>
+        </dt>
+        <dd>
+          Creates a copy of this border side description but with the width scaled
+by the factor <code>t</code>. <a href="painting/BorderSide/scale.html">[...]</a>
+          
+</dd>
+        <dt id="toPaint" class="callable">
+          <span class="name"><a href="painting/BorderSide/toPaint.html">toPaint</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-ui/Paint-class.html">Paint</a></span>
+          </span>
+        </dt>
+        <dd>
+          Create a <a href="dart-ui/Paint-class.html">Paint</a> object that, if used to stroke a line, will draw the line
+in this border's style. <a href="painting/BorderSide/toPaint.html">[...]</a>
+          
+</dd>
+        <dt id="toString" class="callable">
+          <span class="name"><a href="painting/BorderSide/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/String-class.html">String</a></span>
+          </span>
+        </dt>
+        <dd>
+          Returns a string representation of this object.
+          
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="dart-core/Object/noSuchMethod.html">[...]</a>
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+          <span class="name"><a href="painting/BorderSide/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          The equality operator. <a href="painting/BorderSide/operator_equals.html">[...]</a>
+          
+</dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="canMerge" class="callable">
+          <span class="name"><a href="painting/BorderSide/canMerge.html">canMerge</a></span><span class="signature">(<wbr><span class="parameter" id="canMerge-param-a"><span class="type-annotation"><a href="painting/BorderSide-class.html">BorderSide</a></span> <span class="parameter-name">a</span>, </span> <span class="parameter" id="canMerge-param-b"><span class="type-annotation"><a href="painting/BorderSide-class.html">BorderSide</a></span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; <a href="dart-core/bool-class.html">bool</a></span>
+          </span>
+        </dt>
+        <dd>
+          Whether the two given <a href="painting/BorderSide-class.html">BorderSide</a>s can be merged using <a href="painting/BorderSide/merge.html">new
+BorderSide.merge</a>. <a href="painting/BorderSide/canMerge.html">[...]</a>
+          
+</dd>
+        <dt id="lerp" class="callable">
+          <span class="name"><a href="painting/BorderSide/lerp.html">lerp</a></span><span class="signature">(<wbr><span class="parameter" id="lerp-param-a"><span class="type-annotation"><a href="painting/BorderSide-class.html">BorderSide</a></span> <span class="parameter-name">a</span>, </span> <span class="parameter" id="lerp-param-b"><span class="type-annotation"><a href="painting/BorderSide-class.html">BorderSide</a></span> <span class="parameter-name">b</span>, </span> <span class="parameter" id="lerp-param-t"><span class="type-annotation"><a href="dart-core/double-class.html">double</a></span> <span class="parameter-name">t</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/BorderSide-class.html">BorderSide</a></span>
+          </span>
+        </dt>
+        <dd>
+          Linearly interpolate between two border sides. <a href="painting/BorderSide/lerp.html">[...]</a>
+          
+</dd>
+        <dt id="merge" class="callable">
+          <span class="name"><a href="painting/BorderSide/merge.html">merge</a></span><span class="signature">(<wbr><span class="parameter" id="merge-param-a"><span class="type-annotation"><a href="painting/BorderSide-class.html">BorderSide</a></span> <span class="parameter-name">a</span>, </span> <span class="parameter" id="merge-param-b"><span class="type-annotation"><a href="painting/BorderSide-class.html">BorderSide</a></span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; <a href="painting/BorderSide-class.html">BorderSide</a></span>
+          </span>
+        </dt>
+        <dd>
+          Creates a <a href="painting/BorderSide-class.html">BorderSide</a> that represents the addition of the two given
+<a href="painting/BorderSide-class.html">BorderSide</a>s. <a href="painting/BorderSide/merge.html">[...]</a>
+          
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="none" class="constant">
+          <span class="name "><a href="painting/BorderSide/none-constant.html">none</a></span>
+          <span class="signature">&#8594; const <a href="painting/BorderSide-class.html">BorderSide</a></span>
+        </dt>
+        <dd>
+          A hairline black border that is not rendered.
+          
+  <div>
+            <span class="signature"><code>const <a href="painting/BorderSide/BorderSide.html">BorderSide</a>(width: 0.0, style: BorderStyle.none)</code></span>
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+      <li class="section-title"><a href="painting/BorderSide-class.html#constructors">Constructors</a></li>
+      <li><a href="painting/BorderSide/BorderSide.html">BorderSide</a></li>
+    
+      <li class="section-title">
+        <a href="painting/BorderSide-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="painting/BorderSide/color.html">color</a></li>
+      <li><a href="painting/BorderSide/hashCode.html">hashCode</a></li>
+      <li><a href="painting/BorderSide/style.html">style</a></li>
+      <li><a href="painting/BorderSide/width.html">width</a></li>
+      <li class="inherited"><a href="dart-core/Object/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="painting/BorderSide-class.html#instance-methods">Methods</a></li>
+      <li><a href="painting/BorderSide/copyWith.html">copyWith</a></li>
+      <li><a href="painting/BorderSide/scale.html">scale</a></li>
+      <li><a href="painting/BorderSide/toPaint.html">toPaint</a></li>
+      <li><a href="painting/BorderSide/toString.html">toString</a></li>
+      <li class="inherited"><a href="dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title"><a href="painting/BorderSide-class.html#operators">Operators</a></li>
+      <li><a href="painting/BorderSide/operator_equals.html">operator ==</a></li>
+    
+    
+      <li class="section-title"><a href="painting/BorderSide-class.html#static-methods">Static methods</a></li>
+      <li><a href="painting/BorderSide/canMerge.html">canMerge</a></li>
+      <li><a href="painting/BorderSide/lerp.html">lerp</a></li>
+      <li><a href="painting/BorderSide/merge.html">merge</a></li>
+    
+      <li class="section-title"><a href="painting/BorderSide-class.html#constants">Constants</a></li>
+      <li><a href="painting/BorderSide/none-constant.html">none</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

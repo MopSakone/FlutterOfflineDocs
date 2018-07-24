@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the GestureLongPressCallback property from the gestures library, for the Dart programming language.">
+  <title>GestureLongPressCallback typedef - gestures library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="gestures/gestures-library.html">gestures</a></li>
+    <li class="self-crumb">GestureLongPressCallback typedef</li>
+  </ol>
+  <div class="self-name">GestureLongPressCallback</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>gestures library</h5>
+    <ol>
+      <li class="section-title"><a href="gestures/gestures-library.html#classes">Classes</a></li>
+      <li><a href="gestures/DelayedMultiDragGestureRecognizer-class.html">DelayedMultiDragGestureRecognizer</a></li>
+      <li><a href="gestures/DoubleTapGestureRecognizer-class.html">DoubleTapGestureRecognizer</a></li>
+      <li><a href="gestures/Drag-class.html">Drag</a></li>
+      <li><a href="gestures/DragDownDetails-class.html">DragDownDetails</a></li>
+      <li><a href="gestures/DragEndDetails-class.html">DragEndDetails</a></li>
+      <li><a href="gestures/DragGestureRecognizer-class.html">DragGestureRecognizer</a></li>
+      <li><a href="gestures/DragStartDetails-class.html">DragStartDetails</a></li>
+      <li><a href="gestures/DragUpdateDetails-class.html">DragUpdateDetails</a></li>
+      <li><a href="gestures/FlutterErrorDetailsForPointerEventDispatcher-class.html">FlutterErrorDetailsForPointerEventDispatcher</a></li>
+      <li><a href="gestures/FlutterErrorDetailsForPointerRouter-class.html">FlutterErrorDetailsForPointerRouter</a></li>
+      <li><a href="gestures/GestureArenaEntry-class.html">GestureArenaEntry</a></li>
+      <li><a href="gestures/GestureArenaManager-class.html">GestureArenaManager</a></li>
+      <li><a href="gestures/GestureArenaMember-class.html">GestureArenaMember</a></li>
+      <li><a href="gestures/GestureArenaTeam-class.html">GestureArenaTeam</a></li>
+      <li><a href="gestures/GestureBinding-class.html">GestureBinding</a></li>
+      <li><a href="gestures/GestureRecognizer-class.html">GestureRecognizer</a></li>
+      <li><a href="gestures/HitTestable-class.html">HitTestable</a></li>
+      <li><a href="gestures/HitTestDispatcher-class.html">HitTestDispatcher</a></li>
+      <li><a href="gestures/HitTestEntry-class.html">HitTestEntry</a></li>
+      <li><a href="gestures/HitTestResult-class.html">HitTestResult</a></li>
+      <li><a href="gestures/HitTestTarget-class.html">HitTestTarget</a></li>
+      <li><a href="gestures/HorizontalDragGestureRecognizer-class.html">HorizontalDragGestureRecognizer</a></li>
+      <li><a href="gestures/HorizontalMultiDragGestureRecognizer-class.html">HorizontalMultiDragGestureRecognizer</a></li>
+      <li><a href="gestures/ImmediateMultiDragGestureRecognizer-class.html">ImmediateMultiDragGestureRecognizer</a></li>
+      <li><a href="gestures/LeastSquaresSolver-class.html">LeastSquaresSolver</a></li>
+      <li><a href="gestures/LongPressGestureRecognizer-class.html">LongPressGestureRecognizer</a></li>
+      <li><a href="gestures/MultiDragGestureRecognizer-class.html">MultiDragGestureRecognizer</a></li>
+      <li><a href="gestures/MultiDragPointerState-class.html">MultiDragPointerState</a></li>
+      <li><a href="gestures/MultiTapGestureRecognizer-class.html">MultiTapGestureRecognizer</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="gestures/OneSequenceGestureRecognizer-class.html">OneSequenceGestureRecognizer</a></li>
+      <li><a href="gestures/PanGestureRecognizer-class.html">PanGestureRecognizer</a></li>
+      <li><a href="gestures/PointerAddedEvent-class.html">PointerAddedEvent</a></li>
+      <li><a href="gestures/PointerCancelEvent-class.html">PointerCancelEvent</a></li>
+      <li><a href="gestures/PointerDownEvent-class.html">PointerDownEvent</a></li>
+      <li><a href="gestures/PointerEvent-class.html">PointerEvent</a></li>
+      <li><a href="gestures/PointerEventConverter-class.html">PointerEventConverter</a></li>
+      <li><a href="gestures/PointerHoverEvent-class.html">PointerHoverEvent</a></li>
+      <li><a href="gestures/PointerMoveEvent-class.html">PointerMoveEvent</a></li>
+      <li><a href="gestures/PointerRemovedEvent-class.html">PointerRemovedEvent</a></li>
+      <li><a href="gestures/PointerRouter-class.html">PointerRouter</a></li>
+      <li><a href="gestures/PointerUpEvent-class.html">PointerUpEvent</a></li>
+      <li><a href="gestures/PolynomialFit-class.html">PolynomialFit</a></li>
+      <li><a href="gestures/PrimaryPointerGestureRecognizer-class.html">PrimaryPointerGestureRecognizer</a></li>
+      <li><a href="gestures/ScaleEndDetails-class.html">ScaleEndDetails</a></li>
+      <li><a href="gestures/ScaleGestureRecognizer-class.html">ScaleGestureRecognizer</a></li>
+      <li><a href="gestures/ScaleStartDetails-class.html">ScaleStartDetails</a></li>
+      <li><a href="gestures/ScaleUpdateDetails-class.html">ScaleUpdateDetails</a></li>
+      <li><a href="gestures/TapDownDetails-class.html">TapDownDetails</a></li>
+      <li><a href="gestures/TapGestureRecognizer-class.html">TapGestureRecognizer</a></li>
+      <li><a href="gestures/TapUpDetails-class.html">TapUpDetails</a></li>
+      <li><a href="gestures/Velocity-class.html">Velocity</a></li>
+      <li><a href="gestures/VelocityEstimate-class.html">VelocityEstimate</a></li>
+      <li><a href="gestures/VelocityTracker-class.html">VelocityTracker</a></li>
+      <li><a href="gestures/VerticalDragGestureRecognizer-class.html">VerticalDragGestureRecognizer</a></li>
+      <li><a href="gestures/VerticalMultiDragGestureRecognizer-class.html">VerticalMultiDragGestureRecognizer</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#constants">Constants</a></li>
+      <li><a href="gestures/kBackMouseButton-constant.html">kBackMouseButton</a></li>
+      <li><a href="gestures/kDoubleTapMinTime-constant.html">kDoubleTapMinTime</a></li>
+      <li><a href="gestures/kDoubleTapSlop-constant.html">kDoubleTapSlop</a></li>
+      <li><a href="gestures/kDoubleTapTimeout-constant.html">kDoubleTapTimeout</a></li>
+      <li><a href="gestures/kDoubleTapTouchSlop-constant.html">kDoubleTapTouchSlop</a></li>
+      <li><a href="gestures/kForwardMouseButton-constant.html">kForwardMouseButton</a></li>
+      <li><a href="gestures/kHoverTapSlop-constant.html">kHoverTapSlop</a></li>
+      <li><a href="gestures/kHoverTapTimeout-constant.html">kHoverTapTimeout</a></li>
+      <li><a href="gestures/kJumpTapTimeout-constant.html">kJumpTapTimeout</a></li>
+      <li><a href="gestures/kLongPressTimeout-constant.html">kLongPressTimeout</a></li>
+      <li><a href="gestures/kMaxFlingVelocity-constant.html">kMaxFlingVelocity</a></li>
+      <li><a href="gestures/kMiddleMouseButton-constant.html">kMiddleMouseButton</a></li>
+      <li><a href="gestures/kMinFlingVelocity-constant.html">kMinFlingVelocity</a></li>
+      <li><a href="gestures/kPagingTouchSlop-constant.html">kPagingTouchSlop</a></li>
+      <li><a href="gestures/kPanSlop-constant.html">kPanSlop</a></li>
+      <li><a href="gestures/kPressTimeout-constant.html">kPressTimeout</a></li>
+      <li><a href="gestures/kPrimaryMouseButton-constant.html">kPrimaryMouseButton</a></li>
+      <li><a href="gestures/kPrimaryStylusButton-constant.html">kPrimaryStylusButton</a></li>
+      <li><a href="gestures/kScaleSlop-constant.html">kScaleSlop</a></li>
+      <li><a href="gestures/kSecondaryMouseButton-constant.html">kSecondaryMouseButton</a></li>
+      <li><a href="gestures/kSecondaryStylusButton-constant.html">kSecondaryStylusButton</a></li>
+      <li><a href="gestures/kTouchSlop-constant.html">kTouchSlop</a></li>
+      <li><a href="gestures/kWindowTouchSlop-constant.html">kWindowTouchSlop</a></li>
+      <li><a href="gestures/kZoomControlsTimeout-constant.html">kZoomControlsTimeout</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#properties">Properties</a></li>
+      <li><a href="gestures/debugPrintGestureArenaDiagnostics.html">debugPrintGestureArenaDiagnostics</a></li>
+      <li><a href="gestures/debugPrintHitTestResults.html">debugPrintHitTestResults</a></li>
+      <li><a href="gestures/debugPrintRecognizerCallbacksTrace.html">debugPrintRecognizerCallbacksTrace</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#functions">Functions</a></li>
+      <li><a href="gestures/debugAssertAllGesturesVarsUnset.html">debugAssertAllGesturesVarsUnset</a></li>
+      <li><a href="gestures/nthMouseButton.html">nthMouseButton</a></li>
+      <li><a href="gestures/nthStylusButton.html">nthStylusButton</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#enums">Enums</a></li>
+      <li><a href="gestures/GestureDisposition-class.html">GestureDisposition</a></li>
+      <li><a href="gestures/GestureRecognizerState-class.html">GestureRecognizerState</a></li>
+      <li><a href="dart-ui/PointerDeviceKind-class.html">PointerDeviceKind</a></li>
+    
+      <li class="section-title"><a href="gestures/gestures-library.html#typedefs">Typedefs</a></li>
+      <li><a href="gestures/GestureDoubleTapCallback.html">GestureDoubleTapCallback</a></li>
+      <li><a href="gestures/GestureDragCancelCallback.html">GestureDragCancelCallback</a></li>
+      <li><a href="gestures/GestureDragDownCallback.html">GestureDragDownCallback</a></li>
+      <li><a href="gestures/GestureDragEndCallback.html">GestureDragEndCallback</a></li>
+      <li><a href="gestures/GestureDragStartCallback.html">GestureDragStartCallback</a></li>
+      <li><a href="gestures/GestureDragUpdateCallback.html">GestureDragUpdateCallback</a></li>
+      <li><a href="gestures/GestureLongPressCallback.html">GestureLongPressCallback</a></li>
+      <li><a href="gestures/GestureMultiDragStartCallback.html">GestureMultiDragStartCallback</a></li>
+      <li><a href="gestures/GestureMultiTapCallback.html">GestureMultiTapCallback</a></li>
+      <li><a href="gestures/GestureMultiTapCancelCallback.html">GestureMultiTapCancelCallback</a></li>
+      <li><a href="gestures/GestureMultiTapDownCallback.html">GestureMultiTapDownCallback</a></li>
+      <li><a href="gestures/GestureMultiTapUpCallback.html">GestureMultiTapUpCallback</a></li>
+      <li><a href="gestures/GestureScaleEndCallback.html">GestureScaleEndCallback</a></li>
+      <li><a href="gestures/GestureScaleStartCallback.html">GestureScaleStartCallback</a></li>
+      <li><a href="gestures/GestureScaleUpdateCallback.html">GestureScaleUpdateCallback</a></li>
+      <li><a href="gestures/GestureTapCallback.html">GestureTapCallback</a></li>
+      <li><a href="gestures/GestureTapCancelCallback.html">GestureTapCancelCallback</a></li>
+      <li><a href="gestures/GestureTapDownCallback.html">GestureTapDownCallback</a></li>
+      <li><a href="gestures/GestureTapUpCallback.html">GestureTapUpCallback</a></li>
+      <li><a href="gestures/PointerRoute.html">PointerRoute</a></li>
+      <li><a href="gestures/RecognizerCallback.html">RecognizerCallback</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>GestureLongPressCallback typedef</h1>
+
+    <section class="multi-line-signature">
+        <span class="returntype">void</span>
+        <span class="name ">GestureLongPressCallback</span>
+(<wbr>)
+    </section>
+
+    <section class="desc markdown">
+      <p>Signature for when a pointer has remained in contact with the screen at the
+same location for a long period of time.</p>
+    </section>
+        
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

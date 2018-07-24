@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the SemanticsBuilderCallback property from the rendering library, for the Dart programming language.">
+  <title>SemanticsBuilderCallback typedef - rendering library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- style overrides for dartdoc -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400,100i';
+</style>
+
+<style>
+  body {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    color: #111;
+    background-color: #fdfdfd;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }
+
+  header {
+    background-color: white;
+    color: #424242;
+  }
+
+  nav.navbar {
+    min-height: 57px;
+    padding: 6px 0;
+  }
+
+  header.header-fixed nav.navbar-fixed-top {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  h1, h2 {
+    font-weight: 300;
+  }
+
+  h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px !important;
+    letter-spacing: -1px;
+  }
+
+  header h1 {
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #111;
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 24px;
+  }
+
+  section.summary h2 {
+    font-size: 24px;
+    color: inherit;
+    border-bottom: none;
+  }
+
+  .sidebar ol,
+  .sidebar ol li.section-title {
+    font-size: inherit;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar-offcanvas-left.active {
+      padding: 10px;
+    }
+  }
+
+  .sidebar-offcanvas-left ol {
+    padding: 0 16px 16px 0;
+  }
+
+  .sidebar-offcanvas-left h5 {
+    display: none;
+  }
+
+  pre,
+  pre.prettyprint,
+  pre > code {
+    font-size: 14px;
+  }
+
+  pre,
+  pre.prettyprint {
+    background: #f5f2f0;
+    margin: 0 0 15px 0;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+
+  code {
+    background-color: inherit;
+    font-size: 1em; /* browsers default to smaller font for code */
+    font-weight: 300;
+    padding-left: 0; /* otherwise we get ragged left margins */
+    padding-right: 0;
+  }
+
+  #search-box {
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 4px 6px;
+    font-size: 15px;
+  }
+
+  input.form-control.typeahead {
+    padding: 4px 7px;
+    font-size: 15px;
+  }
+
+  dl.dl-horizontal dt {
+    color: inherit;
+  }
+
+  /* Line the material icons up with their labels */
+  i.material-icons.md-36,
+  i.material-icons.md-48 {
+    vertical-align: bottom;
+  }
+
+  /* thinify the inherited names in lists */
+  li.inherited a {
+    font-weight: 100;
+  }
+
+  /* address a style issue with the background of code sections */
+  code.hljs {
+    background: inherit;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+</style>
+
+<!-- The following rules are from http://google.github.io/material-design-icons/ -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67589403-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script async="" defer="" 
+  src="//www.google.com/insights/consumersurveys/async_survey?site=i2bdmo2dzky7fqws25nicgx5f4">
+</script>
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">Flutter</a></li>
+    <li><a href="rendering/rendering-library.html">rendering</a></li>
+    <li class="self-crumb">SemanticsBuilderCallback typedef</li>
+  </ol>
+  <div class="self-name">SemanticsBuilderCallback</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>rendering library</h5>
+    <ol>
+      <li class="section-title"><a href="rendering/rendering-library.html#classes">Classes</a></li>
+      <li><a href="painting/Alignment-class.html">Alignment</a></li>
+      <li><a href="painting/AlignmentDirectional-class.html">AlignmentDirectional</a></li>
+      <li><a href="painting/AlignmentGeometry-class.html">AlignmentGeometry</a></li>
+      <li><a href="rendering/AlignmentGeometryTween-class.html">AlignmentGeometryTween</a></li>
+      <li><a href="rendering/AlignmentTween-class.html">AlignmentTween</a></li>
+      <li><a href="semantics/AnnounceSemanticsEvent-class.html">AnnounceSemanticsEvent</a></li>
+      <li><a href="painting/AssetBundleImageKey-class.html">AssetBundleImageKey</a></li>
+      <li><a href="painting/AssetBundleImageProvider-class.html">AssetBundleImageProvider</a></li>
+      <li><a href="painting/AssetImage-class.html">AssetImage</a></li>
+      <li><a href="rendering/BackdropFilterLayer-class.html">BackdropFilterLayer</a></li>
+      <li><a href="painting/BeveledRectangleBorder-class.html">BeveledRectangleBorder</a></li>
+      <li><a href="painting/Border-class.html">Border</a></li>
+      <li><a href="painting/BorderDirectional-class.html">BorderDirectional</a></li>
+      <li><a href="painting/BorderRadius-class.html">BorderRadius</a></li>
+      <li><a href="painting/BorderRadiusDirectional-class.html">BorderRadiusDirectional</a></li>
+      <li><a href="painting/BorderRadiusGeometry-class.html">BorderRadiusGeometry</a></li>
+      <li><a href="painting/BorderSide-class.html">BorderSide</a></li>
+      <li><a href="painting/BoxBorder-class.html">BoxBorder</a></li>
+      <li><a href="rendering/BoxConstraints-class.html">BoxConstraints</a></li>
+      <li><a href="painting/BoxDecoration-class.html">BoxDecoration</a></li>
+      <li><a href="rendering/BoxHitTestEntry-class.html">BoxHitTestEntry</a></li>
+      <li><a href="painting/BoxPainter-class.html">BoxPainter</a></li>
+      <li><a href="rendering/BoxParentData-class.html">BoxParentData</a></li>
+      <li><a href="painting/BoxShadow-class.html">BoxShadow</a></li>
+      <li><a href="dart-ui/Canvas-class.html">Canvas</a></li>
+      <li><a href="painting/CircleBorder-class.html">CircleBorder</a></li>
+      <li><a href="rendering/ClipPathLayer-class.html">ClipPathLayer</a></li>
+      <li><a href="rendering/ClipRectLayer-class.html">ClipRectLayer</a></li>
+      <li><a href="rendering/ClipRRectLayer-class.html">ClipRRectLayer</a></li>
+      <li><a href="dart-ui/Color-class.html">Color</a></li>
+      <li><a href="dart-ui/ColorFilter-class.html">ColorFilter</a></li>
+      <li><a href="painting/ColorSwatch-class.html">ColorSwatch</a></li>
+      <li><a href="rendering/Constraints-class.html">Constraints</a></li>
+      <li><a href="rendering/ContainerBoxParentData-class.html">ContainerBoxParentData</a></li>
+      <li><a href="rendering/ContainerLayer-class.html">ContainerLayer</a></li>
+      <li><a href="rendering/ContainerParentDataMixin-class.html">ContainerParentDataMixin</a></li>
+      <li><a href="rendering/ContainerRenderObjectMixin-class.html">ContainerRenderObjectMixin</a></li>
+      <li><a href="rendering/CustomClipper-class.html">CustomClipper</a></li>
+      <li><a href="rendering/CustomPainter-class.html">CustomPainter</a></li>
+      <li><a href="rendering/CustomPainterSemantics-class.html">CustomPainterSemantics</a></li>
+      <li><a href="rendering/DebugOverflowIndicatorMixin-class.html">DebugOverflowIndicatorMixin</a></li>
+      <li><a href="painting/Decoration-class.html">Decoration</a></li>
+      <li><a href="painting/DecorationImage-class.html">DecorationImage</a></li>
+      <li><a href="painting/DecorationImagePainter-class.html">DecorationImagePainter</a></li>
+      <li><a href="foundation/DiagnosticPropertiesBuilder-class.html">DiagnosticPropertiesBuilder</a></li>
+      <li><a href="foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></li>
+      <li><a href="foundation/DiagnosticsProperty-class.html">DiagnosticsProperty</a></li>
+      <li><a href="foundation/DoubleProperty-class.html">DoubleProperty</a></li>
+      <li><a href="painting/EdgeInsets-class.html">EdgeInsets</a></li>
+      <li><a href="painting/EdgeInsetsDirectional-class.html">EdgeInsetsDirectional</a></li>
+      <li><a href="painting/EdgeInsetsGeometry-class.html">EdgeInsetsGeometry</a></li>
+      <li><a href="foundation/EnumProperty-class.html">EnumProperty</a></li>
+      <li><a href="painting/ExactAssetImage-class.html">ExactAssetImage</a></li>
+      <li><a href="painting/FileImage-class.html">FileImage</a></li>
+      <li><a href="painting/FittedSizes-class.html">FittedSizes</a></li>
+      <li><a href="rendering/FixedColumnWidth-class.html">FixedColumnWidth</a></li>
+      <li><a href="foundation/FlagProperty-class.html">FlagProperty</a></li>
+      <li><a href="rendering/FlexColumnWidth-class.html">FlexColumnWidth</a></li>
+      <li><a href="rendering/FlexParentData-class.html">FlexParentData</a></li>
+      <li><a href="rendering/FloatingHeaderSnapConfiguration-class.html">FloatingHeaderSnapConfiguration</a></li>
+      <li><a href="rendering/FlowDelegate-class.html">FlowDelegate</a></li>
+      <li><a href="rendering/FlowPaintingContext-class.html">FlowPaintingContext</a></li>
+      <li><a href="rendering/FlowParentData-class.html">FlowParentData</a></li>
+      <li><a href="rendering/FlutterErrorDetailsForRendering-class.html">FlutterErrorDetailsForRendering</a></li>
+      <li><a href="painting/FlutterLogoDecoration-class.html">FlutterLogoDecoration</a></li>
+      <li><a href="rendering/FollowerLayer-class.html">FollowerLayer</a></li>
+      <li><a href="dart-ui/FontWeight-class.html">FontWeight</a></li>
+      <li><a href="painting/FractionalOffset-class.html">FractionalOffset</a></li>
+      <li><a href="rendering/FractionalOffsetTween-class.html">FractionalOffsetTween</a></li>
+      <li><a href="rendering/FractionColumnWidth-class.html">FractionColumnWidth</a></li>
+      <li><a href="painting/Gradient-class.html">Gradient</a></li>
+      <li><a href="gestures/HitTestEntry-class.html">HitTestEntry</a></li>
+      <li><a href="gestures/HitTestResult-class.html">HitTestResult</a></li>
+      <li><a href="painting/HSVColor-class.html">HSVColor</a></li>
+      <li><a href="painting/ImageCache-class.html">ImageCache</a></li>
+      <li><a href="painting/ImageConfiguration-class.html">ImageConfiguration</a></li>
+      <li><a href="painting/ImageInfo-class.html">ImageInfo</a></li>
+      <li><a href="painting/ImageProvider-class.html">ImageProvider</a></li>
+      <li><a href="dart-ui/ImageShader-class.html">ImageShader</a></li>
+      <li><a href="painting/ImageStream-class.html">ImageStream</a></li>
+      <li><a href="painting/ImageStreamCompleter-class.html">ImageStreamCompleter</a></li>
+      <li><a href="foundation/IntProperty-class.html">IntProperty</a></li>
+      <li><a href="rendering/IntrinsicColumnWidth-class.html">IntrinsicColumnWidth</a></li>
+      <li><a href="rendering/Layer-class.html">Layer</a></li>
+      <li><a href="rendering/LayerLink-class.html">LayerLink</a></li>
+      <li><a href="rendering/LeaderLayer-class.html">LeaderLayer</a></li>
+      <li><a href="painting/LinearGradient-class.html">LinearGradient</a></li>
+      <li><a href="rendering/ListBodyParentData-class.html">ListBodyParentData</a></li>
+      <li><a href="rendering/ListWheelParentData-class.html">ListWheelParentData</a></li>
+      <li><a href="dart-ui/Locale-class.html">Locale</a></li>
+      <li><a href="semantics/LongPressSemanticsEvent-class.html">LongPressSemanticsEvent</a></li>
+      <li><a href="dart-ui/MaskFilter-class.html">MaskFilter</a></li>
+      <li><a href="vector_math_64/Matrix4-class.html">Matrix4</a></li>
+      <li><a href="painting/MatrixUtils-class.html">MatrixUtils</a></li>
+      <li><a href="rendering/MaxColumnWidth-class.html">MaxColumnWidth</a></li>
+      <li><a href="painting/MemoryImage-class.html">MemoryImage</a></li>
+      <li><a href="rendering/MinColumnWidth-class.html">MinColumnWidth</a></li>
+      <li><a href="rendering/MultiChildLayoutDelegate-class.html">MultiChildLayoutDelegate</a></li>
+      <li><a href="rendering/MultiChildLayoutParentData-class.html">MultiChildLayoutParentData</a></li>
+      <li><a href="painting/MultiFrameImageStreamCompleter-class.html">MultiFrameImageStreamCompleter</a></li>
+      <li><a href="painting/NetworkImage-class.html">NetworkImage</a></li>
+      <li><a href="dart-ui/Offset-class.html">Offset</a></li>
+      <li><a href="rendering/OffsetLayer-class.html">OffsetLayer</a></li>
+      <li><a href="painting/OneFrameImageStreamCompleter-class.html">OneFrameImageStreamCompleter</a></li>
+      <li><a href="rendering/OpacityLayer-class.html">OpacityLayer</a></li>
+      <li><a href="semantics/OrdinalSortKey-class.html">OrdinalSortKey</a></li>
+      <li><a href="dart-ui/Paint-class.html">Paint</a></li>
+      <li><a href="painting/PaintingBinding-class.html">PaintingBinding</a></li>
+      <li><a href="rendering/PaintingContext-class.html">PaintingContext</a></li>
+      <li><a href="rendering/ParentData-class.html">ParentData</a></li>
+      <li><a href="dart-ui/Path-class.html">Path</a></li>
+      <li><a href="rendering/PerformanceOverlayLayer-class.html">PerformanceOverlayLayer</a></li>
+      <li><a href="rendering/PhysicalModelLayer-class.html">PhysicalModelLayer</a></li>
+      <li><a href="rendering/PictureLayer-class.html">PictureLayer</a></li>
+      <li><a href="rendering/PipelineOwner-class.html">PipelineOwner</a></li>
+      <li><a href="gestures/PointerCancelEvent-class.html">PointerCancelEvent</a></li>
+      <li><a href="gestures/PointerDownEvent-class.html">PointerDownEvent</a></li>
+      <li><a href="gestures/PointerEvent-class.html">PointerEvent</a></li>
+      <li><a href="gestures/PointerMoveEvent-class.html">PointerMoveEvent</a></li>
+      <li><a href="gestures/PointerUpEvent-class.html">PointerUpEvent</a></li>
+      <li><a href="painting/RadialGradient-class.html">RadialGradient</a></li>
+      <li><a href="dart-ui/Radius-class.html">Radius</a></li>
+      <li><a href="dart-ui/Rect-class.html">Rect</a></li>
+      <li><a href="rendering/RelativeRect-class.html">RelativeRect</a></li>
+      <li><a href="rendering/RenderAbsorbPointer-class.html">RenderAbsorbPointer</a></li>
+      <li><a href="rendering/RenderAbstractViewport-class.html">RenderAbstractViewport</a></li>
+      <li><a href="rendering/RenderAligningShiftedBox-class.html">RenderAligningShiftedBox</a></li>
+      <li><a href="rendering/RenderAnimatedOpacity-class.html">RenderAnimatedOpacity</a></li>
+      <li><a href="rendering/RenderAnimatedSize-class.html">RenderAnimatedSize</a></li>
+      <li><a href="rendering/RenderAspectRatio-class.html">RenderAspectRatio</a></li>
+      <li><a href="rendering/RenderBackdropFilter-class.html">RenderBackdropFilter</a></li>
+      <li><a href="rendering/RenderBaseline-class.html">RenderBaseline</a></li>
+      <li><a href="rendering/RenderBlockSemantics-class.html">RenderBlockSemantics</a></li>
+      <li><a href="rendering/RenderBox-class.html">RenderBox</a></li>
+      <li><a href="rendering/RenderBoxContainerDefaultsMixin-class.html">RenderBoxContainerDefaultsMixin</a></li>
+      <li><a href="rendering/RenderClipOval-class.html">RenderClipOval</a></li>
+      <li><a href="rendering/RenderClipPath-class.html">RenderClipPath</a></li>
+      <li><a href="rendering/RenderClipRect-class.html">RenderClipRect</a></li>
+      <li><a href="rendering/RenderClipRRect-class.html">RenderClipRRect</a></li>
+      <li><a href="rendering/RenderConstrainedBox-class.html">RenderConstrainedBox</a></li>
+      <li><a href="rendering/RenderConstrainedOverflowBox-class.html">RenderConstrainedOverflowBox</a></li>
+      <li><a href="rendering/RenderCustomMultiChildLayoutBox-class.html">RenderCustomMultiChildLayoutBox</a></li>
+      <li><a href="rendering/RenderCustomPaint-class.html">RenderCustomPaint</a></li>
+      <li><a href="rendering/RenderCustomSingleChildLayoutBox-class.html">RenderCustomSingleChildLayoutBox</a></li>
+      <li><a href="rendering/RenderDecoratedBox-class.html">RenderDecoratedBox</a></li>
+      <li><a href="rendering/RenderEditable-class.html">RenderEditable</a></li>
+      <li><a href="rendering/RendererBinding-class.html">RendererBinding</a></li>
+      <li><a href="rendering/RenderErrorBox-class.html">RenderErrorBox</a></li>
+      <li><a href="rendering/RenderExcludeSemantics-class.html">RenderExcludeSemantics</a></li>
+      <li><a href="rendering/RenderFittedBox-class.html">RenderFittedBox</a></li>
+      <li><a href="rendering/RenderFlex-class.html">RenderFlex</a></li>
+      <li><a href="rendering/RenderFlow-class.html">RenderFlow</a></li>
+      <li><a href="rendering/RenderFollowerLayer-class.html">RenderFollowerLayer</a></li>
+      <li><a href="rendering/RenderFractionallySizedOverflowBox-class.html">RenderFractionallySizedOverflowBox</a></li>
+      <li><a href="rendering/RenderFractionalTranslation-class.html">RenderFractionalTranslation</a></li>
+      <li><a href="rendering/RenderIgnorePointer-class.html">RenderIgnorePointer</a></li>
+      <li><a href="rendering/RenderImage-class.html">RenderImage</a></li>
+      <li><a href="rendering/RenderIndexedStack-class.html">RenderIndexedStack</a></li>
+      <li><a href="rendering/RenderingFlutterBinding-class.html">RenderingFlutterBinding</a></li>
+      <li><a href="rendering/RenderIntrinsicHeight-class.html">RenderIntrinsicHeight</a></li>
+      <li><a href="rendering/RenderIntrinsicWidth-class.html">RenderIntrinsicWidth</a></li>
+      <li><a href="rendering/RenderLeaderLayer-class.html">RenderLeaderLayer</a></li>
+      <li><a href="rendering/RenderLimitedBox-class.html">RenderLimitedBox</a></li>
+      <li><a href="rendering/RenderListBody-class.html">RenderListBody</a></li>
+      <li><a href="rendering/RenderListWheelViewport-class.html">RenderListWheelViewport</a></li>
+      <li><a href="rendering/RenderMergeSemantics-class.html">RenderMergeSemantics</a></li>
+      <li><a href="rendering/RenderMetaData-class.html">RenderMetaData</a></li>
+      <li><a href="rendering/RenderObject-class.html">RenderObject</a></li>
+      <li><a href="rendering/RenderObjectWithChildMixin-class.html">RenderObjectWithChildMixin</a></li>
+      <li><a href="rendering/RenderOffstage-class.html">RenderOffstage</a></li>
+      <li><a href="rendering/RenderOpacity-class.html">RenderOpacity</a></li>
+      <li><a href="rendering/RenderPadding-class.html">RenderPadding</a></li>
+      <li><a href="rendering/RenderParagraph-class.html">RenderParagraph</a></li>
+      <li><a href="rendering/RenderPerformanceOverlay-class.html">RenderPerformanceOverlay</a></li>
+      <li><a href="rendering/RenderPhysicalModel-class.html">RenderPhysicalModel</a></li>
+      <li><a href="rendering/RenderPhysicalShape-class.html">RenderPhysicalShape</a></li>
+      <li><a href="rendering/RenderPointerListener-class.html">RenderPointerListener</a></li>
+      <li><a href="rendering/RenderPositionedBox-class.html">RenderPositionedBox</a></li>
+      <li><a href="rendering/RenderProxyBox-class.html">RenderProxyBox</a></li>
+      <li><a href="rendering/RenderProxyBoxMixin-class.html">RenderProxyBoxMixin</a></li>
+      <li><a href="rendering/RenderProxyBoxWithHitTestBehavior-class.html">RenderProxyBoxWithHitTestBehavior</a></li>
+      <li><a href="rendering/RenderRepaintBoundary-class.html">RenderRepaintBoundary</a></li>
+      <li><a href="rendering/RenderRotatedBox-class.html">RenderRotatedBox</a></li>
+      <li><a href="rendering/RenderSemanticsAnnotations-class.html">RenderSemanticsAnnotations</a></li>
+      <li><a href="rendering/RenderSemanticsGestureHandler-class.html">RenderSemanticsGestureHandler</a></li>
+      <li><a href="rendering/RenderShaderMask-class.html">RenderShaderMask</a></li>
+      <li><a href="rendering/RenderShiftedBox-class.html">RenderShiftedBox</a></li>
+      <li><a href="rendering/RenderShrinkWrappingViewport-class.html">RenderShrinkWrappingViewport</a></li>
+      <li><a href="rendering/RenderSizedOverflowBox-class.html">RenderSizedOverflowBox</a></li>
+      <li><a href="rendering/RenderSliver-class.html">RenderSliver</a></li>
+      <li><a href="rendering/RenderSliverBoxChildManager-class.html">RenderSliverBoxChildManager</a></li>
+      <li><a href="rendering/RenderSliverFillRemaining-class.html">RenderSliverFillRemaining</a></li>
+      <li><a href="rendering/RenderSliverFillViewport-class.html">RenderSliverFillViewport</a></li>
+      <li><a href="rendering/RenderSliverFixedExtentBoxAdaptor-class.html">RenderSliverFixedExtentBoxAdaptor</a></li>
+      <li><a href="rendering/RenderSliverFixedExtentList-class.html">RenderSliverFixedExtentList</a></li>
+      <li><a href="rendering/RenderSliverFloatingPersistentHeader-class.html">RenderSliverFloatingPersistentHeader</a></li>
+      <li><a href="rendering/RenderSliverFloatingPinnedPersistentHeader-class.html">RenderSliverFloatingPinnedPersistentHeader</a></li>
+      <li><a href="rendering/RenderSliverGrid-class.html">RenderSliverGrid</a></li>
+      <li><a href="rendering/RenderSliverHelpers-class.html">RenderSliverHelpers</a></li>
+      <li><a href="rendering/RenderSliverList-class.html">RenderSliverList</a></li>
+      <li><a href="rendering/RenderSliverMultiBoxAdaptor-class.html">RenderSliverMultiBoxAdaptor</a></li>
+      <li><a href="rendering/RenderSliverPadding-class.html">RenderSliverPadding</a></li>
+      <li><a href="rendering/RenderSliverPersistentHeader-class.html">RenderSliverPersistentHeader</a></li>
+      <li><a href="rendering/RenderSliverPinnedPersistentHeader-class.html">RenderSliverPinnedPersistentHeader</a></li>
+      <li><a href="rendering/RenderSliverScrollingPersistentHeader-class.html">RenderSliverScrollingPersistentHeader</a></li>
+      <li><a href="rendering/RenderSliverSingleBoxAdapter-class.html">RenderSliverSingleBoxAdapter</a></li>
+      <li><a href="rendering/RenderSliverToBoxAdapter-class.html">RenderSliverToBoxAdapter</a></li>
+      <li><a href="rendering/RenderStack-class.html">RenderStack</a></li>
+      <li><a href="rendering/RenderTable-class.html">RenderTable</a></li>
+      <li><a href="rendering/RenderTransform-class.html">RenderTransform</a></li>
+      <li><a href="rendering/RenderUnconstrainedBox-class.html">RenderUnconstrainedBox</a></li>
+      <li><a href="rendering/RenderView-class.html">RenderView</a></li>
+      <li><a href="rendering/RenderViewport-class.html">RenderViewport</a></li>
+      <li><a href="rendering/RenderViewportBase-class.html">RenderViewportBase</a></li>
+      <li><a href="rendering/RenderWrap-class.html">RenderWrap</a></li>
+      <li><a href="painting/RoundedRectangleBorder-class.html">RoundedRectangleBorder</a></li>
+      <li><a href="dart-ui/RRect-class.html">RRect</a></li>
+      <li><a href="dart-ui/RSTransform-class.html">RSTransform</a></li>
+      <li><a href="dart-ui/SemanticsAction-class.html">SemanticsAction</a></li>
+      <li><a href="semantics/SemanticsConfiguration-class.html">SemanticsConfiguration</a></li>
+      <li><a href="semantics/SemanticsData-class.html">SemanticsData</a></li>
+      <li><a href="semantics/SemanticsEvent-class.html">SemanticsEvent</a></li>
+      <li><a href="rendering/SemanticsHandle-class.html">SemanticsHandle</a></li>
+      <li><a href="semantics/SemanticsNode-class.html">SemanticsNode</a></li>
+      <li><a href="semantics/SemanticsOwner-class.html">SemanticsOwner</a></li>
+      <li><a href="semantics/SemanticsProperties-class.html">SemanticsProperties</a></li>
+      <li><a href="semantics/SemanticsService-class.html">SemanticsService</a></li>
+      <li><a href="semantics/SemanticsSortKey-class.html">SemanticsSortKey</a></li>
+      <li><a href="semantics/SemanticsTag-class.html">SemanticsTag</a></li>
+      <li><a href="dart-ui/Shader-class.html">Shader</a></li>
+      <li><a href="rendering/ShaderMaskLayer-class.html">ShaderMaskLayer</a></li>
+      <li><a href="painting/ShapeBorder-class.html">ShapeBorder</a></li>
+      <li><a href="rendering/ShapeBorderClipper-class.html">ShapeBorderClipper</a></li>
+      <li><a href="painting/ShapeDecoration-class.html">ShapeDecoration</a></li>
+      <li><a href="rendering/SingleChildLayoutDelegate-class.html">SingleChildLayoutDelegate</a></li>
+      <li><a href="dart-ui/Size-class.html">Size</a></li>
+      <li><a href="rendering/SliverConstraints-class.html">SliverConstraints</a></li>
+      <li><a href="rendering/SliverGeometry-class.html">SliverGeometry</a></li>
+      <li><a href="rendering/SliverGridDelegate-class.html">SliverGridDelegate</a></li>
+      <li><a href="rendering/SliverGridDelegateWithFixedCrossAxisCount-class.html">SliverGridDelegateWithFixedCrossAxisCount</a></li>
+      <li><a href="rendering/SliverGridDelegateWithMaxCrossAxisExtent-class.html">SliverGridDelegateWithMaxCrossAxisExtent</a></li>
+      <li><a href="rendering/SliverGridGeometry-class.html">SliverGridGeometry</a></li>
+      <li><a href="rendering/SliverGridLayout-class.html">SliverGridLayout</a></li>
+      <li><a href="rendering/SliverGridParentData-class.html">SliverGridParentData</a></li>
+      <li><a href="rendering/SliverGridRegularTileLayout-class.html">SliverGridRegularTileLayout</a></li>
+      <li><a href="rendering/SliverHitTestEntry-class.html">SliverHitTestEntry</a></li>
+      <li><a href="rendering/SliverLogicalContainerParentData-class.html">SliverLogicalContainerParentData</a></li>
+      <li><a href="rendering/SliverLogicalParentData-class.html">SliverLogicalParentData</a></li>
+      <li><a href="rendering/SliverMultiBoxAdaptorParentData-class.html">SliverMultiBoxAdaptorParentData</a></li>
+      <li><a href="rendering/SliverPhysicalContainerParentData-class.html">SliverPhysicalContainerParentData</a></li>
+      <li><a href="rendering/SliverPhysicalParentData-class.html">SliverPhysicalParentData</a></li>
+      <li><a href="rendering/StackParentData-class.html">StackParentData</a></li>
+      <li><a href="painting/StadiumBorder-class.html">StadiumBorder</a></li>
+      <li><a href="foundation/StringProperty-class.html">StringProperty</a></li>
+      <li><a href="rendering/TableBorder-class.html">TableBorder</a></li>
+      <li><a href="rendering/TableCellParentData-class.html">TableCellParentData</a></li>
+      <li><a href="rendering/TableColumnWidth-class.html">TableColumnWidth</a></li>
+      <li><a href="semantics/TapSemanticEvent-class.html">TapSemanticEvent</a></li>
+      <li><a href="dart-ui/TextBox-class.html">TextBox</a></li>
+      <li><a href="dart-ui/TextDecoration-class.html">TextDecoration</a></li>
+      <li><a href="painting/TextPainter-class.html">TextPainter</a></li>
+      <li><a href="dart-ui/TextPosition-class.html">TextPosition</a></li>
+      <li><a href="services/TextRange-class.html">TextRange</a></li>
+      <li><a href="services/TextSelection-class.html">TextSelection</a></li>
+      <li><a href="rendering/TextSelectionPoint-class.html">TextSelectionPoint</a></li>
+      <li><a href="painting/TextSpan-class.html">TextSpan</a></li>
+      <li><a href="painting/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="rendering/TextureBox-class.html">TextureBox</a></li>
+      <li><a href="rendering/TextureLayer-class.html">TextureLayer</a></li>
+      <li><a href="semantics/TooltipSemanticsEvent-class.html">TooltipSemanticsEvent</a></li>
+      <li><a href="rendering/TransformLayer-class.html">TransformLayer</a></li>
+      <li><a href="painting/TransformProperty-class.html">TransformProperty</a></li>
+      <li><a href="rendering/ViewConfiguration-class.html">ViewConfiguration</a></li>
+      <li><a href="rendering/ViewportOffset-class.html">ViewportOffset</a></li>
+      <li><a href="rendering/WrapParentData-class.html">WrapParentData</a></li>
+    
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#properties">Properties</a></li>
+      <li><a href="rendering/debugCheckIntrinsicSizes.html">debugCheckIntrinsicSizes</a></li>
+      <li><a href="rendering/debugCurrentRepaintColor.html">debugCurrentRepaintColor</a></li>
+      <li><a href="rendering/debugDisableClipLayers.html">debugDisableClipLayers</a></li>
+      <li><a href="rendering/debugDisableOpacityLayers.html">debugDisableOpacityLayers</a></li>
+      <li><a href="rendering/debugDisablePhysicalShapeLayers.html">debugDisablePhysicalShapeLayers</a></li>
+      <li><a href="painting/debugDisableShadows.html">debugDisableShadows</a></li>
+      <li><a href="rendering/debugPaintBaselinesEnabled.html">debugPaintBaselinesEnabled</a></li>
+      <li><a href="rendering/debugPaintLayerBordersEnabled.html">debugPaintLayerBordersEnabled</a></li>
+      <li><a href="rendering/debugPaintPointersEnabled.html">debugPaintPointersEnabled</a></li>
+      <li><a href="rendering/debugPaintSizeEnabled.html">debugPaintSizeEnabled</a></li>
+      <li><a href="foundation/debugPrint.html">debugPrint</a></li>
+      <li><a href="rendering/debugPrintLayouts.html">debugPrintLayouts</a></li>
+      <li><a href="rendering/debugPrintMarkNeedsLayoutStacks.html">debugPrintMarkNeedsLayoutStacks</a></li>
+      <li><a href="rendering/debugPrintMarkNeedsPaintStacks.html">debugPrintMarkNeedsPaintStacks</a></li>
+      <li><a href="rendering/debugProfilePaintsEnabled.html">debugProfilePaintsEnabled</a></li>
+      <li><a href="rendering/debugRepaintRainbowEnabled.html">debugRepaintRainbowEnabled</a></li>
+      <li><a href="rendering/debugRepaintTextRainbowEnabled.html">debugRepaintTextRainbowEnabled</a></li>
+      <li><a href="painting/imageCache.html">imageCache</a></li>
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#functions">Functions</a></li>
+      <li><a href="painting/applyBoxFit.html">applyBoxFit</a></li>
+      <li><a href="rendering/applyGrowthDirectionToAxisDirection.html">applyGrowthDirectionToAxisDirection</a></li>
+      <li><a href="rendering/applyGrowthDirectionToScrollDirection.html">applyGrowthDirectionToScrollDirection</a></li>
+      <li><a href="painting/axisDirectionIsReversed.html">axisDirectionIsReversed</a></li>
+      <li><a href="painting/axisDirectionToAxis.html">axisDirectionToAxis</a></li>
+      <li><a href="painting/debugAssertAllPaintingVarsUnset.html">debugAssertAllPaintingVarsUnset</a></li>
+      <li><a href="rendering/debugAssertAllRenderVarsUnset.html">debugAssertAllRenderVarsUnset</a></li>
+      <li><a href="painting/debugDescribeTransform.html">debugDescribeTransform</a></li>
+      <li><a href="rendering/debugDumpLayerTree.html">debugDumpLayerTree</a></li>
+      <li><a href="rendering/debugDumpRenderTree.html">debugDumpRenderTree</a></li>
+      <li><a href="rendering/debugDumpSemanticsTree.html">debugDumpSemanticsTree</a></li>
+      <li><a href="rendering/debugPaintPadding.html">debugPaintPadding</a></li>
+      <li><a href="semantics/debugResetSemanticsIdCounter.html">debugResetSemanticsIdCounter</a></li>
+      <li><a href="painting/decodeImageFromList.html">decodeImageFromList</a></li>
+      <li><a href="painting/flipAxis.html">flipAxis</a></li>
+      <li><a href="painting/flipAxisDirection.html">flipAxisDirection</a></li>
+      <li><a href="rendering/flipScrollDirection.html">flipScrollDirection</a></li>
+      <li><a href="dart-ui/hashList.html">hashList</a></li>
+      <li><a href="dart-ui/hashValues.html">hashValues</a></li>
+      <li><a href="painting/paintBorder.html">paintBorder</a></li>
+      <li><a href="painting/paintImage.html">paintImage</a></li>
+      <li><a href="painting/paintZigZag.html">paintZigZag</a></li>
+      <li><a href="painting/positionDependentBox.html">positionDependentBox</a></li>
+      <li><a href="painting/textDirectionToAxisDirection.html">textDirectionToAxisDirection</a></li>
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#enums">Enums</a></li>
+      <li><a href="painting/Axis-class.html">Axis</a></li>
+      <li><a href="painting/AxisDirection-class.html">AxisDirection</a></li>
+      <li><a href="dart-ui/BlendMode-class.html">BlendMode</a></li>
+      <li><a href="dart-ui/BlurStyle-class.html">BlurStyle</a></li>
+      <li><a href="painting/BorderStyle-class.html">BorderStyle</a></li>
+      <li><a href="painting/BoxFit-class.html">BoxFit</a></li>
+      <li><a href="painting/BoxShape-class.html">BoxShape</a></li>
+      <li><a href="rendering/CrossAxisAlignment-class.html">CrossAxisAlignment</a></li>
+      <li><a href="semantics/DebugSemanticsDumpOrder-class.html">DebugSemanticsDumpOrder</a></li>
+      <li><a href="rendering/DecorationPosition-class.html">DecorationPosition</a></li>
+      <li><a href="foundation/DiagnosticLevel-class.html">DiagnosticLevel</a></li>
+      <li><a href="dart-ui/FilterQuality-class.html">FilterQuality</a></li>
+      <li><a href="rendering/FlexFit-class.html">FlexFit</a></li>
+      <li><a href="painting/FlutterLogoStyle-class.html">FlutterLogoStyle</a></li>
+      <li><a href="dart-ui/FontStyle-class.html">FontStyle</a></li>
+      <li><a href="rendering/GrowthDirection-class.html">GrowthDirection</a></li>
+      <li><a href="rendering/HitTestBehavior-class.html">HitTestBehavior</a></li>
+      <li><a href="painting/ImageRepeat-class.html">ImageRepeat</a></li>
+      <li><a href="rendering/MainAxisAlignment-class.html">MainAxisAlignment</a></li>
+      <li><a href="rendering/MainAxisSize-class.html">MainAxisSize</a></li>
+      <li><a href="rendering/Overflow-class.html">Overflow</a></li>
+      <li><a href="dart-ui/PaintingStyle-class.html">PaintingStyle</a></li>
+      <li><a href="dart-ui/PathFillType-class.html">PathFillType</a></li>
+      <li><a href="rendering/PerformanceOverlayOption-class.html">PerformanceOverlayOption</a></li>
+      <li><a href="rendering/RenderAnimatedSizeState-class.html">RenderAnimatedSizeState</a></li>
+      <li><a href="painting/RenderComparison-class.html">RenderComparison</a></li>
+      <li><a href="rendering/ScrollDirection-class.html">ScrollDirection</a></li>
+      <li><a href="rendering/SelectionChangedCause-class.html">SelectionChangedCause</a></li>
+      <li><a href="rendering/StackFit-class.html">StackFit</a></li>
+      <li><a href="dart-ui/StrokeCap-class.html">StrokeCap</a></li>
+      <li><a href="dart-ui/StrokeJoin-class.html">StrokeJoin</a></li>
+      <li><a href="rendering/TableCellVerticalAlignment-class.html">TableCellVerticalAlignment</a></li>
+      <li><a href="dart-ui/TextAffinity-class.html">TextAffinity</a></li>
+      <li><a href="dart-ui/TextAlign-class.html">TextAlign</a></li>
+      <li><a href="dart-ui/TextBaseline-class.html">TextBaseline</a></li>
+      <li><a href="dart-ui/TextDecorationStyle-class.html">TextDecorationStyle</a></li>
+      <li><a href="dart-ui/TextDirection-class.html">TextDirection</a></li>
+      <li><a href="rendering/TextOverflow-class.html">TextOverflow</a></li>
+      <li><a href="dart-ui/TileMode-class.html">TileMode</a></li>
+      <li><a href="dart-ui/VertexMode-class.html">VertexMode</a></li>
+      <li><a href="painting/VerticalDirection-class.html">VerticalDirection</a></li>
+      <li><a href="rendering/WrapAlignment-class.html">WrapAlignment</a></li>
+      <li><a href="rendering/WrapCrossAlignment-class.html">WrapCrossAlignment</a></li>
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#typedefs">Typedefs</a></li>
+      <li><a href="rendering/CaretChangedHandler.html">CaretChangedHandler</a></li>
+      <li><a href="painting/ImageListener.html">ImageListener</a></li>
+      <li><a href="foundation/InformationCollector.html">InformationCollector</a></li>
+      <li><a href="rendering/LayoutCallback.html">LayoutCallback</a></li>
+      <li><a href="semantics/MoveCursorHandler.html">MoveCursorHandler</a></li>
+      <li><a href="rendering/PaintingContextCallback.html">PaintingContextCallback</a></li>
+      <li><a href="rendering/PointerCancelEventListener.html">PointerCancelEventListener</a></li>
+      <li><a href="rendering/PointerDownEventListener.html">PointerDownEventListener</a></li>
+      <li><a href="rendering/PointerMoveEventListener.html">PointerMoveEventListener</a></li>
+      <li><a href="rendering/PointerUpEventListener.html">PointerUpEventListener</a></li>
+      <li><a href="rendering/RenderObjectVisitor.html">RenderObjectVisitor</a></li>
+      <li><a href="rendering/SelectionChangedHandler.html">SelectionChangedHandler</a></li>
+      <li><a href="rendering/SemanticsBuilderCallback.html">SemanticsBuilderCallback</a></li>
+      <li><a href="semantics/SemanticsNodeVisitor.html">SemanticsNodeVisitor</a></li>
+      <li><a href="semantics/SetSelectionHandler.html">SetSelectionHandler</a></li>
+      <li><a href="rendering/ShaderCallback.html">ShaderCallback</a></li>
+      <li><a href="foundation/ValueChanged.html">ValueChanged</a></li>
+      <li><a href="foundation/ValueGetter.html">ValueGetter</a></li>
+      <li><a href="foundation/ValueSetter.html">ValueSetter</a></li>
+      <li><a href="dart-ui/VoidCallback.html">VoidCallback</a></li>
+    
+      <li class="section-title"><a href="rendering/rendering-library.html#exceptions">Exceptions</a></li>
+      <li><a href="foundation/FlutterError-class.html">FlutterError</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>SemanticsBuilderCallback typedef</h1>
+
+    <section class="multi-line-signature">
+        <span class="returntype"><a href="dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="rendering/CustomPainterSemantics-class.html">CustomPainterSemantics</a></span>&gt;</span></span>
+        <span class="name ">SemanticsBuilderCallback</span>
+(<wbr><span class="parameter" id="SemanticsBuilderCallback-param-size"><span class="type-annotation"><a href="dart-ui/Size-class.html">Size</a></span> <span class="parameter-name">size</span></span>)
+    </section>
+
+    <section class="desc markdown">
+      <p>Signature of the function returned by <code>CustomPainter.semanticsBuilder</code>.</p>
+<p>Builds semantics information describing the picture drawn by a
+<code>CustomPainter</code>. Each <code>CustomPainterSemantics</code> in the returned list is
+converted into a <code>SemanticsNode</code> by copying its properties.</p>
+<p>The returned list must not be mutated after this function completes. To
+change the semantic information, the function must return a new list
+instead.</p>
+    </section>
+        
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Flutter 0.5.1
+  </span>
+
+  • </span class="no-break">2018-06-19 16:29<span> • </span class="no-break">c7ea3ca377</span>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
